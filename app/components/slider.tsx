@@ -52,7 +52,11 @@ const Slider = ({ direction }: { direction: string }) => {
             style={{ width: `${130 / slides.length}%` }}
           >
             <div className="flex  items-center justify-center h-full rounded-md overflow-hidden ">
-              <img className="shadow-xl" src={slide.image} alt="" />
+              <img
+                className="shadow-xl hover:scale-110 transition-all"
+                src={slide.image}
+                alt=""
+              />
             </div>
           </div>
         ))}
