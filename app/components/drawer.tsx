@@ -1,7 +1,10 @@
 import { useState } from "react";
+import InfoDrawer from "./info-drawer";
 
 function Drawer() {
   const [hovered, setHovered] = useState("");
+
+  const [info, setInfo] = useState("");
 
   const handleHover = (word: any) => {
     setHovered(word);
@@ -10,6 +13,10 @@ function Drawer() {
   const handleUnhover = () => {
     setHovered("");
   };
+
+  function handleEnter(word: string) {
+    setInfo(word);
+  }
 
   const renderWord = (word: any) => {
     return (
@@ -23,10 +30,12 @@ function Drawer() {
       >
         {Array.from(word).map((char: any, index) => (
           <span
+            onMouseEnter={() => handleEnter(word)}
+            onMouseLeave={() => setInfo("")}
             key={index}
             className="inline-block"
             style={{
-              transitionDelay: `${index * 50}ms`,
+              transitionDelay: `${index * 30}ms`,
             }}
           >
             {char}
@@ -52,7 +61,9 @@ function Drawer() {
         </div>
       </div>
       {/* information */}
-      <div></div>
+      <div className="mt-12">
+        <InfoDrawer word={info}></InfoDrawer>
+      </div>
     </div>
   );
 }
