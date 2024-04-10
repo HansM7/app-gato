@@ -22,7 +22,7 @@ function Drawer() {
     return (
       <span
         role="button"
-        className={`relative text-[4rem] font-black text-gray-500  transition-all ${
+        className={`relative text-[4rem] font-black hover:text-black text-gray-500  transition-all ${
           hovered === word && "text-black"
         }`}
         onMouseEnter={() => handleHover(word)}
@@ -35,7 +35,7 @@ function Drawer() {
             key={index}
             className="inline-block"
             style={{
-              transitionDelay: `${index * 30}ms`,
+              transitionDelay: `${index * 50}ms`,
             }}
           >
             {char}
