@@ -24,10 +24,10 @@ function Banner() {
   return (
     <section className="xl:px-52 md:px-28  px-8 flex  py-4 pt-20">
       <div className="w-full flex flex-col">
-        <div className="flex">
+        <div className="flex animate-fade-right animate-duration-500 animate-ease-linear animate-normal">
           <h1 className="xl:text-[3rem] md:text-[2rem] ">Agencia de </h1>
           <span
-            className={`xl:text-[3rem] md:text-[2rem]  ml-2 px-1 ${colorSelected}`}
+            className={`xl:text-[3rem] md:text-[2rem]  ml-2 px-1  ${colorSelected}`}
           >
             <Typewriter
               words={words}
@@ -44,14 +44,14 @@ function Banner() {
         </div>
         <div className="flex gap-4  justify-start mt-4">
           <div className="xl:pr-36 md:pr-20 pt-16">
-            <p className="text-[#7A7678] font-light text-2xl">
+            <p className="text-[#7A7678] font-light text-2xl animate-fade-right animate-duration-500 animate-ease-linear animate-normal">
               En Genius te asesoramos para tomar la mejor decisión y orientar tu
               presupuesto a los productos que mayor retorno brindarán a tu
               empresa.
             </p>
           </div>
 
-          <div className="">
+          <div className=" animate-fade-left animate-duration-500 animate-ease-linear animate-normal">
             <img
               className="rounded-full min-w-[18rem] "
               src="https://gestion.pe/resizer/SJKSRXdfehWOIsd6j_4Gnbcy_lE=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/SQE2S74DKRAHPPLHWHHKYTEDEM.jpg"
