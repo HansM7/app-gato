@@ -27,17 +27,16 @@ const slides = [
   },
 ];
 
-const Slider = () => {
+const Slider = ({ direction }: { direction: string }) => {
   // Duplicate the slides array to ensure seamless looping
   const duplicatedSlides = [...slides, ...slides];
 
   return (
-    <div className="relative w-full overflow-hidden  ">
-      {/* Wrapping div for seamless looping */}
+    <div className="relative w-full overflow-hidden rounded-md  ">
       <motion.div
-        className="flex gap-4"
+        className="relative flex gap-4"
         animate={{
-          x: ["-100%", "0%"],
+          x: direction === "right" ? ["-100%", "0%"] : ["0%", "-100%"],
           transition: {
             ease: "linear",
             duration: 30,

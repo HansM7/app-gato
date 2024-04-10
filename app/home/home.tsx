@@ -2,6 +2,7 @@
 
 import Banner from "../components/banner";
 import Carousel from "../components/carousel";
+import Carousel2 from "../components/carousel-2";
 import Header from "../components/header";
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
       <Header></Header>
       <Banner></Banner>
       <Carousel></Carousel>
+      {/* <Carousel2></Carousel2> */}
     </div>
   );
 }
