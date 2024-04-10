@@ -15,8 +15,6 @@ function Index() {
     setIsFade(true);
   }, 1000);
 
-  console.log(isLoading);
-
   return (
     <>
       {isLoading ? (
@@ -30,7 +28,7 @@ function Index() {
             <div className="bg-white rounded-full p-2">
               <img
                 className="w-20 animate-spin animate-once animate-duration-[1000ms] animate-ease-linear animate-reverse"
-                src="https://cdn-icons-png.freepik.com/512/1051/1051377.png"
+                src="gato-png.png"
                 alt=""
               />
             </div>
