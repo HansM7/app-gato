@@ -1,6 +1,7 @@
 "use client";
 
 import Banner from "../components/banner";
+import Carousel from "../components/carousel";
 import Header from "../components/header";
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
     <div className="bg-white">
       <Header></Header>
       <Banner></Banner>
+      <Carousel></Carousel>
     </div>
   );
 }
