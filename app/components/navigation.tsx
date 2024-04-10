@@ -23,6 +23,7 @@ function Navigation({
               </span>
             ) : (
               <svg
+                role="button"
                 onClick={() => setIsDrawer(true)}
                 data-testid="geist-icon"
                 height="16"

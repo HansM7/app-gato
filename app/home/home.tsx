@@ -4,6 +4,7 @@ import { useState } from "react";
 import Banner from "../components/banner";
 import Carousel from "../components/carousel";
 import Navigation from "../components/navigation";
+import Drawer from "../components/drawer";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -16,9 +17,7 @@ function Home() {
         }  h-screen z-10 flex  `}
       >
         <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
-        {isDrawer && (
-          <div className=" bg-white h-full w-screen z-10 animate-fade-right animate-duration-500 animate-ease-linear animate-normal "></div>
-        )}
+        {isDrawer && <Drawer></Drawer>}
       </div>
       <main>
         {/* <Header></Header> */}
