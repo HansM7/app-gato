@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 function Navigation({
   isDrawer,
   setIsDrawer,
@@ -9,9 +11,11 @@ function Navigation({
 }) {
   return (
     <>
-      <div className=" w-16 left-0 top-0  flex flex-col justify-between min-h-svh bg-white items-center shadow-lg border">
-        <div className="h-96 flex flex-col justify-between items-center  mt-12">
-          <img className="w-14" src="gato-png.png" alt="" />
+      <div className=" w-16 left-0 top-0  flex flex-col justify-between min-h-svh bg-white items-center shadow-lg border-r">
+        <div className="h-96 flex flex-col justify-between items-center  mt-4">
+          <Link href={""}>
+            <img className="w-16" src="gato-icon.png" alt="" />
+          </Link>
           <div>
             {isDrawer ? (
               <span role="button" onClick={() => setIsDrawer(false)}>

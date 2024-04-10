@@ -10,10 +10,10 @@ function Index() {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 2000);
+  }, 4000);
   setTimeout(() => {
     setIsFade(true);
-  }, 1000);
+  }, 3000);
 
   return (
     <>
@@ -25,10 +25,10 @@ function Index() {
           }`}
         >
           <div className="flex gap-4">
-            <div className="bg-white rounded-full p-2">
+            <div className=" rounded-full p-2">
               <img
-                className="w-20 animate-spin animate-once animate-duration-[1000ms] animate-ease-linear animate-reverse"
-                src="gato-png.png"
+                className="w-32 rounded-full animate-spin animate-once animate-duration-[1000ms] animate-ease-linear animate-reverse"
+                src="animation-cat.gif"
                 alt=""
               />
             </div>
