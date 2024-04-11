@@ -17,6 +17,11 @@ function Navigation({
             <img className="w-16" src="gato-icon.png" alt="" />
           </Link>
           <div>
+            <div className="-rotate-90">
+              <span className="w-full ">GATO</span>
+            </div>
+          </div>
+          <div>
             {isDrawer ? (
               <svg
                 role="button"
