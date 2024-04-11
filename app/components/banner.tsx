@@ -43,36 +43,32 @@ function Banner() {
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
-              <h1 className="xl:text-[4rem] md:text-[4rem] text-white w-full">
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-white w-full">
                 Agencia de{" "}
               </h1>
-              <br />
 
               <span
-                className={` xl:text-[4rem] md:text-[2rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[4rem] md:text-[3rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
                   onDelete={deleting}
-                  typeSpeed={50}
+                  typeSpeed={70}
                 />
               </span>
             </div>
 
             {/* //todo carousel or transition images  --------------------- */}
 
-            <div className="flex gap-4  justify-start mt-4 ">
-              <div className="xl:pr-36 md:pr-20 pt-16">
-                <p className="text-white font-light text-2xl ">
+            <div className="flex gap-4  justify-start mt-12 ">
+              <div className="w-[40rem]">
+                <p className="text-white font-light text-3xl ">
                   {/* En Genius te asesoramos para tomar la mejor decisión y
                   orientar tu presupuesto a los productos que mayor retorno
                   brindarán a tu empresa. */}
                   En Genius, somos expertos en el desarrollo de software a
                   medida que impulsa la innovación y la eficiencia en tu
-                  empresa. Nuestro equipo de ingenieros trabaja en colaboración
-                  contigo para crear soluciones de software robustas y
-                  escalables que se adapten perfectamente a tus necesidades
-                  empresariales y te ayuden a alcanzar tus metas.
+                  empresa.
                 </p>
               </div>
 
@@ -80,7 +76,7 @@ function Banner() {
                 <img
                   // className="rounded-full min-w-[18rem] "
                   className="rounded-3xl w-[55rem] "
-                  src="https://static.wixstatic.com/media/377bd9_e2045c531cb5435eadad4a35b31bd05b~mv2.gif "
+                  src="animation-cat.gif "
                   alt=""
                 />
               </div> */}
@@ -90,32 +86,29 @@ function Banner() {
 
         {position === 1 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
-            <div className="flex  animate-fade-right  ">
-              <h1 className="xl:text-[4rem] md:text-[4rem] text-white">
+            <div className="flex flex-col  animate-fade-right  ">
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-white w-full">
                 Agencia de{" "}
               </h1>
 
               <span
-                className={` xl:text-[4rem] md:text-[2rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[4rem] md:text-[3rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
                   onDelete={deleting}
-                  typeSpeed={50}
+                  typeSpeed={70}
                 />
               </span>
             </div>
 
             {/* //todo carousel or transition images  --------------------- */}
 
-            <div className="flex gap-4  justify-start mt-4 ">
-              <div className="xl:pr-36 md:pr-20 pt-16">
-                <p className="text-white font-light text-2xl ">
+            <div className="flex gap-4  justify-start mt-12 ">
+              <div className="w-[40rem]">
+                <p className="text-white font-light text-3xl ">
                   En Genius, nos especializamos en el desarrollo web de
                   vanguardia que potencia la presencia en línea de tu empresa.
-                  Con nuestra experiencia técnica y creatividad, creamos
-                  soluciones web personalizadas que destacan tu marca y generan
-                  resultados tangibles para tu negocio.
                 </p>
               </div>
 
@@ -133,32 +126,33 @@ function Banner() {
 
         {position === 2 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
-            <div className="flex  animate-fade-right animate-duration-500  ">
-              <h1 className="xl:text-[4rem] md:text-[4rem] text-white">
+            <div className="flex flex-col animate-fade-right animate-duration-500  ">
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-white w-full">
                 Agencia de{" "}
               </h1>
-
               <span
-                className={` xl:text-[4rem] md:text-[2rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[4rem] md:text-[3rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
                   onDelete={deleting}
-                  typeSpeed={50}
+                  typeSpeed={70}
                 />
               </span>
             </div>
 
             {/* //todo carousel or transition images  --------------------- */}
 
-            <div className="flex gap-4  justify-start mt-4 ">
-              <div className="xl:pr-36 md:pr-20 pt-16">
-                <p className="text-white font-light text-2xl ">
-                  En Genius, te ofrecemos orientación experta para optimizar tus
-                  estrategias de marketing y maximizar el retorno de inversión
-                  en cada iniciativa. Nuestro equipo especializado te guiará
-                  para tomar decisiones informadas y alcanzar tus objetivos
-                  comerciales con eficacia.
+            <div className="flex gap-4  justify-start mt-12 ">
+              <div className="w-[40rem]">
+                <p className="text-white font-light text-3xl ">
+                  <Typewriter
+                    words={[
+                      "En Genius, te ofrecemos orientación experta para optimizar tus estrategias de marketing y maximizar el retorno de inversión en cada iniciativa.",
+                    ]}
+                    onDelete={deleting}
+                    typeSpeed={30}
+                  />
                 </p>
               </div>
 
@@ -177,28 +171,26 @@ function Banner() {
         {/* //todo data about company */}
         <div className=" p- text-white z-0  flex flex-col gap-8 text-right">
           <div className="flex flex-col">
-            <span className="text-4xl ">
+            <span className="text-[4rem] ">
               {" "}
               <CountUp end={40} />
             </span>
-            <span className="opacity-80 text-sm font-light">
-              Años en el mercado
-            </span>
+            <span className="opacity-80  font-light">Años en el mercado</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-4xl ">
+            <span className="text-[4rem] ">
               <CountUp end={300} />
             </span>
-            <span className="opacity-80 text-sm font-light">
+            <span className="opacity-80  font-light">
               {" "}
               Proyectos realizados
             </span>
           </div>
           <div className="flex flex-col">
-            <span className="text-4xl ">
+            <span className="text-[4rem] ">
               <CountUp end={10} />
             </span>
-            <span className="opacity-80 text-sm font-light">Colaboradores</span>
+            <span className="opacity-80  font-light">Colaboradores</span>
           </div>
         </div>
       </div>

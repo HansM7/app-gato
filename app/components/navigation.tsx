@@ -16,10 +16,14 @@ function Navigation({
           <Link href={""}>
             <img className="w-16" src="gato-icon.png" alt="" />
           </Link>
-          <div>
-            <div className="-rotate-90">
+          <div className="flex flex-col gap-1">
+            {/* <div className="-rotate-90">
               <span className="w-full ">GATO</span>
-            </div>
+            </div> */}
+            <span>G</span>
+            <span>A</span>
+            <span>T</span>
+            <span>O</span>
           </div>
           <div>
             {isDrawer ? (
