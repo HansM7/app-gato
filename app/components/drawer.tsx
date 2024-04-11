@@ -61,7 +61,7 @@ function Drawer() {
   };
 
   return (
-    <div className="bg-white h-full w-screen z-10 animate-fade-right animate-duration-500 animate-ease-linear animate-normal pt-36 px-32">
+    <div className="bg-white h-full w-screen  animate-fade-right animate-duration-500 animate-ease-linear animate-normal pt-36 px-32 z-30">
       <div className="flex justify-between">
         <div className="flex flex-col">
           <div className="flex items-center">
