@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import AwesomeSlider from "react-awesome-slider";
+import CountUp from "react-countup";
 
 function Banner() {
+  // todo -> define states
   const words = ["Desarrollo de Software", "Desarrollo web", "Marketing"];
 
   const bg_colors = ["bg-[#007CF8]", "bg-[#0BC2E1]", "bg-[#A52DE6]"];
@@ -13,6 +14,8 @@ function Banner() {
   const [colorSelected, setColorSelected] = useState(bg_colors[0]);
 
   const [position, setPosition] = useState(0);
+
+  // todo -> define functions
 
   function deleting() {
     setIterator(iterator + 1);
@@ -174,20 +177,27 @@ function Banner() {
         {/* //todo data about company */}
         <div className=" p- text-white z-0  flex flex-col gap-8 text-right">
           <div className="flex flex-col">
-            <span className="text-4xl ">3</span>
+            <span className="text-4xl ">
+              {" "}
+              <CountUp end={40} />
+            </span>
             <span className="opacity-80 text-sm font-light">
               Años en el mercado
             </span>
           </div>
           <div className="flex flex-col">
-            <span className="text-4xl ">200</span>
+            <span className="text-4xl ">
+              <CountUp end={300} />
+            </span>
             <span className="opacity-80 text-sm font-light">
               {" "}
               Proyectos realizados
             </span>
           </div>
           <div className="flex flex-col">
-            <span className="text-4xl ">30</span>
+            <span className="text-4xl ">
+              <CountUp end={10} />
+            </span>
             <span className="opacity-80 text-sm font-light">Colaboradores</span>
           </div>
         </div>
