@@ -5,6 +5,7 @@ import Banner from "../components/banner";
 import Carousel from "../components/carousel";
 import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
+import "react-awesome-slider/dist/styles.css";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
