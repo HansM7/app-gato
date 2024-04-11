@@ -6,6 +6,8 @@ import Carousel from "../components/carousel";
 import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
 import "react-awesome-slider/dist/styles.css";
+import Collage from "../components/collage";
+import Detail from "../components/detail";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -13,7 +15,7 @@ function Home() {
   return (
     <div className="relative bg-white flex">
       {/* this section remove i ncase not video */}
-      <div className="absolute w-full bg-violet-900 opacity-80">
+      {/* <div className="absolute w-full bg-violet-900 opacity-80">
         <video
           className="  opacity-60"
           muted
@@ -21,7 +23,7 @@ function Home() {
           autoPlay
           src="video.mp4"
         ></video>
-      </div>
+      </div> */}
       {/* end ->this section remove i ncase not video */}
 
       <div
@@ -32,11 +34,13 @@ function Home() {
         <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
         {isDrawer && <Drawer></Drawer>}
       </div>
-      <main>
+      <main className="flex flex-col w-full">
         {/* <Header></Header> */}
         <Banner></Banner>
-        <Carousel></Carousel>
+        {/* <Carousel></Carousel> */}
         {/* <Carousel2></Carousel2> */}
+        <Collage></Collage>
+        <Detail></Detail>
       </main>
     </div>
   );

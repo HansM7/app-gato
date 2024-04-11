@@ -38,12 +38,12 @@ function Banner() {
   }, [position]);
 
   return (
-    <section className=" min-h-screen">
+    <section className=" min-h-screen  bg-gray-100 ">
       <div className="xl:px-44 md:px-28  px-8 flex  py-4 pt-20">
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-white w-full">
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-black w-full">
                 Agencia de{" "}
               </h1>
 
@@ -62,7 +62,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-[40rem]">
-                <p className="text-white font-light text-3xl ">
+                <p className="text-black font-light text-3xl ">
                   {/* En Genius te asesoramos para tomar la mejor decisión y
                   orientar tu presupuesto a los productos que mayor retorno
                   brindarán a tu empresa. */}
@@ -87,7 +87,7 @@ function Banner() {
         {position === 1 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col  animate-fade-right  ">
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-white w-full">
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-black w-full">
                 Agencia de{" "}
               </h1>
 
@@ -106,7 +106,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-[40rem]">
-                <p className="text-white font-light text-3xl ">
+                <p className="text-black font-light text-3xl ">
                   En Genius, nos especializamos en el desarrollo web de
                   vanguardia que potencia la presencia en línea de tu empresa.
                 </p>
@@ -127,7 +127,7 @@ function Banner() {
         {position === 2 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right animate-duration-500  ">
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-white w-full">
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-black w-full">
                 Agencia de{" "}
               </h1>
               <span
@@ -145,7 +145,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-[40rem]">
-                <p className="text-white font-light text-3xl ">
+                <p className="text-black font-light text-3xl ">
                   <Typewriter
                     words={[
                       "En Genius, te ofrecemos orientación experta para optimizar tus estrategias de marketing y maximizar el retorno de inversión en cada iniciativa.",
@@ -169,7 +169,7 @@ function Banner() {
         )}
 
         {/* //todo data about company */}
-        <div className=" p- text-white z-0  flex flex-col gap-8 text-right">
+        <div className=" p- text-black z-0  flex flex-col gap-8 text-right">
           <div className="flex flex-col">
             <span className="text-[4rem] ">
               {" "}

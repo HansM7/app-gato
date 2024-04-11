@@ -21,10 +21,6 @@ const slides = [
     image:
       "https://img.freepik.com/foto-gratis/personas-tiro-medio-trabajando-juntas_23-2149271712.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712448000&semt=ais",
   },
-  {
-    image:
-      "https://us.123rf.com/450wm/xartproduction/xartproduction2004/xartproduction200400408/143979272-un-equipo-de-j%C3%B3venes-empresarios-con-traje-trabajando-y-comunic%C3%A1ndose-juntos-en-una-oficina.jpg?ver=6",
-  },
 ];
 
 const Slider = ({ direction }: { direction: string }) => {
