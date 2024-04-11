@@ -27,16 +27,16 @@ function Index() {
           <div className="flex gap-4">
             <div className=" rounded-full p-2">
               <img
-                className="w-32 rounded-full animate-spin animate-once animate-duration-[1000ms] animate-ease-linear animate-reverse"
+                className="w-60 rounded-full animate-spin animate-once animate-duration-[1000ms] animate-ease-linear animate-reverse"
                 src="animation-cat.gif"
                 alt=""
               />
             </div>
-            <div className="flex items-center animate-fade-right animate-duration-[2000ms] animate-ease-in-out ">
+            {/* <div className="flex items-center animate-fade-right animate-duration-[2000ms] animate-ease-in-out ">
               <span className="text-xl font-semibold text-white">
                 GATO TECHNOLOGY
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       ) : (

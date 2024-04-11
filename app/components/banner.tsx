@@ -22,7 +22,7 @@ function Banner() {
   }
 
   return (
-    <section className="xl:px-52 md:px-28  px-8 flex  py-4 pt-20">
+    <section className="xl:px-52 md:px-28  px-8 flex  py-4 pt-20 h-screen">
       <div className="w-full flex flex-col">
         <div className="flex animate-fade-right animate-duration-500 animate-ease-linear animate-normal">
           <h1 className="xl:text-[3rem] md:text-[2rem] ">Agencia de </h1>

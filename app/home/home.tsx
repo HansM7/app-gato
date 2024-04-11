@@ -11,6 +11,18 @@ function Home() {
 
   return (
     <div className="relative bg-white flex">
+      {/* this section remove i ncase not video */}
+      <div className="absolute w-full bg-black opacity-80">
+        <video
+          className="  opacity-60"
+          muted
+          loop
+          autoPlay
+          src="video.mp4"
+        ></video>
+      </div>
+      {/* end ->this section remove i ncase not video */}
+
       <div
         className={`fixed ${
           isDrawer ? "w-screen" : "w-16"
