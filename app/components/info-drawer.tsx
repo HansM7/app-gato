@@ -1,7 +1,7 @@
 "use client";
 
 function InfoDrawer({ word }: { word: string }) {
-  if (word === "Portfolio") {
+  if (word === "Portafolio") {
     return (
       <div className="grid grid-cols-3 gap-8">
         <span className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal">
@@ -24,7 +24,7 @@ function InfoDrawer({ word }: { word: string }) {
         </span>
       </div>
     );
-  } else if (word === "Agencia") {
+  } else if (word === "Nosotros") {
     return (
       <div className="grid grid-cols-3 gap-8">
         <span className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal">

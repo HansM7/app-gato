@@ -19,9 +19,9 @@ function Drawer() {
 
   function handleEnter(word: string) {
     setInfo(word);
-    if (word === "Portfolio") {
+    if (word === "Portafolio") {
       setNumber("01");
-    } else if (word === "Agencia") {
+    } else if (word === "Nosotros") {
       setNumber("02");
     } else if (word === "Servicios") {
       setNumber("03");
@@ -37,7 +37,7 @@ function Drawer() {
     return (
       <span
         role="button"
-        className={`relative text-[5rem] font-semibold hover:text-black text-gray-500  transition-all ${
+        className={`relative text-[4rem] font-semibold hover:text-black text-gray-500  transition-all ${
           hovered === word && "text-black"
         }`}
         onMouseEnter={() => handleHover(word)}
@@ -66,7 +66,7 @@ function Drawer() {
         <div className="flex flex-col">
           <div className="flex items-center">
             <div className="w-10 ">
-              {info === "Portfolio" ? (
+              {info === "Portafolio" ? (
                 <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
                   {number}
                 </div>
@@ -76,17 +76,17 @@ function Drawer() {
             </div>
             <div
               className={`${
-                info === "Portfolio"
+                info === "Portafolio"
                   ? "hover:ml-4 transition-all  "
                   : "transition-all"
               }`}
             >
-              {renderWord("Portfolio")}
+              {renderWord("Portafolio")}
             </div>
           </div>
           <div className="flex items-center">
             <div className="w-10">
-              {info === "Agencia" ? (
+              {info === "Nosotros" ? (
                 <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
                   {number}
                 </div>
@@ -96,12 +96,12 @@ function Drawer() {
             </div>
             <div
               className={`${
-                info === "Agencia"
+                info === "Nosotros"
                   ? "hover:ml-4 transition-all  "
                   : "transition-all"
               }`}
             >
-              {renderWord("Agencia")}
+              {renderWord("Nosotros")}
             </div>
           </div>
           <div className="flex items-center">

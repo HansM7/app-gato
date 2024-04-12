@@ -65,7 +65,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-full flex justify-between pr-8">
+              <div className="w-full flex justify-between xl:pr-32 pr-12">
                 <p className="text-black font-light text-2xl ">
                   {/* En Genius te asesoramos para tomar la mejor decisión y
                   orientar tu presupuesto a los productos que mayor retorno
@@ -119,7 +119,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-full flex justify-between pr-8 ">
+              <div className="w-full flex justify-between xl:pr-32 pr-12 ">
                 <p className="text-black font-light text-2xl ">
                   <Typewriter
                     words={[
@@ -167,7 +167,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-full flex justify-between pr-8 ">
+              <div className="w-full flex justify-between xl:pr-32 pr-12">
                 <p className="text-black font-light text-2xl ">
                   <Typewriter
                     words={[
