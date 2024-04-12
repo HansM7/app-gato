@@ -17,6 +17,11 @@ function About() {
     }, 800);
   }
 
+  function redirect() {
+    console.log("redirect!");
+    window.open("https://wa.me/+51999999999", "_blank");
+  }
+
   useEffect(() => {
     changeLoading();
   }, []);
@@ -40,7 +45,7 @@ function About() {
 
         {/* // todo -> whatsapp icon */}
 
-        <div className="fixed bottom-6 right-6">
+        <div className="fixed bottom-6 right-6" onClick={redirect}>
           <svg
             role="button"
             viewBox="0 0 256 259"

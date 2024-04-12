@@ -13,6 +13,11 @@ import Slider from "../components/slider";
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
 
+  function redirect() {
+    console.log("redirect!");
+    window.open("https://wa.me/+51999999999", "_blank");
+  }
+
   return (
     <div className="relative bg-white flex">
       {/* //todo fondo -----------------------------*/}
@@ -31,7 +36,7 @@ function Home() {
 
       {/* // todo -> whatsapp icon */}
 
-      <div className="fixed bottom-6 right-6">
+      <div className="fixed bottom-6 right-6  z-20" onClick={redirect}>
         <svg
           role="button"
           viewBox="0 0 256 259"
