@@ -5,7 +5,11 @@ import CountUp from "react-countup";
 
 function Banner() {
   // todo -> define states
-  const words = ["Desarrollo de Software", "Desarrollo web", "Marketing"];
+  const words = [
+    "Desarrollo de Software",
+    "Desarrollo web",
+    "Marketing Digital",
+  ];
 
   const bg_colors = ["bg-[#007CF8]", "bg-[#0BC2E1]", "bg-[#A52DE6]"];
 
@@ -61,7 +65,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-full flex justify-between ">
+              <div className="w-full flex justify-between pr-8">
                 <p className="text-black font-light text-2xl ">
                   {/* En Genius te asesoramos para tomar la mejor decisión y
                   orientar tu presupuesto a los productos que mayor retorno
@@ -77,7 +81,7 @@ function Banner() {
                 </p>
                 <img
                   className="h-[14rem]"
-                  src="https://png.pngtree.com/png-vector/20231101/ourmid/pngtree-black-and-white-oriental-cat-upright-shorthair-png-image_10414803.png"
+                  src="https://png.pngtree.com/png-clipart/20221006/original/pngtree-working-cat-png-image_8661191.png"
                   alt=""
                 />
               </div>
@@ -115,7 +119,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-full flex justify-between ">
+              <div className="w-full flex justify-between pr-8 ">
                 <p className="text-black font-light text-2xl ">
                   <Typewriter
                     words={[
@@ -163,7 +167,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-full flex justify-between ">
+              <div className="w-full flex justify-between pr-8 ">
                 <p className="text-black font-light text-2xl ">
                   <Typewriter
                     words={[
