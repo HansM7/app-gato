@@ -17,7 +17,7 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-white">
+    <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-gray-100">
       <RevealWrapper duration={1500} origin="left">
         <div className="flex w-full gap-32">
           <div className="flex flex-col gap-4">

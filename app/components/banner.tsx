@@ -43,12 +43,12 @@ function Banner() {
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-black w-full">
+              <h1 className="xl:text-[3rem] md:text-[2rem] text-black w-full">
                 Agencia de{" "}
               </h1>
 
               <span
-                className={` xl:text-[4rem] md:text-[3rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[3rem] md:text-[2rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -61,15 +61,25 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-[40rem]">
-                <p className="text-black font-light text-3xl ">
+              <div className="w-full flex justify-between ">
+                <p className="text-black font-light text-2xl ">
                   {/* En Genius te asesoramos para tomar la mejor decisión y
                   orientar tu presupuesto a los productos que mayor retorno
                   brindarán a tu empresa. */}
-                  En Genius, somos expertos en el desarrollo de software a
-                  medida que impulsa la innovación y la eficiencia en tu
-                  empresa.
+
+                  <Typewriter
+                    words={[
+                      "En Genius, somos expertos en el desarrollo de software a medida que impulsa la innovación y la eficiencia en tu empresa.",
+                    ]}
+                    onDelete={deleting}
+                    typeSpeed={30}
+                  />
                 </p>
+                <img
+                  className="h-[14rem]"
+                  src="https://png.pngtree.com/png-vector/20231101/ourmid/pngtree-black-and-white-oriental-cat-upright-shorthair-png-image_10414803.png"
+                  alt=""
+                />
               </div>
 
               {/* <div className=" ">
@@ -87,12 +97,12 @@ function Banner() {
         {position === 1 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col  animate-fade-right  ">
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-black w-full">
+              <h1 className="xl:text-[3rem] md:text-[2rem] text-black w-full">
                 Agencia de{" "}
               </h1>
 
               <span
-                className={` xl:text-[4rem] md:text-[3rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[3rem] md:text-[2rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -105,11 +115,20 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-[40rem]">
-                <p className="text-black font-light text-3xl ">
-                  En Genius, nos especializamos en el desarrollo web de
-                  vanguardia que potencia la presencia en línea de tu empresa.
+              <div className="w-full flex justify-between ">
+                <p className="text-black font-light text-2xl ">
+                  <Typewriter
+                    words={[
+                      "En Genius, nos especializamos en el desarrollo web de vanguardia que potencia la presencia en línea de tu empresa.",
+                    ]}
+                    onDelete={deleting}
+                    typeSpeed={30}
+                  />
                 </p>
+                <img
+                  src="https://images.creativefabrica.com/products/thumbnails/2023/10/02/PDnV1GAQB/2WDK2dm2ymmVNuKA4dVhyQrJkCM.png"
+                  alt=""
+                />
               </div>
 
               {/* <div className=" ">
@@ -127,11 +146,11 @@ function Banner() {
         {position === 2 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right animate-duration-500  ">
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-black w-full">
+              <h1 className="xl:text-[3rem] md:text-[2rem] text-black w-full">
                 Agencia de{" "}
               </h1>
               <span
-                className={` xl:text-[4rem] md:text-[3rem]  ml-2 px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[3rem] md:text-[2rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -144,8 +163,8 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start mt-12 ">
-              <div className="w-[40rem]">
-                <p className="text-black font-light text-3xl ">
+              <div className="w-full flex justify-between ">
+                <p className="text-black font-light text-2xl ">
                   <Typewriter
                     words={[
                       "En Genius, te ofrecemos orientación experta para optimizar tus estrategias de marketing y maximizar el retorno de inversión en cada iniciativa.",
@@ -154,6 +173,10 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
+                <img
+                  src="https://images.creativefabrica.com/products/thumbnails/2023/10/06/dbijaL9Uz/2WNuDaTVq8gEWWBD5Cwl1WWqe7Y.png"
+                  alt=""
+                />
               </div>
 
               {/* <div className=" ">
@@ -169,7 +192,7 @@ function Banner() {
         )}
 
         {/* //todo data about company */}
-        <div className=" p- text-black z-0  flex flex-col gap-8 text-right">
+        <div className=" p- text-slate-700 z-0  flex flex-col gap-8 text-right">
           <div className="flex flex-col">
             <span className="text-[4rem] ">
               {" "}
