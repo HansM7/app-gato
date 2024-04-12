@@ -43,16 +43,16 @@ function Banner() {
 
   return (
     <section className=" min-h-screen  bg-gray-100 ">
-      <div className="xl:px-44 md:px-28  px-8 flex  py-4 pt-20">
+      <div className="xl:px-40 md:px-28  px-8 flex  py-4 pt-20">
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
-              <h1 className="xl:text-[3rem] md:text-[2rem] text-black w-full">
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-black w-full">
                 Agencia de{" "}
               </h1>
 
               <span
-                className={` xl:text-[3rem] md:text-[2rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={`w-fit xl:text-[5rem] md:text-[4rem]  px-1  font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -79,11 +79,11 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-                <img
+                {/* <img
                   className="h-[14rem]"
                   src="https://png.pngtree.com/png-clipart/20221006/original/pngtree-working-cat-png-image_8661191.png"
                   alt=""
-                />
+                /> */}
               </div>
 
               {/* <div className=" ">
@@ -101,12 +101,12 @@ function Banner() {
         {position === 1 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col  animate-fade-right  ">
-              <h1 className="xl:text-[3rem] md:text-[2rem] text-black w-full">
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-black w-full">
                 Agencia de{" "}
               </h1>
 
               <span
-                className={` xl:text-[3rem] md:text-[2rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[5rem] md:text-[4rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -129,10 +129,10 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-                <img
+                {/* <img
                   src="https://images.creativefabrica.com/products/thumbnails/2023/10/02/PDnV1GAQB/2WDK2dm2ymmVNuKA4dVhyQrJkCM.png"
                   alt=""
-                />
+                /> */}
               </div>
 
               {/* <div className=" ">
@@ -150,11 +150,11 @@ function Banner() {
         {position === 2 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right animate-duration-500  ">
-              <h1 className="xl:text-[3rem] md:text-[2rem] text-black w-full">
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-black w-full">
                 Agencia de{" "}
               </h1>
               <span
-                className={` xl:text-[3rem] md:text-[2rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:text-[5rem] md:text-[4rem]   px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -177,10 +177,10 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-                <img
+                {/* <img
                   src="https://images.creativefabrica.com/products/thumbnails/2023/10/06/dbijaL9Uz/2WNuDaTVq8gEWWBD5Cwl1WWqe7Y.png"
                   alt=""
-                />
+                /> */}
               </div>
 
               {/* <div className=" ">
@@ -196,7 +196,7 @@ function Banner() {
         )}
 
         {/* //todo data about company */}
-        <div className=" p- text-slate-700 z-0  flex flex-col gap-8 text-right">
+        {/* <div className=" p- text-slate-700 z-0  flex flex-col gap-8 text-right">
           <div className="flex flex-col">
             <span className="text-[4rem] ">
               {" "}
@@ -219,6 +219,14 @@ function Banner() {
             </span>
             <span className="opacity-80  font-light">Colaboradores</span>
           </div>
+        </div> */}
+
+        <div className=" text-slate-700 z-0  flex  gap-8 text-right  justify-center pt-20 ">
+          <img
+            className="w-[26rem] h-[28rem]"
+            src="https://img1.picmix.com/output/stamp/normal/6/8/9/8/1868986_4d8e5.gif"
+            alt=""
+          />
         </div>
       </div>
 

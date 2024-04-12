@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const slides = [
   {
     image:
-      "https://static8.depositphotos.com/1594308/1073/i/450/depositphotos_10731758-stock-photo-at-meeting.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fe/Logo_Adidas.png",
   },
   {
     image:
-      "https://previews.123rf.com/images/microstockasia/microstockasia1611/microstockasia161110885/69312280-ejecutivos-en-una-reuni%C3%B3n.jpg",
+      "https://seeklogo.com/images/B/bcp-bolivia-logo-87EC694136-seeklogo.com.png",
   },
   {
     image:
-      "https://img.freepik.com/foto-gratis/ejecutivos-negociando-reunion_1098-508.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Interbank_logo.svg/2560px-Interbank_logo.svg.png",
   },
   {
     image:
-      "https://img.freepik.com/foto-gratis/personas-tiro-medio-trabajando-juntas_23-2149271712.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712448000&semt=ais",
+      "https://1000marcas.net/wp-content/uploads/2021/09/Elektra-Logo-2008.png",
   },
 ];
 
@@ -30,7 +30,7 @@ const Slider = ({ direction }: { direction: string }) => {
   return (
     <div className="relative w-full overflow-hidden rounded-md  ">
       <motion.div
-        className="relative flex gap-4"
+        className="relative flex gap-4 items-center py-2"
         animate={{
           x: direction === "right" ? ["-100%", "0%"] : ["0%", "-100%"],
           transition: {
@@ -41,7 +41,7 @@ const Slider = ({ direction }: { direction: string }) => {
         }}
       >
         {/* Render duplicated slides */}
-        {duplicatedSlides.map((slide, index) => (
+        {/* {duplicatedSlides.map((slide, index) => (
           <div
             key={index}
             className="flex-shrink-0"
@@ -50,6 +50,22 @@ const Slider = ({ direction }: { direction: string }) => {
             <div className="flex  items-center justify-center h-full rounded-md overflow-hidden ">
               <img
                 className="shadow-xl hover:scale-110 transition-all"
+                src={slide.image}
+                alt=""
+              />
+            </div>
+          </div>
+        ))} */}
+
+        {duplicatedSlides.map((slide, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0"
+            style={{ width: `${130 / slides.length}%` }}
+          >
+            <div className="flex  items-center justify-center w-64 rounded-md overflow-hidden ">
+              <img
+                className=" hover:scale-110 transition-all"
                 src={slide.image}
                 alt=""
               />
