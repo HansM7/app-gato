@@ -24,7 +24,7 @@ function Navigation({
       <div className=" w-16 left-0 top-0  flex flex-col justify-between min-h-svh bg-white items-center shadow-lg border-r">
         <div className="h-[100%] flex flex-col justify-between items-center  py-4">
           <Link href={"/"}>
-            <img className="w-16" src="gato-icon.png" alt="" />
+            <img className="w-16 h-16" src="gato-icon.png" alt="" />
           </Link>
           <div className="flex flex-col gap-1">
             {/* <div className="-rotate-90">

@@ -1,10 +1,10 @@
 import Footer from "../components/footer";
-import Services from "./services";
+import Contact from "./contact";
 
 function Page() {
   return (
     <div className="w-full h-screen ">
-      <Services></Services>
+      <Contact></Contact>
       <Footer></Footer>
     </div>
   );

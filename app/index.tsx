@@ -19,7 +19,7 @@ function Index() {
     <>
       {isLoading ? (
         <div
-          className={`bg-[#0A86ED] w-full h-screen flex justify-center items-center  ${
+          className={`bg-[#9623DE] w-full h-screen flex justify-center items-center  ${
             isFade &&
             "animate-fade animate-duration-1000 animate-ease-linear animate-reverse"
           }`}
