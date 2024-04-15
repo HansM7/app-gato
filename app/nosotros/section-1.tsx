@@ -3,6 +3,7 @@
 import { RevealWrapper } from "next-reveal";
 import Team from "./team";
 import Footer from "../components/footer";
+import Colaborators from "./colaborators";
 
 function Section1() {
   return (
@@ -189,7 +190,9 @@ function Section1() {
               <div className="border-r flex justify-end pr-8 pt-4">
                 <div className="border border-slate-300 p-8 flex group gap-4 shadow-large">
                   <div className="hidden transition-all group-hover:flex group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal  ">
-                    <span className="text-xl font-light">Análisis de dato</span>
+                    <span className="text-xl font-light">
+                      Análisis de datos
+                    </span>
                   </div>
                   <span className="text-3xl">05</span>
                 </div>
@@ -202,6 +205,8 @@ function Section1() {
       {/* //todo -> --------------------------------------------------------------------------------*/}
 
       <Team></Team>
+      <hr />
+      <Colaborators></Colaborators>
       <Footer></Footer>
     </section>
   );
