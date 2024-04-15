@@ -40,14 +40,14 @@ function Drawer() {
   }
 
   function handleRedirect(word: string) {
+    const newWord = word.toLocaleLowerCase();
     setIsRedirecting(true);
+    setTimeout(() => {
+      router.push(`/${newWord}`);
+    }, 1000);
     setTimeout(() => {
       setIsRedirecting(false);
     }, 2000);
-
-    setTimeout(() => {
-      router.push("/nosotros");
-    }, 1500);
   }
 
   const renderWord = (word: any) => {
