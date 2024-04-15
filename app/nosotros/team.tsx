@@ -43,7 +43,7 @@ function Team() {
       name: "Hans Melchor",
       photo:
         "https://media.licdn.com/dms/image/D4D03AQFUHe6qo_0yQA/profile-displayphoto-shrink_800_800/0/1711981009206?e=1718236800&v=beta&t=dnZN-OtJPPET6P5WaWRAEZ0b75VK8FpS0yrVIUv_50M",
-      role: "Dearrollador de software",
+      role: "Desarrollador de software",
       description: "",
     },
     {

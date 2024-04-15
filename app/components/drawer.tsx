@@ -59,7 +59,7 @@ function Drawer() {
           hovered === word && "text-black"
         }`}
         onMouseEnter={() => handleHover(word)}
-        onMouseLeave={handleUnhover}
+        // onMouseLeave={handleUnhover}
       >
         {Array.from(word).map((char: any, index) => (
           <span
