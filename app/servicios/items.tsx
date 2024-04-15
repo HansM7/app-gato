@@ -18,7 +18,7 @@ function Items() {
       icon: "https://cdn-icons-png.flaticon.com/512/2210/2210184.png",
       detail:
         "Transformamos tu presencia en línea con diseños web impactantes y funcionales. Desde la creación de sitios web atractivos hasta la optimización.",
-      path: "diseño-web",
+      path: "diseno-web",
     },
     {
       name: "Desarrollo de Software",

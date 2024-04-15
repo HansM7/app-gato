@@ -3,7 +3,11 @@
 import Drawer from "@/app/components/drawer";
 import Navigation from "@/app/components/navigation";
 import { useEffect, useState } from "react";
-import Service01 from "./service-01";
+import Service01 from "./service_01";
+import Service02 from "./service_02";
+import Service03 from "./service_03";
+import Service04 from "./service_04";
+import Service05 from "./service_05";
 
 function Content({ slug }: { slug: string }) {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -79,7 +83,11 @@ function Content({ slug }: { slug: string }) {
         <div className="w-full flex flex-col  justify-between">
           {/* <Header></Header> */}
 
-          <Service01></Service01>
+          {slug === "marketing-digital" && <Service01></Service01>}
+          {slug === "diseno-web" && <Service02></Service02>}
+          {slug === "desarrollo-software" && <Service03></Service03>}
+          {slug === "branding" && <Service04></Service04>}
+          {slug === "business-intelligence" && <Service05></Service05>}
         </div>
 
         {/* //todo-> section loadin -----------------------------------------------*/}

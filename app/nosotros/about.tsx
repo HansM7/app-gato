@@ -5,6 +5,7 @@ import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
 import Section1 from "./section-1";
 import Section2 from "./section-2";
+import Footer from "../components/footer";
 
 function About() {
   const [isDrawer, setIsDrawer] = useState(false);

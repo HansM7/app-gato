@@ -2,6 +2,7 @@
 
 import { RevealWrapper } from "next-reveal";
 import Team from "./team";
+import Footer from "../components/footer";
 
 function Section1() {
   return (
@@ -98,14 +99,14 @@ function Section1() {
       <div className="w-full  flex flex-col mt-[20rem]">
         <div className="grid grid-cols-2 px-52 gap-20">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <p className="text-2xl font-semibold">
+            <p className="text-3xl ">
               Ayudamos a las marcas a resolver grandes desafíos y lograr mejores
               productos digitales.
             </p>
           </RevealWrapper>
 
           <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-            <p>
+            <p className="text-xl font-light">
               Nuestro trabajo resulta de nuestra identidad como agencia. Nuestra
               metodología basado en el valor permite a nuestros clientes pensar
               en grande, dar pasos seguros y lanzar las mejores experiencias
@@ -118,42 +119,80 @@ function Section1() {
           <div className="flex ">
             <RevealWrapper origin="top" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pb-4 ">
-                <div className="bg-red-300 p-8 hover:pl-24 transition-all">
-                  01
+                <div className="border border-slate-300 p-8 flex group gap-4 shadow-large">
+                  <div className="hidden transition-all group-hover:flex group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal  ">
+                    <span className="text-xl font-light">
+                      Visión Disruptiva
+                    </span>
+                  </div>
+                  <span className="text-3xl">02</span>
                 </div>
               </div>
             </RevealWrapper>
             <RevealWrapper origin="top" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pb-4">
-                <div className="bg-red-300 p-8">02</div>
+                <div className="border border-slate-300 p-8 flex group gap-4 shadow-large">
+                  <div className="hidden transition-all group-hover:flex group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal  ">
+                    <span className="text-xl font-light">
+                      Cultura de Colaboración
+                    </span>
+                  </div>
+                  <span className="text-3xl">04</span>
+                </div>
               </div>
             </RevealWrapper>
 
             <RevealWrapper origin="top" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pb-4">
-                <div className="bg-red-300 p-8">03</div>
+                <div className="border border-slate-300 p-8 flex group gap-4 shadow-large">
+                  <div className="hidden transition-all group-hover:flex group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal  ">
+                    <span className="text-xl font-light">
+                      Compromiso con la Sostenibilidad
+                    </span>
+                  </div>
+                  <span className="text-3xl">06</span>
+                </div>
               </div>
             </RevealWrapper>
           </div>
 
           <RevealWrapper origin="left" duration={2000} className={"w-full"}>
-            <div className="h-1 bg-black w-full"></div>
+            <div className="h-1 bg-slate-300  w-full"></div>
           </RevealWrapper>
           <div className="flex pr-64">
             <RevealWrapper origin="bottom" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pt-4">
-                <div className="bg-red-300 p-8">04</div>
+                <div className="border border-slate-300 p-8 flex group gap-4 shadow-large">
+                  <div className="hidden transition-all group-hover:flex group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal  ">
+                    <span className="text-xl font-light">
+                      Visión Disruptiva
+                    </span>
+                  </div>
+                  <span className="text-3xl">01</span>
+                </div>
               </div>
             </RevealWrapper>
             <RevealWrapper origin="bottom" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pt-4">
-                <div className="bg-red-300 p-8">05</div>
+                <div className="border border-slate-300 p-8 flex group gap-4 shadow-large">
+                  <div className="hidden transition-all group-hover:flex group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal  ">
+                    <span className="text-xl font-light">
+                      Centricidad en el Cliente
+                    </span>
+                  </div>
+                  <span className="text-3xl">03</span>
+                </div>
               </div>
             </RevealWrapper>
 
             <RevealWrapper origin="bottom" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pt-4">
-                <div className="bg-red-300 p-8">06</div>
+                <div className="border border-slate-300 p-8 flex group gap-4 shadow-large">
+                  <div className="hidden transition-all group-hover:flex group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal  ">
+                    <span className="text-xl font-light">Análisis de dato</span>
+                  </div>
+                  <span className="text-3xl">05</span>
+                </div>
               </div>
             </RevealWrapper>
           </div>
@@ -163,6 +202,7 @@ function Section1() {
       {/* //todo -> --------------------------------------------------------------------------------*/}
 
       <Team></Team>
+      <Footer></Footer>
     </section>
   );
 }

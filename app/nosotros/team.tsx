@@ -18,6 +18,7 @@ function Team() {
   const leaders = [
     {
       name: "Martin Jara",
+      photo_name: "martin",
       photo:
         "https://media.licdn.com/dms/image/D5635AQFGLM7VnS33PQ/profile-framedphoto-shrink_800_800/0/1711476726864?e=1713625200&v=beta&t=4QHErSs5nfjqgJMZz9K0sOruZTTr-CXvwuvt-bLOzFY",
       role: "CEO",
@@ -25,6 +26,8 @@ function Team() {
     },
     {
       name: "Diana Ortega",
+      photo_name: "diana",
+
       photo:
         "https://media.licdn.com/dms/image/D4E35AQHPXy-1TU49Ow/profile-framedphoto-shrink_800_800/0/1711806246117?e=1713628800&v=beta&t=mWQvQSUf5PGy_jwPjav-5imqRhOJfAHv8XpzYpHmyUw",
       role: "CEO",
@@ -34,6 +37,8 @@ function Team() {
   const workers = [
     {
       name: "Edson Huamaní",
+      photo_name: "jordan",
+
       photo:
         "https://media.licdn.com/dms/image/D4E03AQEDVxglbWreig/profile-displayphoto-shrink_800_800/0/1711986826924?e=1718236800&v=beta&t=jwQEry8mTXzsYGDmq5x3kEKaMl7HkfKMHAltfPgtN24",
       role: "Desarrollador Web",
@@ -41,6 +46,8 @@ function Team() {
     },
     {
       name: "Hans Melchor",
+      photo_name: "hans",
+
       photo:
         "https://media.licdn.com/dms/image/D4D03AQFUHe6qo_0yQA/profile-displayphoto-shrink_800_800/0/1711981009206?e=1718236800&v=beta&t=dnZN-OtJPPET6P5WaWRAEZ0b75VK8FpS0yrVIUv_50M",
       role: "Desarrollador de software",
@@ -48,6 +55,8 @@ function Team() {
     },
     {
       name: "Mariapia Contreras",
+      photo_name: "mariapia",
+
       photo:
         "https://media.licdn.com/dms/image/D4D03AQFxLpT4Jd4YgA/profile-displayphoto-shrink_400_400/0/1711981006091?e=1718236800&v=beta&t=X2Hb95A1iv9yJ_tnCZ_DYJT4vvyC669V6_ePQZoU3-E",
       role: "Marketing",
@@ -55,6 +64,8 @@ function Team() {
     },
     {
       name: "Stacey Geraldine",
+      photo_name: "stacey",
+
       photo:
         "https://media.licdn.com/dms/image/D4E03AQE-PeReXqOXqA/profile-displayphoto-shrink_800_800/0/1712686468366?e=1718236800&v=beta&t=syqAvo7kmkH70nvRJ81iozLAuMxdD66syADy-60Ookc",
       role: "Marketing",
@@ -62,6 +73,8 @@ function Team() {
     },
     {
       name: "Katherin Guerra",
+      photo_name: "katherin",
+
       photo:
         "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
       role: "Marketing",
@@ -81,7 +94,7 @@ function Team() {
     <div className="w-full px-36 h-screen flex flex-col mt-32 bg-gray-100 pt-24 text-slate-600">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
-          <span className="text-3xl  font-semibold">Nuestro equipo</span>
+          <span className="text-[4rem]  ">Nuestro equipo</span>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-16 gap-16">
@@ -92,10 +105,13 @@ function Team() {
                 <img
                   role="buttom"
                   onClick={() => openModal(item)}
-                  className="rounded-full w-36 hover:scale-105 transition-all cursor-pointer "
-                  src={item.photo}
+                  className="rounded-full w-40 hover:scale-105 transition-all cursor-pointer "
+                  src={"team/" + item.photo_name + ".jpeg"}
                   alt=""
                 />
+                <span className="text-xs bg-violet-600 text-white rounded-lg py-1">
+                  {item.role}
+                </span>
                 <span>{item.name}</span>
               </div>
             </RevealWrapper>
@@ -104,16 +120,20 @@ function Team() {
         {/*  */}
         <div className="flex flex-wrap gap-8 justify-center">
           {workers.map((item, index) => (
-            <RevealWrapper origin="bottom" duration={1400} key={index}>
+            <RevealWrapper
+              origin="bottom"
+              duration={index * 300 + 1000}
+              key={index}
+            >
               <div className="flex flex-col text-center gap-2">
                 <img
                   role="buttom"
                   onClick={() => openModal(item)}
-                  className="rounded-full w-36 hover:scale-105 transition-all cursor-pointer "
-                  src={item.photo}
+                  className="rounded-full w-40 hover:scale-105 transition-all cursor-pointer "
+                  src={"team/" + item.photo_name + ".jpeg"}
                   alt="Jordan Edson"
                 />
-                <span className="text-xs bg-violet-600 text-white rounded-md py-1">
+                <span className="text-xs bg-violet-600 text-white rounded-lg px-2 py-1">
                   {item.role}
                 </span>
                 <span>{item.name}</span>
@@ -154,11 +174,15 @@ function ModalDetail({
               variant="p"
               className="text-body-4 font-normal text-metal-600"
             >
-              <img className="rounded-lg" src={data.photo} alt="" />
+              <img
+                className="rounded-lg"
+                src={"team/" + data.photo_name + ".jpeg"}
+                alt=""
+              />
             </Typography>
           </Typography>
         </Modal.Content>
-        <Modal.Footer className="flex justify-between">
+        {/* <Modal.Footer className="flex justify-between">
           <div className="flex gap-2">
             <svg
               className="hover:scale-105 transition-all"
@@ -202,7 +226,7 @@ function ModalDetail({
           >
             Cerrar
           </Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal.Body>
     </Modal>
   );

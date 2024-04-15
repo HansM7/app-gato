@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 function InfoDrawer({ word }: { word: string }) {
   if (word === "Portafolio") {
     return (
@@ -27,38 +29,56 @@ function InfoDrawer({ word }: { word: string }) {
   } else if (word === "Nosotros") {
     return (
       <div className="grid grid-cols-3 gap-8">
-        <span className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal col-span-3">
+        <span className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal col-span-3 text-xl">
           Somos un equipo comprometido con la búsqueda de la excelencia en cada
           proyecto que emprendemos. Nos enorgullece trabajar con clientes que
           comparten nuestra pasión por el éxito y están dispuestos a desafiar
-          los límites en busca de resultados extraordinarios. Con un equipo de
-          expertos dedicados, nuestro objetivo es ayudarte a mantener en claro
-          tus objetivos y superar cualquier obstáculo que se interponga en tu
-          camino hacia el progreso. Únete a nosotros en esta emocionante
-          aventura, donde nuestro principal propósito es el éxito de tu
-          proyecto.
+          los límites en busca de resultados extraordinarios.
+          <br />
+          Con un equipo de expertos dedicados, nuestro objetivo es ayudarte a
+          mantener en claro tus objetivos y superar cualquier obstáculo que se
+          interponga en tu camino hacia el progreso.
+          <br />
+          <br />
+          Únete a nosotros en esta emocionante aventura, donde nuestro principal
+          propósito es el éxito de tu proyecto.
         </span>
       </div>
     );
   } else if (word === "Servicios") {
     return (
       <div className="grid grid-cols-3 gap-8">
-        <span className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal">
+        <Link
+          href={"/servicios/marketing-digital"}
+          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
           Marketing digital
-        </span>
-        <span className="animate-fade-up animate-duration-700 animate-ease-linear animate-normal">
+        </Link>
+        <Link
+          href={"/servicios/desarrollo-software"}
+          className="animate-fade-up animate-duration-700 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
           Desarrollo de software
-        </span>
+        </Link>
 
-        <span className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal">
+        <Link
+          href={"/servicios/diseno-web"}
+          className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
           Diseño web
-        </span>
-        <span className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal">
+        </Link>
+        <Link
+          href={"/servicios/branding"}
+          className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
           Branding
-        </span>
-        <span className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal">
+        </Link>
+        <Link
+          href={"/servicios/business-intelligence"}
+          className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
           Business Intelligence
-        </span>
+        </Link>
       </div>
     );
   } else {
