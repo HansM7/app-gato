@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
-import Section1 from "./section-1";
-import Section2 from "./section-2";
+import Items from "./items";
 
-function About() {
+function Services() {
   const [isDrawer, setIsDrawer] = useState(false);
 
   const [loading, setLoading] = useState(true);
@@ -80,7 +79,7 @@ function About() {
         <div className="w-full flex flex-col  justify-between">
           {/* <Header></Header> */}
 
-          <Section1></Section1>
+          <Items></Items>
         </div>
 
         {/* //todo-> section loadin -----------------------------------------------*/}
@@ -97,4 +96,4 @@ function About() {
   );
 }
 
-export default About;
+export default Services;

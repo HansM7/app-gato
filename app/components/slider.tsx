@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 // Define the array of slides with numbers
 const slides = [
   {
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/f/fe/Logo_Adidas.png",
+    image: "https://1000marcas.net/wp-content/uploads/2024/02/Adidas-Logo.png",
   },
   {
     image:
@@ -28,7 +27,18 @@ const Slider = ({ direction }: { direction: string }) => {
   const duplicatedSlides = [...slides, ...slides];
 
   return (
-    <div className="relative w-full overflow-hidden rounded-md  ">
+    <div className="relative flex flex-col w-full overflow-hidden rounded-md pt-8  bg-white">
+      <div className="flex justify-between px-48">
+        <h1 className="text-3xl">Nuestros clientes</h1>
+        <div className="flex gap-4">
+          <span className="bg-[#0A86ED] rounded-full p-2 w-10 h-10 text-white text-center">
+            {"<"}
+          </span>
+          <span className="border border-[#0A86ED] rounded-full p-2  w-10 h-10 text-[#0A86ED] text-center">
+            {">"}
+          </span>
+        </div>
+      </div>
       <motion.div
         className="relative flex gap-4 items-center py-2"
         animate={{
@@ -64,11 +74,7 @@ const Slider = ({ direction }: { direction: string }) => {
             style={{ width: `${130 / slides.length}%` }}
           >
             <div className="flex  items-center justify-center w-64 rounded-md overflow-hidden ">
-              <img
-                className=" hover:scale-110 transition-all"
-                src={slide.image}
-                alt=""
-              />
+              <img className="  transition-all" src={slide.image} alt="" />
             </div>
           </div>
         ))}

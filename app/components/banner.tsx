@@ -66,7 +66,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12">
-                <p className="text-black font-light text-2xl ">
+                <p className="text-black font-light text-3xl ">
                   {/* En Genius te asesoramos para tomar la mejor decisión y
                   orientar tu presupuesto a los productos que mayor retorno
                   brindarán a tu empresa. */}
@@ -120,7 +120,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12 ">
-                <p className="text-black font-light text-2xl ">
+                <p className="text-black font-light text-3xl ">
                   <Typewriter
                     words={[
                       "En Genius, nos especializamos en el desarrollo web de vanguardia que potencia la presencia en línea de tu empresa.",
@@ -168,7 +168,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12">
-                <p className="text-black font-light text-2xl ">
+                <p className="text-black font-light text-3xl ">
                   <Typewriter
                     words={[
                       "En Genius, te ofrecemos orientación experta para optimizar tus estrategias de marketing y maximizar el retorno de inversión en cada iniciativa.",

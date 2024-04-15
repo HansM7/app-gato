@@ -9,6 +9,8 @@ import "react-awesome-slider/dist/styles.css";
 import Collage from "../components/collage";
 import Detail from "../components/detail";
 import Slider from "../components/slider";
+import Testimonials from "../components/testimonials";
+import Footer from "../components/footer";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -72,7 +74,10 @@ function Home() {
         {/* <Carousel2></Carousel2> */}
         <Collage></Collage>
         <Detail></Detail>
+
         <Slider direction="right"></Slider>
+        <Testimonials></Testimonials>
+        <Footer></Footer>
       </main>
     </div>
   );

@@ -144,10 +144,14 @@ function Drawer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <div className="flex flex-col">
               <span className="font-semibold">Escríbenos</span>
               <span>gato@gmail.com</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-semibold">Háblanos</span>
+              <span>9907676768</span>
             </div>
           </div>
         </div>

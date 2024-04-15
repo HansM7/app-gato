@@ -1,13 +1,14 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
+import Team from "./team";
 
 function Section1() {
   return (
     <section className="w-full h-screen  ">
-      <div className="h-screen xl:px-80 md:px-28  px-8 flex  bg-gray-100 pt-32">
+      <div className="h-screen xl:px-80 md:px-28  px-8 flex bg-gray-100 pt-32">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
-          <h1 className="font-bold text-[5.5rem] text-slate-800">
+          <h1 className="font-bold xl:text-[5rem] md:text-[4rem] text-slate-800">
             Estrategas,soñadores comprometidos con el cambio digital.
           </h1>
         </RevealWrapper>
@@ -92,9 +93,9 @@ function Section1() {
         </RevealWrapper>
       </div>
 
-      {/*  */}
+      {/* //todo -> --------------------------------------------------------------------------------*/}
 
-      <div className="w-full h-screen flex flex-col mt-32">
+      <div className="w-full  flex flex-col mt-[20rem]">
         <div className="grid grid-cols-2 px-52 gap-20">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
             <p className="text-2xl font-semibold">
@@ -115,42 +116,42 @@ function Section1() {
         {/* timeline */}
         <div className="px-32 mt-32">
           <div className="flex ">
-            <RevealWrapper origin="top" duration={1500} className={"w-full"}>
+            <RevealWrapper origin="top" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pb-4 ">
                 <div className="bg-red-300 p-8 hover:pl-24 transition-all">
                   01
                 </div>
               </div>
             </RevealWrapper>
-            <RevealWrapper origin="top" duration={1500} className={"w-full"}>
+            <RevealWrapper origin="top" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pb-4">
                 <div className="bg-red-300 p-8">02</div>
               </div>
             </RevealWrapper>
 
-            <RevealWrapper origin="top" duration={1500} className={"w-full"}>
+            <RevealWrapper origin="top" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pb-4">
                 <div className="bg-red-300 p-8">03</div>
               </div>
             </RevealWrapper>
           </div>
 
-          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+          <RevealWrapper origin="left" duration={2000} className={"w-full"}>
             <div className="h-1 bg-black w-full"></div>
           </RevealWrapper>
           <div className="flex pr-64">
-            <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
+            <RevealWrapper origin="bottom" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pt-4">
                 <div className="bg-red-300 p-8">04</div>
               </div>
             </RevealWrapper>
-            <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
+            <RevealWrapper origin="bottom" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pt-4">
                 <div className="bg-red-300 p-8">05</div>
               </div>
             </RevealWrapper>
 
-            <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
+            <RevealWrapper origin="bottom" duration={2000} className={"w-full"}>
               <div className="border-r flex justify-end pr-8 pt-4">
                 <div className="bg-red-300 p-8">06</div>
               </div>
@@ -158,6 +159,10 @@ function Section1() {
           </div>
         </div>
       </div>
+
+      {/* //todo -> --------------------------------------------------------------------------------*/}
+
+      <Team></Team>
     </section>
   );
 }
