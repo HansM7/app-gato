@@ -51,10 +51,14 @@ function Items() {
         <div className="flex gap-16">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="text-[4rem]">Somos</h1>
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">
+                Somos
+              </h1>
             </RevealWrapper>
             <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="text-[4rem] font-semibold">Especialistas</h1>
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem] font-semibold">
+                Especialistas
+              </h1>
             </RevealWrapper>
           </div>
           <div>
@@ -64,18 +68,20 @@ function Items() {
           </div>
         </div>
         {/*  */}
-        <div className="grid grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-6 gap-8 mt-8">
           {services.map((service, index) => (
             <RevealWrapper
               origin="bottom"
               duration={index * 400 + 1000}
-              className={"w-full group overflow-hidden"}
+              className={
+                "w-full group overflow-hidden col-span-6 md:col-span-3 xl:col-span-2"
+              }
               key={index}
             >
               <div
                 role="button"
                 onClick={() => handleRedirect("")}
-                className="w-full p-4 flex flex-col gap-4  bg-white rounded-xl"
+                className="w-full p-4 flex flex-col gap-4  bg-white rounded-xl "
               >
                 <div className="flex flex-col relative">
                   <div className="flex flex-col gap-1">
@@ -105,12 +111,16 @@ function Items() {
         <hr className="mt-16 bg-white" />
         {/*  */}
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <div className="flex gap-8 mt-16 items-center">
-            <div>
+          <div className="grid grid-cols-3 gap-8 mt-16 items-center">
+            <div className=" col-span-3 md:col-span-1">
               <span className="text-3xl">¿Necesitas una cotización?</span>
             </div>
 
-            <RevealWrapper origin="bottom" duration={2000}>
+            <RevealWrapper
+              origin="bottom"
+              duration={2000}
+              className={"w-fit col-span-3 md:col-span-1"}
+            >
               <div className="relative group flex overflow-hidden">
                 <img
                   className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
@@ -133,7 +143,11 @@ function Items() {
               </div>
             </RevealWrapper>
 
-            <RevealWrapper origin="bottom" duration={2500}>
+            <RevealWrapper
+              origin="bottom"
+              duration={2500}
+              className={"w-fit col-span-3 md:col-span-1"}
+            >
               <div className="relative group flex overflow-hidden">
                 <img
                   className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
