@@ -3,6 +3,11 @@
 import { RevealWrapper } from "next-reveal";
 import { useState } from "react";
 
+const sizing = {
+  title: "xl:text-[4rem] md:text-[3rem]",
+  description: "xl:text-[3rem] md:text-[2rem]",
+};
+
 function Detail() {
   const [selected, setSelected] = useState<any>(1);
 
@@ -17,8 +22,8 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-gray-100">
-      <RevealWrapper duration={1500} origin="left">
+    <section className="xl:px-44 md:px-28 h-screen  px-8 flex  py-16  w-full bg-white justify-center ">
+      <RevealWrapper duration={1500} origin="left ">
         <div className="flex w-full gap-32">
           <div className="flex flex-col gap-4">
             <div
@@ -30,10 +35,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="24"
+                height="36"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="24"
+                width="36"
               >
                 <path
                   fillRule="evenodd"
@@ -52,10 +57,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="24"
+                height="36"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="24"
+                width="36"
               >
                 <path
                   fillRule="evenodd"
@@ -74,10 +79,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="24"
+                height="36"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="24"
+                width="36"
               >
                 <g clip-path="url(#clip0_53_1354omh4ri0y)">
                   <path
@@ -98,10 +103,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="24"
+                height="36"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="24"
+                width="36"
               >
                 <path
                   fillRule="evenodd"
@@ -199,9 +204,9 @@ function Component1({
   return (
     <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
-        <h2 className="text-[3rem]">Consultaria</h2>
+        <h2 className={`${sizing.title}`}>Consultaria</h2>
         <div className="pl-8 flex flex-col gap-2">
-          <p className="text-[2rem] text-[#7A7678]">
+          <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
           </p>
@@ -209,17 +214,17 @@ function Component1({
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
             role="button"
-            className={`relative rounded-3xl py-2 pr-2  w-fit text-xs h-10 font-semibold flex items-center   ${
+            className={`relative rounded-3xl py-3 pr-2  w-fit   font-semibold flex items-center   ${
               isEnter && " transition-all"
             } transition-all`}
           >
             <div
-              className={`bg-blue-300 rounded-full w-10 h-full absolute  ${
+              className={`bg-blue-300 rounded-full w-12 h-full absolute   ${
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
             <span
-              className={`pl-2 z-10 ${
+              className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
@@ -230,7 +235,7 @@ function Component1({
       </div>
       <div>
         <img
-          className="rounded-md"
+          className="rounded-md w-[800px]"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
           alt=""
         />
@@ -251,9 +256,9 @@ function Component2({
   return (
     <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
-        <h2 className="text-[3rem]">Desarrollo web</h2>
+        <h2 className={`${sizing.title}`}>Desarrollo web</h2>
         <div className="pl-8 flex flex-col gap-2">
-          <p className="text-[2rem] text-[#7A7678]">
+          <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
           </p>
@@ -261,17 +266,17 @@ function Component2({
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
             role="button"
-            className={`relative rounded-3xl py-2 pr-2  w-fit text-xs h-10 font-semibold flex items-center   ${
+            className={`relative rounded-3xl py-3 pr-2  w-fit   font-semibold flex items-center   ${
               isEnter && " transition-all"
             } transition-all`}
           >
             <div
-              className={`bg-blue-300 rounded-full w-10 h-full absolute  ${
+              className={`bg-blue-300 rounded-full w-12 h-full absolute   ${
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
             <span
-              className={`pl-2 z-10 ${
+              className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
@@ -282,7 +287,7 @@ function Component2({
       </div>
       <div>
         <img
-          className="rounded-md"
+          className="rounded-md w-[800px]"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
           alt=""
         />
@@ -303,9 +308,9 @@ function Component3({
   return (
     <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
-        <h2 className="text-[3rem]">Desarollo de software</h2>
+        <h2 className={`${sizing.title}`}>Desarollo de software</h2>
         <div className="pl-8 flex flex-col gap-2">
-          <p className="text-[2rem] text-[#7A7678]">
+          <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
           </p>
@@ -313,17 +318,17 @@ function Component3({
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
             role="button"
-            className={`relative rounded-3xl py-2 pr-2  w-fit text-xs h-10 font-semibold flex items-center   ${
+            className={`relative rounded-3xl py-3 pr-2  w-fit   font-semibold flex items-center   ${
               isEnter && " transition-all"
             } transition-all`}
           >
             <div
-              className={`bg-blue-300 rounded-full w-10 h-full absolute  ${
+              className={`bg-blue-300 rounded-full w-12 h-full absolute   ${
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
             <span
-              className={`pl-2 z-10 ${
+              className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
@@ -334,7 +339,7 @@ function Component3({
       </div>
       <div>
         <img
-          className="rounded-md"
+          className="rounded-md w-[800px]"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
           alt=""
         />
@@ -355,9 +360,9 @@ function Component4({
   return (
     <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
-        <h2 className="text-[3rem]">Marketing</h2>
+        <h2 className={`${sizing.title}`}>Marketing</h2>
         <div className="pl-8 flex flex-col gap-2">
-          <p className="text-[2rem] text-[#7A7678]">
+          <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
           </p>
@@ -365,17 +370,17 @@ function Component4({
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
             role="button"
-            className={`relative rounded-3xl py-2 pr-2  w-fit text-xs h-10 font-semibold flex items-center   ${
+            className={`relative rounded-3xl py-3 pr-2  w-fit   font-semibold flex items-center   ${
               isEnter && " transition-all"
             } transition-all`}
           >
             <div
-              className={`bg-blue-300 rounded-full w-10 h-full absolute  ${
+              className={`bg-blue-300 rounded-full w-12 h-full absolute   ${
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
             <span
-              className={`pl-2 z-10 ${
+              className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
@@ -386,7 +391,7 @@ function Component4({
       </div>
       <div>
         <img
-          className="rounded-md"
+          className="rounded-md w-[800px]"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
           alt=""
         />

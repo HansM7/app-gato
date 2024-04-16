@@ -13,6 +13,8 @@ function Banner() {
 
   const bg_colors = ["bg-[#007CF8]", "bg-[#0BC2E1]", "bg-[#A52DE6]"];
 
+  const sizing = ["text-[5rem]", "text-[4rem]"];
+
   const [iterator, setIterator] = useState(0);
 
   const [colorSelected, setColorSelected] = useState(bg_colors[0]);
@@ -47,12 +49,14 @@ function Banner() {
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-black w-full">
+              <h1
+                className={`xl:${sizing[0]} md:${sizing[1]} text-black w-full`}
+              >
                 Agencia de{" "}
               </h1>
 
               <span
-                className={`w-fit xl:text-[5rem] md:text-[4rem]  px-1  font-semibold  ${bg_colors[position]}`}
+                className={`w-fit xl:text-[5rem] md:text-[4rem]  px-1 text-white  font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -66,7 +70,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12">
-                <p className="text-black font-light text-3xl ">
+                <p className="text-[#7A7678] font-light text-[3rem]  ">
                   {/* En Genius te asesoramos para tomar la mejor decisión y
                   orientar tu presupuesto a los productos que mayor retorno
                   brindarán a tu empresa. */}
@@ -101,12 +105,14 @@ function Banner() {
         {position === 1 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col  animate-fade-right  ">
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-black w-full">
+              <h1
+                className={`xl:${sizing[0]} md:${sizing[1]} text-black w-full`}
+              >
                 Agencia de{" "}
               </h1>
 
               <span
-                className={` xl:text-[5rem] md:text-[4rem]   px-1 w-fit font-semibold  ${bg_colors[position]}`}
+                className={` xl:${sizing[0]} md:${sizing[1]} text-white  px-1 w-fit font-semibold  ${bg_colors[position]}`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -120,7 +126,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12 ">
-                <p className="text-black font-light text-3xl ">
+                <p className="text-[#7A7678] font-light text-[3rem] ">
                   <Typewriter
                     words={[
                       "En Genius, nos especializamos en el desarrollo web de vanguardia que potencia la presencia en línea de tu empresa.",
@@ -150,11 +156,13 @@ function Banner() {
         {position === 2 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right animate-duration-500  ">
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-black w-full">
+              <h1
+                className={`xl:${sizing[0]} md:${sizing[1]} text-black w-full`}
+              >
                 Agencia de{" "}
               </h1>
               <span
-                className={` xl:text-[5rem] md:text-[4rem]   px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                className={` xl:text-[5rem] md:text-[4rem]  text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
               >
                 <Typewriter
                   words={[words[position]]}
@@ -168,7 +176,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12">
-                <p className="text-black font-light text-3xl ">
+                <p className="text-[#7A7678] font-light text-[3rem]  ">
                   <Typewriter
                     words={[
                       "En Genius, te ofrecemos orientación experta para optimizar tus estrategias de marketing y maximizar el retorno de inversión en cada iniciativa.",

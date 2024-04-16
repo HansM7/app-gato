@@ -28,8 +28,8 @@ const Slider = ({ direction }: { direction: string }) => {
 
   return (
     <div className="relative flex flex-col w-full overflow-hidden rounded-md pt-8  bg-white">
-      <div className="flex justify-between px-48">
-        <h1 className="text-3xl">Nuestros clientes</h1>
+      <div className="flex justify-between px-48 items-center">
+        <h1 className="text-[3rem]">Nuestros clientes</h1>
         <div className="flex gap-4">
           <span className="bg-[#0A86ED] rounded-full p-2 w-10 h-10 text-white text-center">
             {"<"}

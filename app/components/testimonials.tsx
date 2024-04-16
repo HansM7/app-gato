@@ -6,8 +6,8 @@ import Image from "next/image";
 
 function Testimonials() {
   return (
-    <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-gray-100  flex-col  ">
-      <RevealWrapper duration={1500} origin="left">
+    <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-white  flex-col  mt-16">
+      {/* <RevealWrapper duration={1500} origin="left">
         <div className="flex flex-col px-24 gap-4">
           <div className="flex justify-center">
             <img
@@ -30,7 +30,7 @@ function Testimonials() {
 
           <div></div>
         </div>
-      </RevealWrapper>
+      </RevealWrapper> */}
 
       <RevealWrapper duration={1500} origin="left">
         <Carousel

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 function Footer() {
   return (
     <footer className="bg-white xl:px-44 md:px-28  px-8 flex  py-16  w-full flex-col">
@@ -13,13 +15,21 @@ function Footer() {
         </div>
         <div className="flex flex-col">
           <span className="font-semibold">Hablemos</span>
-          <span className="text-slate-600">99999999</span>
-          <span className="text-slate-600">99999999</span>
+          <Link href={"tel:+51 976587365"} className="text-slate-600">
+            +51 976587365
+          </Link>
+          <Link href={"tel:+51 976587365"} className="text-slate-600">
+            +51 976587365
+          </Link>
         </div>
         <div className="flex flex-col">
           <span className="font-semibold">Escríbenos</span>
-          <span className="text-slate-600">info@gmail.com</span>
-          <span className="text-slate-600">staff.gg@gmail.com</span>
+          <Link href={"mailto:info@gmail.com"} className="text-slate-600">
+            info@gmail.com
+          </Link>
+          <Link href={"mailto:info@gmail.com"} className="text-slate-600">
+            info@gmail.com
+          </Link>
         </div>
       </div>
       <hr />
