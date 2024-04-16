@@ -4,8 +4,8 @@ import { RevealWrapper } from "next-reveal";
 import { useState } from "react";
 
 const sizing = {
-  title: "xl:text-[4rem] md:text-[3rem]",
-  description: "xl:text-[3rem] md:text-[2rem]",
+  title: "xl:text-[4rem] md:text-[3rem] text-[2rem]",
+  description: "xl:text-[3rem] md:text-[2rem] text-[1.5rem]",
 };
 
 function Detail() {
@@ -24,8 +24,8 @@ function Detail() {
   return (
     <section className="xl:px-44 md:px-28 h-screen  px-8 flex  py-16  w-full bg-white justify-center ">
       <RevealWrapper duration={1500} origin="left ">
-        <div className="flex w-full gap-32">
-          <div className="flex flex-col gap-4">
+        <div className="flex flex-col md:flex-row w-full gap-4 md:gap-32">
+          <div className="flex justify-start   md:flex-col gap-4 ">
             <div
               role="button"
               onClick={() => setSelected(1)}
@@ -202,10 +202,10 @@ function Component1({
   isEnter: any;
 }) {
   return (
-    <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row  pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Consultaria</h2>
-        <div className="pl-8 flex flex-col gap-2">
+        <div className="md:pl-8 flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
@@ -254,10 +254,10 @@ function Component2({
   isEnter: any;
 }) {
   return (
-    <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Desarrollo web</h2>
-        <div className="pl-8 flex flex-col gap-2">
+        <div className="md:pl-8 flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
@@ -306,10 +306,10 @@ function Component3({
   isEnter: any;
 }) {
   return (
-    <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Desarollo de software</h2>
-        <div className="pl-8 flex flex-col gap-2">
+        <div className="md:pl-8 flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
@@ -358,10 +358,10 @@ function Component4({
   isEnter: any;
 }) {
   return (
-    <div className="flex  pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex  flex-col md:flex-row pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Marketing</h2>
-        <div className="pl-8 flex flex-col gap-2">
+        <div className="md:pl-8 flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.

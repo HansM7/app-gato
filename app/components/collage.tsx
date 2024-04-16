@@ -10,20 +10,24 @@ function Collage() {
     <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-white">
       <div className="w-full">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-          <RevealWrapper duration={1500} origin="left">
+          <RevealWrapper
+            duration={1500}
+            origin="left "
+            className="col-span-2 sm:col-span-1"
+          >
             <div
-              className="group relative flex xl:h-96 h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 "
+              className=" group relative flex xl:h-96 h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 "
               onMouseEnter={() => setPosition(1)}
               onMouseLeave={() => setPosition(0)}
             >
-              <a href="#">
+              <div>
                 <img
                   src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
-              </a>
+              </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 1 && (
                 <div
@@ -49,14 +53,14 @@ function Collage() {
               onMouseEnter={() => setPosition(2)}
               onMouseLeave={() => setPosition(0)}
             >
-              <a href="#">
+              <div>
                 <img
                   src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
-              </a>
+              </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 2 && (
                 <div
@@ -111,14 +115,14 @@ function Collage() {
               onMouseEnter={() => setPosition(3)}
               onMouseLeave={() => setPosition(0)}
             >
-              <a href="#">
+              <div>
                 <img
                   src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
-              </a>
+              </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 3 && (
                 <div
@@ -136,20 +140,24 @@ function Collage() {
             </div>
           </RevealWrapper>
 
-          <RevealWrapper duration={1500} origin="left">
+          <RevealWrapper
+            duration={1500}
+            origin="left"
+            className="col-span-2 sm:col-span-1"
+          >
             <div
               className="group relative flex xl:h-96 h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 "
               onMouseEnter={() => setPosition(4)}
               onMouseLeave={() => setPosition(0)}
             >
-              <a href="#">
+              <div>
                 <img
                   src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
-              </a>
+              </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 4 && (
                 <div

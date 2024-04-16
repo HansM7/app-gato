@@ -40,46 +40,46 @@ function Testimonials() {
           style={{ minHeight: "20rem!important" }}
           className=" bg-gray-600 text-white rounded-lg  carousel_dinamic"
         >
-          <div className="flex flex-col px-24 gap-4 py-12 h-[20rem]">
+          <div className="flex flex-col px-8 md:px-24 gap-4 py-12 h-[20rem]">
             <div className="flex justify-center">
               <img
-                className="rounded-full w-24"
+                className="rounded-full w-16 md:w-24"
                 src="https://xsgames.co/randomusers/assets/avatars/male/74.jpg"
                 alt=""
               />
             </div>
             <div className="flex flex-col gap-4 justify-center text-center">
-              <p className="text-white text-xl">
+              <p className="text-white text-sm md:text-xl">
                 “Be genuine in your assessment, and provide constructive
                 feedback to benefit both potential customers and the company
                 providing the product or service.”
               </p>
               <div className="flex flex-col gap-2">
-                <span className="font-bold">Jhon Doe</span>
-                <span>CEO of and eduport</span>
+                <span className="text-sm md:text-md font-bold">Jhon Doe</span>
+                <span className="text-sm md:text-md ">CEO of and eduport</span>
               </div>
             </div>
             {/* options prev next */}
             <div></div>
           </div>
 
-          <div className="flex flex-col px-24 gap-4">
+          <div className="flex flex-col px-8 md:px-24 gap-4 py-12 h-[20rem]">
             <div className="flex justify-center">
               <img
-                className="rounded-full w-24"
+                className="rounded-full w-16 md:w-24"
                 src="https://xsgames.co/randomusers/assets/avatars/male/74.jpg"
                 alt=""
               />
             </div>
             <div className="flex flex-col gap-4 justify-center text-center">
-              <p className="text-white text-xl">
+              <p className="text-white text-sm md:text-xl">
                 “Be genuine in your assessment, and provide constructive
                 feedback to benefit both potential customers and the company
                 providing the product or service.”
               </p>
               <div className="flex flex-col gap-2">
-                <span className="font-bold">Jhon Doe</span>
-                <span>CEO of and eduport</span>
+                <span className="text-sm md:text-md font-bold">Jhon Doe</span>
+                <span className="text-sm md:text-md ">CEO of and eduport</span>
               </div>
             </div>
             {/* options prev next */}
