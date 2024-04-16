@@ -92,7 +92,7 @@ function Colaborators() {
     <div className="w-full px-36 min-h-screen flex flex-col pt-24 pb-32 bg-gray-100  text-slate-600">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
-          <span className="text-[3rem]  ">Nuestros colaboradores</span>
+          <span className="text-[3rem]  ">Nuestros clientes</span>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-16 gap-16">

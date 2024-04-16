@@ -6,7 +6,7 @@ import React from "react";
 function Form() {
   return (
     <section className="w-full min-h-screen  ">
-      <div className="min-h-screen xl:px-64 md:px-28  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
+      <div className="min-h-screen xl:px-64 md:px-28  px-8 flex bg-white pt-16 flex-col pb-16">
         <div className="flex gap-16 items-center">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
@@ -36,7 +36,7 @@ function Form() {
         <hr />
 
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
-          <div className="bg-white p-8 rounded-lg mt-16 shadow-large ">
+          <div className="bg-white shadow-violet-300 p-8 rounded-lg mt-16 shadow-large ">
             <form action="" className="grid grid-cols-2 gap-8">
               <div className="flex flex-col gap-2 col-span-2">
                 <span className="font-semibold">Nombres</span>

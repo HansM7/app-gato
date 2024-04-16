@@ -21,12 +21,12 @@ function Navigation({
   };
   return (
     <>
-      <div className=" w-16 left-0 top-0  flex flex-col justify-between min-h-svh bg-white items-center shadow-lg border-r">
+      <div className=" w-[92px] left-0 top-0  flex flex-col justify-between min-h-svh bg-white items-center shadow-lg border-r">
         <div className="h-[100%] flex flex-col justify-between items-center  py-4">
           <Link href={"/"}>
-            <img className="w-16 h-16" src="gato-icon.png" alt="" />
+            <img className="w-full" src="gato-icon.png" alt="" />
           </Link>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col justify-center items-center gap-1 text-3xl">
             {/* <div className="-rotate-90">
               <span className="w-full ">GATO</span>
             </div> */}
@@ -110,9 +110,9 @@ function Navigation({
           </Modal>
         </div>
 
-        <div className="bg-[#0A86ED] flex justify-center items-center  text-center min-h-52 max-w-full overflow-hidden">
+        <div className="bg-[#211B1B] flex justify-center items-center  text-center min-h-52 max-w-full overflow-hidden">
           <div className="-rotate-90   flex justify-center items-center min-w-48 ">
-            <span className="w-full ">Get in touch</span>
+            <span className="w-full text-white ">Get in touch</span>
           </div>
         </div>
       </div>
