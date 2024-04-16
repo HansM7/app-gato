@@ -13,12 +13,14 @@ function Service05() {
         <div className="flex gap-16 items-center">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] font-semibold">
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-semibold">
                 Business
               </h1>
             </RevealWrapper>
             <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] ">Intelligent</h1>
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem]  ">
+                Intelligent
+              </h1>
             </RevealWrapper>
           </div>
           <div className="w-fit">
@@ -33,7 +35,7 @@ function Service05() {
         </div>
 
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="text-2xl text-slate-600">
+          <p className="md:text-2xl text-xl text-slate-600">
             Potenciamos tu toma de decisiones con datos inteligentes. Nuestro
             servicio de Business Intelligence te ofrece insights profundos y
             visualizaciones claras para que puedas aprovechar al máximo la
@@ -53,30 +55,30 @@ function Service05() {
             />
           </div> */}
           <div className="flex flex-col mt-16">
-            <div className="flex justify-between">
+            <div className="grid md:grid-cols-5 grid-cols-3 gap-2 text-xs md:text-lg">
               <div
                 onClick={() => setStep(1)}
-                className={`rounded-full ${
-                  step === 1 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 1 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span>Definición de Objetivos</span>
               </div>
               <div
                 onClick={() => setStep(2)}
-                className={`rounded-full ${
-                  step === 2 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 2 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span>Recolección y Transformación de Datos</span>
               </div>
               <div
                 onClick={() => setStep(3)}
-                className={`rounded-full ${
-                  step === 3 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 3 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Análisis y Visualización de Datos</span>
@@ -84,9 +86,9 @@ function Service05() {
 
               <div
                 onClick={() => setStep(4)}
-                className={`rounded-full ${
-                  step === 4 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 4 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Implementación y Soporte </span>
@@ -101,10 +103,10 @@ function Service05() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Definición de Objetivos</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Embárcate en una conversación profunda con nuestro
                         equipo de expertos para comprender a fondo tus objetivos
@@ -126,12 +128,12 @@ function Service05() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">
                         Recolección y Transformación de Datos
                       </span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Limpiaremos, transformaremos y normalizaremos tus datos
                         para garantizar su calidad, consistencia y
@@ -154,12 +156,12 @@ function Service05() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">
                         Análisis y Visualización de Datos
                       </span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Aplicaremos técnicas de análisis de datos avanzadas para
                         descubrir patrones ocultos, tendencias y relaciones en
@@ -183,10 +185,10 @@ function Service05() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Implementación y Soporte</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Implementaremos la solución BI personalizada en tu
                         entorno de producción y te brindaremos la capacitación

@@ -13,12 +13,14 @@ function Service06() {
         <div className="flex gap-16 items-center">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] font-semibold">
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-semibold">
                 Desarrollo de
               </h1>
             </RevealWrapper>
             <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] ">Aplicaciones</h1>
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem]  ">
+                Aplicaciones
+              </h1>
             </RevealWrapper>
           </div>
           <div className="w-fit">
@@ -33,7 +35,7 @@ function Service06() {
         </div>
 
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="text-2xl text-slate-600">
+          <p className="md:text-2xl text-xl text-slate-600">
             Desarrollamos aplicaciones a medida que se adaptan a tus necesidades
             específicas y potencian la experiencia de tus usuarios. Creamos
             herramientas innovadoras que impulsan tu éxito en el mundo digital.
@@ -52,30 +54,30 @@ function Service06() {
             />
           </div> */}
           <div className="flex flex-col mt-16">
-            <div className="flex justify-between">
+            <div className="grid md:grid-cols-5 grid-cols-3 gap-2 text-xs md:text-lg">
               <div
                 onClick={() => setStep(1)}
-                className={`rounded-full ${
-                  step === 1 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 1 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span>Definición de Alcance y Requerimientos</span>
               </div>
               <div
                 onClick={() => setStep(2)}
-                className={`rounded-full ${
-                  step === 2 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 2 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span>Diseño y Prototipado</span>
               </div>
               <div
                 onClick={() => setStep(3)}
-                className={`rounded-full ${
-                  step === 3 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 3 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Desarrollo y Pruebas</span>
@@ -83,9 +85,9 @@ function Service06() {
 
               <div
                 onClick={() => setStep(4)}
-                className={`rounded-full ${
-                  step === 4 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 4 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Lanzamiento y Mantenimiento </span>
@@ -100,12 +102,12 @@ function Service06() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">
                         Definición de Alcance y Requerimientos
                       </span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Empezaremos por comprender a la perfección tus
                         objetivos, las necesidades de tus usuarios y las metas
@@ -128,10 +130,10 @@ function Service06() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Diseño y Prototipado</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Daremos vida a tu app a través de prototipos visuales e
                         interactivos. Juntos, navegaremos por la interfaz de
@@ -155,10 +157,10 @@ function Service06() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Desarrollo y Pruebas</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Lanzaremos al mundo a través de las tiendas de
                         aplicaciones correspondientes (Google Play Store, Apple
@@ -182,12 +184,12 @@ function Service06() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">
                         Lanzamiento y Mantenimiento
                       </span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Implementaremos la solución BI personalizada en tu
                         entorno de producción y te brindaremos la capacitación

@@ -13,7 +13,7 @@ function Service04() {
         <div className="flex gap-16 items-center">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] font-semibold">
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-semibold">
                 Branding
               </h1>
             </RevealWrapper>
@@ -33,7 +33,7 @@ function Service04() {
         </div>
 
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="text-2xl text-slate-600">
+          <p className="md:text-2xl text-xl text-slate-600">
             Somos expertos en capturar la esencia de tu marca y llevarla a
             nuevas alturas. Te ayudamos a destacar en un mundo cada vez más
             competitivo a través de la creación de identidades visuales
@@ -53,30 +53,30 @@ function Service04() {
             />
           </div> */}
           <div className="flex flex-col mt-16">
-            <div className="flex justify-between">
+            <div className="grid md:grid-cols-5 grid-cols-3 gap-2 text-xs md:text-lg">
               <div
                 onClick={() => setStep(1)}
-                className={`rounded-full ${
-                  step === 1 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 1 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span>Descubrimiento de Marca</span>
               </div>
               <div
                 onClick={() => setStep(2)}
-                className={`rounded-full ${
-                  step === 2 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 2 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Estrategia de Marca</span>
               </div>
               <div
                 onClick={() => setStep(3)}
-                className={`rounded-full ${
-                  step === 3 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 3 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Diseño de Materiales</span>
@@ -84,9 +84,9 @@ function Service04() {
 
               <div
                 onClick={() => setStep(4)}
-                className={`rounded-full ${
-                  step === 4 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 4 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Diseño de Materiales </span>
@@ -94,9 +94,9 @@ function Service04() {
 
               <div
                 onClick={() => setStep(5)}
-                className={`rounded-full ${
-                  step === 5 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 5 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Guía de Estilo de Marca </span>
@@ -113,10 +113,10 @@ function Service04() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Descubrimiento de Marca</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Embárcate en un viaje de autodescubrimiento para
                         comprender a fondo tu marca, su historia, valores,
@@ -140,10 +140,10 @@ function Service04() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Estrategia de Marca</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Define la personalidad, la voz y la propuesta de valor
                         única de tu marca. Determina cómo quieres que tu marca
@@ -167,10 +167,10 @@ function Service04() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Identidad Visual</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Desarrolla un concepto creativo que refleje la
                         personalidad y los valores de tu marca. Crea un logotipo
@@ -197,10 +197,10 @@ function Service04() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Diseño de Materiales</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Diseña materiales impresos como tarjetas de visita,
                         folletos, brochures y papelería que reflejen la
@@ -225,10 +225,10 @@ function Service04() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Guía de Estilo de Marca</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Establece normas claras para el uso consistente de la
                         identidad de tu marca en todos los materiales.
