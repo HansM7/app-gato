@@ -6,18 +6,20 @@ import React from "react";
 function Form() {
   return (
     <section className="w-full min-h-screen  ">
-      <div className="min-h-screen xl:px-80 md:px-28  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
+      <div className="min-h-screen xl:px-64 md:px-28  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
         <div className="flex gap-16 items-center">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
               <h1 className="">
                 {" "}
-                <span className="xl:text-[5rem] font-semibold">Hola,</span>
-                <span className="xl:text-[5rem] "> hagamos</span>
+                <span className="xl:text-[4rem] md:text-[3rem] font-semibold">
+                  Hola,
+                </span>
+                <span className="xl:text-[4rem]  md:text-[3rem]"> hagamos</span>
               </h1>
             </RevealWrapper>
             <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] ">cosas grandes</h1>
+              <h1 className="xl:text-[4rem]  md:text-[3rem]">cosas grandes</h1>
             </RevealWrapper>
           </div>
           <div className="w-fit">

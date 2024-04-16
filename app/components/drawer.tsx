@@ -1,6 +1,6 @@
 import { useState } from "react";
 import InfoDrawer from "./info-drawer";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 function Drawer() {
   const [hovered, setHovered] = useState("");
@@ -12,6 +12,8 @@ function Drawer() {
   const [isRedirecting, setIsRedirecting] = useState(false);
 
   const router = useRouter();
+
+  const pathname = usePathname();
 
   // todo -> define functions
   const handleHover = (word: any) => {
@@ -41,13 +43,12 @@ function Drawer() {
 
   function handleRedirect(word: string) {
     const newWord = word.toLocaleLowerCase();
-    setIsRedirecting(true);
-    setTimeout(() => {
-      router.push(`/${newWord}`);
-    }, 1000);
-    setTimeout(() => {
-      setIsRedirecting(false);
-    }, 2000);
+    if ("/" + newWord !== pathname) {
+      setIsRedirecting(true);
+      setTimeout(() => {
+        router.push(`/${newWord}`);
+      }, 1000);
+    }
   }
 
   const renderWord = (word: any) => {
