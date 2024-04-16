@@ -209,12 +209,16 @@ function Service05() {
         <hr />
 
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <div className="flex gap-8 mt-16 items-center">
-            <div>
+          <div className="grid grid-cols-3 gap-8 mt-16 items-center">
+            <div className=" col-span-3 md:col-span-1">
               <span className="text-3xl">¿Necesitas una cotización?</span>
             </div>
 
-            <RevealWrapper origin="bottom" duration={2000}>
+            <RevealWrapper
+              origin="bottom"
+              duration={2000}
+              className={"w-fit col-span-3 md:col-span-1"}
+            >
               <div className="relative group flex overflow-hidden">
                 <img
                   className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
@@ -237,7 +241,11 @@ function Service05() {
               </div>
             </RevealWrapper>
 
-            <RevealWrapper origin="bottom" duration={2500}>
+            <RevealWrapper
+              origin="bottom"
+              duration={2500}
+              className={"w-fit col-span-3 md:col-span-1"}
+            >
               <div className="relative group flex overflow-hidden">
                 <img
                   className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"

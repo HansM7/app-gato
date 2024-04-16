@@ -41,6 +41,13 @@ function Items() {
         "Análizamos insights y visualizaciones para que puedas aprovechar al máximo la información de tu empresa.",
       path: "business-intelligence",
     },
+    {
+      name: "Desarrollo de Aplicaciones",
+      icon: "https://cdn-icons-png.flaticon.com/512/6470/6470993.png",
+      detail:
+        "Desarrollamos aplicaciones a medida que se adaptan a tus necesidades específicas y potencian la experiencia de tus usuarios.",
+      path: "desarrollo-movil",
+    },
   ];
 
   function handleRedirect(path: string) {}

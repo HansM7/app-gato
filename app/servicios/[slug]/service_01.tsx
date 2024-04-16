@@ -13,12 +13,14 @@ function Service01() {
         <div className="flex gap-16 items-center">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] font-semibold">
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-semibold">
                 Marketing
               </h1>
             </RevealWrapper>
             <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] ">Digital</h1>
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem]  ">
+                Digital
+              </h1>
             </RevealWrapper>
           </div>
           <div className="w-fit">
@@ -33,7 +35,7 @@ function Service01() {
         </div>
 
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="text-2xl text-slate-600">
+          <p className="md:text-2xl text-xl text-slate-600">
             Nuestros servicios de Marketing Digital te ayudarán a lograr tus
             objetivos de negocio a través de estrategias personalizadas para
             cada plataforma. Creamos contenido atractivo y relevante que cautiva
@@ -56,30 +58,30 @@ function Service01() {
             />
           </div> */}
           <div className="flex flex-col mt-16">
-            <div className="flex justify-between">
+            <div className="grid md:grid-cols-5 grid-cols-3 gap-2 text-xs md:text-lg">
               <div
                 onClick={() => setStep(1)}
-                className={`rounded-full ${
-                  step === 1 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 1 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]    p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span>Análisis e Investigación</span>
               </div>
               <div
                 onClick={() => setStep(2)}
-                className={`rounded-full ${
-                  step === 2 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 2 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED]  p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span>Planificación y Desarrollo</span>
               </div>
               <div
                 onClick={() => setStep(3)}
-                className={`rounded-full ${
-                  step === 3 ? "bg-[#0A86ED]" : "bg-white"
-                } border border-[#0A86ED] p-3  w-36 h-36 flex justify-center items-center text-center`}
+                className={`rounded-xl ${
+                  step === 3 ? "bg-[#0A86ED] text-white" : "bg-white"
+                } border border-[#0A86ED] p-2 flex justify-center items-center text-center `}
                 role="button"
               >
                 <span> Implementación y Medición</span>
@@ -94,10 +96,10 @@ function Service01() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">Análisis e Investigación</span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         El primer paso crucial es sumergirse en el mundo de tu
                         mercado, público objetivo y competidores. Esto implica
@@ -122,12 +124,12 @@ function Service01() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">
                         Planificación y Desarrollo
                       </span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Con base en el análisis previo, selecciona los canales
                         de marketing digital más adecuados para alcanzar tus
@@ -152,12 +154,12 @@ function Service01() {
                   className={"w-full"}
                 >
                   <div className="mt-12 grid grid-cols-2">
-                    <div className="">
+                    <div className="md:col-span-1 col-span-2">
                       <span className="text-3xl">
                         Implementación y Medición
                       </span>
                     </div>
-                    <div>
+                    <div className="md:col-span-1 col-span-2 mt-4 md:mt-0">
                       <p>
                         Llevamos el plan a la acción y ejecuta tu estrategia de
                         marketing digital en los canales elegidos. Interactúa
@@ -181,12 +183,16 @@ function Service01() {
         <hr />
 
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <div className="flex gap-8 mt-16 items-center">
-            <div>
+          <div className="grid grid-cols-3 gap-8 mt-16 items-center">
+            <div className=" col-span-3 md:col-span-1">
               <span className="text-3xl">¿Necesitas una cotización?</span>
             </div>
 
-            <RevealWrapper origin="bottom" duration={2000}>
+            <RevealWrapper
+              origin="bottom"
+              duration={2000}
+              className={"w-fit col-span-3 md:col-span-1"}
+            >
               <div className="relative group flex overflow-hidden">
                 <img
                   className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
@@ -209,7 +215,11 @@ function Service01() {
               </div>
             </RevealWrapper>
 
-            <RevealWrapper origin="bottom" duration={2500}>
+            <RevealWrapper
+              origin="bottom"
+              duration={2500}
+              className={"w-fit col-span-3 md:col-span-1"}
+            >
               <div className="relative group flex overflow-hidden">
                 <img
                   className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"

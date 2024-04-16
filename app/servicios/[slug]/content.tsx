@@ -8,6 +8,7 @@ import Service02 from "./service_02";
 import Service03 from "./service_03";
 import Service04 from "./service_04";
 import Service05 from "./service_05";
+import Service06 from "./service_06";
 
 function Content({ slug }: { slug: string }) {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -88,6 +89,7 @@ function Content({ slug }: { slug: string }) {
           {slug === "desarrollo-software" && <Service03></Service03>}
           {slug === "branding" && <Service04></Service04>}
           {slug === "business-intelligence" && <Service05></Service05>}
+          {slug === "desarrollo-movil" && <Service06></Service06>}
         </div>
 
         {/* //todo-> section loadin -----------------------------------------------*/}
