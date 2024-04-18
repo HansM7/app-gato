@@ -1,11 +1,12 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
+import Link from "next/link";
 import { useState } from "react";
 
 const sizing = {
-  title: "xl:text-[4rem] md:text-[3rem] text-[2rem]",
-  description: "xl:text-[3rem] md:text-[2rem] text-[1.5rem]",
+  title: "xl:text-[3rem] md:text-[3rem] text-[2rem]",
+  description: "xl:text-[2rem] md:text-[2rem] text-[1rem]",
 };
 
 function Detail() {
@@ -22,7 +23,7 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-44 md:px-28 h-screen  px-8 flex  py-16  w-full bg-white justify-center ">
+    <section className="xl:px-44 md:px-28 h-screen  px-8 flex  py-8  w-full bg-white justify-center ">
       <RevealWrapper duration={1500} origin="left ">
         <div className="flex flex-col md:flex-row w-full gap-4 md:gap-32">
           <div className="flex justify-start   md:flex-col gap-4 ">
@@ -35,10 +36,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="36"
+                height="24"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="36"
+                width="24"
               >
                 <path
                   fillRule="evenodd"
@@ -57,10 +58,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="36"
+                height="24"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="36"
+                width="24"
               >
                 <path
                   fillRule="evenodd"
@@ -79,10 +80,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="36"
+                height="24"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="36"
+                width="24"
               >
                 <g clip-path="url(#clip0_53_1354omh4ri0y)">
                   <path
@@ -103,10 +104,10 @@ function Detail() {
             >
               <svg
                 data-testid="geist-icon"
-                height="36"
+                height="24"
                 strokeLinejoin="round"
                 viewBox="0 0 16 16"
-                width="36"
+                width="24"
               >
                 <path
                   fillRule="evenodd"
@@ -204,11 +205,11 @@ function Component1({
   return (
     <div className="flex flex-col md:flex-row  pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Consultaria</h2>
+        <h2 className={`${sizing.title}`}>Branding</h2>
         <div className="md:pl-8 flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
-            Somos especialistas en el diseño atractivo y diferenciado de
-            empaques que incitan a la compra.
+            Nuestros servicios de Marketing Digital, están orientados en
+            transformar tus redes sociales en fuentes de conversión
           </p>
           <div
             onMouseEnter={handleEnter}
@@ -223,13 +224,14 @@ function Component1({
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
-            <span
+            <Link
+              href={"/servicios/branding"}
               className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
               VER SERVICIO {">"}
-            </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -256,7 +258,7 @@ function Component2({
   return (
     <div className="flex flex-col md:flex-row pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Desarrollo web</h2>
+        <h2 className={`${sizing.title}`}>Diseño Web</h2>
         <div className="md:pl-8 flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
@@ -275,13 +277,14 @@ function Component2({
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
-            <span
+            <Link
+              href={"/servicios/diseno-web"}
               className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
               VER SERVICIO {">"}
-            </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -327,13 +330,14 @@ function Component3({
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
-            <span
+            <Link
+              href={"/servicios/desarrollo-software"}
               className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
               VER SERVICIO {">"}
-            </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -379,13 +383,14 @@ function Component4({
                 isEnter && "bg-blue-500 w-full transition-all"
               } transition-all`}
             ></div>
-            <span
+            <Link
+              href={"/servicios/marketing-digital"}
               className={`pl-4 z-10   ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
               VER SERVICIO {">"}
-            </span>
+            </Link>
           </div>
         </div>
       </div>

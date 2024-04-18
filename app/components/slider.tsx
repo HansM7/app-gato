@@ -27,22 +27,22 @@ const Slider = ({ direction }: { direction: string }) => {
   const duplicatedSlides = [...slides, ...slides];
 
   return (
-    <div className="relative flex flex-col w-full overflow-hidden rounded-md pt-8  bg-white xl:px-48 md:px-24 ">
+    <div className="relative flex flex-col w-full overflow-hidden rounded-md   bg-white xl:px-48 md:px-24 ">
       <div className="flex justify-between  px-8 items-center">
         <h1 className="xl:text-[3rem] md:text-[2rem] text-[2rem]">
           Nuestros clientes
         </h1>
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           <span className="bg-[#0A86ED] rounded-full p-2 w-10 h-10 text-white text-center">
             {"<"}
           </span>
           <span className="border border-[#0A86ED] rounded-full p-2  w-10 h-10 text-[#0A86ED] text-center">
             {">"}
           </span>
-        </div>
+        </div> */}
       </div>
       <motion.div
-        className=" flex gap-32 items-center py-2 "
+        className=" flex gap-32 items-center py-2 mt-8"
         animate={{
           x: direction === "right" ? ["-100%", "0%"] : ["0%", "-100%"],
           transition: {

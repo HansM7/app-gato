@@ -43,3 +43,19 @@ html::-webkit-scrollbar-thumb
 body{
 	font-family: var(--font-poppins);
 }
+
+.floating-image {
+	animation: floatAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

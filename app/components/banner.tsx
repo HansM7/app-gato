@@ -2,9 +2,17 @@
 import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import CountUp from "react-countup";
+import { useMediaQueries } from "@react-hook/media-query";
 
 function Banner() {
   // todo -> define states
+
+  const { matches, matchesAny, matchesAll } = useMediaQueries({
+    screen: "screen",
+    width: "(min-width: 400px)",
+  });
+
+  console.log(matches);
   const words = [
     "Desarrollo de Software",
     "Desarrollo web",
@@ -15,7 +23,7 @@ function Banner() {
 
   const sizing = {
     title: "xl:text-[5rem] md:text-[4rem] sm:text-[3rem] text-[3rem]",
-    description: "xl:text-[3rem] md:text-[2rem] sm:text-[2rem] text-[2rem]",
+    description: "xl:text-[28px] md:text-[2rem] sm:text-[2rem] text-[2rem]",
   };
 
   const [iterator, setIterator] = useState(0);
@@ -52,19 +60,31 @@ function Banner() {
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
-              <h1 className={`${sizing.title} text-black w-full`}>
+              <h1 className={`${sizing.title} text-black w-full font-semibold`}>
                 Agencia de{" "}
               </h1>
 
-              <span
-                className={`w-fit ${sizing.title} px-1 text-white  font-semibold  ${bg_colors[position]}`}
-              >
-                <Typewriter
-                  words={[words[position]]}
-                  onDelete={deleting}
-                  typeSpeed={70}
-                />
-              </span>
+              <div className="flex flex-col gap-2">
+                <span
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                >
+                  <Typewriter
+                    words={["Desarrollo de"]}
+                    onDelete={deleting}
+                    typeSpeed={70}
+                  />
+                </span>
+
+                <span
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                >
+                  <Typewriter
+                    words={["Software"]}
+                    onDelete={deleting}
+                    typeSpeed={70}
+                  />
+                </span>
+              </div>
             </div>
 
             {/* //todo carousel or transition images  --------------------- */}
@@ -108,19 +128,31 @@ function Banner() {
         {position === 1 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col  animate-fade-right  ">
-              <h1 className={`${sizing.title} text-black w-full`}>
+              <h1 className={`${sizing.title} text-black w-full font-semibold`}>
                 Agencia de{" "}
               </h1>
 
-              <span
-                className={`${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]}`}
-              >
-                <Typewriter
-                  words={[words[position]]}
-                  onDelete={deleting}
-                  typeSpeed={70}
-                />
-              </span>
+              <div className="flex flex-col gap-2">
+                <span
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                >
+                  <Typewriter
+                    words={["Desarrollo"]}
+                    onDelete={deleting}
+                    typeSpeed={70}
+                  />
+                </span>
+
+                <span
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                >
+                  <Typewriter
+                    words={["Web"]}
+                    onDelete={deleting}
+                    typeSpeed={70}
+                  />
+                </span>
+              </div>
             </div>
 
             {/* //todo carousel or transition images  --------------------- */}
@@ -159,18 +191,30 @@ function Banner() {
         {position === 2 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right animate-duration-500  ">
-              <h1 className={`${sizing.title} text-black w-full`}>
+              <h1 className={`${sizing.title} text-black w-full font-semibold`}>
                 Agencia de{" "}
               </h1>
-              <span
-                className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
-              >
-                <Typewriter
-                  words={[words[position]]}
-                  onDelete={deleting}
-                  typeSpeed={70}
-                />
-              </span>
+              <div className="flex flex-col gap-2">
+                <span
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                >
+                  <Typewriter
+                    words={["Marketing"]}
+                    onDelete={deleting}
+                    typeSpeed={70}
+                  />
+                </span>
+
+                <span
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                >
+                  <Typewriter
+                    words={["Digital"]}
+                    onDelete={deleting}
+                    typeSpeed={70}
+                  />
+                </span>
+              </div>
             </div>
 
             {/* //todo carousel or transition images  --------------------- */}
@@ -232,12 +276,8 @@ function Banner() {
           </div>
         </div> */}
 
-        <div className=" hidden md:flex text-slate-700 z-0    gap-8 text-right  justify-center pt-20 ">
-          <img
-            className="w-[26rem] h-[28rem]"
-            src="https://img1.picmix.com/output/stamp/normal/6/8/9/8/1868986_4d8e5.gif"
-            alt=""
-          />
+        <div className=" hidden md:flex text-slate-700 z-0     text-right  justify-center  ">
+          <img className="w-[40rem] floating-image" src="banner.png" alt="" />
         </div>
       </div>
 
