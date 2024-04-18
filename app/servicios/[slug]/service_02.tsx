@@ -25,11 +25,7 @@ function Service02() {
           </div>
           <div className="w-fit">
             <RevealWrapper origin="top" duration={1500} className={"w-full"}>
-              <img
-                className="w-96"
-                src="https://images.vexels.com/media/users/3/215556/isolated/preview/56cab15c9dd85351a1546bdfa86b9dd6-gato-acostado-mullido-plano.png"
-                alt=""
-              />
+              <img className="w-96" src="/gato-service.png" alt="" />
             </RevealWrapper>
           </div>
         </div>

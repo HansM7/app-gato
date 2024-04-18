@@ -1,10 +1,17 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 function Collage() {
   const [position, setPosition] = useState(0);
+
+  const router = useRouter();
+
+  function handleRedirect(path: string) {
+    router.push("/servicios/" + path);
+  }
 
   return (
     <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-white">
@@ -19,6 +26,7 @@ function Collage() {
               className=" group relative flex xl:h-96 h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 "
               onMouseEnter={() => setPosition(1)}
               onMouseLeave={() => setPosition(0)}
+              onClick={() => handleRedirect("marketing-digital")}
             >
               <div>
                 <img
@@ -52,6 +60,7 @@ function Collage() {
               className="w-full group relative flex xl:h-96 h-80  items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80  "
               onMouseEnter={() => setPosition(2)}
               onMouseLeave={() => setPosition(0)}
+              onClick={() => handleRedirect("branding")}
             >
               <div>
                 <img
@@ -114,6 +123,7 @@ function Collage() {
               className="w-full group relative flex xl:h-96 h-80  items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80  "
               onMouseEnter={() => setPosition(3)}
               onMouseLeave={() => setPosition(0)}
+              onClick={() => handleRedirect("desarrollo-software")}
             >
               <div>
                 <img
@@ -149,6 +159,7 @@ function Collage() {
               className="group relative flex xl:h-96 h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 "
               onMouseEnter={() => setPosition(4)}
               onMouseLeave={() => setPosition(0)}
+              onClick={() => handleRedirect("desarrollo-movil")}
             >
               <div>
                 <img

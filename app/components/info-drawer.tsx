@@ -74,10 +74,10 @@ function InfoDrawer({ word }: { word: string }) {
           Branding
         </Link>
         <Link
-          href={"/servicios/business-intelligence"}
+          href={"/servicios/desarrollo-movil"}
           className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal hover:font-semibold transition-all"
         >
-          Business Intelligence
+          Desarrollo de aplicaciones
         </Link>
       </div>
     );

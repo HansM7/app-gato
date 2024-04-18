@@ -16,8 +16,7 @@ function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
 
   function redirect() {
-    console.log("redirect!");
-    window.open("https://wa.me/+51999999999", "_blank");
+    window.open("https://wa.me/+51946380310", "_blank");
   }
 
   return (

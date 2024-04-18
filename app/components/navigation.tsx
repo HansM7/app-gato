@@ -29,7 +29,11 @@ function Navigation({
     <div className=" hidden md:flex w-[80px]    left-0 top-0   flex-col justify-between min-h-svh bg-white items-center shadow-lg border-r">
       <div className="h-[100%] flex flex-col justify-between items-center  py-4">
         <Link href={"/"}>
-          <img className="w-full" src="gato-icon.png" alt="" />
+          <img
+            className="w-full"
+            src="https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png"
+            alt=""
+          />
         </Link>
         <div className="flex flex-col justify-center items-center gap-1 text-3xl">
           {/* <div className="-rotate-90">

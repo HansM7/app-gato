@@ -34,13 +34,13 @@ function Items() {
         "Capturamos la esencia de tu marca y la llevamos a nuevas alturas con la creación de identidades visuales impactantes",
       path: "branding",
     },
-    {
-      name: "Business Intelligence",
-      icon: "https://cdn-icons-png.flaticon.com/512/3343/3343849.png",
-      detail:
-        "Análizamos insights y visualizaciones para que puedas aprovechar al máximo la información de tu empresa.",
-      path: "business-intelligence",
-    },
+    // {
+    //   name: "Business Intelligence",
+    //   icon: "https://cdn-icons-png.flaticon.com/512/3343/3343849.png",
+    //   detail:
+    //     "Análizamos insights y visualizaciones para que puedas aprovechar al máximo la información de tu empresa.",
+    //   path: "business-intelligence",
+    // },
     {
       name: "Desarrollo de Aplicaciones",
       icon: "https://cdn-icons-png.flaticon.com/512/6470/6470993.png",
@@ -58,13 +58,11 @@ function Items() {
         <div className="flex gap-16">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">
-                Somos
-              </h1>
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">Nos</h1>
             </RevealWrapper>
             <RevealWrapper origin="right" duration={1500} className={"w-full"}>
               <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem] font-semibold">
-                Especialistas
+                Especializamos
               </h1>
             </RevealWrapper>
           </div>
@@ -110,7 +108,11 @@ function Items() {
               </div>
 
               <div className="absolute right-0 top-0 hidden group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal group-hover:flex ">
-                <img className="w-16 opacity-80  " src="cat-m-1.png" alt="" />
+                <img
+                  className="w-32 opacity-60  "
+                  src="gato-saludo.png"
+                  alt=""
+                />
               </div>
             </RevealWrapper>
           ))}

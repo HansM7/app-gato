@@ -85,7 +85,7 @@ function Drawer() {
         <div className="flex justify-between">
           <div className="flex flex-col">
             <div className="flex items-center">
-              <div className="w-10 ">
+              {/* <div className="w-10 ">
                 {info === "Portafolio" ? (
                   <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
                     {number}
@@ -93,7 +93,7 @@ function Drawer() {
                 ) : (
                   ""
                 )}{" "}
-              </div>
+              </div> */}
               <div
                 className={`${
                   info === "Portafolio"
@@ -105,7 +105,7 @@ function Drawer() {
               </div>
             </div>
             <div className="flex items-center">
-              <div className="w-10">
+              {/* <div className="w-10">
                 {info === "Nosotros" ? (
                   <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
                     {number}
@@ -113,7 +113,7 @@ function Drawer() {
                 ) : (
                   ""
                 )}{" "}
-              </div>
+              </div> */}
               <div
                 className={`${
                   info === "Nosotros"
@@ -125,7 +125,7 @@ function Drawer() {
               </div>
             </div>
             <div className="flex items-center">
-              <div className="w-10">
+              {/* <div className="w-10">
                 {info === "Servicios" ? (
                   <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
                     {number}
@@ -133,7 +133,7 @@ function Drawer() {
                 ) : (
                   ""
                 )}{" "}
-              </div>
+              </div> */}
               <div
                 className={`${
                   info === "Servicios"
