@@ -55,7 +55,11 @@ function Banner() {
   }, [position]);
 
   return (
-    <section className=" min-h-screen  bg-gray-100 ">
+    <section className=" min-h-screen  bg-gray-100 relative">
+      {/* this is decorator */}
+      <div className="absolute w-full h-screen  bg-red-100"> </div>
+
+      {/*  */}
       <div className="xl:px-40 md:px-20 sm:px-12  px-8 flex  py-4 pt-20">
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
@@ -94,10 +98,6 @@ function Banner() {
                 <p
                   className={`font-light ${sizing.description} text-[#7A7678]`}
                 >
-                  {/* En Genius te asesoramos para tomar la mejor decisión y
-                  orientar tu presupuesto a los productos que mayor retorno
-                  brindarán a tu empresa. */}
-
                   <Typewriter
                     words={[
                       "En Genius, somos expertos en el desarrollo de software a medida que impulsa la innovación y la eficiencia en tu empresa.",
@@ -106,21 +106,7 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-                {/* <img
-                  className="h-[14rem]"
-                  src="https://png.pngtree.com/png-clipart/20221006/original/pngtree-working-cat-png-image_8661191.png"
-                  alt=""
-                /> */}
               </div>
-
-              {/* <div className=" ">
-                <img
-                  // className="rounded-full min-w-[18rem] "
-                  className="rounded-3xl w-[55rem] "
-                  src="animation-cat.gif "
-                  alt=""
-                />
-              </div> */}
             </div>
           </div>
         )}
@@ -170,20 +156,7 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-                {/* <img
-                  src="https://images.creativefabrica.com/products/thumbnails/2023/10/02/PDnV1GAQB/2WDK2dm2ymmVNuKA4dVhyQrJkCM.png"
-                  alt=""
-                /> */}
               </div>
-
-              {/* <div className=" ">
-                <img
-                  // className="rounded-full min-w-[18rem] "
-                  className="rounded-3xl w-[55rem] "
-                  src="https://static.wixstatic.com/media/377bd9_e2045c531cb5435eadad4a35b31bd05b~mv2.gif "
-                  alt=""
-                />
-              </div> */}
             </div>
           </div>
         )}
@@ -237,15 +210,6 @@ function Banner() {
                   alt=""
                 /> */}
               </div>
-
-              {/* <div className=" ">
-                <img
-                  // className="rounded-full min-w-[18rem] "
-                  className="rounded-3xl w-[55rem] "
-                  src="https://static.wixstatic.com/media/377bd9_e2045c531cb5435eadad4a35b31bd05b~mv2.gif "
-                  alt=""
-                />
-              </div> */}
             </div>
           </div>
         )}
@@ -280,23 +244,6 @@ function Banner() {
           <img className="w-[40rem] floating-image" src="banner.png" alt="" />
         </div>
       </div>
-
-      {/* //todo carousel or transition images  --------------------- */}
-
-      {/* <div className="flex gap-4  justify-start mt-4">
-        <AwesomeSlider className="px-4" organicArrows={false} bullets={false}>
-          <div>
-            <img
-              className="w-screen"
-              src="https://www.vinccihoteles.com/blog-expert/wp-content/uploads/2022/05/reunion-1024x682.jpg"
-              alt=""
-            />
-          </div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-        </AwesomeSlider>
-      </div> */}
     </section>
   );
 }

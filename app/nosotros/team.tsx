@@ -91,10 +91,10 @@ function Team() {
   };
 
   return (
-    <div className="w-full px-36 min-h-screen flex flex-col mt-32 bg-gray-100 pt-24 text-slate-600 pb-32">
+    <div className="w-full xl:px-52 md:px-36 px-8 min-h-screen flex flex-col mt-16 bg-gray-100 pt-16 text-slate-600 pb-32">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
-          <span className="text-[3rem]  ">Nuestro equipo</span>
+          <span className="md:text-[3rem] text-[2rem] ">Nuestro equipo</span>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-16 gap-16">
@@ -118,7 +118,7 @@ function Team() {
           ))}
         </div>
         {/*  */}
-        <div className="flex flex-wrap gap-8 justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 justify-center">
           {workers.map((item, index) => (
             <RevealWrapper
               origin="bottom"

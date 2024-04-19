@@ -58,11 +58,13 @@ function Items() {
         <div className="flex gap-16">
           <div className="flex flex-col">
             <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">Nos</h1>
+              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">
+                Servicios
+              </h1>
             </RevealWrapper>
             <RevealWrapper origin="right" duration={1500} className={"w-full"}>
               <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem] font-semibold">
-                Especializamos
+                Tecnológicos
               </h1>
             </RevealWrapper>
           </div>

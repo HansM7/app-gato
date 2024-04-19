@@ -66,7 +66,7 @@ function Home() {
         <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
         {isDrawer && <Drawer></Drawer>}
       </div>
-      <main className="flex flex-col w-full ">
+      <main className="flex flex-col w-full md:pl-[80px] ">
         {/* <Header></Header> */}
         <Banner></Banner>
         {/* <Carousel></Carousel> */}

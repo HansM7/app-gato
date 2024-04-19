@@ -78,7 +78,7 @@ function About() {
           ></Navigation>
           {isDrawer && <Drawer></Drawer>}
         </div>
-        <div className="w-full flex flex-col  justify-between">
+        <div className="w-full flex flex-col  justify-between md:pl-[80px]">
           {/* <Header></Header> */}
 
           <Section1></Section1>
