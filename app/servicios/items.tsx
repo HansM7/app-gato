@@ -53,137 +53,143 @@ function Items() {
   function handleRedirect(path: string) {}
 
   return (
-    <div className="min-h-screen xl:px-48 md:px-28  px-8 flex bg-gray-100 pt-24 pb-24">
-      <div className="w-full flex flex-col">
-        <div className="flex gap-16">
-          <div className="flex flex-col">
-            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">
-                Servicios
-              </h1>
-            </RevealWrapper>
-            <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem] font-semibold">
-                Tecnológicos
-              </h1>
-            </RevealWrapper>
-          </div>
-          <div>
-            <RevealWrapper origin="" duration={1500} className={"w-full"}>
-              <img src="gato-sleep.png" alt="" />
-            </RevealWrapper>
-          </div>
-        </div>
-        {/*  */}
-        <div className="grid grid-cols-6 gap-8 mt-8">
-          {services.map((service, index) => (
-            <RevealWrapper
-              origin="bottom"
-              duration={index * 400 + 1000}
-              className={
-                "w-full group overflow-hidden col-span-6 md:col-span-3 xl:col-span-2"
-              }
-              key={index}
-            >
-              <div
-                role="button"
-                onClick={() => handleRedirect("")}
-                className="w-full p-4 flex flex-col gap-4  bg-white rounded-xl "
+    <section>
+      <div className="min-h-screen xl:px-48 md:px-28  px-8 flex bg-gray-100 pt-24 pb-24">
+        <div className="w-full flex flex-col">
+          {/* <div className="flex gap-16">
+              <div className="flex flex-col">
+                <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+                  <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">
+                    Servicios
+                  </h1>
+                </RevealWrapper>
+                <RevealWrapper
+                  origin="right"
+                  duration={1500}
+                  className={"w-full"}
+                >
+                  <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem] font-semibold">
+                    Tecnológicos
+                  </h1>
+                </RevealWrapper>
+              </div>
+              <div>
+                <RevealWrapper origin="" duration={1500} className={"w-full"}>
+                  <img src="gato-sleep.png" alt="" />
+                </RevealWrapper>
+              </div>
+            </div> */}
+          {/*  */}
+          <div className="grid grid-cols-6 gap-8 mt-8">
+            {services.map((service, index) => (
+              <RevealWrapper
+                origin="bottom"
+                duration={index * 400 + 1000}
+                className={
+                  "w-full group overflow-hidden col-span-6 md:col-span-3 xl:col-span-2"
+                }
+                key={index}
               >
-                <div className="flex flex-col relative">
-                  <div className="flex flex-col gap-1">
-                    <img className="w-20  " src={service.icon} alt="" />
-                    <h3 className="font-semibold text-2xl">{service.name}</h3>
+                <div
+                  role="button"
+                  onClick={() => handleRedirect("")}
+                  className="w-full p-4 flex flex-col gap-4  bg-white rounded-xl "
+                >
+                  <div className="flex flex-col relative">
+                    <div className="flex flex-col gap-1">
+                      <img className="w-20  " src={service.icon} alt="" />
+                      <h3 className="font-semibold text-2xl">{service.name}</h3>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <p className="text-slate-600">{service.detail}</p>
-                </div>
-                <div>
-                  <Link
-                    href={"/servicios/" + service.path}
-                    className="text-[#0A86ED] underline font-semibold"
-                  >
-                    VER DETALLE
-                  </Link>
-                </div>
-              </div>
-
-              <div className="absolute right-0 top-0 hidden group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal group-hover:flex ">
-                <img
-                  className="w-32 opacity-60  "
-                  src="gato-saludo.png"
-                  alt=""
-                />
-              </div>
-            </RevealWrapper>
-          ))}
-        </div>
-        <hr className="mt-16 bg-white" />
-        {/*  */}
-        <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <div className="grid grid-cols-3 gap-8 mt-16 items-center">
-            <div className=" col-span-3 md:col-span-1">
-              <span className="text-3xl">¿Necesitas una cotización?</span>
-            </div>
-
-            <RevealWrapper
-              origin="bottom"
-              duration={2000}
-              className={"w-fit col-span-3 md:col-span-1"}
-            >
-              <div className="relative group flex overflow-hidden">
-                <img
-                  className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
-                  src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
-                  alt=""
-                />
-                <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
-                  <span className="text-xl text-slate-600">
-                    Soy una Pyme y tengo una idea de negocio
-                  </span>
-                  <div className="h-10  mt-2 ">
+                  <div>
+                    <p className="text-slate-600">{service.detail}</p>
+                  </div>
+                  <div>
                     <Link
-                      href={"/contactanos"}
-                      className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
+                      href={"/servicios/" + service.path}
+                      className="text-[#0A86ED] underline font-semibold"
                     >
-                      Solicitar detalle
+                      VER DETALLE
                     </Link>
                   </div>
                 </div>
-              </div>
-            </RevealWrapper>
 
-            <RevealWrapper
-              origin="bottom"
-              duration={2500}
-              className={"w-fit col-span-3 md:col-span-1"}
-            >
-              <div className="relative group flex overflow-hidden">
-                <img
-                  className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
-                  src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
-                  alt=""
-                />
-                <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
-                  <span className="text-xl text-slate-600">
-                    Tengo una empresa y necesito una cotización
-                  </span>
-                  <div className="h-10  mt-2 ">
-                    <Link
-                      href={"/contactanos"}
-                      className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
-                    >
-                      Solicitar detalle
-                    </Link>
-                  </div>
+                <div className="absolute right-0 top-0 hidden group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal group-hover:flex ">
+                  <img
+                    className="w-32 opacity-60  "
+                    src="gato-saludo.png"
+                    alt=""
+                  />
                 </div>
-              </div>
-            </RevealWrapper>
+              </RevealWrapper>
+            ))}
           </div>
-        </RevealWrapper>
+          <hr className="mt-16 bg-white" />
+          {/*  */}
+          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+            <div className="grid grid-cols-3 gap-8 mt-16 items-center">
+              <div className=" col-span-3 md:col-span-1">
+                <span className="text-3xl">¿Necesitas una cotización?</span>
+              </div>
+
+              <RevealWrapper
+                origin="bottom"
+                duration={2000}
+                className={"w-fit col-span-3 md:col-span-1"}
+              >
+                <div className="relative group flex overflow-hidden">
+                  <img
+                    className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
+                    src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
+                    alt=""
+                  />
+                  <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
+                    <span className="text-xl text-slate-600">
+                      Soy una Pyme y tengo una idea de negocio
+                    </span>
+                    <div className="h-10  mt-2 ">
+                      <Link
+                        href={"/contactanos"}
+                        className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
+                      >
+                        Solicitar detalle
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </RevealWrapper>
+
+              <RevealWrapper
+                origin="bottom"
+                duration={2500}
+                className={"w-fit col-span-3 md:col-span-1"}
+              >
+                <div className="relative group flex overflow-hidden">
+                  <img
+                    className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
+                    src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
+                    alt=""
+                  />
+                  <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
+                    <span className="text-xl text-slate-600">
+                      Tengo una empresa y necesito una cotización
+                    </span>
+                    <div className="h-10  mt-2 ">
+                      <Link
+                        href={"/contactanos"}
+                        className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
+                      >
+                        Solicitar detalle
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </RevealWrapper>
+            </div>
+          </RevealWrapper>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

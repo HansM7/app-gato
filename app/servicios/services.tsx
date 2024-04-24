@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
 import Items from "./items";
+import BannerServices from "./banner";
 
 function Services() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -78,7 +79,7 @@ function Services() {
         </div>
         <div className="w-full flex flex-col  justify-between md:pl-[80px]">
           {/* <Header></Header> */}
-
+          <BannerServices></BannerServices>
           <Items></Items>
         </div>
 

@@ -27,8 +27,10 @@ function Items() {
     <>
       <div className="xl:px-40 md:px-20 sm:px-12  px-8   py-4 pt-20 flex flex-col">
         <section className="grid grid-cols-4 gap-8">
-          <div className="col-span-4 md:col-span-2 xl:col-span-3  border-b ">
-            <h1 className="text-3xl text-gray-800">Nuestras publicaciones</h1>
+          <div className="col-span-4 md:col-span-2 xl:col-span-3   ">
+            <h1 className="text-3xl text-gray-800 border-b">
+              Nuestras publicaciones
+            </h1>
             <div className="grid grid-cols-2 xl:grid-cols-3 col-span-2 xl:col-span-3 gap-8 mt-4">
               <div className="flex flex-col col-span-2 xl:col-span-1 gap-2">
                 <img
@@ -130,8 +132,8 @@ function Items() {
               </div>
             </div>
           </div>
-          <div className="col-span-4 md:col-span-2  xl:col-span-1  border-b ">
-            <h1 className="text-3xl text-gray-800">Lo mas visto</h1>
+          <div className="col-span-4 md:col-span-2  xl:col-span-1   ">
+            <h1 className="text-3xl text-gray-800 border-b">Lo mas visto</h1>
             <div className="col-span-2 xl:col-span-1 mt-4">
               <div className="flex flex-col col-span-2 gap-4">
                 <Link href={""} className="flex gap-4 border-b pb-2">
@@ -220,7 +222,7 @@ function Items() {
           {/* section information */}
         </section>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 mt-8">
           {posts.map((post: any, index: number) => (
             <div key={index} className="rounded-lg p-4 shadow-large border">
               <div>

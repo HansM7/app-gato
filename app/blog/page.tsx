@@ -1,10 +1,8 @@
 import Blog from "./blog";
 
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 
-export async function generateMetadata(
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata(parent: any): Promise<Metadata> {
   // const product = await fetch(`https://.../${id}`).then((res) => res.json())
   // const previousImages = (await parent).openGraph?.images || []
 
