@@ -57,7 +57,7 @@ function Banner() {
   return (
     <section className=" md:min-h-screen min-h-[25rem]  bg-gray-100 relative">
       {/* this is decorator */}
-      <div className="absolute w-full md:min-h-screen min-h-[25rem]  bg-red-100 ">
+      <div className="absolute w-full md:min-h-screen min-h-[25rem]  bg-red-100 md:max-h-screen overflow-hidden ">
         {/* <video
           autoPlay
           muted

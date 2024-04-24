@@ -91,7 +91,7 @@ function Team() {
   };
 
   return (
-    <div className="w-full xl:px-40 md:px-36 px-8 min-h-screen flex flex-col mt-16 bg-gray-100 pt-16 text-slate-600 pb-32">
+    <div className="w-full xl:px-40 md:px-36 px-8 min-h-screen flex flex-col mt-16 bg-gray-100 pt-16  pb-32">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
           <span className="md:text-[3rem] text-[2rem] ">Nuestro equipo</span>
