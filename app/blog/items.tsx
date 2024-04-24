@@ -26,45 +26,197 @@ function Items() {
   return (
     <>
       <div className="xl:px-40 md:px-20 sm:px-12  px-8   py-4 pt-20 flex flex-col">
-        <section className="grid grid-cols-2 gap-8">
-          <div className="flex flex-col">
-            <div className="group overflow-hidden">
-              <img
-                className=" inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
-                src="https://imgcap.capturetheatlas.com/wp-content/uploads/2020/04/Long-exposure-photograph-.jpg"
-                alt=""
-              />
-            </div>
-
-            <div>
-              <h1 className="font-semibold">Title example</h1>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti ipsa voluptatibus magni quae dolorum similique quisquam
-                suscipit! Odit quaerat minus, commodi, officia amet pariatur a
-                eveniet sint hic assumenda sunt?
-              </p>
-            </div>
+        <section className="grid grid-cols-4 gap-8">
+          <div className="col-span-2 md:col-span-3  border-b ">
+            <h1 className="text-3xl text-gray-800">Nuestras publicaciones</h1>
           </div>
-          <article>
-            <div className="grid grid-cols-3">
+          <div className=" col-span-2  md:col-span-1  border-b ">
+            <h1 className="text-3xl text-gray-800">Lo mas visto</h1>
+          </div>
+
+          {/* section information */}
+          <div className="grid grid-cols-2 md:grid-cols-3 col-span-2 md:col-span-3 gap-8">
+            <div className="flex flex-col col-span-2 md:col-span-1 gap-2">
               <img
-                className="w-fll col-span-1"
-                src="https://imgcap.capturetheatlas.com/wp-content/uploads/2020/04/Long-exposure-photograph-.jpg"
+                className="rounded-lg w-full"
+                src="https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png"
                 alt=""
               />
-              <div className="col-span-2">
-                <h1 className="font-semibold text-sm">Title example</h1>
-                <p className="text-xs text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti ipsa voluptatibus magni quae dolorum similique
-                  quisquam suscipit! Odit quaerat minus, commodi, officia amet
-                  pariatur a eveniet sint hic assumenda sunt?
-                </p>
+              <h4 className="font-semibold">Title example blog for test</h4>
+              <p className="text-sm text-gray-500 text-pretty">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita voluptatum dolor quos quibusdam consequatur laudantium
+                quidem obcaecati accusamus facilis veniam illo.
+              </p>
+              <div className="flex flex-col text-sm ">
+                <div>
+                  <span>Jhonson smith </span>{" "}
+                  <span className="text-gray-600">in</span> <span>Design</span>
+                </div>
+
+                <span className="text-gray-500">Aprl 13, 2020</span>
+              </div>
+              <div>
+                <button className="border border-sky-400 p-1 rounded-lg outline-none text-sky-500 font-light text-sm">
+                  Ver completo
+                </button>
               </div>
             </div>
-          </article>
+
+            <div className="flex flex-col col-span-2 xl:col-span-2 gap-2">
+              <div className="flex gap-2">
+                <img
+                  className="w-48 rounded-lg"
+                  src="https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"
+                  alt=""
+                />
+                <div className="flex flex-col justify-around">
+                  <h3 className="font-semibold">
+                    How to Create a blog with Genius PE
+                  </h3>
+                  <div className="flex flex-col text-sm ">
+                    <div>
+                      <span>Jhonson smith </span>{" "}
+                      <span className="text-gray-600">in</span>{" "}
+                      <span>Design</span>
+                    </div>
+
+                    <span className="text-gray-500">Aprl 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <img
+                  className="w-48 rounded-lg"
+                  src="https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"
+                  alt=""
+                />
+                <div className="flex flex-col justify-around">
+                  <h3 className="font-semibold">
+                    How to Create a blog with Genius PE
+                  </h3>
+                  <div className="flex flex-col text-sm ">
+                    <div>
+                      <span>Jhonson smith </span>{" "}
+                      <span className="text-gray-600">in</span>{" "}
+                      <span>Design</span>
+                    </div>
+
+                    <span className="text-gray-500">Aprl 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <img
+                  className="w-48 rounded-lg"
+                  src="https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg"
+                  alt=""
+                />
+                <div className="flex flex-col justify-around">
+                  <h3 className="font-semibold">
+                    How to Create a blog with Genius PE
+                  </h3>
+                  <div className="flex flex-col text-sm ">
+                    <div>
+                      <span>Jhonson smith </span>{" "}
+                      <span className="text-gray-600">in</span>{" "}
+                      <span>Design</span>
+                    </div>
+
+                    <span className="text-gray-500">Aprl 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-span-2 md:col-span-1">
+            <div className="flex flex-col col-span-2 gap-4">
+              <div className="flex gap-4 border-b pb-2">
+                <div>
+                  <span className="text-3xl text-gray-600">01</span>
+                </div>
+                <div className="flex flex-col justify-around">
+                  <h3 className="font-semibold">
+                    How to Create a blog with Genius PE
+                  </h3>
+                  <div className="flex flex-col text-sm ">
+                    <div>
+                      <span>Jhonson smith </span>{" "}
+                      <span className="text-gray-600">in</span>{" "}
+                      <span>Design</span>
+                    </div>
+
+                    <span className="text-gray-500">Aprl 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4 border-b pb-2">
+                <div>
+                  <span className="text-3xl text-gray-600">02</span>
+                </div>
+                <div className="flex flex-col justify-around">
+                  <h3 className="font-semibold">
+                    How to Create a blog with Genius PE
+                  </h3>
+                  <div className="flex flex-col text-sm ">
+                    <div>
+                      <span>Jhonson smith </span>{" "}
+                      <span className="text-gray-600">in</span>{" "}
+                      <span>Design</span>
+                    </div>
+
+                    <span className="text-gray-500">Aprl 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4 border-b pb-2">
+                <div>
+                  <span className="text-3xl text-gray-600">03</span>
+                </div>
+                <div className="flex flex-col justify-around">
+                  <h3 className="font-semibold">
+                    How to Create a blog with Genius PE
+                  </h3>
+                  <div className="flex flex-col text-sm ">
+                    <div>
+                      <span>Jhonson smith </span>{" "}
+                      <span className="text-gray-600">in</span>{" "}
+                      <span>Design</span>
+                    </div>
+
+                    <span className="text-gray-500">Aprl 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4 border-b pb-2">
+                <div>
+                  <span className="text-3xl text-gray-600">04</span>
+                </div>
+                <div className="flex flex-col justify-around">
+                  <h3 className="font-semibold">
+                    How to Create a blog with Genius PE
+                  </h3>
+                  <div className="flex flex-col text-sm ">
+                    <div>
+                      <span>Jhonson smith </span>{" "}
+                      <span className="text-gray-600">in</span>{" "}
+                      <span>Design</span>
+                    </div>
+
+                    <span className="text-gray-500">Aprl 13, 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+
         <div className="flex flex-col gap-8">
           {posts.map((post: any, index: number) => (
             <div key={index} className="rounded-lg p-4 shadow-large border">
