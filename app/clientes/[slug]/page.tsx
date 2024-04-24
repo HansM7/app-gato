@@ -4,6 +4,7 @@ type Props = {
 };
 
 import { Metadata, ResolvingMetadata } from "next";
+import Detail from "./detail";
 
 export async function generateMetadata(
   { params, searchParams }: Props,
@@ -18,8 +19,13 @@ export async function generateMetadata(
   };
 }
 
-function Page({}) {
-  return <div className="w-full min-h-screen "></div>;
+function Page({ params }: { params: { slug: string } }) {
+  const slug = params.slug;
+  return (
+    <div className="w-full min-h-screen ">
+      <Detail slug={slug}></Detail>
+    </div>
+  );
 }
 
 export default Page;
