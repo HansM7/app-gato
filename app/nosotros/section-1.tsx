@@ -9,14 +9,14 @@ import CollageAbout from "../components/collage-about";
 function Section1() {
   return (
     <section className="w-full h-screen  ">
-      <div className="md:min-h-screen   xl:px-52 md:px-36 pb-16 md:pb-0 px-8  flex bg-gray-100 md:pt-32 pt-16">
+      <div className="md:min-h-screen   xl:px-40 md:px-36 pb-16 md:pb-0 px-8  flex bg-gray-100 md:pt-32 pt-16">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <h1 className="font-bold xl:text-[5rem] md:text-[4rem] text-[2rem] text-slate-800">
             Somo estrategas y soñadores comprometidos con el cambio digital.
           </h1>
         </RevealWrapper>
       </div>
-      <div className="min-h-screen xl:px-52 md:px-36 px-8   flex   justify-center  ">
+      <div className="min-h-screen xl:px-40 md:px-36 px-8   flex   justify-center  ">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <CollageAbout></CollageAbout>
         </RevealWrapper>

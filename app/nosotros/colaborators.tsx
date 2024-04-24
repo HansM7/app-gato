@@ -1,6 +1,7 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
+import Link from "next/link";
 import React, { useState } from "react";
 
 function Colaborators() {
@@ -89,57 +90,70 @@ function Colaborators() {
   };
 
   return (
-    <div className="w-full xl:px-52 md:px-36 px-8  min-h-screen flex flex-col pt-24 pb-32 bg-gray-100  text-slate-600">
-      <div className="flex justify-center">
+    <div className="w-full xl:px-40 md:px-36 px-8  min-h-screen flex flex-col pt-16 pb-32 bg-gray-100  text-slate-600">
+      <div className="flex">
         <RevealWrapper origin="top" duration={1000}>
-          <span className="text-[3rem]  ">Ellos confiaron en nosotros</span>
+          <span className="text-[3rem]  ">Casos de éxito</span>
         </RevealWrapper>
       </div>
-      <div className="flex flex-col items-center mt-16 gap-16">
-        <div className="grid grid-cols-4 gap-8 ">
-          <RevealWrapper origin="left" duration={1000}>
-            <img
-              className="w-full  rounded-xl"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgLXwiDQusHqu4zMuvEVnBUv04xNZlSQjc5gyKlT7XQ&s"
-              alt=""
-            />
-          </RevealWrapper>
-          <RevealWrapper origin="left" duration={1000}>
-            {" "}
-            <img
-              className=" rounded-xl"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4wfBr35CvAy_CH9EH438ACMR0_s9rq4q1tTsSAuPfw&s"
-              alt=""
-            />
-          </RevealWrapper>
-          <RevealWrapper origin="right" duration={1000}>
-            <img
-              className=" rounded-xl"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRrJB5e7WyvqC14eYPK0kXN6kzONkJDp02PejGumCcFQ&s"
-              alt=""
-            />
-          </RevealWrapper>
+      <div className="flex flex-col items-center mt-8 gap-8">
+        <RevealWrapper origin="left" duration={1000}>
+          <div className="grid grid-cols-3 bg-white p-4 rounded-md group overflow-hidden">
+            <div className="col-span-2 flex flex-col gap-4">
+              <h3 className="font-semibold text-xl">Proyecto Web</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                fuga incidunt nisi, iure suscipit nobis iusto dolor aliquid at
+                deleniti aliquam ducimus veritatis quidem! Eos minus laudantium
+                iure eaque fugiat?
+              </p>
+              <Link
+                href={""}
+                className="hidden group-hover:flex text-blue-600 underline w-fit "
+              >
+                <span className="transition-all animate-fade-right">
+                  Conocer mas
+                </span>
+              </Link>
+            </div>
+            <div className="col-span-1 flex justify-center">
+              <img
+                className="h-48  rounded-xl"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgLXwiDQusHqu4zMuvEVnBUv04xNZlSQjc5gyKlT7XQ&s"
+                alt=""
+              />
+            </div>
+          </div>
+        </RevealWrapper>
 
-          <RevealWrapper origin="right" duration={1000}>
-            <img
-              className=" rounded-xl"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdDvku89zTPPiEXoMucJ0YhFznM3xtg2D8WI6n2VwaQ&s"
-              alt=""
-            />
-          </RevealWrapper>
-
-          <RevealWrapper
-            origin="bottom"
-            duration={1000}
-            className={"col-span-4"}
-          >
-            <img
-              className=" w-full rounded-lg"
-              src="https://scontent.flim11-1.fna.fbcdn.net/v/t39.30808-6/294488433_581874250296156_6381925361257838933_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGlNhE3bKdDNoTxphR27N0LSEWvgrzhPEdIRa-CvOE8R8u0q5FkSRsJQXMptZq0cGp7jdT-DooA77oYod9OJiAg&_nc_ohc=twhLRHPwG6kAb5BgH5t&_nc_ht=scontent.flim11-1.fna&oh=00_AfCAMAdUQSKu7CQcwlbqnxE5DGVufZQyo6J9jGhrlKLNsA&oe=66237DE7"
-              alt=""
-            />
-          </RevealWrapper>
-        </div>
+        <RevealWrapper origin="left" duration={1000}>
+          <div className="grid grid-cols-3 bg-white p-4 rounded-md group overflow-hidden">
+            <div className="col-span-2 flex flex-col gap-4">
+              <h3 className="font-semibold text-xl">Proyecto Web</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                fuga incidunt nisi, iure suscipit nobis iusto dolor aliquid at
+                deleniti aliquam ducimus veritatis quidem! Eos minus laudantium
+                iure eaque fugiat?
+              </p>
+              <Link
+                href={""}
+                className="hidden group-hover:flex text-blue-600 underline w-fit "
+              >
+                <span className="transition-all animate-fade-right">
+                  Conocer mas
+                </span>
+              </Link>
+            </div>
+            <div className="col-span-1 flex justify-center">
+              <img
+                className="h-48  rounded-xl"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgLXwiDQusHqu4zMuvEVnBUv04xNZlSQjc5gyKlT7XQ&s"
+                alt=""
+              />
+            </div>
+          </div>
+        </RevealWrapper>
       </div>
 
       {/* modal detail team */}

@@ -22,8 +22,8 @@ function Banner() {
   const bg_colors = ["bg-[#007CF8]", "bg-[#0BC2E1]", "bg-[#A52DE6]"];
 
   const sizing = {
-    title: "xl:text-[5rem] md:text-[4rem] sm:text-[3rem] text-[3rem]",
-    description: "xl:text-[28px] md:text-[2rem] sm:text-[2rem] text-[2rem]",
+    title: "xl:text-[4rem] md:text-[3rem] sm:text-[2rem] text-[2rem]",
+    description: "xl:text-[28px] md:text-[2rem] sm:text-[2rem] text-[1rem]",
   };
 
   const [iterator, setIterator] = useState(0);
@@ -55,12 +55,25 @@ function Banner() {
   }, [position]);
 
   return (
-    <section className=" min-h-screen  bg-gray-100 relative">
+    <section className=" md:min-h-screen min-h-[25rem]  bg-gray-100 relative">
       {/* this is decorator */}
-      <div className="absolute w-full h-screen  bg-red-100"> </div>
+      <div className="absolute w-full md:min-h-screen min-h-[25rem]  bg-red-100 ">
+        {/* <video
+          autoPlay
+          muted
+          loop
+          className="w-full md:min-h-screen min-h-[25rem] object-cover  overflow-hidden"
+          src="https://videos.pexels.com/video-files/5495900/5495900-hd_1920_1080_30fps.mp4"
+        ></video> */}
+        <img
+          className="w-full md:min-h-screen min-h-[25rem] object-cover  overflow-hidden"
+          src="https://images.pexels.com/photos/1166643/pexels-photo-1166643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />{" "}
+      </div>
 
       {/*  */}
-      <div className="xl:px-40 md:px-20 sm:px-12  px-8 flex  py-4 pt-20">
+      <div className="xl:px-40 md:px-20 sm:px-12  px-8 flex  py-4 pt-20 relative">
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
@@ -73,17 +86,7 @@ function Banner() {
                   className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
                 >
                   <Typewriter
-                    words={["Desarrollo de"]}
-                    onDelete={deleting}
-                    typeSpeed={70}
-                  />
-                </span>
-
-                <span
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
-                >
-                  <Typewriter
-                    words={["Software"]}
+                    words={["Desarrollo de software"]}
                     onDelete={deleting}
                     typeSpeed={70}
                   />
@@ -123,17 +126,7 @@ function Banner() {
                   className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
                 >
                   <Typewriter
-                    words={["Desarrollo"]}
-                    onDelete={deleting}
-                    typeSpeed={70}
-                  />
-                </span>
-
-                <span
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
-                >
-                  <Typewriter
-                    words={["Web"]}
+                    words={["Desarrollo web"]}
                     onDelete={deleting}
                     typeSpeed={70}
                   />
@@ -172,17 +165,7 @@ function Banner() {
                   className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
                 >
                   <Typewriter
-                    words={["Marketing"]}
-                    onDelete={deleting}
-                    typeSpeed={70}
-                  />
-                </span>
-
-                <span
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
-                >
-                  <Typewriter
-                    words={["Digital"]}
+                    words={["Marketing digital"]}
                     onDelete={deleting}
                     typeSpeed={70}
                   />
@@ -240,9 +223,11 @@ function Banner() {
           </div>
         </div> */}
 
-        <div className=" hidden md:flex text-slate-700 z-0     text-right  justify-center  ">
+        {/* <div className=" hidden md:flex text-slate-700 z-0     text-right  justify-center  ">
           <img className="w-[40rem] floating-image" src="banner.png" alt="" />
-        </div>
+        </div> */}
+
+        {/*  */}
       </div>
     </section>
   );

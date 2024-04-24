@@ -144,6 +144,27 @@ function Drawer() {
                 {renderWord("Servicios")}
               </div>
             </div>
+
+            <div className="flex items-center">
+              {/* <div className="w-10">
+                {info === "Nosotros" ? (
+                  <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
+                    {number}
+                  </div>
+                ) : (
+                  ""
+                )}{" "}
+              </div> */}
+              <div
+                className={`${
+                  info === "Blog"
+                    ? "hover:ml-4 transition-all  "
+                    : "transition-all"
+                }`}
+              >
+                {renderWord("Blog")}
+              </div>
+            </div>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col">
