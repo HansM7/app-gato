@@ -47,13 +47,13 @@ function Colaborators() {
                   />
 
                   <div className="absolute inset-0 flex flex-col justify-between  z-10  gap-4 ">
-                    <div className="px-4 py-8 flex flex-col gap-4">
-                      <span className="xl:text-xl text-sm bg-violet-300 w-full opacity-70 py-1">
-                        {item.title}
-                      </span>
-                      <h3 className="text-white xl:text-3xl text-lg font-semibold">
+                    <div className="px-8 py-8 flex flex-col gap-4">
+                      <h3 className="text-white xl:text-xl text-lg ">
                         Desarrollo de software
                       </h3>
+                      <span className="xl:text-3xl text-sm  w-full  py-1 text-white font-semibold">
+                        {item.title}
+                      </span>
                       <p className="text-gray-200 font-light">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Consequatur inventore maiores magnam veritatis,

@@ -56,7 +56,7 @@ function Drawer() {
       <span
         role="button"
         onClick={() => handleRedirect(word)}
-        className={`relative xl:text-[4rem] text-[3rem] font-semibold hover:text-black text-gray-500  transition-all ${
+        className={`relative xl:text-[3rem] text-[3rem] font-semibold hover:text-black text-gray-500  transition-all ${
           hovered === word && "text-black"
         }`}
         onMouseEnter={() => handleHover(word)}
@@ -178,8 +178,16 @@ function Drawer() {
           </div>
         </div>
         {/* information */}
-        <div className="mt-12">
-          <InfoDrawer word={info}></InfoDrawer>
+        <div className="mt-12 flex flex-col">
+          <div className="min-h-52 w-full ">
+            <InfoDrawer word={info}></InfoDrawer>
+          </div>
+
+          <div className="grid grid-cols-3 mt-8 text-sm font-semibold border-t pt-8 pb-8">
+            <span>Clientes</span>
+            <span>Blog</span>
+            <span>Bolsa de trabajo</span>
+          </div>
         </div>
       </div>
       {/* --------------- screen black ------------------------------------- */}
