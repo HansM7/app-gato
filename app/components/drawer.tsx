@@ -56,7 +56,7 @@ function Drawer() {
       <span
         role="button"
         onClick={() => handleRedirect(word)}
-        className={`relative text-[4rem] font-semibold hover:text-black text-gray-500  transition-all ${
+        className={`relative xl:text-[4rem] text-[3rem] font-semibold hover:text-black text-gray-500  transition-all ${
           hovered === word && "text-black"
         }`}
         onMouseEnter={() => handleHover(word)}
@@ -81,7 +81,7 @@ function Drawer() {
 
   return (
     <>
-      <div className="bg-white h-full w-screen  animate-fade-right animate-duration-500 animate-ease-linear animate-normal pt-36 px-32 z-30">
+      <div className="overflow-y-scroll bg-white h-full w-screen  animate-fade-right animate-duration-500 animate-ease-linear animate-normal pt-24 xl:px-32 px-16 z-30">
         <div className="flex justify-between">
           <div className="flex flex-col">
             <div className="flex items-center">
@@ -166,7 +166,7 @@ function Drawer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 text-sm">
             <div className="flex flex-col">
               <span className="font-semibold">Escríbenos</span>
               <span>gato@gmail.com</span>

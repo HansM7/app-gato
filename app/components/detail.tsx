@@ -31,7 +31,7 @@ function Detail() {
               role="button"
               onClick={() => setSelected(1)}
               className={`p-3 rounded-md ${
-                selected === 1 && "shadow-lg text-[#0A86ED]"
+                selected === 1 ? "shadow-lg text-[#0A86ED]" : "text-[#7A7678]"
               }`}
             >
               <svg
@@ -53,7 +53,7 @@ function Detail() {
               role="button"
               onClick={() => setSelected(2)}
               className={`p-3 rounded-md ${
-                selected === 2 && "shadow-lg text-[#0A86ED]"
+                selected === 2 ? "shadow-lg text-[#0A86ED]" : "text-[#7A7678]"
               }`}
             >
               <svg
@@ -75,7 +75,7 @@ function Detail() {
               role="button"
               onClick={() => setSelected(3)}
               className={`p-3 rounded-md ${
-                selected === 3 && "shadow-lg text-[#0A86ED]"
+                selected === 3 ? "shadow-lg text-[#0A86ED]" : "text-[#7A7678]"
               }`}
             >
               <svg
@@ -99,7 +99,7 @@ function Detail() {
               role="button"
               onClick={() => setSelected(4)}
               className={`p-3 rounded-md ${
-                selected === 4 && "shadow-lg text-[#0A86ED]"
+                selected === 4 ? "shadow-lg text-[#0A86ED]" : "text-[#7A7678]"
               }`}
             >
               <svg

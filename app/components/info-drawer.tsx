@@ -29,7 +29,7 @@ function InfoDrawer({ word }: { word: string }) {
   } else if (word === "Nosotros") {
     return (
       <div className="grid grid-cols-3 gap-8">
-        <span className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal col-span-3 text-xl">
+        <span className=" font-light animate-fade-up animate-duration-500 animate-ease-linear animate-normal col-span-3 text-xl">
           Somos un equipo comprometido con la búsqueda de la excelencia en cada
           proyecto que emprendemos. Nos enorgullece trabajar con clientes que
           comparten nuestra pasión por el éxito y están dispuestos a desafiar

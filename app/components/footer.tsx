@@ -15,22 +15,37 @@ function Footer() {
         </div>
         <div className="flex flex-col col-span-2 md:col-span-1">
           <span className="font-semibold">Hablemos</span>
-          <Link href={"tel:+51 976587365"} className="text-slate-600">
+          <Link
+            href={"tel:+51 976587365"}
+            className="text-slate-600 md:text-sm text-xs"
+          >
             +51 980005257
           </Link>
-          <Link href={"tel:+51 976587365"} className="text-slate-600">
+          <Link
+            href={"tel:+51 976587365"}
+            className="text-slate-600 md:text-sm text-xs"
+          >
             +51 952341679
           </Link>
         </div>
         <div className="flex flex-col col-span-2 md:col-span-1">
           <span className="font-semibold">Escríbenos</span>
-          <Link href={"mailto:info@gmail.com"} className="text-slate-600">
+          <Link
+            href={"mailto:info@gmail.com"}
+            className="text-slate-600 md:text-sm text-xs"
+          >
             info@geniusperu.com
           </Link>
-          <Link href={"mailto:info@gmail.com"} className="text-slate-600">
+          <Link
+            href={"mailto:info@gmail.com"}
+            className="text-slate-600 md:text-sm text-xs"
+          >
             dortega@geniusperu.com
           </Link>
-          <Link href={"mailto:info@gmail.com"} className="text-slate-600">
+          <Link
+            href={"mailto:info@gmail.com"}
+            className="text-slate-600 md:text-sm text-xs"
+          >
             mjara@geniusperu.com
           </Link>
         </div>
