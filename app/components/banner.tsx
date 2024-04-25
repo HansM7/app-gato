@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import CountUp from "react-countup";
 import { useMediaQueries } from "@react-hook/media-query";
+import { TypeAnimation } from "react-type-animation";
 
 function Banner() {
   // todo -> define states
@@ -22,8 +23,8 @@ function Banner() {
   const bg_colors = ["bg-[#007CF8]", "bg-[#0BC2E1]", "bg-[#A52DE6]"];
 
   const sizing = {
-    title: "xl:text-[4rem] md:text-[3rem] sm:text-[2rem] text-[2rem]",
-    description: "xl:text-[28px] md:text-[2rem] sm:text-[2rem] text-[1rem]",
+    title: "xl:text-[5rem] md:text-[3rem] sm:text-[2rem] text-[2rem]",
+    description: "xl:text-4xl md:text-[2rem] sm:text-[2rem] text-[1rem]",
   };
 
   const [iterator, setIterator] = useState(0);
@@ -83,12 +84,23 @@ function Banner() {
 
               <div className="flex flex-col gap-2">
                 <span
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
                 >
-                  <Typewriter
+                  {/* <Typewriter
                     words={["Desarrollo de software"]}
                     onDelete={deleting}
                     typeSpeed={70}
+                  /> */}
+
+                  <TypeAnimation
+                    className={`${bg_colors[position]}`}
+                    sequence={[
+                      // Same substring at the start will only be typed once, initially
+                      words[position],
+                      1000,
+                    ]}
+                    speed={2}
+                    repeat={Infinity}
                   />
                 </span>
               </div>
@@ -123,12 +135,23 @@ function Banner() {
 
               <div className="flex flex-col gap-2">
                 <span
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
                 >
-                  <Typewriter
-                    words={["Desarrollo web"]}
+                  {/* <Typewriter
+                    words={["Desarrollo de software"]}
                     onDelete={deleting}
                     typeSpeed={70}
+                  /> */}
+
+                  <TypeAnimation
+                    className={`${bg_colors[position]}`}
+                    sequence={[
+                      // Same substring at the start will only be typed once, initially
+                      words[position],
+                      1000,
+                    ]}
+                    speed={2}
+                    repeat={Infinity}
                   />
                 </span>
               </div>
@@ -162,12 +185,23 @@ function Banner() {
               </h1>
               <div className="flex flex-col gap-2">
                 <span
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold  ${bg_colors[position]} leading-1	`}
+                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
                 >
-                  <Typewriter
-                    words={["Marketing digital"]}
+                  {/* <Typewriter
+                    words={["Desarrollo de software"]}
                     onDelete={deleting}
                     typeSpeed={70}
+                  /> */}
+
+                  <TypeAnimation
+                    className={`${bg_colors[position]}`}
+                    sequence={[
+                      // Same substring at the start will only be typed once, initially
+                      words[position],
+                      1000,
+                    ]}
+                    speed={2}
+                    repeat={Infinity}
                   />
                 </span>
               </div>
@@ -188,10 +222,6 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-                {/* <img
-                  src="https://images.creativefabrica.com/products/thumbnails/2023/10/06/dbijaL9Uz/2WNuDaTVq8gEWWBD5Cwl1WWqe7Y.png"
-                  alt=""
-                /> */}
               </div>
             </div>
           </div>

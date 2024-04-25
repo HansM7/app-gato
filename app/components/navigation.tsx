@@ -35,14 +35,14 @@ function Navigation({
             alt=""
           />
         </Link>
-        <div className="flex flex-col justify-center items-center gap-1 text-3xl">
+        <div className="flex  flex-col justify-center items-center gap-1 text-3xl">
           {/* <div className="-rotate-90">
         <span className="w-full ">GATO</span>
       </div> */}
-          <span>G</span>
-          <span>A</span>
-          <span>T</span>
-          <span>O</span>
+          <span className="font-semibold">G</span>
+          <span className="font-semibold">A</span>
+          <span className="font-semibold">T</span>
+          <span className="font-semibold">O</span>
         </div>
 
         {/* ------------------------------------------ */}

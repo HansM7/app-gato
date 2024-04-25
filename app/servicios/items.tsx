@@ -12,6 +12,8 @@ function Items() {
       detail:
         "Nuestros servicios de Marketing Digital, están orientados en transformar tus redes sociales en fuentes de conversión, según los objetivos de tu negocio.",
       path: "marketing-digital",
+      video:
+        "https://videos.pexels.com/video-files/7414127/7414127-hd_1920_1080_24fps.mp4",
     },
     {
       name: "Diseño Web",
@@ -19,6 +21,8 @@ function Items() {
       detail:
         "Transformamos tu presencia en línea con diseños web impactantes y funcionales. Desde la creación de sitios web atractivos hasta la optimización.",
       path: "diseno-web",
+      video:
+        "https://videos.pexels.com/video-files/852423/852423-hd_1920_1080_24fps.mp4",
     },
     {
       name: "Desarrollo de Software",
@@ -26,6 +30,8 @@ function Items() {
       detail:
         "Transformamos tus ideas en software funcional. Desde la conceptualización hasta la implementación, creamos soluciones a medida.",
       path: "desarrollo-software",
+      video:
+        "https://videos.pexels.com/video-files/2516160/2516160-hd_1920_1080_24fps.mp4",
     },
     {
       name: "Branding",
@@ -33,6 +39,8 @@ function Items() {
       detail:
         "Capturamos la esencia de tu marca y la llevamos a nuevas alturas con la creación de identidades visuales impactantes",
       path: "branding",
+      video:
+        "https://videos.pexels.com/video-files/3205622/3205622-hd_1920_1080_25fps.mp4",
     },
     // {
     //   name: "Business Intelligence",
@@ -47,6 +55,8 @@ function Items() {
       detail:
         "Desarrollamos aplicaciones a medida que se adaptan a tus necesidades específicas y potencian la experiencia de tus usuarios.",
       path: "desarrollo-movil",
+      video:
+        "https://videos.pexels.com/video-files/3252145/3252145-uhd_3840_2160_25fps.mp4",
     },
   ];
 
@@ -54,8 +64,8 @@ function Items() {
 
   return (
     <section>
-      <div className="min-h-screen xl:px-48 md:px-28  px-8 flex bg-gray-100 pt-24 pb-24">
-        <div className="w-full flex flex-col">
+      <div className="min-h-screen xl:px-24 md:px-16  px-8 flex bg-gray-100 pt-12 pb-24">
+        <div className="w-full flex flex-col ">
           {/* <div className="flex gap-16">
               <div className="flex flex-col">
                 <RevealWrapper origin="left" duration={1500} className={"w-full"}>
@@ -80,47 +90,40 @@ function Items() {
               </div>
             </div> */}
           {/*  */}
-          <div className="grid grid-cols-6 gap-8 mt-8">
+          <div className="grid grid-cols-6 gap-4 mt-8 ">
             {services.map((service, index) => (
               <RevealWrapper
                 origin="bottom"
                 duration={index * 400 + 1000}
                 className={
-                  "w-full group overflow-hidden col-span-6 md:col-span-3 xl:col-span-2"
+                  "w-full group overflow-hidden col-span-6 md:col-span-3 xl:col-span-3 2xl:col-span-2 min-h-80"
                 }
                 key={index}
               >
-                <div
-                  role="button"
-                  onClick={() => handleRedirect("")}
-                  className="w-full p-4 flex flex-col gap-4  bg-white rounded-xl "
+                <Link
+                  href={"/servicios/" + service.path}
+                  className="h-96 relative"
                 >
-                  <div className="flex flex-col relative">
-                    <div className="flex flex-col gap-1">
-                      <img className="w-20  " src={service.icon} alt="" />
-                      <h3 className="font-semibold text-2xl">{service.name}</h3>
+                  <div className="overflow-hidden group h-full relative">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      className="w-full h-full object-cover filter brightness-[30%] group-hover:scale-110 transition-all"
+                      src={service.video}
+                    />
+
+                    <div className="absolute inset-0 flex flex-col px-4 py-8  z-10  gap-4">
+                      <h3 className="text-white text-3xl">{service.name}</h3>
+                      <p className="text-gray-300 text-xl font-light">
+                        {service.detail}
+                      </p>
+                      <div className="text-violet-300 p-2 hidden group-hover:flex animate-fade-right ">
+                        Click para ver mas detalles
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <p className="text-slate-600">{service.detail}</p>
-                  </div>
-                  <div>
-                    <Link
-                      href={"/servicios/" + service.path}
-                      className="text-[#0A86ED] underline font-semibold"
-                    >
-                      VER DETALLE
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="absolute right-0 top-0 hidden group-hover:animate-fade-left animate-once animate-duration-[1200ms] animate-ease-out animate-normal group-hover:flex ">
-                  <img
-                    className="w-32 opacity-60  "
-                    src="gato-saludo.png"
-                    alt=""
-                  />
-                </div>
+                </Link>
               </RevealWrapper>
             ))}
           </div>

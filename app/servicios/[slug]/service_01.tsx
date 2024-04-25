@@ -9,6 +9,30 @@ function Service01() {
 
   return (
     <section className="w-full min-h-screen  overflow-hidden">
+      <div className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative">
+        <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
+          <img
+            className="w-screen  md:min-h-screen h-full min-h-[28rem] object-cover  overflow-hidden filter brightness-50"
+            src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ></img>
+        </div>
+        <div className="xl:px-40 md:px-36 pb-16 md:pb-0 px-8 md:pt-24 pt-8">
+          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+            <span className="text-sky-400 font-black  xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+              Bienvenidos
+            </span>
+          </RevealWrapper>
+          <RevealWrapper
+            origin="left"
+            duration={1500}
+            className={"w-full mt-16"}
+          >
+            <span className="md:font-normal font-light xl:text-[6rem] md:text-[4rem] text-[2rem] text-gray-200">
+              Servicio de Marketing Digital
+            </span>
+          </RevealWrapper>
+        </div>
+      </div>
       <div className="min-h-screen xl:px-80 md:px-28  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
         <div className="flex gap-16 items-center">
           <div className="flex flex-col">
