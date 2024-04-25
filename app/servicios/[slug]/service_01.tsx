@@ -18,8 +18,8 @@ function Service01() {
         </div>
         <div className="xl:px-40 md:px-36 pb-16 md:pb-0 px-8 md:pt-24 pt-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <span className="text-sky-400 font-black  xl:text-[7rem] md:text-[4rem] text-[3rem] ">
-              Bienvenidos
+            <span className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+              Servicio de Marketing Digital
             </span>
           </RevealWrapper>
           <RevealWrapper
@@ -27,33 +27,14 @@ function Service01() {
             duration={1500}
             className={"w-full mt-16"}
           >
-            <span className="md:font-normal font-light xl:text-[6rem] md:text-[4rem] text-[2rem] text-gray-200">
-              Servicio de Marketing Digital
+            <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
+              Estrategias personalizadas, contenido cautivador, alcance ampliado
+              y análisis constante para optimizar tus inversiones.
             </span>
           </RevealWrapper>
         </div>
       </div>
-      <div className="min-h-screen xl:px-80 md:px-28  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
-        <div className="flex gap-16 items-center">
-          <div className="flex flex-col">
-            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-semibold">
-                Marketing
-              </h1>
-            </RevealWrapper>
-            <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem]  ">
-                Digital
-              </h1>
-            </RevealWrapper>
-          </div>
-          <div className="w-fit">
-            <RevealWrapper origin="top" duration={1500} className={"w-full"}>
-              <img className="w-96" src="/gato-service.png" alt="" />
-            </RevealWrapper>
-          </div>
-        </div>
-
+      <div className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <p className="md:text-2xl text-xl text-slate-600">
             Nuestros servicios de Marketing Digital te ayudarán a lograr tus

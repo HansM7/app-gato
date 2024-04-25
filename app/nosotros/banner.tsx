@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 function BannerAbout() {
   return (
     <section className="md:min-h-screen min-h-[25rem]    flex bg-gray-100  relative">
-      <div className=" md:min-h-screen md:max-h-screen h-full overflow-hidden min-h-[25rem] absolute">
+      <div className=" md:min-h-screen md:max-h-screen w-full  h-full overflow-hidden min-h-[25rem] absolute">
         <video
           autoPlay
           muted

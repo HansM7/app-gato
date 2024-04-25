@@ -62,7 +62,7 @@ function Colaborators() {
                         natus tempora impedit dicta!
                       </p>
                     </div>
-                    <div className="text-white pt-2 -mt-1   text-sm  justify-center w-full bg-violet-500 hidden group-hover:flex animate-fade-up animate-ease-in-out ">
+                    <div className="text-white pt-2 -mt-1   text-sm  justify-center w-full bg-violet-600 hidden group-hover:flex animate-fade-up animate-ease-in-out ">
                       <span className="">Click para ver mas detalles</span>
                       <br />
                     </div>
