@@ -9,7 +9,7 @@ import CollageAbout from "../components/collage-about";
 function Section1() {
   return (
     <section className="w-full h-screen  ">
-      <div className="min-h-screen xl:px-40 md:px-36 px-8   flex   justify-center  ">
+      <div className=" pb-16 xl:px-32 md:px-24 px-8   flex   justify-center  ">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <CollageAbout></CollageAbout>
         </RevealWrapper>
@@ -17,8 +17,8 @@ function Section1() {
 
       {/* //todo -> --------------------------------------------------------------------------------*/}
 
-      <div className="w-full  flex flex-col md:mt-8 mt-8">
-        <div className="grid md:grid-cols-2 grid-cols-1 xl:px-52 md:px-36 px-8  md:gap-20 gap-8">
+      <div className="w-full  flex flex-col ">
+        <div className="grid md:grid-cols-2 grid-cols-1 xl:px-32 md:px-24 px-8  md:gap-20 gap-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
             <p className="text-3xl ">
               Ayudamos a las marcas a resolver grandes desafíos y lograr mejores

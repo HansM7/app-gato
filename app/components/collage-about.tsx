@@ -14,7 +14,7 @@ function CollageAbout() {
   }
 
   return (
-    <section className=" flex  py-16  w-full ">
+    <section className=" flex  pt-16  w-full ">
       <div className="w-full">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           <RevealWrapper
