@@ -11,6 +11,7 @@ import Detail from "../components/detail";
 import Slider from "../components/slider";
 import Testimonials from "../components/testimonials";
 import Footer from "../components/footer";
+import GridClients from "../components/grid-clients";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -75,7 +76,8 @@ function Home() {
         <Collage></Collage>
         <Detail></Detail>
 
-        <Slider direction="right"></Slider>
+        {/* <Slider direction="right"></Slider> */}
+        <GridClients></GridClients>
         <Testimonials></Testimonials>
         <Footer></Footer>
       </main>

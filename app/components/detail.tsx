@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 
 const sizing = {
-  title: "xl:text-[3rem] md:text-[3rem] text-[2rem]",
-  description: "xl:text-[2rem] md:text-[2rem] text-[1rem]",
+  title: "xl:text-3xl md:text-2xl text-2xl",
+  description: "xl:text-2xl md:text-xl text-xl",
 };
 
 function Detail() {
@@ -23,7 +23,7 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-44 md:px-28 h-screen  px-8 flex  py-8  w-full bg-white justify-center ">
+    <section className="xl:px-44 md:px-28   px-8 flex  py-16  w-full bg-white justify-center  ">
       <RevealWrapper duration={1500} origin="left ">
         <div className="flex flex-col md:flex-row w-full gap-4 md:gap-32">
           <div className="flex justify-start   md:flex-col gap-4 ">
@@ -203,7 +203,7 @@ function Component1({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row  pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Branding</h2>
         <div className="md:pl-8 flex flex-col gap-2">
@@ -226,7 +226,7 @@ function Component1({
             ></div>
             <Link
               href={"/servicios/branding"}
-              className={`pl-4 z-10   ${
+              className={`pl-4 z-10 text-sm  ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
@@ -256,7 +256,7 @@ function Component2({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Diseño Web</h2>
         <div className="md:pl-8 flex flex-col gap-2">
@@ -279,7 +279,7 @@ function Component2({
             ></div>
             <Link
               href={"/servicios/diseno-web"}
-              className={`pl-4 z-10   ${
+              className={`pl-4 z-10 text-sm  ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
@@ -309,7 +309,7 @@ function Component3({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row  animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Desarollo de software</h2>
         <div className="md:pl-8 flex flex-col gap-2">
@@ -332,7 +332,7 @@ function Component3({
             ></div>
             <Link
               href={"/servicios/desarrollo-software"}
-              className={`pl-4 z-10   ${
+              className={`pl-4 z-10 text-sm  ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
@@ -362,7 +362,7 @@ function Component4({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row pt-4 md:pt-16 animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Marketing</h2>
         <div className="md:pl-8 flex flex-col gap-2">
@@ -385,7 +385,7 @@ function Component4({
             ></div>
             <Link
               href={"/servicios/marketing-digital"}
-              className={`pl-4 z-10   ${
+              className={`pl-4 z-10 text-sm  ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
             >
