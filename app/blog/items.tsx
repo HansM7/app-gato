@@ -25,7 +25,7 @@ function Items() {
 
   return (
     <>
-      <div className="xl:px-40 md:px-20 sm:px-12  px-8   py-4 pt-20 flex flex-col">
+      <div className="xl:px-32 md:px-20 sm:px-12  px-8   py-4 pt-20 flex flex-col">
         <section className="grid grid-cols-4 gap-8">
           <div className="col-span-4 md:col-span-2 xl:col-span-3   ">
             <h1 className="text-3xl text-gray-800 border-b">
@@ -220,6 +220,99 @@ function Items() {
           </div>
 
           {/* section information */}
+        </section>
+
+        {/* // todo here is blog col */}
+
+        <section className="flex flex-col gap-8 mt-16">
+          <div className="grid grid-cols-3 gap-8 ">
+            <div className="w-full col-span-1">
+              <img
+                className="w-full rounded-lg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGwpQpxNAbG3Z-JyRqmv5tdeC3yXKZ-VrUtgXjVB6-0g&s"
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col col-span-2">
+              <h2 className="font-semibold text-lg ">
+                Como los gatos influyen en el desarrollo de tu aplicacion web,
+                100% real no fake
+              </h2>
+              <p className="text-gray-500 font-light mt-2">
+                Los gatos son como los sabios misteriosos del mundo en línea,
+                dejando su huella en cada rincón de la web, ¡incluso en tu
+                aplicación web! Su influencia puede ser sutil pero poderosa.
+                Piénsalo, ¿cuántas veces has visto un video viral de un gato
+                adorable o una foto de un minino haciendo una travesura en las
+                redes sociales? Esas son las pequeñas dosis de alegría felina
+                que mantienen a la gente enganchada y compartiendo contenido, lo
+                que puede beneficiar enormemente a tu aplicación web.
+              </p>
+              <div className="flex flex-col mt-4 text-sm">
+                <span>Hans Melchor</span>
+                <span className="text-gray-500">Desarrolllador Full Stack</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-8 ">
+            <div className="w-full col-span-1">
+              <img
+                className="w-full rounded-lg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGwpQpxNAbG3Z-JyRqmv5tdeC3yXKZ-VrUtgXjVB6-0g&s"
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col col-span-2">
+              <h2 className="font-semibold text-lg ">
+                Como los gatos influyen en el desarrollo de tu aplicacion web,
+                100% real no fake
+              </h2>
+              <p className="text-gray-500 font-light mt-2">
+                Los gatos son como los sabios misteriosos del mundo en línea,
+                dejando su huella en cada rincón de la web, ¡incluso en tu
+                aplicación web! Su influencia puede ser sutil pero poderosa.
+                Piénsalo, ¿cuántas veces has visto un video viral de un gato
+                adorable o una foto de un minino haciendo una travesura en las
+                redes sociales? Esas son las pequeñas dosis de alegría felina
+                que mantienen a la gente enganchada y compartiendo contenido, lo
+                que puede beneficiar enormemente a tu aplicación web.
+              </p>
+              <div className="flex flex-col mt-4 text-sm">
+                <span>Hans Melchor</span>
+                <span className="text-gray-500">Desarrolllador Full Stack</span>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-8 ">
+            <div className="w-full col-span-1">
+              <img
+                className="w-full rounded-lg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGwpQpxNAbG3Z-JyRqmv5tdeC3yXKZ-VrUtgXjVB6-0g&s"
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col col-span-2">
+              <h2 className="font-semibold text-lg ">
+                Como los gatos influyen en el desarrollo de tu aplicacion web,
+                100% real no fake
+              </h2>
+              <p className="text-gray-500 font-light mt-2">
+                Los gatos son como los sabios misteriosos del mundo en línea,
+                dejando su huella en cada rincón de la web, ¡incluso en tu
+                aplicación web! Su influencia puede ser sutil pero poderosa.
+                Piénsalo, ¿cuántas veces has visto un video viral de un gato
+                adorable o una foto de un minino haciendo una travesura en las
+                redes sociales? Esas son las pequeñas dosis de alegría felina
+                que mantienen a la gente enganchada y compartiendo contenido, lo
+                que puede beneficiar enormemente a tu aplicación web.
+              </p>
+              <div className="flex flex-col mt-4 text-sm">
+                <span>Hans Melchor</span>
+                <span className="text-gray-500">Desarrolllador Full Stack</span>
+              </div>
+            </div>
+          </div>
         </section>
 
         <div className="flex flex-col gap-8 mt-8">
