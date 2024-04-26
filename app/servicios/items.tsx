@@ -113,7 +113,7 @@ function Items() {
                       src={service.video}
                     />
 
-                    <div className="absolute inset-0 flex flex-col px-4 py-8  z-10  gap-4">
+                    <div className="absolute inset-0 flex flex-col p-8  z-10  gap-4">
                       <h3 className="text-white text-3xl">{service.name}</h3>
                       <p className="text-gray-300 text-xl font-light">
                         {service.detail}

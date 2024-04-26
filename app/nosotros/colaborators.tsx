@@ -47,25 +47,20 @@ function Colaborators() {
                     alt=""
                   />
 
-                  <div className="absolute inset-0 flex flex-col justify-between  z-10  gap-4 ">
-                    <div className="px-8 py-8 flex flex-col gap-4">
-                      <h3 className="text-white xl:text-xl text-lg ">
-                        Desarrollo de software
-                      </h3>
-                      <span className="xl:text-3xl text-sm  w-full  py-1 text-white font-semibold">
-                        {item.title}
-                      </span>
-                      <p className="text-gray-200 font-light">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Consequatur inventore maiores magnam veritatis,
-                        provident odio distinctio beatae laudantium deleniti
-                        repudiandae harum, qui, a voluptatibus neque mollitia
-                        natus tempora impedit dicta!
-                      </p>
-                    </div>
-                    <div className="text-white pt-2 -mt-1   text-sm  justify-center w-full bg-violet-600 hidden group-hover:flex animate-fade-up animate-ease-in-out ">
-                      <span className="">Click para ver mas detalles</span>
-                      <br />
+                  <div className="absolute inset-0 flex flex-col   z-10  gap-4  p-8">
+                    <h3 className="text-white xl:text-xl text-lg ">
+                      Desarrollo de software
+                    </h3>
+                    <span className="xl:text-3xl text-sm  w-full  py-1 text-white font-semibold">
+                      {item.title}
+                    </span>
+                    <p className="text-gray-200 font-light">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Consequatur inventore maiores magnam veritatis, provident
+                      odio distinctio beatae
+                    </p>
+                    <div className="text-violet-300 p-2 hidden group-hover:flex animate-fade-right ">
+                      Click para ver mas detalles
                     </div>
                   </div>
                 </div>

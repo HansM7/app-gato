@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 function BannerAbout() {
   return (
-    <section className="md:min-h-screen  h-full  flex bg-gray-100  relative">
+    <section className="md:min-h-screen  h-full  flex bg-gray-100  relative ">
       <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
         <video
           autoPlay
@@ -15,7 +15,7 @@ function BannerAbout() {
           src="https://videos.pexels.com/video-files/3249902/3249902-uhd_3840_2160_25fps.mp4"
         ></video>
       </div>
-      <div className="xl:px-32 md:px-20 pb-16 md:pb-0 px-4 md:pt-16 pt-8">
+      <div className=" md:px-20 pb-16 md:pb-0 px-4 md:pt-16 pt-8  ">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <div className="  flex flex-col  ">
             <span className="text-gray-200 xl:text-[5rem] md:text-[4rem] text-[3rem] h-fit">

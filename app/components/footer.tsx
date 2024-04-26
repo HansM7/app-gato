@@ -53,7 +53,10 @@ function Footer() {
         <div className="flex flex-col ">
           <span className="font-semibold">Redes Sociales</span>
           <div className="flex gap-2">
-            <Link href={"https://www.facebook.com/geniusper"} target="_blank">
+            <Link
+              href={"https://www.instagram.com/genius_mkt_peru/"}
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -111,10 +114,7 @@ function Footer() {
                 ></path>
               </svg>
             </Link>
-            <Link
-              href={"https://www.instagram.com/genius_mkt_peru/"}
-              target="_blank"
-            >
+            <Link href={"https://www.facebook.com/geniusper"} target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
