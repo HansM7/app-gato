@@ -12,6 +12,7 @@ import Slider from "../components/slider";
 import Testimonials from "../components/testimonials";
 import Footer from "../components/footer";
 import GridClients from "../components/grid-clients";
+import TestimonialsCards from "../components/testimonials-card";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -37,7 +38,7 @@ function Home() {
       {/* //todo fondo -----------------------------*/}
 
       {/* // todo -> whatsapp icon */}
-      <div className="fixed bottom-6 right-6  z-20" onClick={redirect}>
+      <div className="fixed bottom-6 right-6  z-30 " onClick={redirect}>
         <svg
           role="button"
           viewBox="0 0 256 259"
@@ -67,7 +68,7 @@ function Home() {
         <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
         {isDrawer && <Drawer></Drawer>}
       </div>
-      <main className="flex flex-col w-full md:pl-[80px] ">
+      <main className="flex flex-col w-full  md:pl-[80px] ">
         {/* <Header></Header> */}
         <Banner></Banner>
         {/* <Carousel></Carousel> */}
@@ -78,7 +79,8 @@ function Home() {
 
         {/* <Slider direction="right"></Slider> */}
         <GridClients></GridClients>
-        <Testimonials></Testimonials>
+        {/* <Testimonials></Testimonials> */}
+        <TestimonialsCards></TestimonialsCards>
         <Footer></Footer>
       </main>
     </div>

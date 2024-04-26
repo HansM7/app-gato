@@ -8,7 +8,7 @@ import CollageAbout from "../components/collage-about";
 
 function Section1() {
   return (
-    <section className="w-full h-screen  ">
+    <div className="w-full h-full ">
       <div className=" pb-16 xl:px-32 md:px-24 px-8   flex   justify-center  ">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <CollageAbout></CollageAbout>
@@ -128,7 +128,7 @@ function Section1() {
       <hr />
       <Colaborators></Colaborators>
       <Footer></Footer>
-    </section>
+    </div>
   );
 }
 

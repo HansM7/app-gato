@@ -5,13 +5,13 @@ import { Typewriter } from "react-simple-typewriter";
 
 function BannerAbout() {
   return (
-    <section className="md:min-h-screen min-h-[25rem]    flex bg-gray-100  relative">
+    <section className="md:min-h-screen  h-full  flex bg-gray-100  relative">
       <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
         <video
           autoPlay
           muted
           loop
-          className="w-full h-full md:min-h-screen min-h-[25rem] object-cover  overflow-hidden filter brightness-50"
+          className="w-screen h-full md:min-h-screen min-h-[25rem] object-cover  overflow-hidden filter brightness-50"
           src="https://videos.pexels.com/video-files/3249902/3249902-uhd_3840_2160_25fps.mp4"
         ></video>
       </div>
@@ -34,7 +34,7 @@ function BannerAbout() {
         <RevealWrapper
           origin="right"
           duration={1500}
-          className={"w-full md:mt-16 "}
+          className={"w-full md:mt-16 -mt-8 "}
         >
           <span className="md:font-light font-light xl:text-[3rem] md:text-[2rem] text-[2rem] text-gray-200">
             Comprometidos con el aprendizaje y desarrollo continuo, nos

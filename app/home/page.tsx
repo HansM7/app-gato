@@ -2,7 +2,7 @@ import Home from "./home";
 
 function Page() {
   return (
-    <div className="w-full h-screen ">
+    <div className="w-full  ">
       <Home></Home>
     </div>
   );

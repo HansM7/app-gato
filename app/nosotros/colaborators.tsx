@@ -37,6 +37,7 @@ function Colaborators() {
               origin="bottom"
               duration={1000}
               className={"min-h-96"}
+              key={index}
             >
               <Link href={"/clientes/" + item.slug} className="h-96 relative">
                 <div className="overflow-hidden group h-full relative">

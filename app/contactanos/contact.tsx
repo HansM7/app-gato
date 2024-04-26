@@ -44,7 +44,7 @@ function Contact() {
 
         {/* // todo -> whatsapp icon */}
 
-        <div className="fixed bottom-6 right-6" onClick={redirect}>
+        <div className="fixed bottom-6 right-6 z-30" onClick={redirect}>
           <svg
             role="button"
             viewBox="0 0 256 259"

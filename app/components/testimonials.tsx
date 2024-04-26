@@ -7,7 +7,7 @@ import Image from "next/image";
 function Testimonials() {
   return (
     // xl:px-44 md:px-28  px-8
-    <section className=" flex  py-16  w-full bg-white  flex-col  mt-16">
+    <section className=" flex   w-full bg-white  flex-col ">
       {/* <RevealWrapper duration={1500} origin="left">
         <div className="flex flex-col px-24 gap-4">
           <div className="flex justify-center">
@@ -39,7 +39,7 @@ function Testimonials() {
           showControls={true}
           indicators={true}
           style={{ minHeight: "20rem!important" }}
-          className=" bg-gray-500 text-white  carousel_dinamic"
+          className=" bg-gray-500 text-white  carousel_dinamic "
         >
           <div className="flex flex-col px-8 md:px-24 gap-4 py-12 h-[20rem]">
             <div className="flex justify-center">
