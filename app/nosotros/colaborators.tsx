@@ -27,11 +27,11 @@ function Colaborators() {
     <div className="w-full xl:px-24 md:px-16  px-8  min-h-screen flex flex-col pt-16 pb-32 bg-gray-100  ">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
-          <span className="text-[3rem]  ">Casos de éxito</span>
+          <span className="md:text-[3rem] text-[2rem] ">Casos de éxito</span>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-8 gap-8">
-        <div className="grid xl:grid-cols-3 grid-cols-2   gap-8">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-8">
           {data.map((item, index) => (
             <RevealWrapper
               origin="bottom"

@@ -14,7 +14,7 @@ function Collage() {
   }
 
   return (
-    <section className="xl:px-44 md:px-28  px-8 flex  py-16  w-full bg-white">
+    <section className="xl:px-32 md:px-24  px-8 flex  py-16  w-full bg-white">
       <div className="w-full">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           <RevealWrapper

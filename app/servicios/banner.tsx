@@ -20,7 +20,7 @@ function BannerServices() {
               Servicios que
             </span>
 
-            <div className="text-sky-400 font-black xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44">
+            <div className="text-sky-400 font-black xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44 -mt-4">
               {/* <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed once, initially
