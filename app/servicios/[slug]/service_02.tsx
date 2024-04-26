@@ -1,5 +1,6 @@
 "use client";
 
+import FastContact from "@/app/components/fast-contac";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import { useState } from "react";
@@ -9,27 +10,33 @@ function Service02() {
 
   return (
     <section className="w-full min-h-screen  overflow-hidden">
-      <div className="min-h-screen xl:px-80 md:px-28  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
-        <div className="flex gap-16 items-center">
-          <div className="flex flex-col">
-            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-semibold">
-                Diseño
-              </h1>
-            </RevealWrapper>
-            <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem]  ">
-                Web
-              </h1>
-            </RevealWrapper>
-          </div>
-          <div className="w-fit">
-            <RevealWrapper origin="top" duration={1500} className={"w-full"}>
-              <img className="w-96" src="/gato-service.png" alt="" />
-            </RevealWrapper>
-          </div>
+      <div className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative">
+        <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
+          <img
+            className="w-screen  md:min-h-screen h-full min-h-[28rem] object-cover  overflow-hidden filter brightness-50"
+            src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ></img>
         </div>
+        <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-24 pt-8">
+          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+            <span className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+              Servicio de Diseño Web
+            </span>
+          </RevealWrapper>
+          <RevealWrapper
+            origin="left"
+            duration={1500}
+            className={"w-full mt-16"}
+          >
+            <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
+              Estrategias personalizadas, contenido cautivador, alcance ampliado
+              y análisis constante para optimizar tus inversiones.
+            </span>
+          </RevealWrapper>
+        </div>
+      </div>
 
+      <div className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <p className="md:text-2xl text-xl text-slate-600">
             Transformamos tu presencia en línea con diseños web impactantes y
@@ -43,13 +50,6 @@ function Service02() {
           duration={1500}
           className={"w-full pb-16"}
         >
-          {/* <div className="">
-            <img
-              className="w-full "
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGHZ9nZyE2bXxKITFeUCu98ewZTqMP1o6LAdb_uDMG-jjXmmPd5lPGGhR36ZbzpO8EZ4Y&usqp=CAU "
-              alt=""
-            />
-          </div> */}
           <div className="flex flex-col mt-16">
             <div className="grid md:grid-cols-5 grid-cols-3 gap-2 text-xs md:text-lg">
               <div
@@ -173,67 +173,7 @@ function Service02() {
 
         <hr />
 
-        <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <div className="grid grid-cols-3 gap-8 mt-16 items-center">
-            <div className=" col-span-3 md:col-span-1">
-              <span className="text-3xl">¿Necesitas una cotización?</span>
-            </div>
-
-            <RevealWrapper
-              origin="bottom"
-              duration={2000}
-              className={"w-fit col-span-3 md:col-span-1"}
-            >
-              <div className="relative group flex overflow-hidden">
-                <img
-                  className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
-                  src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
-                  alt=""
-                />
-                <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
-                  <span className="text-xl text-slate-600">
-                    Soy una Pyme y tengo una idea de negocio
-                  </span>
-                  <div className="h-10  mt-2 ">
-                    <Link
-                      href={"/contactanos"}
-                      className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
-                    >
-                      Solicitar detalle
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </RevealWrapper>
-
-            <RevealWrapper
-              origin="bottom"
-              duration={2500}
-              className={"w-fit col-span-3 md:col-span-1"}
-            >
-              <div className="relative group flex overflow-hidden">
-                <img
-                  className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
-                  src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
-                  alt=""
-                />
-                <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
-                  <span className="text-xl text-slate-600">
-                    Tengo una empresa y necesito una cotización
-                  </span>
-                  <div className="h-10  mt-2 ">
-                    <Link
-                      href={"/contactanos"}
-                      className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
-                    >
-                      Solicitar detalle
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </RevealWrapper>
-          </div>
-        </RevealWrapper>
+        <FastContact></FastContact>
       </div>
     </section>
   );
