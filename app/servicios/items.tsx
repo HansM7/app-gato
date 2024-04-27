@@ -90,7 +90,7 @@ function Items() {
               </div>
             </div> */}
           {/*  */}
-          <div className="grid grid-cols-6 gap-4 mt-8 ">
+          <div className="grid grid-cols-6 gap-8 mt-8 ">
             {services.map((service, index) => (
               <RevealWrapper
                 origin="bottom"

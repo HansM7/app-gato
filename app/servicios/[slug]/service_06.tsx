@@ -17,7 +17,7 @@ function Service06() {
             src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           ></img>
         </div>
-        <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-24 pt-8">
+        <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
             <span className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
               Servicio de Desarrollo de Aplicaciones
@@ -28,7 +28,7 @@ function Service06() {
             duration={1500}
             className={"w-full mt-16"}
           >
-            <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
+            <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 ">
               Estrategias personalizadas, contenido cautivador, alcance ampliado
               y análisis constante para optimizar tus inversiones.
             </span>

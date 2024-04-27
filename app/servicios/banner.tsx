@@ -13,7 +13,7 @@ function BannerServices() {
           src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         ></img>
       </div>
-      <div className="xl:px-32 md:px-24 pb-16 md:pb-0 px-8 md:pt-16 pt-8 flex flex-col items-center">
+      <div className="xl:px-14 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8 flex flex-col items-center">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <div className="  flex flex-col  ">
             <span className="text-gray-200 xl:text-[5rem] md:text-[4rem] text-[3rem]">
