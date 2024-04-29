@@ -4,8 +4,8 @@ import { RevealWrapper } from "next-reveal";
 
 function PortfolioInfoDetail() {
   return (
-    <section className="xl:px-32 md:px-20  md:pb-0 px-4 bg-gray-100 pt-16 ">
-      <div className="grid grid-cols-2 mb-16 gap-8">
+    <section className=" bg-gray-100 pt-16 ">
+      <div className="xl:px-32 md:px-20  md:pb-0 px-4 grid grid-cols-2 mb-16 gap-8">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <div>
             <p className="text-2xl font-light">
@@ -31,7 +31,7 @@ function PortfolioInfoDetail() {
         </RevealWrapper>
       </div>
 
-      <div className="grid grid-cols-2 mb-16 gap-8">
+      <div className="xl:px-32 md:px-20  md:pb-0 px-4 grid grid-cols-2 mb-16 gap-8">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <div>
             <span className="text-xl ">Problema</span>
@@ -55,10 +55,10 @@ function PortfolioInfoDetail() {
         </RevealWrapper>
       </div>
 
-      <div className="flex flex-col mb-16 ">
+      <div className="flex flex-col  ">
         <div className="w-full overflow-hidden">
           <img
-            className=" w-full  object-cover h-96 hover:scale-x-105 transition-all"
+            className=" w-full  object-cover h-[30rem] hover:scale-x-105 transition-all brightness-50"
             src="https://img.freepik.com/fotos-premium/banner-mariposas-arco-iris-sobre-fondo-blanco-fondo-mariposa-colores-arco-iris-ilustracion-acuarela-colorida-papel-tapiz-postales-publicitarias-concepto-verano-ia-generativa_756498-349.jpg"
             alt=""
           />
@@ -66,13 +66,13 @@ function PortfolioInfoDetail() {
 
         <div className="w-full overflow-hidden">
           <img
-            className="w-full h-96 object-cover hover:scale-x-105 transition-all"
+            className="w-full object-cover h-[30rem] hover:scale-x-105 transition-all brightness-50"
             src="https://previews.123rf.com/images/vectorshowstudio/vectorshowstudio2003/vectorshowstudio200300139/141552948-bandera-de-mariposas-volando-hermosos-insectos-de-primavera-y-verano-vector-ilustraci%C3%B3n-de-dibujos.jpg"
             alt=""
           />
         </div>
 
-        <div className="w-full overflow-hidden bg-slate-700  py-4 px-2">
+        <div className="w-full overflow-hidden bg-slate-700  py-16 px-2">
           <span className="text-white font-light ">Ver siguiente </span>
         </div>
       </div>
