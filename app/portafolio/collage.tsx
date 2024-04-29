@@ -18,7 +18,7 @@ function CollagePortfolio() {
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 ">
           {Array.from({ length: 9 }, (_, index) => (
             <Link
-              href={""}
+              href={"/portafolio/" + index}
               className="group relative overflow-hidden"
               key={index}
             >
