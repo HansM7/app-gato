@@ -51,13 +51,153 @@ function Service01() {
         <div className="flex flex-col mt-16">
           {/* // todo here is timeline */}
           <RevealWrapper
-            origin="right"
+            origin="bottom"
             duration={1500}
-            className={"w-full pb-16"}
+            className={"w-full pb-16 px-44"}
           >
-            <div className="grid grid-cols-2">
-              <div className="border-r"></div>
-              <div className="border-l"></div>
+            <div className="grid md:grid-cols-5 grid-cols-3">
+              {/*  */}
+              <div className="md:col-span-2  justify-center items-start py-8 ">
+                <RevealWrapper
+                  origin="left"
+                  duration={2000}
+                  className="rounded-md bg-white shadow-large p-2 flex flex-col"
+                >
+                  <span className="font-semibold">Titulo</span>
+                  <span className="text-sm ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quas temporibus, nisi eaque iste vitae porro laudantium,
+                    odit, itaque quibusdam aliquid fugiat repellendus!
+                    Asperiores deleniti nam praesentium! Natus cumque ad
+                    molestiae.
+                  </span>
+                </RevealWrapper>
+              </div>
+              <div className="flex flex-col justify-center items-center relative">
+                <div className="w-1 h-full bg-blue-500 rounded-md "></div>
+                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
+                <div className="w-1 h-full bg-blue-500  rounded-md "></div>
+              </div>
+              <RevealWrapper
+                duration={2000}
+                origin="right"
+                className="col-span-2 flex items-center"
+              >
+                <img
+                  className="rounded-full w-20 h-20 border-2 border-blue-500"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
+                  alt=""
+                />
+              </RevealWrapper>
+
+              {/*  */}
+
+              <RevealWrapper
+                duration={2000}
+                origin="left"
+                className="col-span-2 flex items-center justify-end"
+              >
+                <img
+                  className="rounded-full w-20 h-20 border-2 border-blue-500"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
+                  alt=""
+                />
+              </RevealWrapper>
+              <div className="flex flex-col justify-center items-center relative">
+                <div className="w-1 h-full bg-blue-500 rounded-md "></div>
+                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
+                <div className="w-1 h-full bg-blue-500  rounded-md "></div>
+              </div>
+
+              <RevealWrapper
+                duration={2000}
+                origin="right"
+                className="col-span-2  justify-center items-start py-8"
+              >
+                <div className="flex flex-col rounded-md bg-white shadow-large p-2">
+                  <span className="font-semibold">Titulo</span>
+                  <span className="text-sm">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quas temporibus, nisi eaque iste vitae porro laudantium,
+                    odit, itaque quibusdam aliquid fugiat repellendus!
+                    Asperiores deleniti nam praesentium! Natus cumque ad
+                    molestiae.
+                  </span>
+                </div>
+              </RevealWrapper>
+
+              {/*  */}
+
+              <RevealWrapper
+                duration={2000}
+                origin="left"
+                className="col-span-2 flex flex-col justify-center items-start py-8"
+              >
+                <div className="flex flex-col rounded-md bg-white shadow-large p-2">
+                  <span className="font-semibold">Titulo</span>
+                  <span className="text-sm ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quas temporibus, nisi eaque iste vitae porro laudantium,
+                    odit, itaque quibusdam aliquid fugiat repellendus!
+                    Asperiores deleniti nam praesentium! Natus cumque ad
+                    molestiae.
+                  </span>
+                </div>
+              </RevealWrapper>
+              <div className="flex flex-col justify-center items-center relative">
+                <div className="w-1 h-full bg-blue-500 rounded-md "></div>
+                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
+                <div className="w-1 h-full bg-blue-500  rounded-md "></div>
+              </div>
+              <RevealWrapper
+                duration={2000}
+                origin=" right"
+                className="col-span-2 flex items-center"
+              >
+                <img
+                  className="rounded-full w-20 h-20 border-2 border-blue-500"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
+                  alt=""
+                />
+              </RevealWrapper>
+
+              {/*  */}
+
+              <RevealWrapper
+                duration={2000}
+                origin="left"
+                className="col-span-2 flex items-center justify-end"
+              >
+                <img
+                  className="rounded-full w-20 h-20 border-2 border-blue-500"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
+                  alt=""
+                />
+              </RevealWrapper>
+              <div className="flex flex-col justify-center items-center relative">
+                <div className="w-1 h-full bg-blue-500 rounded-md "></div>
+                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
+                <div className="w-1 h-full bg-blue-500  rounded-md "></div>
+              </div>
+
+              <RevealWrapper
+                duration={2000}
+                origin="right"
+                className="col-span-2 justify-center items-start py-8"
+              >
+                <div className=" flex flex-col rounded-md bg-white shadow-large p-2">
+                  <span className="font-semibold">Titulo</span>
+                  <span className="text-sm ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quas temporibus, nisi eaque iste vitae porro laudantium,
+                    odit, itaque quibusdam aliquid fugiat repellendus!
+                    Asperiores deleniti nam praesentium! Natus cumque ad
+                    molestiae.
+                  </span>
+                </div>
+              </RevealWrapper>
+
+              {/*  */}
             </div>
           </RevealWrapper>
           {/*  // todo end timeline */}

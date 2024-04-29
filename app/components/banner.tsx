@@ -68,7 +68,7 @@ function Banner() {
         ></video> */}
         <img
           className="w-full md:min-h-screen min-h-[25rem] object-cover  overflow-hidden"
-          src="https://images.pexels.com/photos/1166643/pexels-photo-1166643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="banner_gato.jpg"
           alt=""
         />{" "}
       </div>
@@ -111,7 +111,8 @@ function Banner() {
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12">
                 <p
-                  className={`font-light ${sizing.description} text-[#7A7678]`}
+                  // className={`font-light ${sizing.description} text-[#7A7678]`}
+                  className={`font-light ${sizing.description} text-white`}
                 >
                   <Typewriter
                     words={[
@@ -161,9 +162,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12 ">
-                <p
-                  className={`font-light ${sizing.description} text-[#7A7678]`}
-                >
+                <p className={`font-light ${sizing.description} text-white`}>
                   <Typewriter
                     words={[
                       "En Genius, nos especializamos en el desarrollo web de vanguardia que potencia la presencia en línea de tu empresa.",
@@ -211,9 +210,7 @@ function Banner() {
 
             <div className="flex gap-4  justify-start mt-12 ">
               <div className="w-full flex justify-between xl:pr-32 pr-12">
-                <p
-                  className={`font-light ${sizing.description} text-[#7A7678]`}
-                >
+                <p className={`font-light ${sizing.description} text-white`}>
                   <Typewriter
                     words={[
                       "En Genius, te ofrecemos orientación experta para optimizar tus estrategias de marketing y maximizar el retorno de inversión en cada iniciativa.",

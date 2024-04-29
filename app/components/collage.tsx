@@ -64,10 +64,11 @@ function Collage() {
             >
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
+                  // src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
+                  src="carousel-banner-01.png"
                   loading="lazy"
                   alt="Photo by Minh Pham"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
+                  className="absolute inset-0 h-full w-full object-cover object-top  transition-all duration-200 group-hover:scale-110"
                 />
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
@@ -127,7 +128,8 @@ function Collage() {
             >
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
+                  // src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
+                  src="carousel-banner-02.png"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
