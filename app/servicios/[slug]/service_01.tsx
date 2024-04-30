@@ -53,146 +53,74 @@ function Service01() {
           <RevealWrapper
             origin="bottom"
             duration={1500}
-            className={"w-full pb-16 px-44"}
+            className={"w-full pb-16 md:px-44"}
           >
-            <div className="grid md:grid-cols-5 grid-cols-3">
+            <div className="grid grid-cols-5 ">
               {/*  */}
-              <div className="md:col-span-2  justify-center items-start py-8 ">
-                <RevealWrapper
-                  origin="left"
-                  duration={2000}
-                  className="rounded-md bg-white shadow-large p-2 flex flex-col"
-                >
-                  <span className="font-semibold">Titulo</span>
-                  <span className="text-sm ">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quas temporibus, nisi eaque iste vitae porro laudantium,
-                    odit, itaque quibusdam aliquid fugiat repellendus!
-                    Asperiores deleniti nam praesentium! Natus cumque ad
-                    molestiae.
-                  </span>
-                </RevealWrapper>
-              </div>
-              <div className="flex flex-col justify-center items-center relative">
-                <div className="w-1 h-full bg-blue-500 rounded-md "></div>
-                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
-                <div className="w-1 h-full bg-blue-500  rounded-md "></div>
-              </div>
-              <RevealWrapper
-                duration={2000}
-                origin="right"
-                className="col-span-2 flex items-center"
-              >
-                <img
-                  className="rounded-full w-20 h-20 border-2 border-blue-500"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
-                  alt=""
-                />
-              </RevealWrapper>
-
-              {/*  */}
-
               <RevealWrapper
                 duration={2000}
                 origin="left"
-                className="col-span-2 flex items-center justify-end"
+                className="col-span-2  flex flex-col justify-center items-start py-8 "
               >
-                <img
-                  className="rounded-full w-20 h-20 border-2 border-blue-500"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
-                  alt=""
-                />
-              </RevealWrapper>
-              <div className="flex flex-col justify-center items-center relative">
-                <div className="w-1 h-full bg-blue-500 rounded-md "></div>
-                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
-                <div className="w-1 h-full bg-blue-500  rounded-md "></div>
-              </div>
-
-              <RevealWrapper
-                duration={2000}
-                origin="right"
-                className="col-span-2  justify-center items-start py-8"
-              >
-                <div className="flex flex-col rounded-md bg-white shadow-large p-2">
-                  <span className="font-semibold">Titulo</span>
-                  <span className="text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quas temporibus, nisi eaque iste vitae porro laudantium,
-                    odit, itaque quibusdam aliquid fugiat repellendus!
-                    Asperiores deleniti nam praesentium! Natus cumque ad
-                    molestiae.
+                <div className="flex flex-col rounded-md bg-white shadow-large p-2 ">
+                  <span className="font-semibold md:text-lg text-sm">
+                    Titulo
                   </span>
-                </div>
-              </RevealWrapper>
-
-              {/*  */}
-
-              <RevealWrapper
-                duration={2000}
-                origin="left"
-                className="col-span-2 flex flex-col justify-center items-start py-8"
-              >
-                <div className="flex flex-col rounded-md bg-white shadow-large p-2">
-                  <span className="font-semibold">Titulo</span>
-                  <span className="text-sm ">
+                  <span className="md:text-sm text-xs ">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quas temporibus, nisi eaque iste vitae porro laudantium,
-                    odit, itaque quibusdam aliquid fugiat repellendus!
-                    Asperiores deleniti nam praesentium! Natus cumque ad
-                    molestiae.
+                    odit, itaque quibusdam aliquid fugiat repellendus
                   </span>
                 </div>
               </RevealWrapper>
               <div className="flex flex-col justify-center items-center relative">
                 <div className="w-1 h-full bg-blue-500 rounded-md "></div>
-                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
+                <div className="md:w-16 md:h-16 w-8 h-8 bg-blue-500 rounded-full absolute"></div>
                 <div className="w-1 h-full bg-blue-500  rounded-md "></div>
               </div>
               <RevealWrapper
                 duration={2000}
                 origin=" right"
-                className="col-span-2 flex items-center"
+                className="col-span-2  flex items-center"
               >
                 <img
-                  className="rounded-full w-20 h-20 border-2 border-blue-500"
+                  className="rounded-full md:w-20 md:h-20 w-16 h-16 border-2 border-blue-500"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
                   alt=""
                 />
               </RevealWrapper>
-
               {/*  */}
-
               <RevealWrapper
                 duration={2000}
-                origin="left"
-                className="col-span-2 flex items-center justify-end"
+                origin=" right"
+                className="col-span-2  flex items-center"
               >
                 <img
-                  className="rounded-full w-20 h-20 border-2 border-blue-500"
+                  className="rounded-full md:w-20 md:h-20 w-16 h-16 border-2 border-blue-500"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
                   alt=""
                 />
               </RevealWrapper>
+
               <div className="flex flex-col justify-center items-center relative">
                 <div className="w-1 h-full bg-blue-500 rounded-md "></div>
-                <div className="w-16 h-16 bg-blue-500 rounded-full absolute"></div>
+                <div className="md:w-16 md:h-16 w-8 h-8 bg-blue-500 rounded-full absolute"></div>
                 <div className="w-1 h-full bg-blue-500  rounded-md "></div>
               </div>
 
               <RevealWrapper
                 duration={2000}
-                origin="right"
-                className="col-span-2 justify-center items-start py-8"
+                origin="left"
+                className="col-span-2  flex flex-col justify-center items-start py-8 "
               >
-                <div className=" flex flex-col rounded-md bg-white shadow-large p-2">
-                  <span className="font-semibold">Titulo</span>
-                  <span className="text-sm ">
+                <div className="flex flex-col rounded-md bg-white shadow-large p-2 ">
+                  <span className="font-semibold md:text-lg text-sm">
+                    Titulo
+                  </span>
+                  <span className="md:text-sm text-xs ">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quas temporibus, nisi eaque iste vitae porro laudantium,
-                    odit, itaque quibusdam aliquid fugiat repellendus!
-                    Asperiores deleniti nam praesentium! Natus cumque ad
-                    molestiae.
+                    odit, itaque quibusdam aliquid fugiat repellendus
                   </span>
                 </div>
               </RevealWrapper>

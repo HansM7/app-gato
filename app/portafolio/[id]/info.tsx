@@ -5,10 +5,10 @@ import { RevealWrapper } from "next-reveal";
 function PortfolioInfoDetail() {
   return (
     <section className=" bg-gray-100 pt-16 ">
-      <div className="xl:px-32 md:px-20  md:pb-0 px-4 grid grid-cols-2 mb-16 gap-8">
+      <div className="xl:px-32 md:px-20  md:pb-0 px-4 grid md:grid-cols-2 grid-cols-1 mb-16 gap-8">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <div>
-            <p className="text-2xl font-light">
+            <p className="md:text-2xl text-xl font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
               omnis consequatur beatae sunt atque expedita harum deserunt fugiat
               ducimus saepe hic assumenda pariatur necessitatibus nihil ex
@@ -31,11 +31,11 @@ function PortfolioInfoDetail() {
         </RevealWrapper>
       </div>
 
-      <div className="xl:px-32 md:px-20  md:pb-0 px-4 grid grid-cols-2 mb-16 gap-8">
+      <div className="xl:px-32 md:px-20  md:pb-0 px-4 grid md:grid-cols-2 grid-cols-1 mb-16 gap-8">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <div>
             <span className="text-xl ">Problema</span>
-            <p className="text-xl font-light">
+            <p className="md:text-xl text-lg font-light ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
               omnis consequatur beatae sunt atque expedita harum deserunt fugiat
               ducimus saepe hic assumenda pariatur necessitatibus nihil ex
@@ -46,7 +46,7 @@ function PortfolioInfoDetail() {
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <div>
             <span className="text-xl ">Solucion</span>
-            <p className="text-xl font-light">
+            <p className="md:text-xl text-lg font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
               omnis consequatur beatae sunt atque expedita harum deserunt fugiat
               ducimus saepe hic assumenda pariatur necessitatibus nihil ex

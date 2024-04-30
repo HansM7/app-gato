@@ -17,16 +17,16 @@ function BannerDetailPortfolio() {
       </div>
       <div className="  md:pt-16 pt-8  bg-slate-800  w-full">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <div className=" md:px-32 pb-20 md:pb-0 px-4  flex justify-between items-start ">
-            <span className="text-sky-400 xl:text-[5rem] md:text-[4rem] text-[3rem]  leading-10">
+          <div className=" md:px-32 pb-20 md:pb-0 px-4  flex justify-between items-start gap-8 md:gap-0">
+            <span className="text-sky-400 xl:text-[5rem] md:text-[4rem] text-[2rem]  leading-10">
               Desarrollo Web
             </span>
 
             <div className="h-fit flex flex-col">
-              <span className="text-gray-200 xl:text-[2rem] md:text-[2rem] text-[2rem] ">
+              <span className="text-gray-100 xl:text-[2rem] md:text-[2rem] text-xl ">
                 Cliente
               </span>
-              <span className="font-light text-gray-200 text-xl ">
+              <span className="font-light text-gray-300 text-sm ">
                 Mariposas SAC
               </span>
             </div>
@@ -50,7 +50,7 @@ function BannerDetailPortfolio() {
               src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
-            <div className="mt-4 ml-32 flex flex-col text-gray-200 font-light text-xl">
+            <div className="py-4 md:ml-32 ml-4 flex flex-col text-gray-200 font-light text-xl">
               <span>Responsabilidad</span>
 
               <span>Compromiso</span>

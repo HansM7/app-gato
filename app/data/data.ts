@@ -26,6 +26,7 @@ export const projects = [
     url: "",
     url_image: "",
     url_video: "",
+    problem: "",
     advantages: "",
     opinions: "",
   },
