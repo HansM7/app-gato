@@ -6,24 +6,30 @@ function InfoDrawer({ word }: { word: string }) {
   if (word === "Portafolio") {
     return (
       <div className="grid grid-cols-3 gap-8">
-        <span className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal">
-          Technlogy description
-        </span>
-        <span className="animate-fade-up animate-duration-700 animate-ease-linear animate-normal">
-          Technlogy description
-        </span>
-        <span className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal">
-          Technlogy description
-        </span>
-        <span className="animate-fade-up animate-duration-1100 animate-ease-linear animate-normal">
-          Technlogy description
-        </span>
-        <span className="animate-fade-up animate-duration-1300 animate-ease-linear animate-normal">
-          Technlogy description
-        </span>
-        <span className="animate-fade-up animate-duration-1500 animate-ease-linear animate-normal">
-          Technlogy description
-        </span>
+        <Link
+          href={"/portafolio/cr-motors-marketing-digital"}
+          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
+          CR Motors Marketing Digital
+        </Link>
+        <Link
+          href={"/portafolio/evadry-marketing-digital"}
+          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
+          Evadry Marketing Digital
+        </Link>
+        <Link
+          href={"/portafolio/flower-travel-marketing-y-marketing-digital"}
+          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
+          Flower Travel Branding y Marketing Digital
+        </Link>
+        <Link
+          href={"/portafolio/social-commerce-marketing-digital"}
+          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
+        >
+          Social Commerce Marketing Digital
+        </Link>
       </div>
     );
   } else if (word === "Nosotros") {

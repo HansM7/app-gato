@@ -18,7 +18,6 @@ function Services() {
   }
 
   function redirect() {
-    console.log("redirect!");
     window.open("https://wa.me/+51999999999", "_blank");
   }
 
