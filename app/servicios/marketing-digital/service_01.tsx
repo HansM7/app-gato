@@ -47,7 +47,7 @@ function Service01() {
         </div>
         <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <span className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+            <span className="text-sky-400   xl:text-[6rem] md:text-[4rem] text-[3rem] ">
               Servicio de Marketing Digital
             </span>
           </RevealWrapper>
@@ -56,17 +56,29 @@ function Service01() {
             duration={1500}
             className={"w-full mt-16"}
           >
-            <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
+            <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
               Atrae clientes, impulsa ventas y construye una marca sólida con
               estrategias personalizadas, contenido cautivador y análisis
               constante.
-            </span>
+            </p>
           </RevealWrapper>
+
+          <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
+            <Link
+              href={"#detail"}
+              className="floating-image text-sky-400  text-xl "
+            >
+              <span className="animate-pulse">Ver mas</span>
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
+      <div
+        className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16"
+        id="detail"
+      >
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="md:text-2xl text-xl text-slate-600">
+          <p className="md:text-3xl text-xl text-slate-600">
             Nuestros servicios de Marketing Digital te ayudarán a lograr tus
             objetivos de negocio a través de estrategias personalizadas para
             cada plataforma. Creamos contenido atractivo y relevante que cautiva

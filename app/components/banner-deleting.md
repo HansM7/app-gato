@@ -1,74 +1,4 @@
-"use client";
-import { useEffect, useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
-import CountUp from "react-countup";
-import { useMediaQueries } from "@react-hook/media-query";
-import { TypeAnimation } from "react-type-animation";
-
-function Banner() {
-  // todo -> define states
-
-  const words = [
-    "Desarrollo de Software",
-    "Desarrollo web",
-    "Marketing Digital",
-  ];
-
-  const bg_colors = ["bg-[#007CF8]", "bg-[#0BC2E1]", "bg-[#A52DE6]"];
-
-  const sizing = {
-    title: "xl:text-[5rem] md:text-[3rem] sm:text-[2rem] text-[2rem]",
-    description: "xl:text-[3rem] md:text-3xl sm:text-[2rem]  text-xl",
-  };
-
-  const [iterator, setIterator] = useState(0);
-
-  const [colorSelected, setColorSelected] = useState(bg_colors[0]);
-
-  const [position, setPosition] = useState(1);
-
-  // todo -> define functions
-
-  function deleting() {
-    setIterator(iterator + 1);
-
-    if (iterator === 21) {
-      setColorSelected(bg_colors[1]);
-    } else if (iterator === 35) {
-      setColorSelected(bg_colors[2]);
-    }
-  }
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setPosition((prevPosition) =>
-        prevPosition === 2 ? 0 : prevPosition + 1
-      );
-    }, 10000);
-
-    return () => clearTimeout(timer);
-  }, [position]);
-
-  return (
-    <section className=" md:min-h-screen min-h-[25rem]  bg-gray-100 relative">
-      {/* this is decorator */}
-      <div className="absolute w-full  h-full bg-red-100 md:max-h-screen overflow-hidden ">
-        {/* <video
-          autoPlay
-          muted
-          loop
-          className="w-full md:min-h-screen min-h-[25rem] object-cover  overflow-hidden"
-          src="https://videos.pexels.com/video-files/5495900/5495900-hd_1920_1080_30fps.mp4"
-        ></video> */}
-        <img
-          className="w-full h-full object-cover  overflow-hidden brightness-75"
-          src="banner_gato.jpg"
-          alt=""
-        />{" "}
-      </div>
-
-      {/*  */}
-      <div className="xl:px-24 md:px-12 sm:px-12  px-8 flex   pt-8 relative">
+<div className="xl:px-24 md:px-12 sm:px-12  px-8 flex   pt-8 relative">
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
@@ -103,7 +33,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start xl:mt-16  md:mt-8 mt-4 ">
-              <div className="w-full flex justify-between xl:pr-16 pr-8">
+              <div className="w-full flex justify-between xl:pr-24 pr-8">
                 <p
                   // className={`font-light ${sizing.description} text-[#7A7678]`}
                   className={`font-light ${sizing.description} text-white md:leading-tight`}
@@ -155,7 +85,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start xl:mt-16  md:mt-8 mt-4 ">
-              <div className="w-full flex justify-between xl:pr-16 pr-8">
+              <div className="w-full flex justify-between xl:pr-24 pr-8">
                 <p
                   className={`font-light ${sizing.description} text-white  md:leading-tight`}
                 >
@@ -205,7 +135,7 @@ function Banner() {
             {/* //todo carousel or transition images  --------------------- */}
 
             <div className="flex gap-4  justify-start xl:mt-16  md:mt-8 mt-4 ">
-              <div className="w-full flex justify-between xl:pr-16 pr-8">
+              <div className="w-full flex justify-between xl:pr-24 pr-8">
                 <p
                   className={`font-light ${sizing.description} text-white  md:leading-tight`}
                 >
@@ -254,8 +184,3 @@ function Banner() {
 
         {/*  */}
       </div>
-    </section>
-  );
-}
-
-export default Banner;

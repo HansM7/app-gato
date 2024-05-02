@@ -1,18 +1,19 @@
 "use client";
 
+import { api_projects } from "@/app/data/enviroments/api.enviroment";
 import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import { useEffect, useState } from "react";
 
 function BannerDetailPortfolio() {
-  const [data, setData] = useState<any>({ title: { rendered: "" } });
+  const [data, setData] = useState<any>({});
 
   const [isLoading, setIsLoading] = useState(true);
 
   async function fetchData() {
     try {
       const response = await axios.get(
-        "https://palegreen-anteater-636608.hostingersite.com/wp-json/wp/v2/proyecto?slug=cr-motors-marketing-digital"
+        `${api_projects}?slug=cr-motors-marketing-digital`
       );
       setData(response.data[0]);
       setIsLoading(false);

@@ -1,6 +1,7 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
+import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 import { TypeAnimation } from "react-type-animation";
 
@@ -20,7 +21,7 @@ function BannerServices() {
               Servicios que
             </span>
 
-            <div className="text-sky-400 font-black xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44 -mt-4">
+            <div className="text-sky-400  xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44 -mt-4">
               {/* <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed once, initially
@@ -46,14 +47,23 @@ function BannerServices() {
         <RevealWrapper
           origin="right"
           duration={1500}
-          className={"w-full md:mt-16"}
+          className={"w-full md:mt-16 -mt-16"}
         >
-          <span className="md:font-light font-light xl:text-[3rem] md:text-[2rem] text-[2rem] text-gray-200">
+          <span className="md:font-light font-light xl:text-[3rem] md:text-[2rem] text-3xl text-pretty text-gray-200">
             En GATO estamos comprometidos con el aprendizaje y desarrollo
             continuo, nos eforzamos para que los servicios que ofrezcamos sean
             de la maxima calidad posible
           </span>
         </RevealWrapper>
+      </div>
+
+      <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
+        <Link
+          href={"#items"}
+          className="floating-image text-sky-400 animate-pulse text-xl "
+        >
+          Ver mas
+        </Link>
       </div>
     </section>
   );

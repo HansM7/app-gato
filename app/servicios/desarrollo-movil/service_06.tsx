@@ -62,10 +62,22 @@ function Service06() {
               competitiva.
             </span>
           </RevealWrapper>
+
+          <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
+            <Link
+              href={"#detail"}
+              className="floating-image text-sky-400  text-xl "
+            >
+              <span className="animate-pulse">Ver mas</span>
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
+      <div
+        className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16"
+        id="detail"
+      >
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <p className="md:text-2xl text-xl text-slate-600">
             Desarrollamos aplicaciones a medida que se adaptan a tus necesidades

@@ -7,7 +7,12 @@ function Footer() {
     <footer className="bg-white h-auto xl:px-32 md:px-24 px-8 flex  py-16  w-full flex-col">
       <div className="text-sm grid xl:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-16 gap-4 justify-between w-full mb-4">
         <div className="">
-          <span className="text-3xl font-semibold">GATO</span>
+          {/* <span className="text-3xl font-semibold">GATO</span> */}
+          <img
+            className="w-24"
+            src="https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png"
+            alt=""
+          />
         </div>
         <div className="flex flex-col ">
           <span className="font-semibold">Visitanos</span>

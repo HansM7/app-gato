@@ -1,88 +1,53 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
+import Link from "next/link";
 import React from "react";
 
 function Form() {
   return (
-    <section className="w-full min-h-screen  ">
-      <div className="min-h-screen xl:px-64 md:px-28  px-8 flex bg-white pt-16 flex-col pb-16">
-        <div className="flex gap-16 items-center">
-          <div className="flex flex-col">
-            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="">
-                {" "}
-                <span className="xl:text-[4rem] md:text-[3rem] font-semibold">
-                  Hola,
-                </span>
-                <span className="xl:text-[4rem]  md:text-[3rem]"> hagamos</span>
-              </h1>
-            </RevealWrapper>
-            <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-              <h1 className="xl:text-[4rem]  md:text-[3rem]">cosas grandes</h1>
-            </RevealWrapper>
-          </div>
-          <div className="w-fit">
-            <RevealWrapper origin="top" duration={1500} className={"w-full"}>
-              <img
-                className="w-96"
-                src="https://images.vexels.com/media/users/3/215556/isolated/preview/56cab15c9dd85351a1546bdfa86b9dd6-gato-acostado-mullido-plano.png"
-                alt=""
-              />
-            </RevealWrapper>
+    <section className="w-full min-h-screen  overflow-hidden">
+      <div className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative">
+        <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
+          <img
+            className="w-screen  md:min-h-screen h-full min-h-[28rem] object-cover  overflow-hidden filter brightness-50"
+            src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          ></img>
+        </div>
+        <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
+          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+            <span className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+              Empecemos un nuevo objetivo juntos
+            </span>
+          </RevealWrapper>
+          <RevealWrapper
+            origin="left"
+            duration={1500}
+            className={"w-full mt-16"}
+          >
+            <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
+              De la mano con las mejores trecnologias y especialitas,
+              cumpliremos tus objetivos en acciones.
+            </span>
+          </RevealWrapper>
+
+          <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
+            <Link
+              href={"#form"}
+              className="floating-image text-sky-400  text-xl "
+            >
+              <span className="animate-pulse">Ir a solicitar</span>
+            </Link>
           </div>
         </div>
+      </div>
 
-        <hr />
-
-        <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
-          <div className="bg-white shadow-violet-300 p-8 rounded-lg mt-16 shadow-large ">
-            <form action="" className="grid grid-cols-2 gap-8">
-              <div className="flex flex-col gap-2 col-span-2">
-                <span className="font-semibold">Nombres</span>
-                <input
-                  className="px-3 py-2 rounded-lg outline-none border"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-
-              <div className="flex flex-col gap-2 col-span-1">
-                <span className="font-semibold">Correo</span>
-                <input
-                  className="px-3 py-2 rounded-lg outline-none border"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-
-              <div className="flex flex-col gap-2 col-span-1">
-                <span className="font-semibold">Teléfono</span>
-                <input
-                  className="px-3 py-2 rounded-lg outline-none border"
-                  type="text"
-                  name=""
-                  id=""
-                />
-              </div>
-
-              <div className="flex flex-col gap-2 col-span-2">
-                <span className="font-semibold">Mensaje</span>
-                <textarea
-                  className="px-3 py-2 rounded-lg outline-none border"
-                  name=""
-                  id=""
-                ></textarea>
-              </div>
-              <div className="col-span-2">
-                <button className="bg-[#0A86ED] hover:bg-[#0a7fed] px-5 py-2 rounded-2xl text-white">
-                  Contactar
-                </button>
-              </div>
-            </form>
-          </div>
+      <div
+        className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16"
+        id="form"
+      >
+        <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+          <form action=""></form>
         </RevealWrapper>
       </div>
     </section>

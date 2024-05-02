@@ -121,7 +121,7 @@ function Navigation({
 
       <div className="bg-violet-700 flex justify-center items-center  text-center min-h-52 max-w-full overflow-hidden">
         <Link
-          href={"/contacto"}
+          href={"/contactanos"}
           className="-rotate-90   flex justify-center items-center min-w-48 "
         >
           <span className="w-full text-white "> Contacto </span>

@@ -45,10 +45,10 @@ function SectionLeft({ title, items }: { title: string; items: string[] }) {
       <RevealWrapper
         duration={2000}
         origin="left"
-        className="col-span-2  flex flex-col justify-center items-start py-8 "
+        className="col-span-2  flex flex-col justify-center items-start py-8  "
       >
         <div className="flex flex-col rounded-md bg-white shadow-large p-2 ">
-          <span className="font-semibold md:text-lg text-sm">{title}</span>
+          <span className=" md:text-lg text-sm text-blue-600">{title}</span>
           <span className="md:text-sm text-xs ">
             <ul>
               {items.map((item, index) => (
@@ -104,7 +104,7 @@ function SectionRight({ title, items }: { title: string; items: string[] }) {
         className="col-span-2  flex flex-col justify-center items-start py-8 "
       >
         <div className="flex flex-col rounded-md bg-white shadow-large p-2 ">
-          <span className="font-semibold md:text-lg text-sm">{title}</span>
+          <span className=" md:text-lg text-sm text-blue-600">{title}</span>
           <span className="md:text-sm text-xs ">
             <ul>
               {items.map((item, index) => (

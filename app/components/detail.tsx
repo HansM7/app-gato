@@ -138,46 +138,6 @@ function Detail() {
               </svg>
             </div>
           </div>
-          {/* right */}
-          {/* <div className="flex  pt-16">
-            <div className="flex flex-col gap-4">
-              <h2 className="text-[3rem]">Consultaria</h2>
-              <div className="pl-8 flex flex-col gap-2">
-                <p className="text-[2rem] text-[#7A7678]">
-                  Somos especialistas en el diseño atractivo y diferenciado de
-                  empaques que incitan a la compra.
-                </p>
-                <div
-                  onMouseEnter={handleEnter}
-                  onMouseLeave={handleLeave}
-                  role="button"
-                  className={`relative rounded-3xl py-2 pr-2  w-fit text-xs h-10 font-semibold flex items-center   ${
-                    isEnter && " transition-all"
-                  } transition-all`}
-                >
-                  <div
-                    className={`bg-blue-300 rounded-full w-10 h-full absolute  ${
-                      isEnter && "bg-blue-500 w-full transition-all"
-                    } transition-all`}
-                  ></div>
-                  <span
-                    className={`pl-2 z-10 ${
-                      isEnter ? "text-white" : "text-[#0A86ED]"
-                    } `}
-                  >
-                    VER SERVICIO {">"}
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                className="rounded-md"
-                src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
-                alt=""
-              />
-            </div>
-          </div> */}
 
           {selected === 1 && (
             <Component1
@@ -234,7 +194,7 @@ function Component1({
     <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Branding</h2>
-        <div className="md:pl-8 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Nuestros servicios de Marketing Digital, están orientados en
             transformar tus redes sociales en fuentes de conversión
@@ -287,7 +247,7 @@ function Component2({
     <div className="flex flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Diseño Web</h2>
-        <div className="md:pl-8 flex flex-col gap-2">
+        <div className=" flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
@@ -340,7 +300,7 @@ function Component3({
     <div className="flex flex-col md:flex-row  animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Desarollo de software</h2>
-        <div className="md:pl-8 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
@@ -393,7 +353,7 @@ function Component4({
     <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Marketing</h2>
-        <div className="md:pl-8 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en el diseño atractivo y diferenciado de
             empaques que incitan a la compra.
@@ -446,7 +406,7 @@ function Component5({
     <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Desarrollo Movil</h2>
-        <div className="md:pl-8 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en desarrollo movil haciendo aplicaciones
             eficientes y escalables

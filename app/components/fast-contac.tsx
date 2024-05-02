@@ -19,7 +19,7 @@ function FastContact() {
           <div className="relative group flex overflow-hidden">
             <img
               className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
-              src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
+              src="https://i.pinimg.com/736x/d3/f1/b1/d3f1b1ad2bb5bc4d639b7a0d39846a3f.jpg"
               alt=""
             />
             <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
@@ -46,7 +46,7 @@ function FastContact() {
           <div className="relative group flex overflow-hidden">
             <img
               className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
-              src="https://cdn.pixabay.com/photo/2019/04/17/12/34/black-cat-is-curious-4134136_960_720.png"
+              src="https://i.pinimg.com/736x/d3/f1/b1/d3f1b1ad2bb5bc4d639b7a0d39846a3f.jpg"
               alt=""
             />
             <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">

@@ -61,17 +61,38 @@ function Service04() {
               y análisis constante para optimizar tus inversiones.
             </span>
           </RevealWrapper>
+
+          <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
+            <Link
+              href={"#detail"}
+              className="floating-image text-sky-400  text-xl "
+            >
+              <span className="animate-pulse">Ver mas</span>
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16">
-        <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="md:text-2xl text-xl text-slate-600">
-            Somos expertos en capturar la esencia de tu marca y llevarla a
-            nuevas alturas. Te ayudamos a destacar en un mundo cada vez más
-            competitivo a través de la creación de identidades visuales
-            impactantes que transmiten tu mensaje de manera clara y memorable.
-          </p>
+      <div
+        className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16"
+        id="detail"
+      >
+        <RevealWrapper
+          origin="left"
+          duration={1500}
+          className={"w-full grid grid-cols-2 mb-10"}
+        >
+          <div>
+            <p className="md:text-2xl text-xl text-slate-600">
+              Somos expertos en capturar la esencia de tu marca y llevarla a
+              nuevas alturas. Te ayudamos a destacar en un mundo cada vez más
+              competitivo a través de la creación de identidades visuales
+              impactantes que transmiten tu mensaje de manera clara y memorable.
+            </p>
+          </div>
+          <div>
+            <p>Aqui irian los precios</p>
+          </div>
         </RevealWrapper>
         <RevealWrapper
           origin="bottom"

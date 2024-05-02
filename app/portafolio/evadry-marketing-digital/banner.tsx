@@ -1,5 +1,6 @@
 "use client";
 
+import { api_projects } from "@/app/data/enviroments/api.enviroment";
 import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import { useEffect, useState } from "react";
@@ -12,7 +13,7 @@ function BannerDetailPortfolio() {
   async function fetchData() {
     try {
       const response = await axios.get(
-        "https://palegreen-anteater-636608.hostingersite.com/wp-json/wp/v2/proyecto?slug=evadry-marketing-digital"
+        `${api_projects}?slug=evadry-marketing-digital`
       );
       setData(response.data[0]);
       setIsLoading(false);

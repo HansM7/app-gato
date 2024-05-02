@@ -63,7 +63,7 @@ function Items() {
   function handleRedirect(path: string) {}
 
   return (
-    <section>
+    <section id="items">
       <div className="min-h-screen xl:px-24 md:px-16  px-8 flex bg-gray-100 pt-12 pb-24">
         <div className="w-full flex flex-col ">
           {/* <div className="flex gap-16">
@@ -96,7 +96,7 @@ function Items() {
                 origin="bottom"
                 duration={index * 400 + 1000}
                 className={
-                  "w-full group overflow-hidden col-span-6 md:col-span-3 xl:col-span-3 2xl:col-span-2 min-h-80"
+                  "w-full group overflow-hidden col-span-6 md:col-span-3 xl:col-span-3 2xl:col-span-2 min-h-80 rounded-lg "
                 }
                 key={index}
               >
