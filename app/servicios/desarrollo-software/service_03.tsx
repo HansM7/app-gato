@@ -77,7 +77,7 @@ function Service03() {
         id="detail"
       >
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="md:text-2xl text-xl text-slate-600">
+          <p className="md:text-2xl text-xl font-light">
             Brindamos soluciones de desarrollo de software personalizadas para
             impulsar tu negocio y optimizar tus operaciones. Convertimos tus
             ideas en software funcional, desde la conceptualización hasta la

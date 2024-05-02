@@ -30,7 +30,7 @@ function CollageAbout() {
             >
               <div>
                 <img
-                  src="https://www.tourinnovacion.cl/wp-content/uploads/2023/12/IMG-20231206-WA0015.jpg"
+                  src="https://i.pinimg.com/736x/52/06/f8/5206f80009c41c8b3ce864ae2f07eb93.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
@@ -64,7 +64,7 @@ function CollageAbout() {
             >
               <div>
                 <img
-                  src="https://s3.amazonaws.com/wordpress-production/wp-content/uploads/sites/19/2016/10/construir-equipo-de-desarrollo-agil.jpg"
+                  src="https://i.pinimg.com/736x/74/68/cc/7468cc4fe04a0fccfbfa661555fe8922.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
@@ -127,7 +127,7 @@ function CollageAbout() {
             >
               <div>
                 <img
-                  src="https://phantom-marca.unidadeditorial.es/7f5757062b9d9f786611640769ff75ce/resize/828/f/jpg/assets/multimedia/imagenes/2022/06/14/16552255739888.png"
+                  src="https://i.pinimg.com/736x/b7/da/ae/b7daaed28bee8358721cd0066b7c4209.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
@@ -163,7 +163,7 @@ function CollageAbout() {
             >
               <div>
                 <img
-                  src="https://www.postgradoutp.edu.pe/blog/wp-content/uploads/2020/02/Equipo-SCRUM-300x200.webp"
+                  src="https://i.pinimg.com/736x/ab/1f/9b/ab1f9b72e259f15ac247e3ef90a63261.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"

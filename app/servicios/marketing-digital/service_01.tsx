@@ -2,6 +2,7 @@
 
 import FastContact from "@/app/components/fast-contac";
 import TimeLine from "@/app/components/timeline";
+import { Carousel } from "keep-react";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import { useState } from "react";
@@ -74,19 +75,81 @@ function Service01() {
         </div>
       </div>
       <div
-        className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16"
+        className="min-h-screen xl:px-36 md:px-16  px-4 flex bg-gray-100 pt-16 flex-col pb-16"
         id="detail"
       >
-        <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="md:text-3xl text-xl text-slate-600">
-            Nuestros servicios de Marketing Digital te ayudarán a lograr tus
-            objetivos de negocio a través de estrategias personalizadas para
-            cada plataforma. Creamos contenido atractivo y relevante que cautiva
-            a tu público objetivo, implementamos campañas de pago por clic y
-            marketing de influencers para ampliar tu alcance, y analizamos
-            constantemente los resultados para optimizar tus inversiones
-            inversiones.
-          </p>
+        <RevealWrapper
+          origin="left"
+          duration={1500}
+          className={"w-full grid md:grid-cols-2  grid-cols-1 gap-8"}
+        >
+          <div>
+            <p className="md:text-2xl text-xl font-light">
+              Nuestros servicios de Marketing Digital te ayudarán a lograr tus
+              objetivos de negocio a través de estrategias personalizadas para
+              cada plataforma. Creamos contenido atractivo y relevante que
+              cautiva a tu público objetivo, implementamos campañas de pago por
+              clic y marketing de influencers para ampliar tu alcance, y
+              analizamos constantemente los resultados para optimizar tus
+              inversiones inversiones.
+            </p>
+          </div>
+          <div>
+            <RevealWrapper
+              duration={1500}
+              origin="left"
+              className={`rounded-lg overflow-hidden`}
+            >
+              <Carousel
+                slideInterval={5000}
+                showControls={true}
+                indicators={true}
+                className="  text-white  carousel_dinamic "
+              >
+                <div className="bg-blue-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Plan Nivel 0</span>
+                  <div>
+                    <span className="text-3xl">S/. 400.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-red-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Plan Nivel 1</span>
+                  <div>
+                    <span className="text-3xl">S/. 650.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-orange-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Plan Nivel 2</span>
+                  <div>
+                    <span className="text-3xl">S/. 1200.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-green-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Plan Nivel 3</span>
+                  <div>
+                    <span className="text-3xl">S/. 2000.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-gray-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Plan Nivel 4</span>
+                  <div>
+                    <span className="text-3xl">S/. 3600.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-purple-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Session fotos y videos</span>
+                  <div>
+                    <span className="text-3xl">S/. 320.00</span>
+                  </div>
+                </div>
+              </Carousel>
+            </RevealWrapper>
+          </div>
         </RevealWrapper>
 
         <div className="flex flex-col mt-16">

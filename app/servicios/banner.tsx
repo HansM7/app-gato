@@ -55,15 +55,14 @@ function BannerServices() {
             de la maxima calidad posible
           </span>
         </RevealWrapper>
-      </div>
-
-      <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
-        <Link
-          href={"#items"}
-          className="floating-image text-sky-400 animate-pulse text-xl "
-        >
-          Ver mas
-        </Link>
+        <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
+          <Link
+            href={"#detail"}
+            className="floating-image text-sky-400  text-xl "
+          >
+            <span className="animate-pulse">Ver mas</span>
+          </Link>
+        </div>
       </div>
     </section>
   );

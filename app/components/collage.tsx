@@ -30,7 +30,7 @@ function Collage() {
             >
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+                  src="https://i.pinimg.com/736x/9e/a4/5d/9ea45dc48908ce2f19947d3105dd0dbb.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
@@ -65,7 +65,7 @@ function Collage() {
               <div>
                 <img
                   // src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
-                  src="carousel-banner-01.png"
+                  src="https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-top  transition-all duration-200 group-hover:scale-110"
@@ -129,7 +129,7 @@ function Collage() {
               <div>
                 <img
                   // src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
-                  src="carousel-banner-02.png"
+                  src="https://i.pinimg.com/736x/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
@@ -165,7 +165,7 @@ function Collage() {
             >
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+                  src="https://i.pinimg.com/736x/ab/1f/9b/ab1f9b72e259f15ac247e3ef90a63261.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"

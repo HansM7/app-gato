@@ -68,7 +68,7 @@ function Banner() {
       </div>
 
       {/*  */}
-      <div className="xl:px-24 md:px-12 sm:px-12  px-8 flex   pt-8 relative">
+      <div className="xl:px-24 md:px-12 sm:px-12  px-8 flex   pt-12 relative">
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">

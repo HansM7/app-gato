@@ -2,6 +2,7 @@
 
 import FastContact from "@/app/components/fast-contac";
 import TimeLine from "@/app/components/timeline";
+import { Carousel } from "keep-react";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import { useState } from "react";
@@ -47,7 +48,7 @@ function Service04() {
         </div>
         <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <span className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+            <span className="text-sky-400   xl:text-[6rem] md:text-[4rem] text-[3rem] ">
               Servicio de Branding
             </span>
           </RevealWrapper>
@@ -56,10 +57,10 @@ function Service04() {
             duration={1500}
             className={"w-full mt-16"}
           >
-            <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
+            <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
               Estrategias personalizadas, contenido cautivador, alcance ampliado
               y análisis constante para optimizar tus inversiones.
-            </span>
+            </p>
           </RevealWrapper>
 
           <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
@@ -72,18 +73,17 @@ function Service04() {
           </div>
         </div>
       </div>
-
       <div
-        className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16"
+        className="min-h-screen xl:px-36 md:px-16  px-4 flex bg-gray-100 pt-16 flex-col pb-16"
         id="detail"
       >
         <RevealWrapper
           origin="left"
           duration={1500}
-          className={"w-full grid grid-cols-2 mb-10"}
+          className={"w-full grid md:grid-cols-2  grid-cols-1 gap-8"}
         >
           <div>
-            <p className="md:text-2xl text-xl text-slate-600">
+            <p className="md:text-2xl text-xl font-light">
               Somos expertos en capturar la esencia de tu marca y llevarla a
               nuevas alturas. Te ayudamos a destacar en un mundo cada vez más
               competitivo a través de la creación de identidades visuales
@@ -91,18 +91,55 @@ function Service04() {
             </p>
           </div>
           <div>
-            <p>Aqui irian los precios</p>
+            <RevealWrapper
+              duration={1500}
+              origin="left"
+              className={`rounded-lg overflow-hidden`}
+            >
+              <Carousel
+                slideInterval={5000}
+                showControls={true}
+                indicators={true}
+                className=" bg-blue-500 text-white  carousel_dinamic "
+              >
+                <div className="flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span>Plan Basico</span>
+                  <div>
+                    <span>4000$</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span>Plan Basico</span>
+                  <div>
+                    <span>4000$</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span>Plan Basico</span>
+                  <div>
+                    <span>4000$</span>
+                  </div>
+                </div>
+              </Carousel>
+            </RevealWrapper>
           </div>
         </RevealWrapper>
-        <RevealWrapper
-          origin="bottom"
-          duration={1500}
-          className={"w-full pb-16 md:px-44"}
-        >
-          <div className="grid grid-cols-5 ">
-            <TimeLine data={data}></TimeLine>
-          </div>
-        </RevealWrapper>
+
+        <div className="flex flex-col mt-16">
+          {/* // todo here is timeline */}
+          <RevealWrapper
+            origin="bottom"
+            duration={1500}
+            className={"w-full pb-16 md:px-44"}
+          >
+            <div className="grid grid-cols-5 ">
+              <TimeLine data={data}></TimeLine>
+            </div>
+          </RevealWrapper>
+          {/*  // todo end timeline */}
+        </div>
 
         <hr />
 

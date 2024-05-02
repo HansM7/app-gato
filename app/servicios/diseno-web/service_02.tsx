@@ -2,6 +2,7 @@
 
 import FastContact from "@/app/components/fast-contac";
 import TimeLine from "@/app/components/timeline";
+import { Carousel } from "keep-react";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import { useState } from "react";
@@ -47,7 +48,7 @@ function Service02() {
         </div>
         <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <span className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+            <span className="text-sky-400  xl:text-[6rem] md:text-[4rem] text-[3rem]">
               Servicio de Diseño Web
             </span>
           </RevealWrapper>
@@ -77,18 +78,81 @@ function Service02() {
         className="min-h-screen xl:px-36 md:px-16  px-8 flex bg-gray-100 pt-16 flex-col pb-16"
         id="detail"
       >
-        <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="md:text-2xl text-xl text-slate-600">
-            Transformamos tu presencia en línea con diseños web impactantes y
-            funcionales. Desde la creación de sitios web atractivos hasta la
-            optimización para una experiencia de usuario excepcional, nuestro
-            servicio de diseño web te ayuda a destacar en el mundo digital.
-          </p>
+        <RevealWrapper
+          origin="left"
+          duration={1500}
+          className={"w-full grid md:grid-cols-2  grid-cols-1 gap-8"}
+        >
+          <div className="flex items-center">
+            <p className="md:text-2xl text-xl font-light">
+              Transformamos tu presencia en línea con diseños web impactantes y
+              funcionales. Desde la creación de sitios web atractivos hasta la
+              optimización para una experiencia de usuario excepcional, nuestro
+              servicio de diseño web te ayuda a destacar en el mundo digital.
+            </p>
+          </div>
+          <div>
+            <RevealWrapper
+              duration={1500}
+              origin="left"
+              className={`rounded-lg overflow-hidden`}
+            >
+              <Carousel
+                slideInterval={5000}
+                showControls={true}
+                indicators={true}
+                className="  text-white  carousel_dinamic "
+              >
+                <div className="bg-blue-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Landing Page</span>
+                  <div>
+                    <span className="text-3xl">S/. 350.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-red-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">One Page</span>
+                  <div>
+                    <span className="text-3xl">S/. 500.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-orange-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Basico</span>
+                  <div>
+                    <span className="text-3xl">S/. 850.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-green-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Empresarial</span>
+                  <div>
+                    <span className="text-3xl">S/. 1200.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-gray-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">E-Commerce</span>
+                  <div>
+                    <span className="text-3xl">S/. 1500.00</span>
+                  </div>
+                </div>
+
+                <div className="bg-purple-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
+                  <span className="text-xl">Web a medida</span>
+                  <div>
+                    <span className="text-3xl">S/. 5000.00</span>
+                  </div>
+                </div>
+              </Carousel>
+            </RevealWrapper>
+          </div>
         </RevealWrapper>
+
         <RevealWrapper
           origin="bottom"
           duration={1500}
-          className={"w-full pb-16 md:px-44"}
+          className={"w-full pb-16 md:px-44 mt-16"}
         >
           <div className="grid grid-cols-5 ">
             <TimeLine data={data}></TimeLine>

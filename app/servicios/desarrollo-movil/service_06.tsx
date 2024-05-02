@@ -79,7 +79,7 @@ function Service06() {
         id="detail"
       >
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="md:text-2xl text-xl text-slate-600">
+          <p className="md:text-2xl text-xl font-light">
             Desarrollamos aplicaciones a medida que se adaptan a tus necesidades
             específicas y potencian la experiencia de tus usuarios. Creamos
             herramientas innovadoras que impulsan tu éxito en el mundo digital.

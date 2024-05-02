@@ -37,10 +37,10 @@ function CollagePortfolio() {
             <Link
               key={index}
               href={"/portafolio/" + item.slug}
-              className="group relative overflow-hidden border"
+              className="group relative overflow-hidden border "
             >
               <img
-                className="object-cover w-full h-full group-hover:scale-105 transition-all min-h-72"
+                className="object-cover w-full  group-hover:scale-105 transition-all h-72"
                 src={item.acf.imagen}
                 alt=""
               />
