@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InfoDrawer from "./info-drawer";
 import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 
 function Drawer() {
   const [hovered, setHovered] = useState("");
@@ -184,9 +185,9 @@ function Drawer() {
           </div>
 
           <div className="grid grid-cols-3 mt-8 text-sm font-semibold border-t pt-8 pb-8">
-            <span>Clientes</span>
-            <span>Blog</span>
-            <span>Bolsa de trabajo</span>
+            <Link href={"/#clientes"}>Clientes</Link>
+            <Link href={"/blog"}>Blog</Link>
+            <Link href={"/bolsa de trabajo"}>Bolsa de trabajo</Link>
           </div>
         </div>
       </div>

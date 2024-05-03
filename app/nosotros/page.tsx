@@ -1,4 +1,3 @@
-import Footer from "../components/footer";
 import About from "./about";
 
 function Page() {

@@ -20,7 +20,9 @@ function Team() {
       name: "Martin Jara",
       photo_name: "martin",
       photo:
-        "https://media.licdn.com/dms/image/D5635AQFGLM7VnS33PQ/profile-framedphoto-shrink_800_800/0/1711476726864?e=1713625200&v=beta&t=4QHErSs5nfjqgJMZz9K0sOruZTTr-CXvwuvt-bLOzFY",
+        // "https://media.licdn.com/dms/image/D5635AQFGLM7VnS33PQ/profile-framedphoto-shrink_800_800/0/1711476726864?e=1713625200&v=beta&t=4QHErSs5nfjqgJMZz9K0sOruZTTr-CXvwuvt-bLOzFY",
+        "martin.jpg",
+
       role: "CEO",
       description: "",
     },
@@ -29,7 +31,8 @@ function Team() {
       photo_name: "diana",
 
       photo:
-        "https://media.licdn.com/dms/image/D4E35AQHPXy-1TU49Ow/profile-framedphoto-shrink_800_800/0/1711806246117?e=1713628800&v=beta&t=mWQvQSUf5PGy_jwPjav-5imqRhOJfAHv8XpzYpHmyUw",
+        // "https://media.licdn.com/dms/image/D4E35AQHPXy-1TU49Ow/profile-framedphoto-shrink_800_800/0/1711806246117?e=1713628800&v=beta&t=mWQvQSUf5PGy_jwPjav-5imqRhOJfAHv8XpzYpHmyUw",
+        "diana.png",
       role: "CEO",
       description: "",
     },
@@ -40,7 +43,8 @@ function Team() {
       photo_name: "jordan",
 
       photo:
-        "https://media.licdn.com/dms/image/D4E03AQEDVxglbWreig/profile-displayphoto-shrink_800_800/0/1711986826924?e=1718236800&v=beta&t=jwQEry8mTXzsYGDmq5x3kEKaMl7HkfKMHAltfPgtN24",
+        // "https://media.licdn.com/dms/image/D4E03AQEDVxglbWreig/profile-displayphoto-shrink_800_800/0/1711986826924?e=1718236800&v=beta&t=jwQEry8mTXzsYGDmq5x3kEKaMl7HkfKMHAltfPgtN24",
+        "jordan.png",
       role: "Desarrollador Web",
       description: "",
     },
@@ -49,8 +53,9 @@ function Team() {
       photo_name: "hans",
 
       photo:
-        "https://media.licdn.com/dms/image/D4D03AQFUHe6qo_0yQA/profile-displayphoto-shrink_800_800/0/1711981009206?e=1718236800&v=beta&t=dnZN-OtJPPET6P5WaWRAEZ0b75VK8FpS0yrVIUv_50M",
-      role: "Desarrollador de software",
+        // "https://media.licdn.com/dms/image/D4D03AQFUHe6qo_0yQA/profile-displayphoto-shrink_800_800/0/1711981009206?e=1718236800&v=beta&t=dnZN-OtJPPET6P5WaWRAEZ0b75VK8FpS0yrVIUv_50M",
+        "hans.png",
+      role: "Desarrollador de Full Stack",
       description: "",
     },
     {
@@ -58,7 +63,8 @@ function Team() {
       photo_name: "mariapia",
 
       photo:
-        "https://media.licdn.com/dms/image/D4D03AQFxLpT4Jd4YgA/profile-displayphoto-shrink_400_400/0/1711981006091?e=1718236800&v=beta&t=X2Hb95A1iv9yJ_tnCZ_DYJT4vvyC669V6_ePQZoU3-E",
+        // "https://media.licdn.com/dms/image/D4D03AQFxLpT4Jd4YgA/profile-displayphoto-shrink_400_400/0/1711981006091?e=1718236800&v=beta&t=X2Hb95A1iv9yJ_tnCZ_DYJT4vvyC669V6_ePQZoU3-E",
+        "mariapia.png",
       role: "Marketing",
       description: "",
     },
@@ -67,16 +73,50 @@ function Team() {
       photo_name: "stacey",
 
       photo:
-        "https://media.licdn.com/dms/image/D4E03AQE-PeReXqOXqA/profile-displayphoto-shrink_800_800/0/1712686468366?e=1718236800&v=beta&t=syqAvo7kmkH70nvRJ81iozLAuMxdD66syADy-60Ookc",
+        // "https://media.licdn.com/dms/image/D4E03AQE-PeReXqOXqA/profile-displayphoto-shrink_800_800/0/1712686468366?e=1718236800&v=beta&t=syqAvo7kmkH70nvRJ81iozLAuMxdD66syADy-60Ookc",
+        "stacy.png",
       role: "Marketing",
       description: "",
     },
     {
-      name: "Katherin Guerra",
+      name: "Noor Ponce",
       photo_name: "katherin",
 
       photo:
-        "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "noor.png",
+      role: "Marketing",
+      description: "",
+    },
+
+    {
+      name: "Diana Vasquez",
+      photo_name: "katherin",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "diana-vasquez.png",
+      role: "Marketing",
+      description: "",
+    },
+
+    {
+      name: "Lisbeth",
+      photo_name: "diana",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "lisbeth.png",
+      role: "Marketing",
+      description: "",
+    },
+    {
+      name: "Alejandra",
+      photo_name: "alejandra",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "alejandra.png",
       role: "Marketing",
       description: "",
     },
@@ -98,15 +138,15 @@ function Team() {
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-16 gap-16">
-        <div className="flex gap-8">
+        {/* <div className="flex gap-8">
           {leaders.map((item, index) => (
             <RevealWrapper origin="bottom" duration={1000} key={index}>
               <div className="flex flex-col text-center gap-2 ">
                 <img
                   role="buttom"
                   onClick={() => openModal(item)}
-                  className="rounded-full w-40 hover:scale-105 transition-all cursor-pointer "
-                  src={"team/" + item.photo_name + ".jpeg"}
+                  className="rounded-2xl w-full hover:scale-105 transition-all cursor-pointer "
+                  src={"team/" + item.photo}
                   alt=""
                 />
                 <span className="text-xs bg-violet-600 text-white rounded-lg py-1">
@@ -116,24 +156,45 @@ function Team() {
               </div>
             </RevealWrapper>
           ))}
-        </div>
+        </div> */}
         {/*  */}
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 justify-center">
+          {leaders.map((item, index) => (
+            <RevealWrapper
+              origin="bottom"
+              duration={index * 300 + 1000}
+              key={index}
+            >
+              <div className="flex flex-col text-center gap-2 overflow-hidden rounded-2xl">
+                <img
+                  role="buttom"
+                  onClick={() => openModal(item)}
+                  className="rounded-2xl w-full hover:scale-105 transition-all cursor-pointer  "
+                  src={"team/" + item.photo}
+                  alt="Jordan Edson"
+                />
+                <span className="  text-gray-500 rounded-lg px-2 ">
+                  {item.role}
+                </span>
+                <span>{item.name}</span>
+              </div>
+            </RevealWrapper>
+          ))}
           {workers.map((item, index) => (
             <RevealWrapper
               origin="bottom"
               duration={index * 300 + 1000}
               key={index}
             >
-              <div className="flex flex-col text-center gap-2">
+              <div className="flex flex-col text-center gap-2 overflow-hidden rounded-2xl">
                 <img
                   role="buttom"
                   onClick={() => openModal(item)}
-                  className="rounded-full w-40 hover:scale-105 transition-all cursor-pointer "
-                  src={"team/" + item.photo_name + ".jpeg"}
+                  className="rounded-2xl w-full hover:scale-105 transition-all cursor-pointer "
+                  src={"team/" + item.photo}
                   alt="Jordan Edson"
                 />
-                <span className="text-xs bg-violet-600 text-white rounded-lg px-2 py-1">
+                <span className="  text-gray-500 rounded-lg px-2 ">
                   {item.role}
                 </span>
                 <span>{item.name}</span>
@@ -174,11 +235,7 @@ function ModalDetail({
               variant="p"
               className="text-body-4 font-normal text-metal-600"
             >
-              <img
-                className="rounded-lg"
-                src={"team/" + data.photo_name + ".jpeg"}
-                alt=""
-              />
+              <img className="rounded-lg" src={"team/" + data.photo} alt="" />
             </Typography>
           </Typography>
         </Modal.Content>

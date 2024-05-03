@@ -23,9 +23,9 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-32 md:px-24  px-8 flex  py-16  w-full bg-white justify-center  ">
+    <section className="xl:px-32 md:px-24  px-8 flex  md:py-16 py-8 md:pb-0 pb-16  w-full bg-white justify-center  ">
       <RevealWrapper duration={1500} origin="left ">
-        <div className="flex flex-col md:flex-row w-full gap-4 md:gap-32">
+        <div className="flex flex-col md:flex-row w-full gap-4 md:gap-8 xl:gap-24">
           <div className="flex justify-start   md:flex-col gap-4 ">
             <div
               role="button"
@@ -203,7 +203,7 @@ function Component1({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Branding</h2>
         <div className="flex flex-col gap-2">
@@ -237,8 +237,8 @@ function Component1({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px]"
-          src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
+          className="rounded-md w-[800px] h-[30rem] object-cover"
+          src="https://www.teramind.co/blog/wp-content/uploads/2021/05/Benefits-of-Team-Branding_RD.jpg"
           alt=""
         />
       </div>
@@ -256,7 +256,7 @@ function Component2({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Diseño Web</h2>
         <div className=" flex flex-col gap-2">
@@ -290,8 +290,8 @@ function Component2({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px]"
-          src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
+          className="rounded-md w-[800px] h-[30rem] object-cover"
+          src="https://rightpeoplegroup.com/wp-content/uploads/2022/11/software-production-team-2021-09-24-04-17-44-utc-min-scaled.jpg"
           alt=""
         />
       </div>
@@ -309,7 +309,7 @@ function Component3({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row  animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex flex-col md:flex-row  animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Desarollo de software</h2>
         <div className="flex flex-col gap-2">
@@ -343,8 +343,8 @@ function Component3({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px]"
-          src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
+          className="rounded-md w-[800px] h-[30rem] object-cover"
+          src="https://i0.wp.com/www.agile611.com/wp-content/uploads/2019/09/annie-spratt-QckxruozjRg-unsplash.jpg?fit=480%2C320&ssl=1"
           alt=""
         />
       </div>
@@ -362,7 +362,7 @@ function Component4({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Marketing</h2>
         <div className="flex flex-col gap-2">
@@ -396,7 +396,7 @@ function Component4({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px]"
+          className="rounded-md w-[800px] h-[30rem] object-cover"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
           alt=""
         />
@@ -415,9 +415,9 @@ function Component5({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Desarrollo Movil</h2>
+        <h2 className={`${sizing.title}`}>Desarrollo Móvil</h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en desarrollo movil haciendo aplicaciones
@@ -449,8 +449,8 @@ function Component5({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px]"
-          src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
+          className="rounded-md w-[800px] h-[30rem] object-cover"
+          src="https://www.zervizgroup.com/blogs/wp-content/uploads/2021/08/desarrollo-de-apps-para-empresas.jpg"
           alt=""
         />
       </div>

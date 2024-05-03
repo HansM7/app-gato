@@ -21,13 +21,13 @@ function Footer() {
         <div className="flex flex-col ">
           <span className="font-semibold">Hablemos</span>
           <Link
-            href={"tel:+51 976587365"}
+            href={"tel:+51 980005257"}
             className="text-slate-600 md:text-sm text-xs"
           >
             +51 980005257
           </Link>
           <Link
-            href={"tel:+51 976587365"}
+            href={"tel:+51 952341679"}
             className="text-slate-600 md:text-sm text-xs"
           >
             +51 952341679
@@ -36,19 +36,19 @@ function Footer() {
         <div className="flex flex-col ">
           <span className="font-semibold">Escríbenos</span>
           <Link
-            href={"mailto:info@gmail.com"}
+            href={"mailto:info@geniusperu.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
             info@geniusperu.com
           </Link>
           <Link
-            href={"mailto:info@gmail.com"}
+            href={"mailto:dortega@geniusperu.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
             dortega@geniusperu.com
           </Link>
           <Link
-            href={"mailto:info@gmail.com"}
+            href={"mailto:mjara@geniusperu.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
             mjara@geniusperu.com
@@ -66,8 +66,8 @@ function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="24"
-                height="24"
+                width="28"
+                height="28"
                 viewBox="0 0 48 48"
               >
                 <radialGradient
@@ -124,8 +124,8 @@ function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="24"
-                height="24"
+                width="28"
+                height="28"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -147,8 +147,8 @@ function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="26"
-                height="26"
+                width="30"
+                height="30"
                 viewBox="0 0 48 48"
               >
                 <path
