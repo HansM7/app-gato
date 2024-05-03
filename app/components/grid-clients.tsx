@@ -6,6 +6,7 @@ import Link from "next/link";
 function GridClients() {
   const clients = [
     {
+      slug: "flowers-travel",
       company: "Flowers Travel",
       service: "Desarrolllo Web",
       image:
@@ -13,6 +14,7 @@ function GridClients() {
       url: "",
     },
     {
+      slug: "evadry",
       company: "Eva-Dry",
       service: "Desarrolllo Web",
       image:
@@ -20,6 +22,7 @@ function GridClients() {
       url: "",
     },
     {
+      slug: "cr-motors",
       company: "CR Motors",
       service: "Desarrolllo Web",
       image:
@@ -27,6 +30,7 @@ function GridClients() {
       url: "",
     },
     {
+      slug: "caprepar-group",
       company: "Caprepar Group",
       service: "Desarrolllo Web",
       image:
@@ -51,7 +55,7 @@ function GridClients() {
               "w-full justify-center  flex items-center relative overflow-hidden group"
             }
           >
-            <Link href={""} className="w-full  ">
+            <Link href={"clientes/" + item.slug} className="w-full  ">
               <img
                 className=" w-full group-hover:scale-105 transition-all object-cover h-64"
                 src={item.image}

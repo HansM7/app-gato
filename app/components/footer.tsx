@@ -32,6 +32,12 @@ function Footer() {
           >
             +51 952341679
           </Link>
+          <Link
+            href={"tel:+51 980005257"}
+            className="text-slate-600 md:text-sm text-xs"
+          >
+            +51 946380310
+          </Link>
         </div>
         <div className="flex flex-col ">
           <span className="font-semibold">Escríbenos</span>

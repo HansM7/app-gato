@@ -90,11 +90,13 @@ function Form() {
                 className="border p-2 outline-none w-full rounded-lg"
                 onChange={(e) => setData({ ...data, service: e.target.value })}
               >
-                <option value="">Marketing Digital</option>
-                <option value="">Branding</option>
-                <option value="">Diseno Web</option>
-                <option value="">Desarrollo de Software</option>
-                <option value="">Desarrollo Movil</option>
+                <option value="Marketing Digital">Marketing Digital</option>
+                <option value="Branding">Branding</option>
+                <option value="Diseno Web">Diseno Web</option>
+                <option value="Desarrollo de Software">
+                  Desarrollo de Software
+                </option>
+                <option value="Desarrollo Movil">Desarrollo Movil</option>
               </select>
               <textarea
                 onChange={(e) => setData({ ...data, message: e.target.value })}

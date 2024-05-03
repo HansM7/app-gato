@@ -9,11 +9,6 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata: Metadata = {
-  title: "GATO",
-  description: "Aplicación GATO modo desarollo",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -26,97 +26,83 @@ function BannerDetailPortfolio() {
 
   if (!isLoading) {
     return (
-      <section className="md:min-h-screen  h-full  flex bg-gray-100  relative  overflow-hidden">
-        <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute ">
-          {/* <video
-            loop={true}
-            autoPlay={true}
-            muted
-            className="w-screen h-full md:min-h-screen min-h-[25rem] object-cover  overflow-hidden filter brightness-50"
-            src="https://videos.pexels.com/video-files/2616637/2616637-hd_1920_1080_30fps.mp4"
-          ></video> */}
+      <section className="md:min-h-screen  h-full  flex bg-gray-100  relative  overflow-hidden ">
+        <div className="grid grid-cols-5 ">
+          <div className="w-full md:col-span-2 col-span-5  p-8 flex flex-col gap-8">
+            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+              <span>PROBLEMA</span>
+              <p className="text-gray-800 font-light lg:text-base text-sm  ">
+                {data.acf.problema}
+              </p>
+            </RevealWrapper>
 
-          {/* md:px-20 pb-16 md:pb-0 px-4 */}
-        </div>
-        <div className="  md:pt-16 pt-8  bg-slate-800  w-full">
-          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <div className=" md:px-32 pb-20 md:pb-0 px-4  flex justify-between items-start gap-8 md:gap-0">
-              <span className="text-sky-400 xl:text-[5rem] md:text-[4rem] text-[2rem]  leading-10">
-                {data.title.rendered}
+            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+              <span>NECESIDAD</span>
+              <p className="text-gray-800 font-light lg:text-base text-sm">
+                {data.acf.necesidad}
+              </p>
+            </RevealWrapper>
+
+            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+              <span>SOLUCION</span>
+              <p className="text-gray-800 font-light lg:text-base text-sm">
+                {data.acf.solucion}
+              </p>
+            </RevealWrapper>
+
+            <RevealWrapper
+              origin="left"
+              duration={1500}
+              className={"w-full grid md:grid-cols-2 grid-cols-1 gap-2"}
+            >
+              <img
+                src="https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk="
+                alt=""
+                className="rounded-md"
+              />
+              <img
+                src="https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk="
+                alt=""
+                className="rounded-md"
+              />
+            </RevealWrapper>
+          </div>
+          {/*  */}
+
+          <div className="grid grid-cols-9 md:col-span-3 col-span-5 ">
+            <div className="col-span-8 h-full grid grid-rows-6 ">
+              <div className="border-x border-black row-span-2 p-8 flex flex-col ">
+                <span className="text-2xl font-light">Proyecto de </span>
+
+                <span className="text-[3rem]">{data.title.rendered}</span>
+              </div>
+              <div className="border-x border-t border-black  row-span-4 p-8">
+                <RevealWrapper
+                  origin="bottom"
+                  duration={1500}
+                  className={"w-full h-full grid lg:grid-cols-2 grid-cols-1 "}
+                >
+                  <img
+                    src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg "
+                    className="w-full  object-cover h-full "
+                    alt=""
+                  />
+                  <img
+                    src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg"
+                    className="w-full  object-cover h-full "
+                    alt=""
+                  />
+                </RevealWrapper>
+              </div>
+            </div>
+            <div className="flex flex-col justify-around items-center border ">
+              <span className="-rotate-90">a</span>
+              <span className="-rotate-90 lg:text-base text-sm">
+                {data.acf.cliente}
               </span>
-
-              <div className="h-fit flex flex-col">
-                <span className="text-gray-100 xl:text-[2rem] md:text-[2rem] text-xl ">
-                  Cliente
-                </span>
-                <span className="font-light text-gray-300 md:text-lg text-sm ">
-                  {data.acf.cliente}
-                </span>
-              </div>
+              <span className="-rotate-90">c</span>
             </div>
-          </RevealWrapper>
-          <RevealWrapper
-            origin="right"
-            duration={1500}
-            className={"w-full md:mt-16 -mt-8  "}
-          >
-            <div className="w-full relative  bg-gray-800">
-              {/* <video
-                muted
-                loop
-                autoPlay
-                className="w-full object-cover h-[30rem] md:ml-20 brightness-50"
-                src="https://videos.pexels.com/video-files/2616637/2616637-hd_1920_1080_30fps.mp4"
-              ></video> */}
-              <img
-                className="w-full object-cover h-[30rem] md:ml-32 brightness-50"
-                src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-              <div className="py-4 md:ml-32 ml-4 flex flex-col text-gray-200 font-light text-xl">
-                <span>Responsabilidad</span>
-
-                <span>Compromiso</span>
-              </div>
-            </div>
-          </RevealWrapper>
-
-          {/* <RevealWrapper origin="top" duration={1500} className={`flex mt-12`}>
-            <p className="text-gray-200 text-4xl font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              suscipit at enim voluptatibus, laudantium soluta quas doloribus
-              sapiente quam qui similique ut adipisci? Deleniti voluptas ipsa ea
-              perferendis, facilis quis?
-            </p>
-          </RevealWrapper>
-  
-          <RevealWrapper
-            origin="bottom"
-            duration={1500}
-            className={` mt-12 grid grid-cols-3`}
-          >
-            <div className=" overflow-hidden ">
-              <img
-                className="object-cover w-full overflow-hidden h-96 hover:scale-105 transition-all"
-                src="https://cdn-e360.s3-sa-east-1.amazonaws.com/cms_shutterstock-1931340746jpg__ti5ev7TTqnVMdMOfQ0WICxwloXDzEfjG8wPfK6f7.jpeg"
-                alt=""
-              />
-            </div>
-            <div className="overflow-hidden">
-              <img
-                className="object-cover w-full h-96 hover:scale-105 transition-all"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3JgJUl3NCU10g6aEWoq_6iLeOO1ZCy468O_gg3HJXb1fLR9EZazS7XprVMslG9oJ_olM&usqp=CAU"
-                alt=""
-              />
-            </div>
-            <div className=" overflow-hidden ">
-              <img
-                className="object-cover w-full overflow-hidden h-96 hover:scale-105 transition-all"
-                src="https://cdn-e360.s3-sa-east-1.amazonaws.com/cms_shutterstock-1931340746jpg__ti5ev7TTqnVMdMOfQ0WICxwloXDzEfjG8wPfK6f7.jpeg"
-                alt=""
-              />
-            </div>
-          </RevealWrapper> */}
+          </div>
         </div>
       </section>
     );

@@ -1,11 +1,10 @@
 "use client";
 
 import Drawer from "@/app/components/drawer";
+import Footer from "@/app/components/footer";
 import Navigation from "@/app/components/navigation";
 import { useState } from "react";
-import BannerDetailPortfolio from "./banner";
-import Footer from "@/app/components/footer";
-import PortfolioInfoDetail from "./info";
+import BannerClient from "./banner";
 
 function Detail() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -50,8 +49,7 @@ function Detail() {
         {isDrawer && <Drawer></Drawer>}
       </div>
       <div className="flex flex-col w-full md:pl-[80px] ">
-        <BannerDetailPortfolio></BannerDetailPortfolio>
-        {/* <PortfolioInfoDetail></PortfolioInfoDetail> */}
+        <BannerClient></BannerClient>
         <Footer></Footer>
       </div>
     </div>
