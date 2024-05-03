@@ -170,11 +170,11 @@ function Drawer() {
           <div className="flex flex-col gap-4 text-sm">
             <div className="flex flex-col">
               <span className="font-semibold">Escríbenos</span>
-              <span>gato@gmail.com</span>
+              <span>info@geniusperu.com</span>
             </div>
             <div className="flex flex-col">
               <span className="font-semibold">Háblanos</span>
-              <span>9907676768</span>
+              <span>980005257</span>
             </div>
           </div>
         </div>
