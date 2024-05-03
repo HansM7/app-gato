@@ -16,8 +16,6 @@ function Navigation({
 
   // const isMdOrLarger = useMediaQuery("(min-width: 1024px)");
 
-  // console.log(isMdOrLarger);
-
   const openModal = () => {
     setIsOpen(true);
   };

@@ -22,13 +22,11 @@ function BannerClient() {
     fetchData();
   }, []);
 
-  console.log(data);
-
   if (!isLoading) {
     return (
       <section className="md:min-h-screen  h-full  flex bg-gray-100  relative  overflow-hidden ">
-        <div className="grid grid-cols-2 h-full w-full ">
-          <div className="w-full h-full px-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 h-full w-full ">
+          <div className="w-full h-full px-8 py-8 md:py-0">
             <RevealWrapper
               origin="left"
               duration={1500}
@@ -37,11 +35,15 @@ function BannerClient() {
               }
             >
               <span className="text-gray-400">INDUSTRY</span>
-              <h1 className="text-[5rem]">{data.title.rendered}</h1>
-              <p className="text-xl font-light">{data.acf.descripcion_corta}</p>
+              <h1 className="md:text-[5rem] text-[3rem]">
+                {data.title.rendered}
+              </h1>
+              <p className="md:text-xl text-base font-light">
+                {data.acf.descripcion_corta}
+              </p>
             </RevealWrapper>
           </div>
-          <div className="w-full h-full">
+          <div className="w-full h-full md:px-0 px-8">
             <RevealWrapper
               origin="right"
               duration={1500}

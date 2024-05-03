@@ -24,8 +24,6 @@ function BannerDetailPortfolio() {
     fetchData();
   }, []);
 
-  // console.log(data);
-
   if (!isLoading) {
     return (
       <section className="md:min-h-screen  h-full  flex bg-gray-100  relative  overflow-hidden ">
