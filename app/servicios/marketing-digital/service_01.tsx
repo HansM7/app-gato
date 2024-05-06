@@ -52,9 +52,9 @@ function Service01() {
             className={"w-full mt-16"}
           >
             <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
-              Atrae clientes, impulsa ventas y construye una marca sólida con
-              estrategias personalizadas, contenido cautivador y análisis
-              constante.
+              Nuestros servicios de Marketing Digital, están orientados en
+              transformar tus redes sociales en canales de venta, según los
+              objetivos de tu negocio.
             </p>
           </RevealWrapper>
 

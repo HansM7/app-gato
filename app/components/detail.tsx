@@ -23,7 +23,7 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-32 md:px-24  px-8 flex  md:py-16 py-8 md:pb-0 pb-16  w-full bg-white justify-center  ">
+    <section className="xl:px-32 md:px-24  px-8 flex  md:py-16 py-8  pb-16  w-full bg-white justify-center  ">
       <RevealWrapper duration={1500} origin="left ">
         <div className="flex flex-col md:flex-row w-full gap-4 md:gap-8 xl:gap-24">
           <div className="flex justify-start   md:flex-col gap-4 ">
@@ -203,13 +203,14 @@ function Component1({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
+    <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 pb-16">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`}>Branding</h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
-            Nuestros servicios de Marketing Digital, están orientados en
-            transformar tus redes sociales en fuentes de conversión
+            Capturamos la esencia de tu marca y la llevamos a nuevas alturas.
+            Con la creación de identidades visuales impactantes te ayudamos a
+            destacar en un mundo cada vez más competitivo.
           </p>
           <div
             onMouseEnter={handleEnter}
@@ -261,8 +262,8 @@ function Component2({
         <h2 className={`${sizing.title}`}>Diseño Web</h2>
         <div className=" flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
-            Somos especialistas en el diseño atractivo y diferenciado de
-            empaques que incitan a la compra.
+            Transformamos tu presencia en línea con diseños web impactantes y
+            funcionales.
           </p>
           <div
             onMouseEnter={handleEnter}
@@ -314,8 +315,9 @@ function Component3({
         <h2 className={`${sizing.title}`}>Desarollo de software</h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
-            Somos especialistas en el diseño atractivo y diferenciado de
-            empaques que incitan a la compra.
+            Transformamos tus ideas en software funcional. Desde la
+            conceptualización hasta la implementación, creamos soluciones a
+            medida que potencian tu negocio y simplifican tus operaciones.
           </p>
           <div
             onMouseEnter={handleEnter}
@@ -364,11 +366,12 @@ function Component4({
   return (
     <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Marketing</h2>
+        <h2 className={`${sizing.title}`}>Marketing Digital</h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
-            Somos especialistas en el diseño atractivo y diferenciado de
-            empaques que incitan a la compra.
+            Nuestros servicios de Marketing Digital, están orientados en
+            transformar tus redes sociales en canales de ventas, según los
+            objetivos de tu negocio.
           </p>
           <div
             onMouseEnter={handleEnter}

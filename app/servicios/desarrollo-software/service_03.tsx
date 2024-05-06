@@ -68,9 +68,9 @@ function Service03() {
             className={"w-full mt-16"}
           >
             <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
-              Transforma tus ideas en software poderoso y escalable con un
-              desarrollo personalizado que se adapta a tus necesidades
-              específicas.
+              Transformamos tus ideas en software funcional. Desde la
+              conceptualización hasta la implementación, creamos soluciones a
+              medida que potencian tu negocio y simplifican tus operaciones.
             </span>
           </RevealWrapper>
           <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">

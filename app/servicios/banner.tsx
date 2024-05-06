@@ -50,9 +50,10 @@ function BannerServices() {
           className={"w-full md:mt-16 -mt-16"}
         >
           <span className="md:font-light font-light xl:text-[3rem] md:text-[2rem] text-3xl text-pretty text-gray-200">
-            En GATO estamos comprometidos con el aprendizaje y desarrollo
-            continuo, nos eforzamos para que los servicios que ofrezcamos sean
-            de la maxima calidad posible
+            En GATO llevamos tu negocio al siguiente nivel con nuestra gama
+            completa de servicios digitales. Desde estrategias de marketing
+            hasta el diseño web, estamos aquí para hacer que tu marca brille en
+            el mundo digital.
           </span>
         </RevealWrapper>
         <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">

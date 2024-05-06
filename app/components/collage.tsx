@@ -78,42 +78,15 @@ function Collage() {
                   role="button"
                 >
                   <p className=" text-white text-xl">
-                    Nuestros servicios de Marketing Digital, están orientados en
-                    transformar tus redes sociales en fuentes de conversión,
-                    según los objetivos de tu negocio.
+                    Transformamos tus ideas en software funcional. Desde la
+                    conceptualización hasta la implementación, creamos
+                    soluciones a medida que potencian tu negocio y simplifican
+                    tus operaciones.
                   </p>
                 </div>
               )}
             </div>
           </RevealWrapper>
-
-          {/* <RevealWrapper
-            className="group relative flex xl:h-96 h-80  items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
-            duration={1500}
-            origin="right"
-          >
-            <div>
-              <img
-                onMouseEnter={() => setPosition(2)}
-                onMouseLeave={() => setPosition(0)}
-                src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
-                loading="lazy"
-                alt="Photo by Magicle"
-                className="absolute inset-0 h-full w-full object-cover object-center  duration-200 group-hover:scale-110 transition-all"
-              />
-            </div>
-            {position === 2 && (
-              <div
-                className="absolute bg-black opacity-70 w-full h-full  flex justify-center items-center transition-all "
-                role="button"
-              >
-                <p className="text-sm text-white">
-                  ransformamos tu presencia en línea con diseños web impactantes
-                  y funcionales.
-                </p>
-              </div>
-            )}
-          </RevealWrapper> */}
 
           <RevealWrapper
             duration={1500}
@@ -142,10 +115,9 @@ function Collage() {
                   role="button"
                 >
                   <p className=" text-white text-xl">
-                    Transformamos tus ideas en software funcional. Desde la
-                    conceptualización hasta la implementación, creamos
-                    soluciones a medida que potencian tu negocio y simplifican
-                    tus operaciones.
+                    Nuestros servicios de Marketing Digital, están orientados en
+                    transformar tus redes sociales en canales de ventas, según
+                    los objetivos de tu negocio.
                   </p>
                 </div>
               )}

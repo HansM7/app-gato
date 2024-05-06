@@ -18,11 +18,11 @@ function BannerAbout() {
       <div className=" md:px-20 pb-16 md:pb-0 px-4 md:pt-16 pt-8  ">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <div className="  flex flex-col  ">
-            <span className="text-gray-200 xl:text-[5rem] md:text-[4rem] text-[3rem] h-fit">
+            {/* <span className="text-gray-200 xl:text-[5rem] md:text-[4rem] text-[3rem] h-fit">
               Somos
-            </span>
+            </span> */}
 
-            <div className="text-sky-400 font-black xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44 -mt-4">
+            <div className="text-sky-400  xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44 -mt-4">
               <Typewriter
                 loop
                 words={["Estrategas", "Decididos", "Responsables"]}
@@ -37,9 +37,10 @@ function BannerAbout() {
           className={"w-full md:mt-16 -mt-8 "}
         >
           <span className="md:font-light font-light xl:text-[3rem] md:text-[2rem] text-[2rem] text-gray-200">
-            Comprometidos con el aprendizaje y desarrollo continuo, nos
-            eforzamos para que los servicios que ofrezcamos sean de la maxima
-            calidad posible
+            En GATO, estamos comprometidos con la búsqueda de la excelencia en
+            cada proyecto que emprendemos. Nos enorgullece trabajar con clientes
+            que comparten nuestra pasión por el éxito y están dispuestos a
+            desafiar los límites en busca de resultados extraordinarios.
           </span>
         </RevealWrapper>
       </div>

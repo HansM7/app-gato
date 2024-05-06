@@ -58,8 +58,10 @@ function Service02() {
             className={"w-full mt-16"}
           >
             <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
-              Crea un sitio web atractivo, funcional y optimizado que cautive a
-              tus visitantes y te impulse hacia el éxito online.
+              Transformamos tu presencia en línea con diseños web impactantes y
+              funcionales. Desde la creación de sitios web atractivos hasta la
+              optimización para una experiencia de usuario excepcional, nuestro
+              servicio de diseño web te ayuda a destacar en el mundo digital.
             </span>
           </RevealWrapper>
 

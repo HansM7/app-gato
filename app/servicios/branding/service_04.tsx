@@ -52,8 +52,9 @@ function Service04() {
             className={"w-full mt-16"}
           >
             <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
-              Estrategias personalizadas, contenido cautivador, alcance ampliado
-              y análisis constante para optimizar tus inversiones.
+              Capturamos la esencia de tu marca y la llevamos a nuevas alturas.
+              Con la creación de identidades visuales impactantes te ayudamos a
+              destacar en un mundo cada vez más competitivo.
             </p>
           </RevealWrapper>
 

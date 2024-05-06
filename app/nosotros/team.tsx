@@ -55,7 +55,7 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4D03AQFUHe6qo_0yQA/profile-displayphoto-shrink_800_800/0/1711981009206?e=1718236800&v=beta&t=dnZN-OtJPPET6P5WaWRAEZ0b75VK8FpS0yrVIUv_50M",
         "hans.png",
-      role: "Desarrollador de Full Stack",
+      role: "Desarrollador Full Stack",
       description: "",
     },
     {
@@ -75,27 +75,6 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQE-PeReXqOXqA/profile-displayphoto-shrink_800_800/0/1712686468366?e=1718236800&v=beta&t=syqAvo7kmkH70nvRJ81iozLAuMxdD66syADy-60Ookc",
         "stacy.png",
-      role: "Marketing",
-      description: "",
-    },
-    {
-      name: "Noor Ponce",
-      photo_name: "katherin",
-
-      photo:
-        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "noor.png",
-      role: "Marketing",
-      description: "",
-    },
-
-    {
-      name: "Diana Vasquez",
-      photo_name: "katherin",
-
-      photo:
-        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "diana-vasquez.png",
       role: "Marketing",
       description: "",
     },

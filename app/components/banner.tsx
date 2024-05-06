@@ -110,7 +110,7 @@ function Banner() {
                 >
                   <Typewriter
                     words={[
-                      "En Genius, somos expertos en el desarrollo de software a medida que impulsa la innovación y la eficiencia en tu empresa.",
+                      "En Gato transformamos tus ideas en softwares funcionales y simplificamos tus operaciones.",
                     ]}
                     onDelete={deleting}
                     typeSpeed={30}
@@ -161,7 +161,7 @@ function Banner() {
                 >
                   <Typewriter
                     words={[
-                      "En Genius, nos especializamos en el desarrollo web de vanguardia que potencia la presencia en línea de tu empresa.",
+                      " En Gato potenciamos tu presencia en línea con diseños web impactantes y funcionales.",
                     ]}
                     onDelete={deleting}
                     typeSpeed={30}
@@ -211,7 +211,7 @@ function Banner() {
                 >
                   <Typewriter
                     words={[
-                      "En Genius, te ofrecemos orientación experta para optimizar tus estrategias de marketing y maximizar el retorno de inversión en cada iniciativa.",
+                      "En Gato transformamos tus redes sociales en fuentes de conversión.",
                     ]}
                     onDelete={deleting}
                     typeSpeed={30}

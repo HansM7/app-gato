@@ -1,8 +1,9 @@
 "use client";
 
+import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Colaborators() {
   const data = [
@@ -32,6 +33,23 @@ function Colaborators() {
     },
   ];
 
+  const [projects, setProjects] = useState([]);
+
+  async function fetchData() {
+    try {
+      const response = await axios.get(
+        "https://palegreen-anteater-636608.hostingersite.com/wp-json/wp/v2/proyecto"
+      );
+      setProjects(response.data);
+    } catch (error) {}
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  console.log(projects);
+
   return (
     <div className="w-full xl:px-24 md:px-16  px-8  min-h-screen flex flex-col pt-16 pb-32 bg-gray-100  ">
       <div className="flex justify-center">
@@ -41,14 +59,14 @@ function Colaborators() {
       </div>
       <div className="flex flex-col items-center mt-8 gap-8">
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-8">
-          {data.map((item, index) => (
+          {projects.map((item: any, index) => (
             <RevealWrapper
               origin="bottom"
               duration={1000}
               className={"min-h-96"}
               key={index}
             >
-              <Link href={""} className="h-96 relative">
+              <Link href={"portafolio/" + item.slug} className="h-96 relative">
                 <div className="overflow-hidden group h-full relative">
                   <img
                     className="w-full h-full object-cover filter brightness-[30%] group-hover:scale-110 transition-all"
@@ -58,13 +76,13 @@ function Colaborators() {
 
                   <div className="absolute inset-0 flex flex-col   z-10  gap-4  p-8">
                     <h3 className="text-white xl:text-xl text-lg ">
-                      {item.client}
+                      {item.acf.cliente}
                     </h3>
                     <span className="xl:text-3xl text-sm  w-full  py-1 text-white font-semibold">
-                      {item.title}
+                      {item.title.rendered}
                     </span>
                     <p className="text-gray-200 font-light">
-                      {item.description}
+                      {item.acf.descripcion_corta}
                     </p>
                     {/* <div className="text-violet-300 p-2 hidden group-hover:flex animate-fade-right ">
                       Click para ver mas detalles
