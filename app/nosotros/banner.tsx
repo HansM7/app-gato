@@ -34,7 +34,7 @@ function BannerAbout() {
         <RevealWrapper
           origin="right"
           duration={1500}
-          className={"w-full md:mt-16 -mt-8 "}
+          className={"w-full md:mt-8 -mt-8 "}
         >
           <span className="md:font-light font-light xl:text-[3rem] md:text-[2rem] text-[2rem] text-gray-200">
             En GATO, estamos comprometidos con la búsqueda de la excelencia en

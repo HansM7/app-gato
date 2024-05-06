@@ -57,9 +57,9 @@ function Service06() {
             className={"w-full mt-16"}
           >
             <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 ">
-              Crea aplicaciones móviles innovadoras y atractivas que te acerquen
-              a tus clientes, impulsen tu negocio y te den una ventaja
-              competitiva.
+              Desarrollamos aplicaciones a medida que transforman ideas en
+              soluciones digitales innovadoras que mejoran la experiencia del
+              usuario.
             </span>
           </RevealWrapper>
 

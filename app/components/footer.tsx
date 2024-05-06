@@ -15,8 +15,8 @@ function Footer() {
           />
         </div>
         <div className="flex flex-col ">
-          <span className="font-semibold">Visitanos</span>
-          <span className="text-slate-600">Av. Brasil 2479, Jesús María</span>
+          <span className="font-semibold">Visítanos </span>
+          <span className="text-slate-600">Jesús María</span>
         </div>
         <div className="flex flex-col ">
           <span className="font-semibold">Hablemos</span>

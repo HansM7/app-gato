@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import React, { FormEvent, useEffect, useState } from "react";
@@ -8,15 +9,50 @@ function Form() {
   const [data, setData] = useState({
     name: "",
     email: "",
-    service: "",
+    service: "Marketing Digital",
     message: "",
   });
 
+  const [isSubmiting, setIsSubmiting] = useState(false);
+
+  async function captureTokenDynamic() {
+    try {
+      const response: any = await axios.post(
+        "https://palegreen-anteater-636608.hostingersite.com/wp-json/jwt-auth/v1/token",
+        {
+          username: process.env.NEXT_PUBLIC_EMAIL,
+          password: process.env.NEXT_PUBLIC_PASSWORD,
+        }
+      );
+      return response.data.token;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setIsSubmiting(true);
+
     try {
-    } catch (error) {}
+      const token = await captureTokenDynamic();
+      await axios.post(
+        "https://palegreen-anteater-636608.hostingersite.com/wp-json/api/v1/send-mail/",
+        data,
+        {
+          headers: {
+            Authorization: "Bearer " + token,
+          },
+        }
+      );
+      setIsSubmiting(false);
+    } catch (error) {
+      console.log(error);
+      setIsSubmiting(false);
+    }
   }
+
+  // todo -> algoritmo de validacion por tiempo de envio del ultimo correo
 
   return (
     <section className="w-full min-h-screen  overflow-hidden">
@@ -69,7 +105,7 @@ function Form() {
           ></iframe>
         </RevealWrapper>
         <RevealWrapper origin="right" duration={1500} className={"w-full"}>
-          <form action="" className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div>
               <h1 className="text-xl">Escribenos</h1>
             </div>
@@ -78,16 +114,21 @@ function Form() {
                 className="border p-2 outline-none w-full rounded-lg"
                 placeholder="Nombres"
                 type="text"
+                defaultValue={data.name}
+                required
                 onChange={(e) => setData({ ...data, name: e.target.value })}
               />
               <input
                 className="border p-2 outline-none w-full rounded-lg"
                 placeholder="Correo"
-                type="text"
+                type="email"
+                defaultValue={data.email}
+                required
                 onChange={(e) => setData({ ...data, email: e.target.value })}
               />
               <select
                 className="border p-2 outline-none w-full rounded-lg"
+                defaultValue={data.service}
                 onChange={(e) => setData({ ...data, service: e.target.value })}
               >
                 <option value="Marketing Digital">Marketing Digital</option>
@@ -99,11 +140,17 @@ function Form() {
                 <option value="Desarrollo Movil">Desarrollo Movil</option>
               </select>
               <textarea
+                defaultValue={data.message}
                 onChange={(e) => setData({ ...data, message: e.target.value })}
                 className="border p-2 outline-none w-full rounded-lg"
                 placeholder="Cuentanos su idea"
               />
-              <button className="rounded-lg bg-blue-500 text-white px-4 py-2 w-fit">
+              <button
+                className={`rounded-lg bg-blue-500 text-white px-4 py-2 w-fit ${
+                  isSubmiting && "opacity-90 cursor-not-allowed"
+                }`}
+                disabled={isSubmiting}
+              >
                 Solicitar
               </button>
             </div>

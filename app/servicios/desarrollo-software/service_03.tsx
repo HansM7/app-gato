@@ -68,7 +68,7 @@ function Service03() {
             className={"w-full mt-16"}
           >
             <span className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200">
-              Transformamos tus ideas en software funcional. Desde la
+              En GATO transformamos tus ideas en software funcional. Desde la
               conceptualización hasta la implementación, creamos soluciones a
               medida que potencian tu negocio y simplifican tus operaciones.
             </span>

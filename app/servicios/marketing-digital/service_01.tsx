@@ -2,6 +2,7 @@
 
 import FastContact from "@/app/components/fast-contac";
 import TimeLine from "@/app/components/timeline";
+import TimeLine2 from "@/app/components/timeline2";
 import { Carousel } from "keep-react";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
@@ -40,32 +41,40 @@ function Service01() {
             src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           ></img>
         </div>
-        <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
-          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <span className="text-sky-400   xl:text-[6rem] md:text-[4rem] text-[3rem] ">
-              Servicio de Marketing Digital
-            </span>
-          </RevealWrapper>
-          <RevealWrapper
-            origin="left"
-            duration={1500}
-            className={"w-full mt-16"}
-          >
-            <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
-              Nuestros servicios de Marketing Digital, están orientados en
-              transformar tus redes sociales en canales de venta, según los
-              objetivos de tu negocio.
-            </p>
-          </RevealWrapper>
+        <div className="xl:px-32 md:px-20 pb-16 md:pb-0 px-8 md:pt-32 pt-16  grid grid-cols-5 gap-16">
+          <div className="col-span-3">
+            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
+              <span className="text-sky-400   xl:text-[5rem] md:text-[4rem] text-[3rem] ">
+                Servicio de Marketing Digital
+              </span>
+            </RevealWrapper>
+            <RevealWrapper
+              origin="left"
+              duration={1500}
+              className={"w-full mt-16"}
+            >
+              <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
+                Nuestros servicios de Marketing Digital, están orientados en
+                transformar tus redes sociales en canales de venta, según los
+                objetivos de tu negocio.
+              </p>
+            </RevealWrapper>
+          </div>
+          <div className="col-span-2 z-10 flex justify-center pb-4 ">
+            <img
+              src="https://academiadigital.com/wp-content/uploads/2019/07/Curso-de-Marketing-Digital.png"
+              alt=""
+            />
+          </div>
 
-          <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
+          {/* <div className="hidden md:flex justify-center absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
             <Link
               href={"#detail"}
               className="floating-image text-sky-400  text-xl "
             >
               <span className="animate-pulse">Ver mas</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div
@@ -151,11 +160,13 @@ function Service01() {
           <RevealWrapper
             origin="bottom"
             duration={1500}
-            className={"w-full pb-16 "}
+            className={"w-full pb-16  flex flex-col gap-4"}
           >
-            <div className="grid grid-cols-5 ">
+            <TimeLine2 data={data}></TimeLine2>
+            {/* <div className="grid grid-cols-5 ">
               <TimeLine data={data}></TimeLine>
-            </div>
+              
+            </div> */}
           </RevealWrapper>
           {/*  // todo end timeline */}
         </div>
