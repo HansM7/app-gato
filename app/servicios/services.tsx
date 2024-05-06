@@ -5,6 +5,7 @@ import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
 import Items from "./items";
 import BannerServices from "./banner";
+import WhatsappContact from "../components/whatsapp-contact";
 
 function Services() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -44,14 +45,7 @@ function Services() {
 
         {/* // todo -> whatsapp icon */}
 
-        <div className="fixed bottom-6 right-6 z-20" onClick={redirect}>
-          <img
-            role="button"
-            className="w-10 floating-image"
-            src="https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-43-189795.png?f=webp&w=256"
-            alt=""
-          />
-        </div>
+        <WhatsappContact></WhatsappContact>
 
         <div
           className={`fixed ${

@@ -13,13 +13,10 @@ import Testimonials from "../components/testimonials";
 import Footer from "../components/footer";
 import GridClients from "../components/grid-clients";
 import TestimonialsCards from "../components/testimonials-card";
+import WhatsappContact from "../components/whatsapp-contact";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
-
-  function redirect() {
-    window.open("https://wa.me/+51946380310", "_blank");
-  }
 
   return (
     <div className="relative bg-white flex">
@@ -38,14 +35,7 @@ function Home() {
       {/* //todo fondo -----------------------------*/}
 
       {/* // todo -> whatsapp icon */}
-      <div className="fixed bottom-6 right-6 z-20" onClick={redirect}>
-        <img
-          role="button"
-          className="w-10 floating-image"
-          src="https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-43-189795.png?f=webp&w=256"
-          alt=""
-        />
-      </div>
+      <WhatsappContact></WhatsappContact>
       {/* //todo -> end whatsapp icon */}
 
       <div

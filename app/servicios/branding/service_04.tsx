@@ -12,27 +12,21 @@ function Service04() {
 
   const data = [
     {
-      title: "Descubrimiento",
+      title: " Consulta y Configuración",
       items: [
-        "Descubrimos la esencia de tu marca y lo que la hace única.",
-        "Definimos tu propuesta de valor y tu posicionamiento en el mercado.",
-        "Creamos una identidad visual atractiva y memorable.",
+        "Se realiza una primera reunión para armar el BRIEF junto al cliente, con el objetivo de conocer acerca de la marca, el público, los objetivos, y lo que se quiere transmitir.",
       ],
     },
     {
-      title: "Desarrollo",
+      title: "Diseño Inicial",
       items: [
-        "Desarrollamos una estrategia de comunicación efectiva para tu marca.",
-        "Creamos contenido de alta calidad que resuena con tu público objetivo.",
-        "Gestionamos tu reputación online y construimos relaciones sólidas.",
+        "Se realizan las primeras opciones gráficas de logos o líneas gráficas que se presentan a través de un manual de marca. Se realizan de 2 a 3 diseños de logo y paleta de colores y se van adaptando a los requerimientos del cliente.",
       ],
     },
     {
-      title: "Crecimiento",
+      title: "Implementación y Feedback",
       items: [
-        "Medimos el impacto de tu marca y la fidelización de tus clientes.",
-        "Adaptamos tu estrategia de branding a las tendencias del mercado.",
-        "Expandimos el alcance de tu marca a nuevos públicos.",
+        "Se entrega el manual de marca y se hacen las mejoras, de ser necesarias, en la opciones elegida por el cliente.",
       ],
     },
   ];
@@ -83,7 +77,7 @@ function Service04() {
           className={"w-full grid md:grid-cols-2  grid-cols-1 gap-8"}
         >
           <div>
-            <p className="md:text-2xl text-xl font-light">
+            <p className=" text-xl font-light">
               Somos expertos en capturar la esencia de tu marca y llevarla a
               nuevas alturas. Te ayudamos a destacar en un mundo cada vez más
               competitivo a través de la creación de identidades visuales
@@ -132,7 +126,7 @@ function Service04() {
           <RevealWrapper
             origin="bottom"
             duration={1500}
-            className={"w-full pb-16 md:px-44"}
+            className={"w-full pb-16 "}
           >
             <div className="grid grid-cols-5 ">
               <TimeLine data={data}></TimeLine>

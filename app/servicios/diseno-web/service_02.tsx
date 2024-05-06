@@ -84,7 +84,7 @@ function Service02() {
           className={"w-full grid md:grid-cols-2  grid-cols-1 gap-8"}
         >
           <div className="flex items-center">
-            <p className="md:text-2xl text-xl font-light">
+            <p className="text-xl font-light">
               Transformamos tu presencia en línea con diseños web impactantes y
               funcionales. Desde la creación de sitios web atractivos hasta la
               optimización para una experiencia de usuario excepcional, nuestro
@@ -152,7 +152,7 @@ function Service02() {
         <RevealWrapper
           origin="bottom"
           duration={1500}
-          className={"w-full pb-16 md:px-44 mt-16"}
+          className={"w-full pb-16  mt-16"}
         >
           <div className="grid grid-cols-5 ">
             <TimeLine data={data}></TimeLine>

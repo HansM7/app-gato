@@ -28,10 +28,11 @@ function Section1() {
 
           <RevealWrapper origin="right" duration={1500} className={"w-full"}>
             <p className="text-xl font-light">
-              Nuestro trabajo resulta de nuestra identidad como agencia. Nuestra
-              metodología basado en el valor permite a nuestros clientes pensar
-              en grande, dar pasos seguros y lanzar las mejores experiencias
-              digitales que marquen diferencia con sus competidores.
+              Con un equipo de expertos dedicados, nuestro objetivo es ayudarte
+              a mantener en claro tus objetivos y superar cualquier obstáculo
+              que se interponga en tu camino hacia el progreso. Únete a nosotros
+              en esta emocionante aventura, donde nuestro principal propósito es
+              el éxito de tu proyecto.
             </p>
           </RevealWrapper>
         </div>

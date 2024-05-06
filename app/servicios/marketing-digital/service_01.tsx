@@ -12,27 +12,21 @@ function Service01() {
 
   const data = [
     {
-      title: "Análisis",
+      title: "Consulta y Configuración",
       items: [
-        "Evaluamos tu presencia online actual y la de tus competidores.",
-        "Definimos tu público objetivo y sus necesidades.",
-        "Establecemos objetivos SMART para tu estrategia digital.",
+        "Se realiza una primera reunión para armar el BRIEF junto al cliente, con el objetivo de conocer acerca de la marca, el público, los objetivos, etc. En la misma reunión se procede a configurar la página y otorgar los permisos necesarios para poder administrarla.",
       ],
     },
     {
-      title: "Planificación",
+      title: "Diseño Inicial",
       items: [
-        "Desarrollamos una estrategia personalizada para alcanzar tus objetivos.",
-        "Seleccionamos los canales digitales más adecuados para tu negocio.",
-        "Creamos un calendario editorial con contenido relevante y atractivo.",
+        "Se realizan las primeras opciones de piezas gráficas para comenzar a gestionar las redes sociales de la cuenta. Se sigue una línea gráfica y se van adaptando a los requerimientos del cliente.",
       ],
     },
     {
-      title: "Implementación",
+      title: "Implementación y Feedback",
       items: [
-        "Implementamos la estrategia digital con un equipo de expertos.",
-        "Monitoreamos y analizamos los resultados en tiempo real.",
-        "Optimizamos la estrategia de forma continua para mejorar el rendimiento.",
+        "Se inicia la gestión de las redes sociales, y las ADS, incorporando el feedback del cliente para ajustar y mejorar continuamente las estrategias.",
       ],
     },
   ];
@@ -84,7 +78,7 @@ function Service01() {
           className={"w-full grid md:grid-cols-2  grid-cols-1 gap-8"}
         >
           <div>
-            <p className="md:text-2xl text-xl font-light">
+            <p className=" text-xl font-light">
               Nuestros servicios de Marketing Digital te ayudarán a lograr tus
               objetivos de negocio a través de estrategias personalizadas para
               cada plataforma. Creamos contenido atractivo y relevante que
@@ -107,35 +101,35 @@ function Service01() {
                 className="  text-white  carousel_dinamic "
               >
                 <div className="bg-blue-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
-                  <span className="text-xl">Plan Nivel 0</span>
+                  <span className="text-xl">Plan Inicial</span>
                   <div>
-                    <span className="text-3xl">S/. 400.00</span>
+                    <span className="text-3xl">S/. 450.00</span>
                   </div>
                 </div>
 
                 <div className="bg-red-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
-                  <span className="text-xl">Plan Nivel 1</span>
+                  <span className="text-xl">Plan Integral</span>
                   <div>
-                    <span className="text-3xl">S/. 650.00</span>
+                    <span className="text-3xl">S/. 750.00</span>
                   </div>
                 </div>
 
                 <div className="bg-orange-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
-                  <span className="text-xl">Plan Nivel 2</span>
+                  <span className="text-xl">Plan Maestro</span>
                   <div>
-                    <span className="text-3xl">S/. 1200.00</span>
+                    <span className="text-3xl">S/. 1250.00</span>
                   </div>
                 </div>
 
                 <div className="bg-green-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
-                  <span className="text-xl">Plan Nivel 3</span>
+                  <span className="text-xl">Plan Premium</span>
                   <div>
                     <span className="text-3xl">S/. 2000.00</span>
                   </div>
                 </div>
 
                 <div className="bg-gray-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">
-                  <span className="text-xl">Plan Nivel 4</span>
+                  <span className="text-xl">Plan Ejecutivo</span>
                   <div>
                     <span className="text-3xl">S/. 3600.00</span>
                   </div>
@@ -157,7 +151,7 @@ function Service01() {
           <RevealWrapper
             origin="bottom"
             duration={1500}
-            className={"w-full pb-16 md:px-44"}
+            className={"w-full pb-16 "}
           >
             <div className="grid grid-cols-5 ">
               <TimeLine data={data}></TimeLine>

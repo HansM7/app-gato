@@ -11,27 +11,39 @@ function Service03() {
 
   const data = [
     {
-      title: "Análisis",
+      title: "Reunión y Requerimientos",
       items: [
-        "Recopilamos tus requisitos y comprendemos tus necesidades específicas.",
-        "Definimos la arquitectura del software y las tecnologías a utilizar.",
-        "Elaboramos un presupuesto y un cronograma detallado del proyecto.",
+        "Se lleva a cabo una reunión inicial para comprender los requisitos del cliente y definir el alcance del proyecto.",
       ],
     },
     {
-      title: "Diseño",
+      title: "Diseño y Prototipado",
       items: [
-        "Creamos prototipos interactivos para visualizar la interfaz del software.",
-        "Diseñamos una base de datos segura y escalable.",
-        "Desarrollamos código limpio y bien documentado.",
+        "Se procede a diseñar un prototipo de la aplicación móvil, que sirva como referencia visual para el cliente y como base para el desarrollo.",
       ],
     },
     {
-      title: "Pruebas",
+      title: "Desarrollo y Codificación",
       items: [
-        "Realizamos pruebas exhaustivas para garantizar el correcto funcionamiento del software.",
-        "Corregimos errores y optimizamos el rendimiento.",
-        "Implementamos el software en tu entorno de producción.",
+        "Una vez aprobado el diseño, se inicia el desarrollo de la aplicación móvil, incluyendo la programación del front-end y el back-end según sea necesario.",
+      ],
+    },
+    {
+      title: "Pruebas y Optimización",
+      items: [
+        "Se realizan pruebas exhaustivas para garantizar el funcionamiento correcto de la aplicación en diferentes dispositivos y escenarios. Se realizan ajustes y optimizaciones según sea necesario.",
+      ],
+    },
+    {
+      title: "Lanzamiento y Entrega",
+      items: [
+        "Una vez completadas las pruebas y optimizaciones, la aplicación móvil se prepara para su lanzamiento en las tiendas de aplicaciones (App Store, Google Play, etc.). Se entrega la aplicación al cliente y se brinda soporte durante el proceso de publicación.",
+      ],
+    },
+    {
+      title: "Mantenimiento y Actualización",
+      items: [
+        "Después del lanzamiento, se ofrece soporte continuo para resolver cualquier problema que surja y se realizan actualizaciones periódicas para mantener la aplicación al día con las nuevas tecnologías y requisitos del mercado.",
       ],
     },
   ];
@@ -77,7 +89,7 @@ function Service03() {
         id="detail"
       >
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <p className="md:text-2xl text-xl font-light">
+          <p className=" text-xl font-light">
             Brindamos soluciones de desarrollo de software personalizadas para
             impulsar tu negocio y optimizar tus operaciones. Convertimos tus
             ideas en software funcional, desde la conceptualización hasta la
@@ -88,7 +100,7 @@ function Service03() {
         <RevealWrapper
           origin="bottom"
           duration={1500}
-          className={"w-full pb-16 md:px-44"}
+          className={"w-full pb-16 "}
         >
           <div className="grid grid-cols-5 ">
             <TimeLine data={data}></TimeLine>

@@ -4,6 +4,7 @@ import Navigation from "@/app/components/navigation";
 import Drawer from "@/app/components/drawer";
 import { useEffect, useState } from "react";
 import Service06 from "./service_06";
+import WhatsappContact from "@/app/components/whatsapp-contact";
 
 function Content() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -27,14 +28,7 @@ function Content() {
   return (
     <>
       <div className="relative bg-white flex">
-        <div className="fixed bottom-6 right-6 z-20" onClick={redirect}>
-          <img
-            role="button"
-            className="w-10 floating-image"
-            src="https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-43-189795.png?f=webp&w=256"
-            alt=""
-          />
-        </div>
+        <WhatsappContact></WhatsappContact>
 
         <div
           className={`fixed ${

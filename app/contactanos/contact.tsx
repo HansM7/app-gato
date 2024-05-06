@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Navigation from "../components/navigation";
 import Form from "./form";
 import Drawer from "../components/drawer";
+import WhatsappContact from "../components/whatsapp-contact";
 
 function Contact() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -43,14 +44,7 @@ function Contact() {
 
         {/* // todo -> whatsapp icon */}
 
-        <div className="fixed bottom-6 right-6 z-20" onClick={redirect}>
-          <img
-            role="button"
-            className="w-10 floating-image"
-            src="https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-43-189795.png?f=webp&w=256"
-            alt=""
-          />
-        </div>
+        <WhatsappContact></WhatsappContact>
 
         <div
           className={`fixed ${

@@ -46,7 +46,7 @@ function GridClients() {
       <div className="">
         <h2 className="text-3xl text-center">Nuestros clientes</h2>
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 xl:mt-8 mt-4 2xl:gap-20 xl:gap-24 md:gap-12 gap-8 opacity-90  ">
+      <div className="grid md:grid-cols-5 grid-cols-2 xl:mt-8 mt-4 2xl:gap-20 xl:gap-24 md:gap-8 gap-4 opacity-90  ">
         {clients.map((item, index) => (
           <RevealWrapper
             origin="bottom"

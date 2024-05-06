@@ -6,6 +6,7 @@ import { useState } from "react";
 import BannerDetailPortfolio from "./banner";
 import Footer from "@/app/components/footer";
 import PortfolioInfoDetail from "./info";
+import WhatsappContact from "@/app/components/whatsapp-contact";
 
 function Detail() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -31,14 +32,8 @@ function Detail() {
       {/* //todo fondo -----------------------------*/}
 
       {/* // todo -> whatsapp icon */}
-      <div className="fixed bottom-6 right-6 z-20" onClick={redirect}>
-        <img
-          role="button"
-          className="w-10 floating-image"
-          src="https://cdn.iconscout.com/icon/free/png-512/free-whatsapp-43-189795.png?f=webp&w=256"
-          alt=""
-        />
-      </div>
+      <WhatsappContact></WhatsappContact>
+
       {/* //todo -> end whatsapp icon */}
 
       <div
