@@ -5,9 +5,9 @@ function TimeLineMobile({ data }: { data: any }) {
     <>
       {data.map((item: any, index: number) => {
         return index % 2 === 0 ? (
-          <ItemLeft item={item} index={index}></ItemLeft>
+          <ItemLeft key={index} item={item} index={index}></ItemLeft>
         ) : (
-          <ItemRight item={item}></ItemRight>
+          <ItemRight key={index} item={item}></ItemRight>
         );
       })}
     </>

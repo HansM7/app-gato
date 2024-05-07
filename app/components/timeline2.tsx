@@ -21,21 +21,16 @@ function TimeLine2({ data, numCols }: { data: any[]; numCols: number }) {
       <div
         className={`row-span-1 grid w-full ${defineNumCols} h-12 items-center`}
       >
-        <div className="w-full h-[2px] bg-violet-700 flex justify-center relative">
-          <div className="rounded-full w-10 h-10 bg-white border-2 border-violet-700 flex justify-center items-center absolute -top-4">
-            <div className="w-7 h-7 bg-violet-700 rounded-full"></div>
+        {Array.from({ length: data.length }).map((_, index) => (
+          <div
+            key={index}
+            className="w-full h-[2px] bg-violet-700 flex justify-center relative"
+          >
+            <div className="rounded-full w-10 h-10 bg-white border-2 border-violet-700 flex justify-center items-center absolute -top-4">
+              <div className="w-7 h-7 bg-violet-700 rounded-full"></div>
+            </div>
           </div>
-        </div>
-        <div className="w-full h-[2px] bg-violet-700 flex justify-center relative">
-          <div className="rounded-full w-10 h-10 bg-white border-2 border-violet-700 flex justify-center items-center absolute -top-4 ">
-            <div className="w-7 h-7 bg-violet-700 rounded-full"></div>
-          </div>
-        </div>
-        <div className="w-full h-[2px] bg-violet-700 flex justify-center relative">
-          <div className="rounded-full w-10 h-10 bg-white border-2 border-violet-700 flex justify-center items-center absolute -top-4 ">
-            <div className="w-7 h-7 bg-violet-700 rounded-full"></div>
-          </div>
-        </div>
+        ))}
       </div>
       <div className={`row-span-3 grid w-full ${defineNumCols}`}>
         {data.map((item, index) => {

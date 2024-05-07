@@ -2,6 +2,8 @@
 
 import FastContact from "@/app/components/fast-contac";
 import TimeLine from "@/app/components/timeline";
+import TimeLineMobile from "@/app/components/timeline-mobile";
+import TimeLine2 from "@/app/components/timeline2";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import { useState } from "react";
@@ -85,15 +87,13 @@ function Service06() {
             herramientas innovadoras que impulsan tu éxito en el mundo digital.
           </p>
         </RevealWrapper>
-        <RevealWrapper
-          origin="bottom"
-          duration={1500}
-          className={"w-full pb-16 "}
-        >
-          <div className="grid grid-cols-5 ">
-            <TimeLine data={data}></TimeLine>
-          </div>
-        </RevealWrapper>
+        <div className={` w-full py-16 sm:grid grid-rows-3 hidden    `}>
+          <TimeLine2 data={data} numCols={data.length}></TimeLine2>
+        </div>
+
+        <div className={` w-full py-16 sm:hidden   `}>
+          <TimeLineMobile data={data}></TimeLineMobile>
+        </div>
 
         <hr />
 

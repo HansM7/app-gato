@@ -167,8 +167,6 @@ function Service01() {
         </div>
 
         <div className={` w-full py-16 sm:hidden   `}>
-          {/* <TimeLine2 data={data} numCols={data.length}></TimeLine2> */}
-
           <TimeLineMobile data={data}></TimeLineMobile>
         </div>
 
