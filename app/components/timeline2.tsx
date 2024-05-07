@@ -5,57 +5,86 @@
 import { RevealWrapper } from "next-reveal";
 import React from "react";
 
-function TimeLine2({ data }: { data: any[] }) {
-  const dataTemporal = [
-    {
-      title: "",
-      items: [],
-    },
-    {
-      title: "",
-      items: [],
-    },
-  ];
+function TimeLine2({ data, numCols }: { data: any[]; numCols: number }) {
+  const defineNumCols = "grid-cols-" + numCols;
   return (
     <>
-      {/*  */}
-
-      {/* {data.map((item, index) => {
-        return (index + 1) % 2 === 0 ? (
-          <SectionRight
-            key={index}
-            title={item.title}
-            items={item.items}
-          ></SectionRight>
-        ) : (
-          <SectionLeft
-            key={index}
-            title={item.title}
-            items={item.items}
-          ></SectionLeft>
-        );
-      })} */}
-
-      {data.map((item, index) => (
-        <div
-          key={index}
-          className="border border-violet-700 p-2 rounded-lg flex gap-2 bg-white"
-        >
-          <div className="flex justify-start items-start">
-            <span className="font-semibold text-sm">{index + 1}</span>
+      <div className={`row-span-3 grid w-full ${defineNumCols} `}>
+        {data.map((item, index) => {
+          return index % 2 === 0 ? (
+            <TopTitle key={index} title={item.title} />
+          ) : (
+            <TopDescription key={index} description={item.items[0]} />
+          );
+        })}
+      </div>
+      <div
+        className={`row-span-1 grid w-full ${defineNumCols} h-12 items-center`}
+      >
+        <div className="w-full h-[2px] bg-violet-700 flex justify-center relative">
+          <div className="rounded-full w-10 h-10 bg-white border-2 border-violet-700 flex justify-center items-center absolute -top-4">
+            <div className="w-7 h-7 bg-violet-700 rounded-full"></div>
           </div>
-          <div className="flex flex-col gap-2">
-            <span className="text-sm">{item.title}</span>
-            <p className="font-light text-sm">{item.items[0]}</p>
-          </div>
-          <div className="flex gap-2"></div>
         </div>
-      ))}
+        <div className="w-full h-[2px] bg-violet-700 flex justify-center relative">
+          <div className="rounded-full w-10 h-10 bg-white border-2 border-violet-700 flex justify-center items-center absolute -top-4 ">
+            <div className="w-7 h-7 bg-violet-700 rounded-full"></div>
+          </div>
+        </div>
+        <div className="w-full h-[2px] bg-violet-700 flex justify-center relative">
+          <div className="rounded-full w-10 h-10 bg-white border-2 border-violet-700 flex justify-center items-center absolute -top-4 ">
+            <div className="w-7 h-7 bg-violet-700 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+      <div className={`row-span-3 grid w-full ${defineNumCols}`}>
+        {data.map((item, index) => {
+          return index % 2 === 0 ? (
+            <BottomDescription key={index} description={item.items[0]} />
+          ) : (
+            <BottomTitle key={index} title={item.title} />
+          );
+        })}
+      </div>
     </>
   );
 }
 
-function SectionLeft({ title, items }: { title: string; items: string[] }) {
+function TopDescription({ description }: { description: string }) {
+  return (
+    <div className="flex flex-col justify-end items-center">
+      <p className="text-center text-sm font-light">{description}</p>
+      <div className="h-10 w-[1px] bg-gray-300"></div>
+    </div>
+  );
+}
+
+function BottomDescription({ description }: { description: string }) {
+  return (
+    <div className="flex flex-col justify-start items-center ">
+      <div className="h-10 w-[1px] bg-gray-300"></div>
+      <p className="text-center text-sm font-light">{description}</p>
+    </div>
+  );
+}
+
+function TopTitle({ title }: { title: string }) {
+  return (
+    <div className="flex justify-center items-end">
+      <span className="font-semibold text-violet-700">{title}</span>
+    </div>
+  );
+}
+
+function BottomTitle({ title }: { title: string }) {
+  return (
+    <div className="flex justify-center items-start">
+      <span className="font-semibold text-violet-700">{title}</span>
+    </div>
+  );
+}
+
+function SectionBottom({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="grid grid-cols-5 ">
       <RevealWrapper
@@ -71,7 +100,7 @@ function SectionLeft({ title, items }: { title: string; items: string[] }) {
     </div>
   );
 }
-function SectionRight({ title, items }: { title: string; items: string[] }) {
+function SectionTop({ title, items }: { title: string; items: string[] }) {
   return (
     <>
       <div className="grid grid-cols-5 ">

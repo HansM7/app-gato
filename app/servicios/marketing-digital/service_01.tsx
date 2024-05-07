@@ -2,6 +2,7 @@
 
 import FastContact from "@/app/components/fast-contac";
 import TimeLine from "@/app/components/timeline";
+import TimeLineMobile from "@/app/components/timeline-mobile";
 import TimeLine2 from "@/app/components/timeline2";
 import { Carousel } from "keep-react";
 import { RevealWrapper } from "next-reveal";
@@ -31,6 +32,8 @@ function Service01() {
       ],
     },
   ];
+
+  const gridCol = "grid-cols-" + data.length;
 
   return (
     <section className="w-full min-h-screen  overflow-hidden">
@@ -155,8 +158,18 @@ function Service01() {
           </div>
         </RevealWrapper>
 
-        <div className=" flex-col mt-16 pb-16 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+        {/* <div className=" flex-col mt-16 pb-16 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           <TimeLine2 data={data}></TimeLine2>
+        </div> */}
+
+        <div className={` w-full py-16 sm:grid grid-rows-3 hidden    `}>
+          <TimeLine2 data={data} numCols={data.length}></TimeLine2>
+        </div>
+
+        <div className={` w-full py-16 sm:hidden   `}>
+          {/* <TimeLine2 data={data} numCols={data.length}></TimeLine2> */}
+
+          <TimeLineMobile data={data}></TimeLineMobile>
         </div>
 
         <hr />
