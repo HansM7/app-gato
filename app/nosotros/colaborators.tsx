@@ -48,13 +48,11 @@ function Colaborators() {
     fetchData();
   }, []);
 
-  console.log(projects);
-
   return (
     <div className="w-full xl:px-24 md:px-16  px-8  min-h-screen flex flex-col pt-16 pb-32 bg-gray-100  ">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
-          <span className="md:text-[3rem] text-[2rem] ">Casos de éxito</span>
+          <h1 className="md:text-[3rem] text-[2rem] ">Casos de éxito</h1>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-8 gap-8">
@@ -71,7 +69,8 @@ function Colaborators() {
                   <img
                     className="w-full h-full object-cover filter brightness-[30%] group-hover:scale-110 transition-all"
                     src="https://images.pexels.com/photos/7375/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt=""
+                    alt="GATO - proyecto web y marketing"
+                    title="GATO - proyecto web y marketing"
                   />
 
                   <div className="absolute inset-0 flex flex-col   z-10  gap-4  p-8">

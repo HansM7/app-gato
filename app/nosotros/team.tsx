@@ -25,6 +25,7 @@ function Team() {
 
       role: "CEO",
       description: "",
+      alt: "GATO - CEO Martin Jara",
     },
     {
       name: "Diana Ortega",
@@ -35,6 +36,7 @@ function Team() {
         "diana.png",
       role: "CEO",
       description: "",
+      alt: "GATO - CEO Diana Ortega",
     },
   ];
   const workers = [
@@ -47,6 +49,7 @@ function Team() {
         "jordan.png",
       role: "Desarrollador Web",
       description: "",
+      alt: "GATO - Desarrollador Web Edson Huamaní",
     },
     {
       name: "Hans Melchor",
@@ -57,6 +60,18 @@ function Team() {
         "hans.png",
       role: "Desarrollador Full Stack",
       description: "",
+      alt: "GATO - Desarrollador Full Stack Hans Melchor",
+    },
+    {
+      name: "Alonso Ulloa",
+      photo_name: "alonso",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4D03AQFUHe6qo_0yQA/profile-displayphoto-shrink_800_800/0/1711981009206?e=1718236800&v=beta&t=dnZN-OtJPPET6P5WaWRAEZ0b75VK8FpS0yrVIUv_50M",
+        "alonso.png",
+      role: "Desarrollador Web",
+      description: "",
+      alt: "GATO - Desarrollador Web Alonso Ulloa",
     },
     {
       name: "Mariapia Contreras",
@@ -67,6 +82,7 @@ function Team() {
         "mariapia.png",
       role: "Marketing",
       description: "",
+      alt: "GATO - Marketing Mariapia Contreras",
     },
     {
       name: "Stacey Geraldine",
@@ -77,17 +93,19 @@ function Team() {
         "stacy.png",
       role: "Marketing",
       description: "",
+      alt: "GATO - Marketing Stacey Geraldine",
     },
 
     {
       name: "Lisbeth",
-      photo_name: "diana",
+      photo_name: "lisbeth",
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "lisbeth.png",
       role: "Marketing",
       description: "",
+      alt: "GATO - Marketing Lisbeth",
     },
     {
       name: "Alejandra",
@@ -96,8 +114,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "alejandra.png",
-      role: "Marketing",
+      role: "Community Manager",
       description: "",
+      alt: "GATO - Community Manager Alejandra",
     },
   ];
 
@@ -113,30 +132,10 @@ function Team() {
     <div className="w-fullxl:px-24 md:px-16  px-8 min-h-screen flex flex-col mt-16 bg-gray-100 pt-16  pb-32">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
-          <span className="md:text-[3rem] text-[2rem] ">Nuestro equipo</span>
+          <h1 className="md:text-[3rem] text-[2rem] ">Nuestro equipo</h1>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-16 gap-16">
-        {/* <div className="flex gap-8">
-          {leaders.map((item, index) => (
-            <RevealWrapper origin="bottom" duration={1000} key={index}>
-              <div className="flex flex-col text-center gap-2 ">
-                <img
-                  role="buttom"
-                  onClick={() => openModal(item)}
-                  className="rounded-2xl w-full hover:scale-105 transition-all cursor-pointer "
-                  src={"team/" + item.photo}
-                  alt=""
-                />
-                <span className="text-xs bg-violet-600 text-white rounded-lg py-1">
-                  {item.role}
-                </span>
-                <span>{item.name}</span>
-              </div>
-            </RevealWrapper>
-          ))}
-        </div> */}
-        {/*  */}
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 justify-center">
           {leaders.map((item, index) => (
             <RevealWrapper
@@ -150,7 +149,8 @@ function Team() {
                   onClick={() => openModal(item)}
                   className="rounded-2xl w-full hover:scale-105 transition-all cursor-pointer  "
                   src={"team/" + item.photo}
-                  alt="Jordan Edson"
+                  alt={item.alt}
+                  title={item.alt}
                 />
                 <span className="  text-gray-500 rounded-lg px-2 ">
                   {item.role}
@@ -171,7 +171,8 @@ function Team() {
                   onClick={() => openModal(item)}
                   className="rounded-2xl w-full hover:scale-105 transition-all cursor-pointer "
                   src={"team/" + item.photo}
-                  alt="Jordan Edson"
+                  alt={item.alt}
+                  title={item.alt}
                 />
                 <span className="  text-gray-500 rounded-lg px-2 ">
                   {item.role}

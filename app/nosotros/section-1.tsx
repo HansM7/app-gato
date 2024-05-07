@@ -4,7 +4,7 @@ import { RevealWrapper } from "next-reveal";
 import Team from "./team";
 import Footer from "../components/footer";
 import Colaborators from "./colaborators";
-import CollageAbout from "../components/collage-about";
+import CollageAbout from "./collage-about";
 
 function Section1() {
   return (

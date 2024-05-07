@@ -2,6 +2,7 @@
 
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
+import { title } from "process";
 
 function GridClients() {
   const clients = [
@@ -12,6 +13,7 @@ function GridClients() {
       image:
         "https://i.pinimg.com/736x/81/dd/00/81dd000b83b99271f5b58c8c2232e033.jpg",
       url: "",
+      alt: "GATO - Cliente Flowers Travel",
     },
     {
       slug: "evadry",
@@ -20,6 +22,7 @@ function GridClients() {
       image:
         "https://i.pinimg.com/736x/01/a2/5b/01a25b770392bf75c3bf4182b91892cf.jpg",
       url: "",
+      alt: "GATO - Cliente Eva-Dry",
     },
     {
       slug: "cr-motors",
@@ -28,6 +31,7 @@ function GridClients() {
       image:
         "https://i.pinimg.com/736x/14/d4/1e/14d41e8e044f772dd97ba883eae11075.jpg",
       url: "",
+      alt: "GATO - Cliente CR Motors",
     },
     {
       slug: "caprepar-group",
@@ -36,6 +40,7 @@ function GridClients() {
       image:
         "https://i.pinimg.com/736x/0d/4b/9b/0d4b9bc3bb65614f182fc563c8b32dd0.jpg",
       url: "",
+      alt: "GATO - Cliente Caprepar Group",
     },
   ];
   return (
@@ -49,6 +54,7 @@ function GridClients() {
       <div className="grid md:grid-cols-4 grid-cols-2 xl:mt-8 mt-4 gap-4  opacity-90  ">
         {clients.map((item, index) => (
           <RevealWrapper
+            key={index}
             origin="bottom"
             duration={1000 + index * 200}
             className={
@@ -59,7 +65,7 @@ function GridClients() {
               <img
                 className=" w-full group-hover:scale-105 transition-all object-cover h-64"
                 src={item.image}
-                alt=""
+                alt={item.alt}
               />
               <div className="absolute hidden bg-black group-hover:flex top-0 h-full w-full opacity-50 transition-all justify-center items-center">
                 <span className="text-2xl text-white ">{item.company}</span>

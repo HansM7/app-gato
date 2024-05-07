@@ -11,7 +11,7 @@ function Footer() {
           <img
             className="w-24"
             src="https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png"
-            alt=""
+            alt="GATO - Desarrollo Web, Marketing Digital, Software"
           />
         </div>
         <div className="flex flex-col ">
@@ -42,13 +42,13 @@ function Footer() {
         <div className="flex flex-col ">
           <span className="font-semibold">Escríbenos</span>
           <Link
-            href={"mailto:info@geniusperu.com"}
+            href={"mailto:info@gato.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
             info@geniusperu.com
           </Link>
           <Link
-            href={"mailto:dortega@geniusperu.com"}
+            href={"mailto:dortega@gato.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
             dortega@geniusperu.com

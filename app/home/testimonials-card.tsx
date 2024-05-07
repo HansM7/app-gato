@@ -9,7 +9,7 @@ function TestimonialsCards() {
             <img
               className="rounded-full w-20"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIikjoCF-c8UtN5zp0sk_baxDD-pJNIhRuSNXEddfKFg&s"
-              alt=""
+              alt="GATO - Testimonio cliente Evadry"
             />
             <div className="flex flex-col gap-1">
               {/* <h4 className="">HANS MELCHOR</h4> */}
@@ -35,7 +35,7 @@ function TestimonialsCards() {
             <img
               className="rounded-full w-20"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIikjoCF-c8UtN5zp0sk_baxDD-pJNIhRuSNXEddfKFg&s"
-              alt=""
+              alt="GATO - Testimonio cliente Flowers Travel"
             />
             <div className="flex flex-col gap-1">
               {/* <h4 className="">HANS MELCHOR</h4> */}
@@ -61,7 +61,7 @@ function TestimonialsCards() {
             <img
               className="rounded-full w-20 object-cover"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIikjoCF-c8UtN5zp0sk_baxDD-pJNIhRuSNXEddfKFg&s"
-              alt=""
+              alt="GATO - Testimonio cliente CR Motors"
             />
             <div className="flex flex-col gap-1">
               {/* <h4 className="">HANS MELCHOR</h4> */}

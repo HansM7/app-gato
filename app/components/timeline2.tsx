@@ -20,7 +20,7 @@ function TimeLine2({ data }: { data: any[] }) {
     <>
       {/*  */}
 
-      {data.map((item, index) => {
+      {/* {data.map((item, index) => {
         return (index + 1) % 2 === 0 ? (
           <SectionRight
             key={index}
@@ -34,7 +34,23 @@ function TimeLine2({ data }: { data: any[] }) {
             items={item.items}
           ></SectionLeft>
         );
-      })}
+      })} */}
+
+      {data.map((item, index) => (
+        <div
+          key={index}
+          className="border border-violet-700 p-2 rounded-lg flex gap-2 bg-white"
+        >
+          <div className="flex justify-start items-start">
+            <span className="font-semibold text-sm">{index + 1}</span>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-sm">{item.title}</span>
+            <p className="font-light text-sm">{item.items[0]}</p>
+          </div>
+          <div className="flex gap-2"></div>
+        </div>
+      ))}
     </>
   );
 }

@@ -155,20 +155,8 @@ function Service01() {
           </div>
         </RevealWrapper>
 
-        <div className="flex flex-col mt-16">
-          {/* // todo here is timeline */}
-          <RevealWrapper
-            origin="bottom"
-            duration={1500}
-            className={"w-full pb-16  flex flex-col gap-4"}
-          >
-            <TimeLine2 data={data}></TimeLine2>
-            {/* <div className="grid grid-cols-5 ">
-              <TimeLine data={data}></TimeLine>
-              
-            </div> */}
-          </RevealWrapper>
-          {/*  // todo end timeline */}
+        <div className=" flex-col mt-16 pb-16 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+          <TimeLine2 data={data}></TimeLine2>
         </div>
 
         <hr />

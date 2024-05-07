@@ -25,7 +25,10 @@ function CollagePortfolio() {
     <section className="w-full  xl:px-24 md:px-20 sm:px-12  px-8   py-16">
       <RevealWrapper duration={1500} origin="top">
         <div className="flex justify-center">
-          <h1 className="text-3xl text-center border-b-2 border-blue-400 w-fit">
+          <h1
+            title="GATO - Portafolio de proyectos"
+            className="text-3xl text-center border-b-2 border-blue-400 w-fit"
+          >
             Portafolio
           </h1>
         </div>
@@ -42,7 +45,8 @@ function CollagePortfolio() {
               <img
                 className="object-cover w-full  group-hover:scale-105 transition-all h-72"
                 src={item.acf.imagen}
-                alt=""
+                alt={`GATO - Proyecto ${item.acf.cliente}`}
+                title={`GATO - Proyecto ${item.acf.cliente}`}
               />
 
               <div className="absolute hidden group-hover:flex inset-0 bg-black bg-opacity-70 w-full h-full top-0 animate-fade-up flex-col justify-center items-center gap-4 text-white">

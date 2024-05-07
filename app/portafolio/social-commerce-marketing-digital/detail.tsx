@@ -17,24 +17,7 @@ function Detail() {
 
   return (
     <div className="relative bg-white flex">
-      {/* //todo fondo -----------------------------*/}
-
-      {/* <div className="absolute w-full bg-violet-900 opacity-80">
-        <video
-          className="  opacity-60"
-          muted
-          loop
-          autoPlay
-          src="video.mp4"
-        ></video>
-      </div> */}
-
-      {/* //todo fondo -----------------------------*/}
-
-      {/* // todo -> whatsapp icon */}
       <WhatsappContact></WhatsappContact>
-
-      {/* //todo -> end whatsapp icon */}
 
       <div
         className={`fixed  ${

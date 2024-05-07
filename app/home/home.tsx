@@ -1,18 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import Banner from "../components/banner";
+import Banner from "./banner";
 import Carousel from "../components/carousel";
 import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
 import "react-awesome-slider/dist/styles.css";
-import Collage from "../components/collage";
-import Detail from "../components/detail";
+import Collage from "./collage";
+import Detail from "./detail";
 import Slider from "../components/slider";
 import Testimonials from "../components/testimonials";
 import Footer from "../components/footer";
-import GridClients from "../components/grid-clients";
-import TestimonialsCards from "../components/testimonials-card";
+import GridClients from "./grid-clients";
+import TestimonialsCards from "./testimonials-card";
 import WhatsappContact from "../components/whatsapp-contact";
 
 function Home() {
@@ -20,23 +20,7 @@ function Home() {
 
   return (
     <div className="relative bg-white flex">
-      {/* //todo fondo -----------------------------*/}
-
-      {/* <div className="absolute w-full bg-violet-900 opacity-80">
-        <video
-          className="  opacity-60"
-          muted
-          loop
-          autoPlay
-          src="video.mp4"
-        ></video>
-      </div> */}
-
-      {/* //todo fondo -----------------------------*/}
-
-      {/* // todo -> whatsapp icon */}
       <WhatsappContact></WhatsappContact>
-      {/* //todo -> end whatsapp icon */}
 
       <div
         className={`fixed  ${

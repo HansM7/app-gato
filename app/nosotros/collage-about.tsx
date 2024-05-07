@@ -4,7 +4,7 @@ import { RevealWrapper } from "next-reveal";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-function Collage() {
+function CollageAbout() {
   const [position, setPosition] = useState(0);
 
   const router = useRouter();
@@ -14,7 +14,7 @@ function Collage() {
   }
 
   return (
-    <section className="xl:px-32 md:px-24  px-8 flex  py-16  w-full bg-white">
+    <section className=" flex  pt-16  w-full ">
       <div className="w-full">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           <RevealWrapper
@@ -30,9 +30,10 @@ function Collage() {
             >
               <div>
                 <img
-                  src="https://i.pinimg.com/736x/9e/a4/5d/9ea45dc48908ce2f19947d3105dd0dbb.jpg"
+                  src="https://i.pinimg.com/736x/52/06/f8/5206f80009c41c8b3ce864ae2f07eb93.jpg"
                   loading="lazy"
-                  alt="Photo by Minh Pham"
+                  alt="Agecia GATO - Branding"
+                  title="Agecia GATO - Branding"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
               </div>
@@ -64,11 +65,11 @@ function Collage() {
             >
               <div>
                 <img
-                  // src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
-                  src="https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
+                  src="https://i.pinimg.com/736x/74/68/cc/7468cc4fe04a0fccfbfa661555fe8922.jpg"
                   loading="lazy"
-                  alt="Photo by Minh Pham"
-                  className="absolute inset-0 h-full w-full object-cover object-top  transition-all duration-200 group-hover:scale-110"
+                  alt="Agecia GATO - Desarrollo de Software"
+                  title="Agecia GATO - Desarrollo de Software"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
@@ -78,15 +79,42 @@ function Collage() {
                   role="button"
                 >
                   <p className=" text-white text-xl">
-                    Transformamos tus ideas en software funcional. Desde la
-                    conceptualización hasta la implementación, creamos
-                    soluciones a medida que potencian tu negocio y simplifican
-                    tus operaciones.
+                    Nuestros servicios de Marketing Digital, están orientados en
+                    transformar tus redes sociales en fuentes de conversión,
+                    según los objetivos de tu negocio.
                   </p>
                 </div>
               )}
             </div>
           </RevealWrapper>
+
+          {/* <RevealWrapper
+            className="group relative flex xl:h-96 h-80  items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
+            duration={1500}
+            origin="right"
+          >
+            <div>
+              <img
+                onMouseEnter={() => setPosition(2)}
+                onMouseLeave={() => setPosition(0)}
+                src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
+                loading="lazy"
+                alt="Photo by Magicle"
+                className="absolute inset-0 h-full w-full object-cover object-center  duration-200 group-hover:scale-110 transition-all"
+              />
+            </div>
+            {position === 2 && (
+              <div
+                className="absolute bg-black opacity-70 w-full h-full  flex justify-center items-center transition-all "
+                role="button"
+              >
+                <p className="text-sm text-white">
+                  ransformamos tu presencia en línea con diseños web impactantes
+                  y funcionales.
+                </p>
+              </div>
+            )}
+          </RevealWrapper> */}
 
           <RevealWrapper
             duration={1500}
@@ -101,10 +129,10 @@ function Collage() {
             >
               <div>
                 <img
-                  // src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
-                  src="https://i.pinimg.com/736x/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
+                  src="https://i.pinimg.com/736x/b7/da/ae/b7daaed28bee8358721cd0066b7c4209.jpg"
                   loading="lazy"
-                  alt="Photo by Minh Pham"
+                  alt="Agecia GATO - Desarrollo de Software"
+                  title="Agecia GATO - Desarrollo de Software"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
               </div>
@@ -115,9 +143,10 @@ function Collage() {
                   role="button"
                 >
                   <p className=" text-white text-xl">
-                    Nuestros servicios de Marketing Digital, están orientados en
-                    transformar tus redes sociales en canales de ventas, según
-                    los objetivos de tu negocio.
+                    Transformamos tus ideas en software funcional. Desde la
+                    conceptualización hasta la implementación, creamos
+                    soluciones a medida que potencian tu negocio y simplifican
+                    tus operaciones.
                   </p>
                 </div>
               )}
@@ -139,7 +168,8 @@ function Collage() {
                 <img
                   src="https://i.pinimg.com/736x/ab/1f/9b/ab1f9b72e259f15ac247e3ef90a63261.jpg"
                   loading="lazy"
-                  alt="Photo by Minh Pham"
+                  alt="Agecia GATO - Desarrollo de Aplicaciones"
+                  title="Agecia GATO - Desarrollo de Aplicaciones"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
                 />
               </div>
@@ -164,4 +194,4 @@ function Collage() {
   );
 }
 
-export default Collage;
+export default CollageAbout;

@@ -4,7 +4,6 @@ import { api_projects } from "@/app/data/enviroments/api.enviroment";
 import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import { useEffect, useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
 
 function BannerDetailPortfolio() {
   const [data, setData] = useState<any>({});
@@ -58,12 +57,14 @@ function BannerDetailPortfolio() {
             >
               <img
                 src="https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk="
-                alt=""
+                alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
+                title="Servicio de Marketing Digital para Social Commerce"
                 className="rounded-md"
               />
               <img
                 src="https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk="
-                alt=""
+                alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
+                title="Servicio de Marketing Digital para Social Commerce"
                 className="rounded-md"
               />
             </RevealWrapper>
@@ -75,7 +76,9 @@ function BannerDetailPortfolio() {
               <div className="border-x border-black row-span-2 p-8 flex flex-col ">
                 <span className="text-2xl font-light">Proyecto de </span>
 
-                <span className="text-[3rem]">{data.title.rendered}</span>
+                <h1 className="text-[3rem]" title={data.title.rendered}>
+                  {data.title.rendered}
+                </h1>
               </div>
               <div className="border-x border-t border-black  row-span-4 p-8">
                 <RevealWrapper
@@ -86,12 +89,14 @@ function BannerDetailPortfolio() {
                   <img
                     src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg "
                     className="w-full  object-cover h-full "
-                    alt=""
+                    alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
+                    title="Servicio de Marketing Digital para Social Commerce"
                   />
                   <img
                     src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg"
                     className="w-full  object-cover h-full "
-                    alt=""
+                    alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
+                    title="Servicio de Marketing Digital para Social Commerce"
                   />
                 </RevealWrapper>
               </div>
@@ -107,6 +112,8 @@ function BannerDetailPortfolio() {
         </div>
       </section>
     );
+  } else {
+    return <></>;
   }
 }
 

@@ -205,7 +205,9 @@ function Component1({
   return (
     <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 pb-16">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Branding</h2>
+        <h2 className={`${sizing.title}`} title="GATO - Branding">
+          Branding
+        </h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Capturamos la esencia de tu marca y la llevamos a nuevas alturas.
@@ -240,7 +242,8 @@ function Component1({
         <img
           className="rounded-md w-[800px] h-[30rem] object-cover"
           src="https://www.teramind.co/blog/wp-content/uploads/2021/05/Benefits-of-Team-Branding_RD.jpg"
-          alt=""
+          alt="GATO - Branding"
+          title="GATO - Branding"
         />
       </div>
     </div>
@@ -259,7 +262,9 @@ function Component2({
   return (
     <div className="flex flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Diseño Web</h2>
+        <h2 className={`${sizing.title}`} title="GATO - Diseño Web">
+          Diseño Web
+        </h2>
         <div className=" flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Transformamos tu presencia en línea con diseños web impactantes y
@@ -293,7 +298,8 @@ function Component2({
         <img
           className="rounded-md w-[800px] h-[30rem] object-cover"
           src="https://rightpeoplegroup.com/wp-content/uploads/2022/11/software-production-team-2021-09-24-04-17-44-utc-min-scaled.jpg"
-          alt=""
+          alt="GATO - Diseño Web"
+          title="GATO - Diseño Web"
         />
       </div>
     </div>
@@ -312,7 +318,9 @@ function Component3({
   return (
     <div className="flex flex-col md:flex-row  animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Desarollo de software</h2>
+        <h2 className={`${sizing.title}`} title="GATO - Desarollo de software">
+          Desarollo de software
+        </h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Transformamos tus ideas en software funcional. Desde la
@@ -347,7 +355,8 @@ function Component3({
         <img
           className="rounded-md w-[800px] h-[30rem] object-cover"
           src="https://i0.wp.com/www.agile611.com/wp-content/uploads/2019/09/annie-spratt-QckxruozjRg-unsplash.jpg?fit=480%2C320&ssl=1"
-          alt=""
+          alt="GATO - Desarollo de software"
+          title="GATO - Desarollo de software"
         />
       </div>
     </div>
@@ -366,7 +375,9 @@ function Component4({
   return (
     <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Marketing Digital</h2>
+        <h2 className={`${sizing.title}`} title="GATO - Marketing Digital">
+          Marketing Digital
+        </h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Nuestros servicios de Marketing Digital, están orientados en
@@ -401,7 +412,8 @@ function Component4({
         <img
           className="rounded-md w-[800px] h-[30rem] object-cover"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
-          alt=""
+          alt="GATO - Marketing Digital"
+          title="GATO - Marketing Digital"
         />
       </div>
     </div>
@@ -420,7 +432,9 @@ function Component5({
   return (
     <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`}>Desarrollo Móvil</h2>
+        <h2 className={`${sizing.title}`} title="GATO - Desarrollo Móvil">
+          Desarrollo Móvil
+        </h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Somos especialistas en desarrollo movil haciendo aplicaciones
@@ -454,7 +468,8 @@ function Component5({
         <img
           className="rounded-md w-[800px] h-[30rem] object-cover"
           src="https://www.zervizgroup.com/blogs/wp-content/uploads/2021/08/desarrollo-de-apps-para-empresas.jpg"
-          alt=""
+          alt="GATO - Desarrollo Móvil"
+          title="GATO - Desarrollo Móvil"
         />
       </div>
     </div>

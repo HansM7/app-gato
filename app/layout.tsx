@@ -9,13 +9,17 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+export const metadata: Metadata = {
+  icons: "icon-gato.png",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={poppins.variable}>{children}</body>
     </html>
   );

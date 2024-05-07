@@ -61,9 +61,10 @@ function Banner() {
           src="https://videos.pexels.com/video-files/5495900/5495900-hd_1920_1080_30fps.mp4"
         ></video> */}
         <img
+          alt="Equipo de GATO: Expertos en Desarrollo Web, Marketing Digital y Software"
+          title="Equipo de GATO"
           className="w-full h-full object-cover  overflow-hidden brightness-75"
           src="banner_gato.jpg"
-          alt=""
         />{" "}
       </div>
 
@@ -72,12 +73,16 @@ function Banner() {
         {position === 0 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
-              <h1 className={`${sizing.title} text-black w-full font-semibold`}>
+              <h1
+                className={`${sizing.title} text-black w-full font-semibold`}
+                title="Agencia GATO"
+              >
                 Agencia de{" "}
               </h1>
 
               <div className="flex flex-col gap-2">
                 <span
+                  title="Servicio tecnológico GATO"
                   className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
                 >
                   {/* <Typewriter
@@ -124,12 +129,16 @@ function Banner() {
         {position === 1 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col  animate-fade-right  ">
-              <h1 className={`${sizing.title} text-black w-full font-semibold`}>
+              <h1
+                className={`${sizing.title} text-black w-full font-semibold`}
+                title="Agencia GATO"
+              >
                 Agencia de{" "}
               </h1>
 
               <div className="flex flex-col gap-2">
                 <span
+                  title="Servicio tecnológico GATO"
                   className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
                 >
                   {/* <Typewriter
@@ -175,11 +184,15 @@ function Banner() {
         {position === 2 && (
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right animate-duration-500  ">
-              <h1 className={`${sizing.title} text-black w-full font-semibold`}>
+              <h1
+                className={`${sizing.title} text-black w-full font-semibold`}
+                title="Agencia GATO"
+              >
                 Agencia de{" "}
               </h1>
               <div className="flex flex-col gap-2">
                 <span
+                  title="Servicio tecnológico GATO"
                   className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
                 >
                   {/* <Typewriter
