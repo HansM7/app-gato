@@ -84,9 +84,9 @@ function Service06() {
             </div>
             <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
               <div className="flex flex-col items-center md:gap-16 py-16">
-                <h1 className="md:text-[5rem] text-4xl font-black">
+                <h2 className="md:text-[5rem] text-4xl font-black">
                   Servicio de
-                </h1>
+                </h2>
                 <div className=" flex flex-wrap justify-center md:gap-10 gap-1">
                   <span className="md:text-[6rem] text-4xl font-black text-blue-500 text-center">
                     Desarrollo

@@ -2,6 +2,7 @@
 
 import { api_clients } from "@/app/data/enviroments/api.enviroment";
 import axios from "axios";
+import { Spinner } from "keep-react";
 import { RevealWrapper } from "next-reveal";
 import React, { useEffect, useState } from "react";
 
@@ -57,6 +58,12 @@ function BannerClient() {
             </RevealWrapper>
           </div>
         </div>
+      </section>
+    );
+  } else {
+    return (
+      <section className="w-full h-screen flex justify-center items-center">
+        <Spinner color="info" size="lg" />
       </section>
     );
   }

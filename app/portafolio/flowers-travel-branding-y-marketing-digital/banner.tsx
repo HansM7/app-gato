@@ -2,6 +2,7 @@
 
 import { api_projects } from "@/app/data/enviroments/api.enviroment";
 import axios from "axios";
+import { Spinner } from "keep-react";
 import { RevealWrapper } from "next-reveal";
 import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
@@ -109,6 +110,12 @@ function BannerDetailPortfolio() {
             </div>
           </div>
         </div>
+      </section>
+    );
+  } else {
+    return (
+      <section className="w-full h-screen flex justify-center items-center">
+        <Spinner color="info" size="lg" />
       </section>
     );
   }
