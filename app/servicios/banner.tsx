@@ -17,25 +17,14 @@ function BannerServices() {
       <div className="xl:px-14 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8 flex flex-col items-center">
         <RevealWrapper origin="left" duration={1500} className={"w-full"}>
           <div className="  flex flex-col  ">
-            <span className="text-gray-200 xl:text-[5rem] md:text-[4rem] text-[3rem]">
+            <h1
+              title="Servicios tecnologicos GATO"
+              className="text-gray-200 xl:text-[5rem] md:text-[4rem] text-[3rem]"
+            >
               Servicios que
-            </span>
+            </h1>
 
             <div className="text-sky-400  xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44 -mt-4">
-              {/* <TypeAnimation
-                sequence={[
-                  // Same substring at the start will only be typed once, initially
-                  "Innovan",
-                  1000,
-                  "Trascienden",
-                  1000,
-                  "Impactan",
-                  1000,
-                ]}
-                speed={3}
-                repeat={Infinity}
-              /> */}
-
               <Typewriter
                 loop
                 words={["Innovan", "Trascienden", "Impactan"]}
@@ -53,7 +42,7 @@ function BannerServices() {
             En GATO llevamos tu negocio al siguiente nivel con nuestra gama
             completa de servicios digitales. Desde estrategias de marketing
             hasta el diseño web, estamos aquí para hacer que tu marca brille en
-            el mundo digital.
+            el mundo digital.
           </span>
         </RevealWrapper>
         <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">

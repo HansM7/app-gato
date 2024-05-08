@@ -3,20 +3,6 @@ import Portfolio from "./portfolio";
 
 import type { Metadata, ResolvingMetadata } from "next";
 
-// crear seo a partir de una api
-// export async function generateMetadata(parent: any): Promise<Metadata> {
-//   try {
-//     const response = await fetch(`apiwordpress`).then((res) => res.json());
-
-//     return {
-//       title: response.title,
-//       openGraph: {},
-//     };
-//   } catch (error) {
-//     return {};
-//   }
-// }
-
 export const metadata: Metadata = {
   title: "GATO - Portafolio",
   description:

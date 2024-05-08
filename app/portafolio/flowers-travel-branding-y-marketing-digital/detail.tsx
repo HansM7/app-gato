@@ -11,10 +11,6 @@ import WhatsappContact from "@/app/components/whatsapp-contact";
 function Detail() {
   const [isDrawer, setIsDrawer] = useState(false);
 
-  function redirect() {
-    window.open("https://wa.me/+51946380310", "_blank");
-  }
-
   return (
     <div className="relative bg-white flex">
       <WhatsappContact></WhatsappContact>

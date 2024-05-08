@@ -43,13 +43,7 @@ function Items() {
       video:
         "https://videos.pexels.com/video-files/3205622/3205622-hd_1920_1080_25fps.mp4",
     },
-    // {
-    //   name: "Business Intelligence",
-    //   icon: "https://cdn-icons-png.flaticon.com/512/3343/3343849.png",
-    //   detail:
-    //     "Análizamos insights y visualizaciones para que puedas aprovechar al máximo la información de tu empresa.",
-    //   path: "business-intelligence",
-    // },
+
     {
       name: "Desarrollo de Aplicaciones",
       icon: "https://cdn-icons-png.flaticon.com/512/6470/6470993.png",
@@ -61,36 +55,10 @@ function Items() {
     },
   ];
 
-  function handleRedirect(path: string) {}
-
   return (
     <section id="detail">
       <div className="min-h-screen xl:px-24 md:px-16  px-8 flex bg-gray-100 pt-12 pb-24">
         <div className="w-full flex flex-col ">
-          {/* <div className="flex gap-16">
-              <div className="flex flex-col">
-                <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-                  <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem]">
-                    Servicios
-                  </h1>
-                </RevealWrapper>
-                <RevealWrapper
-                  origin="right"
-                  duration={1500}
-                  className={"w-full"}
-                >
-                  <h1 className="xl:text-[4rem] md:text-[3rem] text-[3rem] font-semibold">
-                    Tecnológicos
-                  </h1>
-                </RevealWrapper>
-              </div>
-              <div>
-                <RevealWrapper origin="" duration={1500} className={"w-full"}>
-                  <img src="gato-sleep.png" alt="" />
-                </RevealWrapper>
-              </div>
-            </div> */}
-          {/*  */}
           <div className="grid grid-cols-6 gap-8 mt-8 ">
             {services.map((service, index) => (
               <RevealWrapper
@@ -112,6 +80,7 @@ function Items() {
                       muted
                       className="w-full h-full object-cover filter brightness-[30%] group-hover:scale-110 transition-all"
                       src={service.video}
+                      title={service.name}
                     />
 
                     <div className="absolute inset-0 flex flex-col p-8  z-10  gap-4">

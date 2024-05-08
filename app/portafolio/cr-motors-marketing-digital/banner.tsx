@@ -57,12 +57,14 @@ function BannerDetailPortfolio() {
             >
               <img
                 src="https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk="
-                alt=""
+                alt="Servicio de Marketing Digital para CR Motors- Aumenta tu presencia en línea y maximiza tus ventas"
+                title="Servicio de Marketing Digital para CR Motors"
                 className="rounded-md"
               />
               <img
                 src="https://media.istockphoto.com/id/1128826884/es/vector/ning%C3%BAn-s%C3%ADmbolo-de-vector-de-imagen-falta-icono-disponible-no-hay-galer%C3%ADa-para-este-momento.jpg?s=612x612&w=0&k=20&c=9vnjI4XI3XQC0VHfuDePO7vNJE7WDM8uzQmZJ1SnQgk="
-                alt=""
+                alt="Servicio de Marketing Digital para CR Motors- Aumenta tu presencia en línea y maximiza tus ventas"
+                title="Servicio de Marketing Digital para CR Motors"
                 className="rounded-md"
               />
             </RevealWrapper>
@@ -85,12 +87,14 @@ function BannerDetailPortfolio() {
                   <img
                     src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg "
                     className="w-full  object-cover h-full "
-                    alt=""
+                    alt="Servicio de Marketing Digital para CR Motors- Aumenta tu presencia en línea y maximiza tus ventas"
+                    title="Servicio de Marketing Digital para CR Motors"
                   />
                   <img
                     src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg"
                     className="w-full  object-cover h-full "
-                    alt=""
+                    alt="Servicio de Marketing Digital para CR Motors- Aumenta tu presencia en línea y maximiza tus ventas"
+                    title="Servicio de Marketing Digital para CR Motors"
                   />
                 </RevealWrapper>
               </div>
