@@ -21,12 +21,16 @@ export const metadata: Metadata = {
     description:
       "Gato ofrece servicios de desarrollo de software, diseño web, desarrollo móvil, branding y marketing digital para ayudar a las empresas a crecer en Lima.",
     type: "website",
+    images:
+      "https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg",
     url: "https://www.tusitio.com/servicios",
   },
   twitter: {
     title: "Gato - Servicios de tecnología en Lima",
     description:
       "Gato ofrece servicios de desarrollo de software, diseño web, desarrollo móvil, branding y marketing digital para ayudar a las empresas a crecer en Lima.",
+    images:
+      "https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg",
   },
 };
 

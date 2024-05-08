@@ -45,19 +45,19 @@ function Footer() {
             href={"mailto:info@gato.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
-            info@geniusperu.com
+            info@gato.com
           </Link>
           <Link
             href={"mailto:dortega@gato.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
-            dortega@geniusperu.com
+            dortega@gato.com
           </Link>
           <Link
-            href={"mailto:mjara@geniusperu.com"}
+            href={"mailto:mjara@gato.com"}
             className="text-slate-600 md:text-sm text-xs"
           >
-            mjara@geniusperu.com
+            mjara@gato.com
           </Link>
         </div>
 

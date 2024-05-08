@@ -34,42 +34,70 @@ function Service04() {
   ];
 
   return (
-    <section className="w-full min-h-screen  overflow-hidden">
-      <div className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative">
-        <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
+    <>
+      <section className="w-full  min-h-screen relative">
+        <div className=" md:min-h-screen h-full  overflow-hidden  absolute z-0">
           <img
-            className="w-screen  md:min-h-screen h-full min-h-[28rem] object-cover  overflow-hidden filter brightness-50"
-            src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            className="w-screen  md:min-h-screen h-full  object-cover  overflow-hidden filter brightness-50"
+            src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
+            alt="GATO - Servicios digitales"
+            title="GATO - Servicios digitales"
           ></img>
         </div>
-        <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
-          <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <h1 className="text-sky-400   xl:text-[5rem] md:text-[4rem] text-[3rem] ">
-              Servicio de Branding
-            </h1>
-          </RevealWrapper>
-          <RevealWrapper
-            origin="left"
-            duration={1500}
-            className={"w-full mt-16"}
+        <div className=" w-full h-full flex items-center md:px-16 px-2">
+          <Carousel
+            slideInterval={5000}
+            showControls={true}
+            // indicators={true}
+            className="  text-white  carousel_dinamic  w-full  "
+            style={{ height: "100%!important" }}
           >
-            <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
-              Capturamos la esencia de tu marca y la llevamos a nuevas alturas.
-              Con la creación de identidades visuales impactantes te ayudamos a
-              destacar en un mundo cada vez más competitivo.
-            </p>
-          </RevealWrapper>
-
-          <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
-            <Link
-              href={"#detail"}
-              className="floating-image text-sky-400  text-xl "
-            >
-              <span className="animate-pulse">Ver mas</span>
-            </Link>
-          </div>
+            <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
+              <div className="flex flex-col items-center md:gap-16 py-16">
+                <h1 className="md:text-[5rem] text-4xl font-black">
+                  Servicio de
+                </h1>
+                <div className=" flex flex-wrap justify-center md:gap-10 gap-1">
+                  <span className="md:text-[6rem] text-4xl font-black text-blue-500 text-center">
+                    Branding
+                  </span>
+                </div>
+              </div>
+              <div className="px-8 ">
+                <p className="md:text-xl text-sm font-light text-center">
+                  Con nuestro enfoque creativo y centrado en tus valores únicos,
+                  llevamos la esencia de tu marca a nuevas alturas. Nuestra
+                  experiencia en la creación de identidades visuales asegura que
+                  destaque en un entorno competitivo, atrayendo a tu audiencia
+                  objetivo y dejando una huella perdurable.
+                </p>
+              </div>
+            </div>
+            <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
+              <div className="flex flex-col items-center md:gap-16 py-16">
+                <h1 className="md:text-[5rem] text-4xl font-black">
+                  Servicio de
+                </h1>
+                <div className=" flex flex-wrap justify-center md:gap-10 gap-1">
+                  <span className="md:text-[6rem] text-4xl font-black text-blue-500 text-center">
+                    Branding
+                  </span>
+                </div>
+              </div>
+              <div className="px-8 ">
+                <p className="md:text-xl text-sm font-light text-center">
+                  En Branding, elevamos tu marca a nuevas alturas capturando su
+                  esencia y valores distintivos. Nuestra experiencia en la
+                  creación de identidades visuales impactantes garantiza que
+                  resaltes en un mundo competitivo, atrayendo a tu público
+                  objetivo y dejando una impresión duradera.
+                </p>
+              </div>
+            </div>
+          </Carousel>
         </div>
-      </div>
+      </section>
+
       <div
         className="min-h-screen xl:px-36 md:px-16  px-4 flex bg-gray-100 pt-16 flex-col pb-16"
         id="detail"
@@ -136,7 +164,7 @@ function Service04() {
 
         <FastContact></FastContact>
       </div>
-    </section>
+    </>
   );
 }
 

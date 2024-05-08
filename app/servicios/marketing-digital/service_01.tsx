@@ -36,41 +36,75 @@ function Service01() {
   const gridCol = "grid-cols-" + data.length;
 
   return (
-    <section className="w-full min-h-screen  overflow-hidden">
-      <div className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative">
-        <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
+    <>
+      <section className="w-full  min-h-screen relative">
+        <div className=" md:min-h-screen h-full  overflow-hidden  absolute z-0">
           <img
-            className="w-screen  md:min-h-screen h-full min-h-[28rem] object-cover  overflow-hidden filter brightness-50"
-            src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            className="w-screen  md:min-h-screen h-full  object-cover  overflow-hidden filter brightness-50"
+            src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
+            alt="GATO - Servicios digitales"
+            title="GATO - Servicios digitales"
           ></img>
         </div>
-        <div className="xl:px-32 md:px-20 pb-16 md:pb-0 px-8 md:pt-32 pt-16  grid grid-cols-5 gap-16">
-          <div className="col-span-3">
-            <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-              <h1 className="text-sky-400   xl:text-[5rem] md:text-[4rem] text-[3rem] ">
-                Servicio de Marketing Digital
-              </h1>
-            </RevealWrapper>
-            <RevealWrapper
-              origin="left"
-              duration={1500}
-              className={"w-full mt-16"}
-            >
-              <p className=" font-light xl:text-4xl md:text-3xl text-xl text-gray-200 leading-normal">
-                Nuestros servicios de Marketing Digital, están orientados en
-                transformar tus redes sociales en canales de venta, según los
-                objetivos de tu negocio.
-              </p>
-            </RevealWrapper>
-          </div>
-          <div className="col-span-2 z-10 flex justify-center pb-4 ">
-            <img
-              src="https://academiadigital.com/wp-content/uploads/2019/07/Curso-de-Marketing-Digital.png"
-              alt=""
-            />
-          </div>
+        <div className=" w-full h-full flex items-center md:px-16 px-2">
+          <Carousel
+            slideInterval={5000}
+            showControls={true}
+            // indicators={true}
+            className="  text-white  carousel_dinamic  w-full  "
+            style={{ height: "100%!important" }}
+          >
+            <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
+              <div className="flex flex-col items-center md:gap-16 py-16">
+                <h1 className="md:text-[5rem] text-4xl font-black">
+                  Servicio de
+                </h1>
+                <div className=" flex flex-wrap justify-center md:gap-10 gap-1">
+                  <span className="md:text-[6rem] text-4xl font-black text-blue-500 text-center">
+                    Marketing
+                  </span>
+                  <span className="md:text-[6rem] text-4xl font-black text-blue-500 text-center">
+                    Digital
+                  </span>
+                </div>
+              </div>
+              <div className="px-8 ">
+                <p className="md:text-xl text-sm font-light text-center">
+                  Maximizamos el potencial de tus redes sociales,
+                  transformándolas en canales de venta eficaces que se alinean
+                  con tu visión empresarial. Nuestro enfoque innovador y
+                  estrategias personalizadas potencian tus ventas y optimizan tu
+                  presencia online.
+                </p>
+              </div>
+            </div>
+            <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
+              <div className="flex flex-col items-center md:gap-16 py-16">
+                <h1 className="md:text-[5rem] text-4xl font-black">
+                  Servicio de
+                </h1>
+                <div className=" flex flex-wrap justify-center md:gap-10 gap-1">
+                  <span className="md:text-[6rem] text-4xl font-black text-blue-500 text-center">
+                    Marketing
+                  </span>
+                  <span className="md:text-[6rem] text-4xl font-black text-blue-500 text-center">
+                    Digital
+                  </span>
+                </div>
+              </div>
+              <div className="px-8 ">
+                <p className="md:text-xl text-sm font-light text-center">
+                  Potenciamos tus plataformas digitales con estrategias
+                  adaptadas, convirtiéndolas en poderosos instrumentos de venta.
+                  Aprovecha al máximo el alcance de tus redes sociales y mejora
+                  tu presencia en línea con nuestro enfoque personalizado y
+                  creativo.
+                </p>
+              </div>
+            </div>
+          </Carousel>
         </div>
-      </div>
+      </section>
       <div
         className="min-h-screen xl:px-36 md:px-16  px-4 flex bg-gray-100 pt-16 flex-col pb-16"
         id="detail"
@@ -161,7 +195,7 @@ function Service01() {
 
         <FastContact></FastContact>
       </div>
-    </section>
+    </>
   );
 }
 
