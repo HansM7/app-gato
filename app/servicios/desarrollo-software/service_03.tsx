@@ -60,7 +60,7 @@ function Service03() {
         </div>
         <div className="xl:px-24 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <h1 className="text-sky-400   xl:text-[7rem] md:text-[4rem] text-[3rem] ">
+            <h1 className="text-sky-400   xl:text-[5rem] md:text-[4rem] text-[3rem] ">
               Servicio de Desarrollo de Software
             </h1>
           </RevealWrapper>

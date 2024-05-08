@@ -185,9 +185,9 @@ function Drawer() {
           </div>
 
           <div className="grid grid-cols-3 mt-8 text-sm font-semibold border-t pt-8 pb-8">
-            <Link href={"/#clientes"}>Clientes</Link>
-            <Link href={"/blog"}>Blog</Link>
-            <Link href={"/bolsa de trabajo"}>Bolsa de trabajo</Link>
+            <Link href={"/clientes"}>Clientes</Link>
+            {/* <Link href={"/blog"}>Blog</Link>
+            <Link href={"/bolsa-de-trabajo"}>Bolsa de trabajo</Link> */}
           </div>
         </div>
       </div>

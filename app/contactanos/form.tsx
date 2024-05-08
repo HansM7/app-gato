@@ -25,9 +25,7 @@ function Form() {
         }
       );
       return response.data.token;
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   }
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -47,7 +45,6 @@ function Form() {
       );
       setIsSubmiting(false);
     } catch (error) {
-      console.log(error);
       setIsSubmiting(false);
     }
   }

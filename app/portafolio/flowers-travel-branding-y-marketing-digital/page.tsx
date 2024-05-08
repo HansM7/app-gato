@@ -11,7 +11,7 @@ export async function generateMetadata(parent: any): Promise<Metadata> {
       title: response.title.rendered,
       description: "Proyecto Social Commerce Marketing Digital",
       openGraph: {
-        title: response.title.rendered,
+        title: "Proyecto " + response.title.rendered,
         description: response.acf.descripcion_corta,
         images: response.acf.imagen,
       },

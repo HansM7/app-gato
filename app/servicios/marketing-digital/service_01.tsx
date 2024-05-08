@@ -69,15 +69,6 @@ function Service01() {
               alt=""
             />
           </div>
-
-          {/* <div className="hidden md:flex justify-center absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
-            <Link
-              href={"#detail"}
-              className="floating-image text-sky-400  text-xl "
-            >
-              <span className="animate-pulse">Ver mas</span>
-            </Link>
-          </div> */}
         </div>
       </div>
       <div
@@ -157,10 +148,6 @@ function Service01() {
             </RevealWrapper>
           </div>
         </RevealWrapper>
-
-        {/* <div className=" flex-col mt-16 pb-16 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-          <TimeLine2 data={data}></TimeLine2>
-        </div> */}
 
         <div className={` w-full py-16 sm:grid grid-rows-3 hidden    `}>
           <TimeLine2 data={data} numCols={data.length}></TimeLine2>

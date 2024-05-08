@@ -9,7 +9,7 @@ export async function generateMetadata(parent: any): Promise<Metadata> {
       api_projects + "?slug=social-commerce-marketing-digital"
     ).then((res) => res.json());
     return {
-      title: response.title.rendered,
+      title: "Proyecto " + response.title.rendered,
       description: "Proyecto Evadry Marketing Digital",
       openGraph: {
         title: response.title.rendered,
