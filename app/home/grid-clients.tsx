@@ -29,7 +29,7 @@ function GridClients() {
       company: "CR Motors",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/14/d4/1e/14d41e8e044f772dd97ba883eae11075.jpg",
+        "https://scontent.flim12-1.fna.fbcdn.net/v/t39.30808-6/277767272_101900742501026_7145760777397551890_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs99pcC_vuYX60SeZX2f-BJ1BO_xpjDBAnUE7_GmMMEKucNb0e3VqlNxYbvyDUPa_smRCVkBABH78Ksl1toluR&_nc_ohc=02eAroRZtFEQ7kNvgGIx95k&_nc_ht=scontent.flim12-1.fna&oh=00_AfB98RxLA3LqOvaSGqEAxnZ3HRM2wkCnJG3HQ280LVwExA&oe=6641D04B",
       url: "",
       alt: "GATO - Cliente CR Motors",
     },
@@ -51,19 +51,19 @@ function GridClients() {
       <div className="">
         <h2 className="text-3xl text-center">Nuestros clientes</h2>
       </div>
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:mt-8 mt-4 gap-4  opacity-90  ">
+      <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:mt-8 mt-4 gap-4  opacity-90  ">
         {clients.map((item, index) => (
           <RevealWrapper
             key={index}
             origin="bottom"
             duration={1000 + index * 200}
             className={
-              "w-full justify-center  flex items-center relative overflow-hidden group"
+              "w-full justify-center  flex items-center relative overflow-hidden group "
             }
           >
             <Link href={"clientes/" + item.slug} className="w-full  ">
               <img
-                className=" w-full group-hover:scale-105 transition-all object-cover h-64"
+                className=" w-full group-hover:scale-105 transition-all  h-64"
                 src={item.image}
                 alt={item.alt}
               />

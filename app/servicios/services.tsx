@@ -18,9 +18,17 @@ function Services() {
     }, 800);
   }
 
-  function redirect() {
-    window.open("https://wa.me/+51999999999", "_blank");
-  }
+  useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      if (event.key === "Escape") {
+        setIsDrawer(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   useEffect(() => {
     changeLoading();

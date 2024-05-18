@@ -115,11 +115,11 @@ function Detail() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M28.1204 9.30653C26.987 8.0532 25.0937 7.42653 22.347 7.42653H22.027V7.3732C22.027 5.1332 22.027 2.35986 17.0137 2.35986H14.987C9.97371 2.35986 9.97371 5.14653 9.97371 7.3732V7.43986H9.65371C6.89371 7.43986 5.01371 8.06653 3.88038 9.31986C2.56038 10.7865 2.60038 12.7599 2.73371 14.1065L2.74704 14.1999L2.85783 15.3631C2.8721 15.5129 2.95293 15.6483 3.07869 15.7309C3.38568 15.9325 3.97633 16.3154 4.32038 16.5065C4.50704 16.6265 4.70704 16.7332 4.90704 16.8399C7.18704 18.0932 9.69371 18.9332 12.2404 19.3465C12.3604 20.5999 12.907 22.0665 15.827 22.0665C18.747 22.0665 19.3204 20.6132 19.4137 19.3199C22.1337 18.8799 24.7604 17.9332 27.1337 16.5465C27.2137 16.5065 27.267 16.4665 27.3337 16.4265C27.8836 16.1157 28.4548 15.73 28.9707 15.3556C29.0835 15.2738 29.1558 15.1478 29.1712 15.0093L29.2004 14.7465L29.267 14.1199C29.2804 14.0399 29.2804 13.9732 29.2937 13.8799C29.4004 12.5332 29.3737 10.6932 28.1204 9.30653ZM17.4537 18.4399C17.4537 19.8532 17.4537 20.0665 15.8137 20.0665C14.1737 20.0665 14.1737 19.8132 14.1737 18.4532V16.7732H17.4537V18.4399ZM11.8804 7.42653V7.3732C11.8804 5.10653 11.8804 4.26653 14.987 4.26653H17.0137C20.1204 4.26653 20.1204 5.11986 20.1204 7.3732V7.43986H11.8804V7.42653Z"
+                  d="M22.6663 30.3335H9.33301C8.78634 30.3335 8.33301 29.8802 8.33301 29.3335C8.33301 28.7868 8.78634 28.3335 9.33301 28.3335H22.6663C23.213 28.3335 23.6663 28.7868 23.6663 29.3335C23.6663 29.8802 23.213 30.3335 22.6663 30.3335Z"
                   fill="#7A7678"
                 />
                 <path
-                  d="M28.1029 18.1823C28.4559 18.0128 28.8611 18.2937 28.8257 18.6837L28.3201 24.2531C28.0401 26.9198 26.9468 29.6398 21.0801 29.6398H10.9201C5.05345 29.6398 3.96012 26.9198 3.68012 24.2665L3.19941 18.9786C3.16436 18.5932 3.56105 18.313 3.91317 18.4737C5.37082 19.1388 8.49371 20.5167 10.3226 20.9777C10.4873 21.0192 10.6213 21.1369 10.6901 21.2922C11.4819 23.0762 13.2523 24.0265 15.8268 24.0265C18.3758 24.0265 20.1695 23.0397 20.9633 21.2524C21.0323 21.097 21.1667 20.9793 21.3316 20.9376C23.2712 20.4472 26.584 18.9114 28.1029 18.1823Z"
+                  d="M24.0003 2.6665H8.00033C5.05366 2.6665 2.66699 5.05317 2.66699 7.99984V19.9998C2.66699 22.9465 5.05366 25.3332 8.00033 25.3332H24.0003C26.947 25.3332 29.3337 22.9465 29.3337 19.9998V7.99984C29.3337 5.05317 26.947 2.6665 24.0003 2.6665ZM13.3203 9.75984C14.067 9.75984 14.667 10.3598 14.667 11.0932C14.667 11.8265 14.067 12.4265 13.3337 12.4265C12.6003 12.4265 12.0003 11.8265 12.0003 11.0932C12.0003 10.3598 12.587 9.75984 13.3203 9.75984ZM9.12033 9.75984C9.86699 9.75984 10.467 10.3598 10.467 11.0932C10.467 11.8265 9.86699 12.4265 9.13366 12.4265C8.40032 12.4265 7.80032 11.8265 7.80032 11.0932C7.80032 10.3598 8.37366 9.75984 9.12033 9.75984ZM23.0137 19.8132H9.01366C8.45366 19.8132 8.00033 19.3598 8.00033 18.8132C8.00033 18.2665 8.44032 17.8132 8.98699 17.8132H23.027C23.5737 17.8132 24.027 18.2665 24.027 18.8132C24.027 19.3598 23.5737 19.8132 23.0137 19.8132ZM23.0137 12.0932H18.107C17.5603 12.0932 17.107 11.6398 17.107 11.0932C17.107 10.5465 17.5603 10.0932 18.107 10.0932H23.0137C23.5603 10.0932 24.0137 10.5465 24.0137 11.0932C24.0137 11.6398 23.5737 12.0932 23.0137 12.0932Z"
                   fill="#7A7678"
                 />
               </svg>
@@ -140,11 +140,11 @@ function Detail() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M22.6663 30.3335H9.33301C8.78634 30.3335 8.33301 29.8802 8.33301 29.3335C8.33301 28.7868 8.78634 28.3335 9.33301 28.3335H22.6663C23.213 28.3335 23.6663 28.7868 23.6663 29.3335C23.6663 29.8802 23.213 30.3335 22.6663 30.3335Z"
+                  d="M28.1204 9.30653C26.987 8.0532 25.0937 7.42653 22.347 7.42653H22.027V7.3732C22.027 5.1332 22.027 2.35986 17.0137 2.35986H14.987C9.97371 2.35986 9.97371 5.14653 9.97371 7.3732V7.43986H9.65371C6.89371 7.43986 5.01371 8.06653 3.88038 9.31986C2.56038 10.7865 2.60038 12.7599 2.73371 14.1065L2.74704 14.1999L2.85783 15.3631C2.8721 15.5129 2.95293 15.6483 3.07869 15.7309C3.38568 15.9325 3.97633 16.3154 4.32038 16.5065C4.50704 16.6265 4.70704 16.7332 4.90704 16.8399C7.18704 18.0932 9.69371 18.9332 12.2404 19.3465C12.3604 20.5999 12.907 22.0665 15.827 22.0665C18.747 22.0665 19.3204 20.6132 19.4137 19.3199C22.1337 18.8799 24.7604 17.9332 27.1337 16.5465C27.2137 16.5065 27.267 16.4665 27.3337 16.4265C27.8836 16.1157 28.4548 15.73 28.9707 15.3556C29.0835 15.2738 29.1558 15.1478 29.1712 15.0093L29.2004 14.7465L29.267 14.1199C29.2804 14.0399 29.2804 13.9732 29.2937 13.8799C29.4004 12.5332 29.3737 10.6932 28.1204 9.30653ZM17.4537 18.4399C17.4537 19.8532 17.4537 20.0665 15.8137 20.0665C14.1737 20.0665 14.1737 19.8132 14.1737 18.4532V16.7732H17.4537V18.4399ZM11.8804 7.42653V7.3732C11.8804 5.10653 11.8804 4.26653 14.987 4.26653H17.0137C20.1204 4.26653 20.1204 5.11986 20.1204 7.3732V7.43986H11.8804V7.42653Z"
                   fill="#7A7678"
                 />
                 <path
-                  d="M24.0003 2.6665H8.00033C5.05366 2.6665 2.66699 5.05317 2.66699 7.99984V19.9998C2.66699 22.9465 5.05366 25.3332 8.00033 25.3332H24.0003C26.947 25.3332 29.3337 22.9465 29.3337 19.9998V7.99984C29.3337 5.05317 26.947 2.6665 24.0003 2.6665ZM13.3203 9.75984C14.067 9.75984 14.667 10.3598 14.667 11.0932C14.667 11.8265 14.067 12.4265 13.3337 12.4265C12.6003 12.4265 12.0003 11.8265 12.0003 11.0932C12.0003 10.3598 12.587 9.75984 13.3203 9.75984ZM9.12033 9.75984C9.86699 9.75984 10.467 10.3598 10.467 11.0932C10.467 11.8265 9.86699 12.4265 9.13366 12.4265C8.40032 12.4265 7.80032 11.8265 7.80032 11.0932C7.80032 10.3598 8.37366 9.75984 9.12033 9.75984ZM23.0137 19.8132H9.01366C8.45366 19.8132 8.00033 19.3598 8.00033 18.8132C8.00033 18.2665 8.44032 17.8132 8.98699 17.8132H23.027C23.5737 17.8132 24.027 18.2665 24.027 18.8132C24.027 19.3598 23.5737 19.8132 23.0137 19.8132ZM23.0137 12.0932H18.107C17.5603 12.0932 17.107 11.6398 17.107 11.0932C17.107 10.5465 17.5603 10.0932 18.107 10.0932H23.0137C23.5603 10.0932 24.0137 10.5465 24.0137 11.0932C24.0137 11.6398 23.5737 12.0932 23.0137 12.0932Z"
+                  d="M28.1029 18.1823C28.4559 18.0128 28.8611 18.2937 28.8257 18.6837L28.3201 24.2531C28.0401 26.9198 26.9468 29.6398 21.0801 29.6398H10.9201C5.05345 29.6398 3.96012 26.9198 3.68012 24.2665L3.19941 18.9786C3.16436 18.5932 3.56105 18.313 3.91317 18.4737C5.37082 19.1388 8.49371 20.5167 10.3226 20.9777C10.4873 21.0192 10.6213 21.1369 10.6901 21.2922C11.4819 23.0762 13.2523 24.0265 15.8268 24.0265C18.3758 24.0265 20.1695 23.0397 20.9633 21.2524C21.0323 21.097 21.1667 20.9793 21.3316 20.9376C23.2712 20.4472 26.584 18.9114 28.1029 18.1823Z"
                   fill="#7A7678"
                 />
               </svg>
@@ -203,16 +203,16 @@ function Component1({
   isEnter: any;
 }) {
   return (
-    <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 pb-16">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
       <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`} title="GATO - Branding">
-          Branding
+        <h2 className={`${sizing.title}`} title="GATO - Marketing Digital">
+          Marketing Digital
         </h2>
         <div className="flex flex-col gap-2">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
-            Capturamos la esencia de tu marca y la llevamos a nuevas alturas.
-            Con la creación de identidades visuales impactantes te ayudamos a
-            destacar en un mundo cada vez más competitivo.
+            Nuestros servicios de Marketing Digital, están orientados en
+            transformar tus redes sociales en canales de ventas, según los
+            objetivos de tu negocio.
           </p>
           <div
             onMouseEnter={handleEnter}
@@ -228,7 +228,7 @@ function Component1({
               } transition-all`}
             ></div>
             <Link
-              href={"/servicios/branding"}
+              href={"/servicios/marketing-digital"}
               className={`pl-4 z-10 text-sm  ${
                 isEnter ? "text-white" : "text-[#0A86ED]"
               } `}
@@ -240,10 +240,10 @@ function Component1({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px] h-[30rem] object-cover"
-          src="https://www.teramind.co/blog/wp-content/uploads/2021/05/Benefits-of-Team-Branding_RD.jpg"
-          alt="GATO - Branding"
-          title="GATO - Branding"
+          className="rounded-md max-w-[350px] h-[30rem] object-cover"
+          src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
+          alt="GATO - Marketing Digital"
+          title="GATO - Marketing Digital"
         />
       </div>
     </div>
@@ -296,7 +296,7 @@ function Component2({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px] h-[30rem] object-cover"
+          className="rounded-md max-w-[350px] h-[30rem] object-cover"
           src="https://rightpeoplegroup.com/wp-content/uploads/2022/11/software-production-team-2021-09-24-04-17-44-utc-min-scaled.jpg"
           alt="GATO - Diseño Web"
           title="GATO - Diseño Web"
@@ -353,7 +353,7 @@ function Component3({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px] h-[30rem] object-cover"
+          className="rounded-md max-w-[350px] h-[30rem] object-cover"
           src="https://i0.wp.com/www.agile611.com/wp-content/uploads/2019/09/annie-spratt-QckxruozjRg-unsplash.jpg?fit=480%2C320&ssl=1"
           alt="GATO - Desarollo de software"
           title="GATO - Desarollo de software"
@@ -364,63 +364,6 @@ function Component3({
 }
 
 function Component4({
-  handleEnter,
-  handleLeave,
-  isEnter,
-}: {
-  handleEnter: any;
-  handleLeave: any;
-  isEnter: any;
-}) {
-  return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
-      <div className="flex flex-col gap-4">
-        <h2 className={`${sizing.title}`} title="GATO - Marketing Digital">
-          Marketing Digital
-        </h2>
-        <div className="flex flex-col gap-2">
-          <p className={`${sizing.description} text-[#7A7678] font-light`}>
-            Nuestros servicios de Marketing Digital, están orientados en
-            transformar tus redes sociales en canales de ventas, según los
-            objetivos de tu negocio.
-          </p>
-          <div
-            onMouseEnter={handleEnter}
-            onMouseLeave={handleLeave}
-            role="button"
-            className={`relative rounded-3xl py-3 pr-2  w-fit   font-semibold flex items-center   ${
-              isEnter && " transition-all"
-            } transition-all`}
-          >
-            <div
-              className={`bg-blue-300 rounded-full w-12 h-full absolute   ${
-                isEnter && "bg-blue-500 w-full transition-all"
-              } transition-all`}
-            ></div>
-            <Link
-              href={"/servicios/marketing-digital"}
-              className={`pl-4 z-10 text-sm  ${
-                isEnter ? "text-white" : "text-[#0A86ED]"
-              } `}
-            >
-              VER SERVICIO {">"}
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img
-          className="rounded-md w-[800px] h-[30rem] object-cover"
-          src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
-          alt="GATO - Marketing Digital"
-          title="GATO - Marketing Digital"
-        />
-      </div>
-    </div>
-  );
-}
-
-function Component5({
   handleEnter,
   handleLeave,
   isEnter,
@@ -466,10 +409,67 @@ function Component5({
       </div>
       <div>
         <img
-          className="rounded-md w-[800px] h-[30rem] object-cover"
+          className="rounded-md max-w-[350px] h-[30rem] object-cover"
           src="https://www.zervizgroup.com/blogs/wp-content/uploads/2021/08/desarrollo-de-apps-para-empresas.jpg"
           alt="GATO - Desarrollo Móvil"
           title="GATO - Desarrollo Móvil"
+        />
+      </div>
+    </div>
+  );
+}
+
+function Component5({
+  handleEnter,
+  handleLeave,
+  isEnter,
+}: {
+  handleEnter: any;
+  handleLeave: any;
+  isEnter: any;
+}) {
+  return (
+    <div className="flex flex-col md:flex-row    animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 pb-16">
+      <div className="flex flex-col gap-4">
+        <h2 className={`${sizing.title}`} title="GATO - Branding">
+          Branding
+        </h2>
+        <div className="flex flex-col gap-2">
+          <p className={`${sizing.description} text-[#7A7678] font-light`}>
+            Capturamos la esencia de tu marca y la llevamos a nuevas alturas.
+            Con la creación de identidades visuales impactantes te ayudamos a
+            destacar en un mundo cada vez más competitivo.
+          </p>
+          <div
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+            role="button"
+            className={`relative rounded-3xl py-3 pr-2  w-fit   font-semibold flex items-center   ${
+              isEnter && " transition-all"
+            } transition-all`}
+          >
+            <div
+              className={`bg-blue-300 rounded-full w-12 h-full absolute   ${
+                isEnter && "bg-blue-500 w-full transition-all"
+              } transition-all`}
+            ></div>
+            <Link
+              href={"/servicios/branding"}
+              className={`pl-4 z-10 text-sm  ${
+                isEnter ? "text-white" : "text-[#0A86ED]"
+              } `}
+            >
+              VER SERVICIO {">"}
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          className="rounded-md max-w-[350px] h-[30rem] object-cover"
+          src="https://www.teramind.co/blog/wp-content/uploads/2021/05/Benefits-of-Team-Branding_RD.jpg"
+          alt="GATO - Branding"
+          title="GATO - Branding"
         />
       </div>
     </div>

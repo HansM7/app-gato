@@ -1,12 +1,10 @@
 "use client";
 
 import FastContact from "@/app/components/fast-contac";
-import TimeLine from "@/app/components/timeline";
 import TimeLineMobile from "@/app/components/timeline-mobile";
 import TimeLine2 from "@/app/components/timeline2";
 import { Carousel } from "keep-react";
 import { RevealWrapper } from "next-reveal";
-import Link from "next/link";
 import { useState } from "react";
 
 function Service04() {

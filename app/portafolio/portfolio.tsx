@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
 import CollagePortfolio from "./collage";
@@ -9,6 +9,17 @@ import WhatsappContact from "../components/whatsapp-contact";
 
 function Portfolio() {
   const [isDrawer, setIsDrawer] = useState(false);
+  useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      if (event.key === "Escape") {
+        setIsDrawer(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
     <div className="relative bg-white flex">

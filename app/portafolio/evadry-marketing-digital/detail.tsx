@@ -2,14 +2,24 @@
 
 import Drawer from "@/app/components/drawer";
 import Navigation from "@/app/components/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BannerDetailPortfolio from "./banner";
 import Footer from "@/app/components/footer";
 import WhatsappContact from "@/app/components/whatsapp-contact";
 
 function Detail() {
   const [isDrawer, setIsDrawer] = useState(false);
-
+  useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      if (event.key === "Escape") {
+        setIsDrawer(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
   return (
     <div className="relative bg-white flex">
       <WhatsappContact></WhatsappContact>

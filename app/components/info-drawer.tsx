@@ -10,25 +10,21 @@ function InfoDrawer({ word }: { word: string }) {
           href={"/portafolio/cr-motors-marketing-digital"}
           className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
         >
-          CR Motors Marketing Digital
+          Proyecto Marketing Digital
         </Link>
-        <Link
-          href={"/portafolio/evadry-marketing-digital"}
-          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
-        >
-          Evadry Marketing Digital
-        </Link>
+
         <Link
           href={"/portafolio/flower-travel-marketing-y-marketing-digital"}
           className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
         >
-          Flower Travel Branding y Marketing Digital
+          Proyecto Branding
         </Link>
         <Link
-          href={"/portafolio/social-commerce-marketing-digital"}
+          href={"https://ambarpaddle.com/"}
+          target="_blank"
           className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
         >
-          Social Commerce Marketing Digital
+          Proyecto Web Ambar Paddle
         </Link>
       </div>
     );

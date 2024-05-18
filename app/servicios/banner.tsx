@@ -44,7 +44,7 @@ function BannerServices() {
             </div>
           </div>
 
-          <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
+          {/* <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
             <div className="flex flex-col items-center md:gap-16 py-16">
               <h2 className="md:text-[6rem] text-4xl font-black">
                 Servicios que
@@ -61,7 +61,7 @@ function BannerServices() {
                 en el mundo digital.
               </p>
             </div>
-          </div>
+          </div> */}
         </Carousel>
       </div>
     </section>

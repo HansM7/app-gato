@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Banner from "./banner";
 import Carousel from "../components/carousel";
 import Navigation from "../components/navigation";
@@ -18,6 +18,18 @@ import WhatsappContact from "../components/whatsapp-contact";
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
 
+  useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      if (event.key === "Escape") {
+        setIsDrawer(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <div className="relative bg-white flex">
       <WhatsappContact></WhatsappContact>
@@ -33,9 +45,7 @@ function Home() {
       <main className="flex flex-col w-full  md:pl-[80px] ">
         {/* <Header></Header> */}
         <Banner></Banner>
-        {/* <Carousel></Carousel> */}
-        {/* <Carousel2></Carousel2> */}
-        {/* // todo -> this is section abiable👇 */}
+
         <Collage></Collage>
         <Detail></Detail>
 
