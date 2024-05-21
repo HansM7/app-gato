@@ -10,6 +10,8 @@ function CollagePortfolio() {
 
   const [isLoading, setIsLoading] = useState(true);
 
+  const [isSelected, setIsSelected] = useState(false);
+
   async function fetchData() {
     try {
       const response = await axios.get(
@@ -27,16 +29,32 @@ function CollagePortfolio() {
   return (
     <section className="w-full  xl:px-24 md:px-20 sm:px-12  px-8   py-16">
       <RevealWrapper duration={1500} origin="top">
-        <div className="flex justify-center">
+        <div>
           <h1
             title="GATO - Portafolio de proyectos"
-            className="text-3xl text-center border-b-2 border-blue-400 w-fit"
+            className="text-3xl 
+            text-[#3D3D3D] font-semibold uppercase mb-4"
           >
             Portafolio
           </h1>
+          <nav className="w-full">
+          <ul className="flex gap-x-4 text-[#4F4F4F] font-semibold">
+            <li className="group hover:text-[#6D28D9]">Todas las categorías
+            <div className="abslute w-full h-0.5 bg-[#6D28D9] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            </li>
+            <li className="group hover:text-[#6D28D9]">Diseño web
+            <div className="abslute w-full h-0.5 bg-[#6D28D9] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            </li>
+            <li className="group hover:text-[#6D28D9]">Branding
+            <div className="abslute w-full h-0.5 bg-[#6D28D9] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div></li>
+            <li className="group hover:text-[#6D28D9]">Desarrollo de aplicaciones
+            <div className="abslute w-full h-0.5 bg-[#6D28D9] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div></li>
+            <li className="group hover:text-[#6D28D9]">Marketing Digital
+            <div className="abslute w-full h-0.5 bg-[#6D28D9] scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div></li>
+          </ul>
+        </nav>
         </div>
       </RevealWrapper>
-
       <RevealWrapper duration={1500} origin="bottom" className={`mt-12`}>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 ">
           {isLoading ? (

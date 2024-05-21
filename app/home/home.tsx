@@ -52,7 +52,7 @@ function Home() {
         {/* <Slider direction="right"></Slider> */}
         <GridClients></GridClients>
         {/* <Testimonials></Testimonials> */}
-        <TestimonialsCards></TestimonialsCards>
+        {/* <TestimonialsCards></TestimonialsCards> */}
         <Footer></Footer>
       </main>
     </div>

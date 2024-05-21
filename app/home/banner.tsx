@@ -74,7 +74,8 @@ function Banner() {
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
               <h1
-                className={`${sizing.title} text-black w-full font-semibold`}
+                className={`${sizing.title} 
+                text-white w-full font-semibold`}
                 title="Agencia GATO"
               >
                 Agencia de{" "}
@@ -130,7 +131,8 @@ function Banner() {
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col  animate-fade-right  ">
               <h1
-                className={`${sizing.title} text-black w-full font-semibold`}
+                className={`${sizing.title} 
+                text-white w-full font-semibold`}
                 title="Agencia GATO"
               >
                 Agencia de{" "}
@@ -185,7 +187,8 @@ function Banner() {
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right animate-duration-500  ">
               <h1
-                className={`${sizing.title} text-black w-full font-semibold`}
+                className={`${sizing.title} 
+                text-white w-full font-semibold`}
                 title="Agencia GATO"
               >
                 Agencia de{" "}

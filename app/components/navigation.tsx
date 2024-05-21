@@ -24,7 +24,7 @@ function Navigation({
   };
 
   return (
-    <div className=" hidden md:flex w-[80px]    left-0 top-0   flex-col justify-between min-h-svh bg-white items-center shadow-lg border-r">
+    <div className=" hidden md:flex w-[80px]    left-0 top-0   flex-col justify-between min-h-svh bg-white items-center shadow-lg ">
       <div className="h-[100%] flex flex-col justify-between items-center  py-4">
         <Link href={"/"}>
           <img

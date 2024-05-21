@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="bg-white h-auto xl:px-32 md:px-24 px-8 flex  py-16  w-full flex-col">
+    <footer className="bg-white h-auto xl:px-32 md:px-24 px-8 flex  pt-16  w-full flex-col">
       <div className="text-sm grid xl:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-16 gap-4 justify-between w-full mb-4">
         <Link href={"/"} className="">
           {/* <span className="text-3xl font-semibold">GATO</span> */}
@@ -15,58 +15,64 @@ function Footer() {
           />
         </Link>
         <div className="flex flex-col ">
-          <span className="font-semibold">Visítanos </span>
+          <span className="font-semibold mb-1">Visítanos </span>
           <span className="text-slate-600">Jesús María</span>
         </div>
         <div className="flex flex-col ">
-          <span className="font-semibold">Hablemos</span>
+          <span className="font-semibold mb-1">Hablemos</span>
           <Link
             href={"tel:+51 980005257"}
-            className="text-slate-600 md:text-sm text-xs"
+            className="text-slate-600 md:text-sm text-xs relative inline-block hover:underline underline-offset-4 mb-1"
           >
             +51 980005257
           </Link>
           <Link
             href={"tel:+51 952341679"}
-            className="text-slate-600 md:text-sm text-xs"
+            className="text-slate-600 md:text-sm text-xs
+            hover:underline underline-offset-4 mb-1"
           >
             +51 952341679
           </Link>
           <Link
             href={"tel:+51 980005257"}
-            className="text-slate-600 md:text-sm text-xs"
+            className="text-slate-600 md:text-sm text-xs
+            hover:underline underline-offset-4 mb-1"
           >
             +51 946380310
           </Link>
         </div>
         <div className="flex flex-col ">
-          <span className="font-semibold">Escríbenos</span>
+          <span className="font-semibold mb-1">Escríbenos</span>
           <Link
             href={"mailto:info@gato.com"}
-            className="text-slate-600 md:text-sm text-xs"
+            className="text-slate-600 md:text-sm text-xs
+            hover:underline underline-offset-4 mb-1"
           >
             info@gato.com
           </Link>
           <Link
             href={"mailto:dortega@gato.com"}
-            className="text-slate-600 md:text-sm text-xs"
+            className="text-slate-600 md:text-sm text-xs
+            hover:underline underline-offset-4 mb-1"
           >
             dortega@gato.com
           </Link>
           <Link
             href={"mailto:mjara@gato.com"}
-            className="text-slate-600 md:text-sm text-xs"
+            className="text-slate-600 md:text-sm text-xs
+            hover:underline underline-offset-4 mb-1"
           >
             mjara@gato.com
           </Link>
         </div>
 
         <div className="flex flex-col ">
-          <span className="font-semibold">Redes Sociales</span>
+          <span className="font-semibold mb-1">Redes Sociales</span>
           <div className="flex gap-2">
             <Link
               href={"https://www.instagram.com/genius_mkt_peru/"}
               target="_blank"
+              className="hover:scale-125 transition-all ease-in-out duration-00"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,13 +89,13 @@ function Footer() {
                   r="44.899"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop offset="0" stopColor="#fd5"></stop>
-                  <stop offset=".328" stopColor="#ff543f"></stop>
-                  <stop offset=".348" stopColor="#fc5245"></stop>
-                  <stop offset=".504" stopColor="#e64771"></stop>
-                  <stop offset=".643" stopColor="#d53e91"></stop>
-                  <stop offset=".761" stopColor="#cc39a4"></stop>
-                  <stop offset=".841" stopColor="#c837ab"></stop>
+                  <stop offset="0" stopColor="#4F4F4F"></stop>
+                  <stop offset=".328" stopColor="#4F4F4F"></stop>
+                  <stop offset=".348" stopColor="#4F4F4F"></stop>
+                  <stop offset=".504" stopColor="#4F4F4F"></stop>
+                  <stop offset=".643" stopColor="#4F4F4F"></stop>
+                  <stop offset=".761" stopColor="#4F4F4F"></stop>
+                  <stop offset=".841" stopColor="#4F4F4F"></stop>
                 </radialGradient>
                 <path
                   fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
@@ -103,10 +109,10 @@ function Footer() {
                   gradientTransform="matrix(1 0 0 .6663 0 1.849)"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop offset="0" stopColor="#4168c9"></stop>
+                  <stop offset="0" stopColor="#4F4F4F"></stop>
                   <stop
                     offset=".999"
-                    stopColor="#4168c9"
+                    stopColor="#4F4F4F"
                     stopOpacity="0"
                   ></stop>
                 </radialGradient>
@@ -125,7 +131,8 @@ function Footer() {
                 ></path>
               </svg>
             </Link>
-            <Link href={"https://www.facebook.com/geniusper"} target="_blank">
+            <Link href={"https://www.facebook.com/geniusper"} target="_blank"
+            className="hover:scale-125 transition-all ease-in-out duration-00">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -135,7 +142,7 @@ function Footer() {
                 viewBox="0 0 48 48"
               >
                 <path
-                  fill="#039be5"
+                  fill="#4F4F4F"
                   d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"
                 ></path>
                 <path
@@ -148,6 +155,7 @@ function Footer() {
             <Link
               href={"https://www.linkedin.com/company/geniusperu"}
               target="_blank"
+              className="hover:scale-125 transition-all ease-in-out duration-00"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +166,7 @@ function Footer() {
                 viewBox="0 0 48 48"
               >
                 <path
-                  fill="#0288D1"
+                  fill="#4F4F4F"
                   d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
                 ></path>
                 <path
@@ -171,7 +179,7 @@ function Footer() {
         </div>
       </div>
       <hr />
-      <div className="text-center w-full mt-4 col-span-4">
+      <div className="text-center w-full my-4 col-span-4">
         <span className="text-slate-600">&copy; 2024 - Gato</span>
       </div>
     </footer>

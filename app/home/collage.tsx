@@ -34,16 +34,19 @@ function Collage() {
                   loading="lazy"
                   alt="Agecia GATO - Marketing Digital"
                   title="Agecia GATO - Marketing Digital"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-500 ease-in-out group-hover:scale-110"
                 />
+                 <span className={`${position === 1 ? "hidden" : "absolute  bottom-1 left-3 font-bold text-white font-lg uppercase"}`}>Innovamos</span>
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 1 && (
                 <div
-                  className="absolute bg-black opacity-70 w-full h-full  flex justify-center items-center transition-all  text-center px-8"
+                  className="absolute 
+                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
                   role="button"
                 >
-                  <p className="text-xl text-white">
+                  <span className="text-xl text-white uppercase font-bold">Innovación</span>
+                  <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
                     Transformamos tu presencia en línea con diseños web
                     impactantes y funcionales.
                   </p>
@@ -70,16 +73,19 @@ function Collage() {
                   loading="lazy"
                   alt="Agecia GATO - Branding"
                   title="Agecia GATO - Branding"
-                  className="absolute inset-0 h-full w-full object-cover object-top  transition-all duration-200 group-hover:scale-110"
+                  className="absolute inset-0 h-full w-full object-cover object-top  transition-all duration-500 ease-in-out group-hover:scale-110"
                 />
+                <span className={`${position === 2 ? "hidden" : "absolute  bottom-1 left-3 font-bold text-white font-lg uppercase"}`}>Desarrollamos</span>
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 2 && (
                 <div
-                  className="absolute bg-black opacity-70 w-full h-full  flex justify-center items-center transition-all  text-center px-8"
+                  className="absolute 
+                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
                   role="button"
                 >
-                  <p className=" text-white text-xl">
+                  <span className="text-xl text-white uppercase font-bold">Desarrollamos</span>
+                  <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
                     Transformamos tus ideas en software funcional. Desde la
                     conceptualización hasta la implementación, creamos
                     soluciones a medida que potencian tu negocio y simplifican
@@ -108,17 +114,20 @@ function Collage() {
                   loading="lazy"
                   alt="Agecia GATO - Desarrollo de Software"
                   title="Agecia GATO - Desarrollo de Software"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-500 ease-in-out group-hover:scale-110"
                 />
+                <span className={`${position === 3 ? "hidden" : "block absolute  bottom-1 left-3 font-bold text-white font-lg uppercase"}`}>Impulsamos</span>
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 3 && (
                 <div
-                  className="absolute bg-black opacity-70 w-full h-full  flex justify-center items-center transition-all  text-center px-8"
+                  className="absolute 
+                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
                   role="button"
                 >
-                  <p className=" text-white text-xl">
-                    Nuestros servicios de Marketing Digital, están orientados en
+                  <span className="text-xl text-white uppercase font-bold">Impulsamos</span>
+                  <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
+                    Nuestros servicios de Marketing Digital están orientados en
                     transformar tus redes sociales en canales de ventas, según
                     los objetivos de tu negocio.
                   </p>
@@ -144,16 +153,19 @@ function Collage() {
                   loading="lazy"
                   alt="Agecia GATO - Desarrollo de Aplicaciones"
                   title="Agecia GATO - Desarrollo de Aplicaciones"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-200 group-hover:scale-110"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-500 ease-in-out group-hover:scale-110"
                 />
+                <span className={`${position === 4 ? "hidden" : "block absolute  bottom-1 left-3 font-bold text-white font-lg uppercase"}`}>Impulsamos</span>
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 4 && (
                 <div
-                  className="absolute bg-black opacity-70 w-full h-full  flex justify-center items-center transition-all  text-center px-8"
+                  className="absolute 
+                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
                   role="button"
                 >
-                  <p className="text-xl text-white">
+                  <span className="text-xl text-white uppercase font-bold">Impulsamos</span>
+                  <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
                     Capturamos la esencia de tu marca y la llevamos a nuevas
                     alturas. Con la creación de identidades visuales impactantes
                     te ayudamos a destacar en un mundo cada vez más competitivo.
