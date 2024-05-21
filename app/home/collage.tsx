@@ -14,7 +14,7 @@ function Collage() {
   }
 
   return (
-    <section className="xl:px-32 md:px-24  px-8 flex  py-16  w-full bg-white">
+    <section className="xl:px-32 lg:px-24  px-8 flex  py-16  w-full bg-white">
       <div className="w-full">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
           <RevealWrapper
@@ -36,16 +36,17 @@ function Collage() {
                   title="Agecia GATO - Marketing Digital"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-500 ease-in-out group-hover:scale-110"
                 />
-                 <span className={`${position === 1 ? "hidden" : "absolute  bottom-1 left-3 font-bold text-white font-lg uppercase"}`}>Innovamos</span>
+                 <span className={`${position === 1 ? "hidden" : "absolute  bottom-1 left-3 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]"}`}>Innovamos</span>
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               {position === 1 && (
                 <div
-                  className="absolute 
-                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
-                  role="button"
-                >
-                  <span className="text-xl text-white uppercase font-bold">Innovación</span>
+                className="absolute bg-[#6D28D9] bg-opacity-70 w-full h-full flex flex-col justify-center items-center text-center px-2 lg:px-8 transition-opacity duration-500 ease-in-out opacity-100"
+                role="button"
+              >
+                <div className="translate-y-[218px] -translate-x-[45px] mb-2 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0">
+                  Innovamos
+                </div>
                   <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
                     Transformamos tu presencia en línea con diseños web
                     impactantes y funcionales.
@@ -81,10 +82,10 @@ function Collage() {
               {position === 2 && (
                 <div
                   className="absolute 
-                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
+                  bg-[#6D28D9] bg-opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
                   role="button"
                 >
-                  <span className="text-xl text-white uppercase font-bold">Desarrollamos</span>
+                  <span className="mb-2 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">Desarrollamos</span>
                   <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
                     Transformamos tus ideas en software funcional. Desde la
                     conceptualización hasta la implementación, creamos
@@ -122,10 +123,10 @@ function Collage() {
               {position === 3 && (
                 <div
                   className="absolute 
-                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
+                  bg-[#6D28D9] bg-opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
                   role="button"
                 >
-                  <span className="text-xl text-white uppercase font-bold">Impulsamos</span>
+                  <span className="mb-2 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">Impulsamos</span>
                   <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
                     Nuestros servicios de Marketing Digital están orientados en
                     transformar tus redes sociales en canales de ventas, según
@@ -161,10 +162,10 @@ function Collage() {
               {position === 4 && (
                 <div
                   className="absolute 
-                  bg-[#6D28D9] opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
+                  bg-[#6D28D9] bg-opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
                   role="button"
                 >
-                  <span className="text-xl text-white uppercase font-bold">Impulsamos</span>
+                  <span className="mb-2 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">Impulsamos</span>
                   <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
                     Capturamos la esencia de tu marca y la llevamos a nuevas
                     alturas. Con la creación de identidades visuales impactantes

@@ -23,14 +23,14 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-32 md:px-24  px-8 flex   pb-16    w-full bg-white">
+    <section className="xl:px-32 lg:px-24  px-8 flex   pb-16    w-full bg-white">
       <RevealWrapper duration={1500} origin="left ">
         <div className="flex flex-col md:flex-row w-full justify-between gap-6 md:gap-8 xl:gap-24">
-          <div className=" flex justify-start   md:flex-col gap-4 ">
+          <div className=" flex justify-center md:justify-start   md:flex-col gap-2 md:gap-4 ">
             <div
               role="button"
               onClick={() => setSelected(1)}
-              className={`p-3 rounded-md ${
+              className={`w-[44px] h-[44px] p-2 md:w-auto md:h-auto md:p-3 rounded-md  ${
                 selected === 1 ? "shadow-lg " : "hover:shadow-lg transition-all ease-in-out duration-300"
               }`}
             >
@@ -39,6 +39,7 @@ function Detail() {
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
+                className="w-full h-full md:w-[32px] md:h-[32px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -54,7 +55,7 @@ function Detail() {
             <div
               role="button"
               onClick={() => setSelected(2)}
-              className={`p-3 rounded-md ${
+              className={`w-[44px] h-[44px] p-2 md:w-auto md:h-auto md:p-3 rounded-md  ${
                 selected === 2 ? "shadow-lg" : "hover:shadow-lg transition-all ease-in-out duration-300"
               }`}
             >
@@ -63,6 +64,7 @@ function Detail() {
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
+                className="w-full h-full md:w-[32px] md:h-[32px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -82,7 +84,7 @@ function Detail() {
             <div
               role="button"
               onClick={() => setSelected(3)}
-              className={`p-3 rounded-md ${
+              className={`w-[44px] h-[44px] p-2 md:w-auto md:h-auto md:p-3 rounded-md  ${
                 selected === 3 ? "shadow-lg " : "hover:shadow-lg transition-all ease-in-out duration-300"
               }`}
             >
@@ -91,6 +93,7 @@ function Detail() {
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
+                 className="w-full h-full md:w-[32px] md:h-[32px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -103,7 +106,7 @@ function Detail() {
             <div
               role="button"
               onClick={() => setSelected(4)}
-              className={`p-3 rounded-md ${
+              className={`w-[44px] h-[44px] p-2 md:w-auto md:h-auto md:p-3 rounded-md  ${
                 selected === 4 ? "shadow-lg " : "hover:shadow-lg transition-all ease-in-out duration-300"
               }`}
             >
@@ -112,6 +115,7 @@ function Detail() {
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
+                 className="w-full h-full md:w-[32px] md:h-[32px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -128,7 +132,7 @@ function Detail() {
             <div
               role="button"
               onClick={() => setSelected(5)}
-              className={`p-3 rounded-md ${
+              className={`w-[44px] h-[44px] p-2 md:w-auto md:h-auto md:p-3 rounded-md  ${
                 selected === 5 ? "shadow-lg " : "hover:shadow-lg transition-all ease-in-out duration-300"
               }`}
             >
@@ -137,6 +141,7 @@ function Detail() {
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
+                 className="w-full h-full md:w-[32px] md:h-[32px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -239,10 +244,9 @@ function Component1({
           </div>
         </div>
       </div>
-      <div className="mx-3 md:mx-0">
+      <div className="flex items-center">
         <img
-          className="
-          rounded-md w-full h-auto mx-auto md:max-w-[400px] md:w-auto md:h-[30rem] object-cover"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
           alt="GATO - Marketing Digital"
           title="GATO - Marketing Digital"
@@ -296,9 +300,9 @@ function Component2({
           </div>
         </div>
       </div>
-      <div className="mx-3 md:mx-0">
+      <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto md:max-w-[400px] md:w-auto md:h-[30rem] object-cover"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
           src="https://rightpeoplegroup.com/wp-content/uploads/2022/11/software-production-team-2021-09-24-04-17-44-utc-min-scaled.jpg"
           alt="GATO - Diseño Web"
           title="GATO - Diseño Web"
@@ -354,9 +358,9 @@ function Component3({
           </div>
         </div>
       </div>
-      <div className="mx-3 md:mx-0">
+      <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto md:max-w-[400px] md:w-auto md:h-[30rem] object-cover"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
           src="https://i0.wp.com/www.agile611.com/wp-content/uploads/2019/09/annie-spratt-QckxruozjRg-unsplash.jpg?fit=480%2C320&ssl=1"
           alt="GATO - Desarollo de software"
           title="GATO - Desarollo de software"
@@ -410,9 +414,9 @@ function Component4({
           </div>
         </div>
       </div>
-      <div className="mx-3 md:mx-0">
+      <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto md:max-w-[400px] md:w-auto md:h-[30rem] object-cover"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
           src="https://www.zervizgroup.com/blogs/wp-content/uploads/2021/08/desarrollo-de-apps-para-empresas.jpg"
           alt="GATO - Desarrollo Móvil"
           title="GATO - Desarrollo Móvil"
@@ -468,9 +472,9 @@ function Component5({
           </div>
         </div>
       </div>
-      <div className="mx-3 md:mx-0">
+      <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto md:max-w-[400px] md:w-auto md:h-[30rem] object-cover"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
           src="https://www.teramind.co/blog/wp-content/uploads/2021/05/Benefits-of-Team-Branding_RD.jpg"
           alt="GATO - Branding"
           title="GATO - Branding"
