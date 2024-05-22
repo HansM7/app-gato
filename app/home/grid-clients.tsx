@@ -174,7 +174,7 @@ function GridClients() {
               <div className="absolute opacity-0 bg-black group-hover:opacity-100 group-hover:bg-opacity-50  flex top-0 h-full w-full transition-all justify-center items-center
               duration-500 ease-in-out ">
                 <span className="translate-y-[500%] text-2xl text-white 
-                font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] group-hover:translate-y-0 transition-all duration-500">{item.company}</span>
+                font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] group-hover:translate-y-0 transition-all duration-700">{item.company}</span>
               </div>
             </Link>
           </RevealWrapper>

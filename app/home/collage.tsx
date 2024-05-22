@@ -23,7 +23,7 @@ function Collage() {
             className="col-span-2 sm:col-span-1"
           >
             <div
-              className=" group relative flex xl:h-96 h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 "
+              className="group relative flex xl:h-96 h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
               onMouseEnter={() => setPosition(1)}
               onMouseLeave={() => setPosition(0)}
               onClick={() => handleRedirect("marketing-digital")}
@@ -36,23 +36,19 @@ function Collage() {
                   title="Agecia GATO - Marketing Digital"
                   className="absolute inset-0 h-full w-full object-cover object-center transition-all duration-500 ease-in-out group-hover:scale-110"
                 />
-                 <span className={`${position === 1 ? "hidden" : "absolute  bottom-1 left-3 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]"}`}>Innovamos</span>
               </div>
-              {/* este div tiene que aparecer cuando haga hover a la imagen */}
-              {position === 1 && (
-                <div
-                className="absolute bg-[#6D28D9] bg-opacity-70 w-full h-full flex flex-col justify-center items-center text-center px-2 lg:px-8 transition-opacity duration-500 ease-in-out opacity-100"
+              <div
+                className="absolute w-full h-full flex px-2 lg:px-8 transition-all justify-center items-center flex-col duration-500 ease-in-out group-hover:bg-[#6D28D9] group-hover:bg-opacity-70"
                 role="button"
               >
-                <div className="translate-y-[218px] -translate-x-[45px] mb-2 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-500 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0">
+                <span className="absolute bottom-2 left-2 text-xl ml-2 mt-2 text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-700 ease-in-out group-hover:translate-y-0 group-hover:translate-x-0 group-hover:bottom-auto group-hover:left-auto group-hover:relative">
                   Innovamos
-                </div>
-                  <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
-                    Transformamos tu presencia en línea con diseños web
-                    impactantes y funcionales.
-                  </p>
-                </div>
-              )}
+                </span>
+                <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block">
+                  Transformamos tu presencia en línea con diseños web
+                  impactantes y funcionales.
+                </p>
+              </div>
             </div>
           </RevealWrapper>
 
@@ -76,24 +72,26 @@ function Collage() {
                   title="Agecia GATO - Branding"
                   className="absolute inset-0 h-full w-full object-cover object-top  transition-all duration-500 ease-in-out group-hover:scale-110"
                 />
-                <span className={`${position === 2 ? "hidden" : "absolute  bottom-1 left-3 font-bold text-white font-lg uppercase"}`}>Desarrollamos</span>
+                {/* <span className={`${position === 2 ? "hidden" : "absolute  bottom-1 left-3 font-bold text-white font-lg uppercase"}`}>Desarrollamos</span> */}
               </div>
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
-              {position === 2 && (
+              
                 <div
-                  className="absolute 
-                  bg-[#6D28D9] bg-opacity-70 w-full h-full  flex flex-col justify-center items-center transition-all  text-center px-2 lg:px-8"
+                  className="absolute w-full h-full flex px-2 lg:px-8 transition-all justify-center items-center flex-col duration-500 ease-in-out group-hover:bg-[#6D28D9] group-hover:bg-opacity-70
+                  "
                   role="button"
                 >
-                  <span className="mb-2 text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">Desarrollamos</span>
-                  <p className="text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto">
+                  <span className=" w-full translate-y-[130px] xl:translate-y-[162px] text-xl text-white uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-700 ease-in-out group-hover:translate-y-0  group-hover:translate-x-[calc(40%)]">
+                  
+                    Desarrollamos</span>
+                  <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block text-center">
                     Transformamos tus ideas en software funcional. Desde la
                     conceptualización hasta la implementación, creamos
                     soluciones a medida que potencian tu negocio y simplifican
                     tus operaciones.
                   </p>
                 </div>
-              )}
+              
             </div>
           </RevealWrapper>
 
