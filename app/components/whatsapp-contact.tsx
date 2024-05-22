@@ -7,9 +7,10 @@ function WhatsappContact() {
   return (
     <div
       role="button"
-      className="fixed bottom-6 right-6 z-20 bg-green-500 px-5 py-2 rounded-lg"
+      className="fixed bottom-6 right-6 z-20 bg-green-500 p-2 w-[60px] h-[60px] flex justify-center items-center rounded-[50%] group hover:bg-green-700 transition-all duration-700"
       onClick={redirect}
     >
+     
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -36,6 +37,11 @@ function WhatsappContact() {
           </g>
         </g>
       </svg>
+      
+      <div className="hidden absolute right-[calc(60px+18px)] px-3 py-1 bg-white text-black rounded-2xl whitespace-nowrap drop-shadow-md group-hover:block">¿Tienes alguna duda? Contáctanos!</div>
+      {/* <span className="hidden absolute right-[calc(60px+10px)]  border-y-[14px] border-y-transparent border-l-[20px] border-l-white group-hover:block drop-shadow-md"></span> */}
+      
+
     </div>
   );
 }

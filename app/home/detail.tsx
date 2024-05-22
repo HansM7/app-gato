@@ -246,7 +246,7 @@ function Component1({
       </div>
       <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://st.depositphotos.com/1594308/5155/i/450/depositphotos_51558107-stock-photo-business-partners-working-at-meeting.jpg"
           alt="GATO - Marketing Digital"
           title="GATO - Marketing Digital"
@@ -302,7 +302,7 @@ function Component2({
       </div>
       <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://rightpeoplegroup.com/wp-content/uploads/2022/11/software-production-team-2021-09-24-04-17-44-utc-min-scaled.jpg"
           alt="GATO - Diseño Web"
           title="GATO - Diseño Web"
@@ -360,7 +360,7 @@ function Component3({
       </div>
       <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://i0.wp.com/www.agile611.com/wp-content/uploads/2019/09/annie-spratt-QckxruozjRg-unsplash.jpg?fit=480%2C320&ssl=1"
           alt="GATO - Desarollo de software"
           title="GATO - Desarollo de software"
@@ -416,7 +416,7 @@ function Component4({
       </div>
       <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://www.zervizgroup.com/blogs/wp-content/uploads/2021/08/desarrollo-de-apps-para-empresas.jpg"
           alt="GATO - Desarrollo Móvil"
           title="GATO - Desarrollo Móvil"
@@ -474,7 +474,7 @@ function Component5({
       </div>
       <div className="flex items-center">
         <img
-          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-[18rem] object-cover aspect-video shadow-lg"
+          className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://www.teramind.co/blog/wp-content/uploads/2021/05/Benefits-of-Team-Branding_RD.jpg"
           alt="GATO - Branding"
           title="GATO - Branding"

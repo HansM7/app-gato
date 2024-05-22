@@ -32,7 +32,7 @@ function BannerDetailPortfolio() {
         <div className=" w-full">
           <div className="py-16 pl-16 ">
             <div className="">
-              <Link href={"/portafolio"} className="text-white flex gap-x-0.5">
+              <Link href={"/portafolio"} className="text-white flex gap-x-2">
                 <svg
                   width="24"
                   height="24"
@@ -77,13 +77,7 @@ function BannerDetailPortfolio() {
                 </RevealWrapper>
               </div>
             </div>
-            {/* <div className="flex flex-col justify-around items-center border ">
-              <span className="-rotate-90">a</span>
-              <span className="-rotate-90 lg:text-base text-sm">
-                {data.acf.cliente}
-              </span>
-              <span className="-rotate-90">c</span>
-            </div> */}
+
             <div className="w-full flex gap-8">
               <RevealWrapper
                 origin="left"
@@ -109,18 +103,27 @@ function BannerDetailPortfolio() {
             </div>
           </div>
           <div className="relative pr-8 flex items-end">
-            <span className="absolute top-4 left-[45%] z-10 text-[#D9D227] font-semibold text-9xl">
-              SOLUCIÓN
-            </span>
-            <img
-              src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg"
-              className="w-[80%] object-cover h-[700px] grayscale "
-              alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
-              title="Servicio de Marketing Digital para Social Commerce"
-            />
-            <div className="flex justify-center items-start w-full h-full mb-8">
+            <div className=" relative w-[60%] h-[700px]">
+              
+              <img
+                src="https://www.freshbooks.com/wp-content/uploads/2021/10/what-is-teamwork.jpg"
+                className="w-full h-full object-cover  grayscale "
+                alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
+                title="Servicio de Marketing Digital para Social Commerce"
+              />
+              <span className="absolute top-4 left-[60%]  text-[#D9D227] font-semibold text-9xl">
+                SOLUCIÓN
+              </span>
+              <div className=" absolute bottom-6 right-8 ">
+                <span className="text-white font-bold text-6xl uppercase drop-shadow-lg">
+                  {data.acf.cliente}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex justify-center items-start w-[40%] h-full mb-8">
               <div className="relative h-[340px] w-[86px]  border-t-8 border-r-8 border-[#CC27D9]">
-                <div className="absolute -top-5 left-0  h-8 w-8 bg-[#CC27D9]"></div>
+                <div className="absolute border-none -top-5 left-0  h-8 w-8 bg-[#CC27D9]"></div>
                 <div className="absolute -right-5 top-1/2 h-8 w-8 bg-[#CC27D9]"></div>
                 <div className="absolute -right-5 bottom-0 h-8 w-8 bg-[#CC27D9]"></div>
               </div>
@@ -137,12 +140,6 @@ function BannerDetailPortfolio() {
               </div>
             </div>
           </div>
-          {/* <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-            <span>SOLUCION</span>
-            <p className="text-gray-800 font-light lg:text-base text-sm">
-              {data.acf.solucion}
-            </p>
-          </RevealWrapper> */}
 
           {/* <RevealWrapper
             origin="left"
