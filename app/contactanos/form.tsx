@@ -53,7 +53,7 @@ function Form() {
 
   return (
     <section className="w-full min-h-screen  overflow-hidden">
-      <div className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative">
+      {/* <div className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative">
         <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
           <img
             className="w-screen  md:min-h-screen h-full min-h-[28rem] object-cover  overflow-hidden filter brightness-50"
@@ -86,7 +86,7 @@ function Form() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         className=" xl:px-20 md:px-16  px-8 grid  py-16 flex-col bg-gray-100 md:grid-cols-2 grid-cols-1 md:gap-16 gap-8"

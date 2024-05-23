@@ -7,15 +7,6 @@ import { title } from "process";
 function GridClients() {
   const clients = [
     {
-      slug: "flowers-travel",
-      company: "Flowers Travel",
-      service: "Desarrolllo Web",
-      image:
-        "https://i.pinimg.com/736x/81/dd/00/81dd000b83b99271f5b58c8c2232e033.jpg",
-      url: "",
-      alt: "GATO - Cliente Flowers Travel",
-    },
-    {
       slug: "evadry",
       company: "Eva-Dry",
       service: "Desarrolllo Web",
@@ -23,6 +14,15 @@ function GridClients() {
         "https://i.pinimg.com/736x/01/a2/5b/01a25b770392bf75c3bf4182b91892cf.jpg",
       url: "",
       alt: "GATO - Cliente Eva-Dry",
+    },
+    {
+      slug: "ambar-paddle",
+      company: "Ambar Paddle",
+      service: "Desarrolllo Web",
+      image:
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480132/clientes-gato/q2ywguwbq1kdnneugaxk.png",
+      url: "",
+      alt: "GATO - Cliente Ambar Paddle",
     },
     {
       slug: "cr-motors",
@@ -43,67 +43,67 @@ function GridClients() {
       alt: "GATO - Cliente Caprepar Group",
     },
     {
-      slug: "flowers-travel",
-      company: "Flowers Travel",
+      slug: "social-commerce",
+      company: "Social Commerce",
       service: "Desarrolllo Web",
       image:
         "https://i.pinimg.com/736x/81/dd/00/81dd000b83b99271f5b58c8c2232e033.jpg",
       url: "",
-      alt: "GATO - Cliente Flowers Travel",
+      alt: "GATO - Cliente Social Commerce",
     },
     {
-      slug: "evadry",
-      company: "Eva-Dry",
+      slug: "dg-norte",
+      company: "DG NOrte",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/01/a2/5b/01a25b770392bf75c3bf4182b91892cf.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/dg-norte.webp",
       url: "",
-      alt: "GATO - Cliente Eva-Dry",
+      alt: "GATO - Cliente DG Norte",
     },
     {
-      slug: "cr-motors",
-      company: "CR Motors",
+      slug: "embalaje-company",
+      company: "Embalaje company",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/14/d4/1e/14d41e8e044f772dd97ba883eae11075.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/embalaje-company.webp",
       url: "",
-      alt: "GATO - Cliente CR Motors",
+      alt: "GATO - Cliente Embalaje Company",
     },
     {
-      slug: "caprepar-group",
-      company: "Caprepar Group",
+      slug: "naturmed",
+      company: "Naturmed",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/0d/4b/9b/0d4b9bc3bb65614f182fc563c8b32dd0.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/naturmed.webp",
       url: "",
-      alt: "GATO - Cliente Caprepar Group",
+      alt: "GATO - Cliente Naturmed",
     },
     {
-      slug: "flowers-travel",
-      company: "Flowers Travel",
+      slug: "clinica-delmat",
+      company: "Clínica Delmat",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/81/dd/00/81dd000b83b99271f5b58c8c2232e033.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/clinicadelmat.png",
       url: "",
-      alt: "GATO - Cliente Flowers Travel",
+      alt: "GATO - Cliente Clínica Delmat",
     },
     {
-      slug: "evadry",
-      company: "Eva-Dry",
+      slug: "importaciones-em",
+      company: "Importaciones E&M",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/01/a2/5b/01a25b770392bf75c3bf4182b91892cf.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/importacioneseym.png",
       url: "",
-      alt: "GATO - Cliente Eva-Dry",
+      alt: "GATO - Cliente Importaciones E&M",
     },
     {
-      slug: "cr-motors",
-      company: "CR Motors",
+      slug: "jocar-games",
+      company: "Jocar Games",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/14/d4/1e/14d41e8e044f772dd97ba883eae11075.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716482257/clientes-gato/jocargames.jpg",
       url: "",
-      alt: "GATO - Cliente CR Motors",
+      alt: "GATO - Cliente Jocar Games",
     },
     {
       slug: "caprepar-group",

@@ -38,11 +38,11 @@ function Collage() {
                 />
               </div>
               <div
-                className="absolute w-full h-full flex px-2 lg:px-8 transition-all justify-center items-center flex-col duration-500 ease-in-out group-hover:bg-[#6D28D9] group-hover:bg-opacity-70 "
+                className="absolute w-full h-full flex px-2  lg:px-8 transition-all justify-center items-center flex-col duration-500 ease-in-out group-hover:bg-[#6D28D9] group-hover:bg-opacity-70  "
                 role="button"
               >
                 <span className="w-full translate-y-[130px] xl:translate-y-[162px] text-xl text-white inline-block uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-700 ease-in-out group-hover:translate-y-0  group-hover:text-center">
-                  Innovamos
+                    Innovamos
                 </span>
                 <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block text-center">
                   Transformamos tu presencia en línea con diseños web
@@ -77,14 +77,14 @@ function Collage() {
               {/* este div tiene que aparecer cuando haga hover a la imagen */}
               
                 <div
-                  className="absolute w-full h-full flex px-2 lg:px-8 transition-all justify-center items-center flex-col duration-500 ease-in-out group-hover:bg-[#6D28D9] group-hover:bg-opacity-70
+                  className="absolute w-full h-full flex px-2 lg:px-8 transition-all justify-center items-center flex-col duration-500 ease-in-out group-hover:bg-[#6D28D9]  group-hover:bg-opacity-70
                   "
                   role="button"
                 >
-                  <span className=" w-full translate-y-[130px] xl:translate-y-[162px] text-xl text-white inline-block uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-700 ease-in-out group-hover:translate-y-0  group-hover:text-center">
+                  <span className="w-full translate-y-[130px] xl:translate-y-[162px] text-xl text-white inline-block uppercase font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-700 ease-in-out group-hover:translate-y-0  group-hover:text-center">
                   
                     Desarrollamos</span>
-                  <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block text-center text-center">
+                  <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block text-center ">
                     Transformamos tus ideas en software funcional. Desde la
                     conceptualización hasta la implementación, creamos
                     soluciones a medida que potencian tu negocio y simplifican

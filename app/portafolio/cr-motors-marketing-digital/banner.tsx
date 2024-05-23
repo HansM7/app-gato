@@ -28,7 +28,7 @@ function BannerDetailPortfolio() {
 
   if (!isLoading) {
     return (
-      <section className="md:min-h-screen  h-full  flex bg-[#6D28D9]  relative  overflow-hidden ">
+      <section className="md:min-h-screen  h-full  flex bg-[#A52DE6]  relative  overflow-hidden ">
         <div className=" w-full">
           <div className="py-16 pl-16 ">
             <div className="">
@@ -122,10 +122,10 @@ function BannerDetailPortfolio() {
             </div>
 
             <div className="flex justify-center items-start w-[40%] h-full mb-8">
-              <div className="relative h-[340px] w-[86px]  border-t-8 border-r-8 border-[#CC27D9]">
-                <div className="absolute border-none -top-5 left-0  h-8 w-8 bg-[#CC27D9]"></div>
-                <div className="absolute -right-5 top-1/2 h-8 w-8 bg-[#CC27D9]"></div>
-                <div className="absolute -right-5 bottom-0 h-8 w-8 bg-[#CC27D9]"></div>
+              <div className="relative h-[340px] w-[86px]  border-t-8 border-r-8 border-[#6D28D9]">
+                <div className="absolute border-none -top-5 left-0  h-8 w-8 bg-[#6D28D9]"></div>
+                <div className="absolute -right-5 top-1/2 h-8 w-8 bg-[#6D28D9]"></div>
+                <div className="absolute -right-5 bottom-0 h-8 w-8 bg-[#6D28D9]"></div>
               </div>
               <div className="h-[460px] flex flex-col ml-4 text-white text-2xl font-bold justify-between">
                 <div className="flex flex-col gap-5">

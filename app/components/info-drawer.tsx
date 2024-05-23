@@ -75,6 +75,14 @@ function InfoDrawer({ word }: { word: string }) {
         </Link>
       </div>
     );
+  } else if (word === "Blog") {
+    return (
+      <div className="grid grid-cols-3 gap-8">
+        <span className=" font-light animate-fade-up animate-duration-500 animate-ease-linear animate-normal col-span-3 text-lg">
+        Descubre un mundo de innovación y creatividad en el blog de GATO. Explora tendencias, consejos prácticos y conocimientos expertos diseñados para inspirar tu éxito empresarial. Únete a nosotros en un viaje emocionante hacia la excelencia y desata tu potencial ilimitado. ¡Bienvenido al blog de GATO, donde las ideas cobran vida!
+        </span>
+      </div>
+    );
   } else {
     return <></>;
   }

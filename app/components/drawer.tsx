@@ -34,6 +34,8 @@ function Drawer() {
       setNumber("02");
     } else if (word === "Servicios") {
       setNumber("03");
+    } else if (word === "Blog") {
+      setNumber("03");
     }
   }
 
@@ -146,7 +148,7 @@ function Drawer() {
               </div>
             </div>
 
-            {/* <div className="flex items-center">
+            <div className="flex items-center">
               
               <div
                 className={`${
@@ -157,7 +159,7 @@ function Drawer() {
               >
                 {renderWord("Blog")}
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="flex flex-col gap-4 text-sm">
             <div className="flex flex-col">
