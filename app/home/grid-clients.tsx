@@ -106,22 +106,22 @@ function GridClients() {
       alt: "GATO - Cliente Jocar Games",
     },
     {
-      slug: "caprepar-group",
-      company: "Caprepar Group",
+      slug: "nutrisalud",
+      company: "Nutrisalud",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/0d/4b/9b/0d4b9bc3bb65614f182fc563c8b32dd0.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716559337/clientes-gato/nutrisalud.webp",
       url: "",
-      alt: "GATO - Cliente Caprepar Group",
+      alt: "GATO - Cliente Nutrisalud",
     },
     {
-      slug: "flowers-travel",
-      company: "Flowers Travel",
+      slug: "corporacion-social-commerce",
+      company: "Corporacion Social Commerce",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/81/dd/00/81dd000b83b99271f5b58c8c2232e033.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716560393/clientes-gato/social-commerce.png",
       url: "",
-      alt: "GATO - Cliente Flowers Travel",
+      alt: "GATO - Cliente Corporacion Social Commerce",
     },
     {
       slug: "evadry",
@@ -165,7 +165,7 @@ function GridClients() {
               <div className=" w-full h-64 bg-white flex items-center justify-center
                 object-contain aspect-square">
                   <img
-                className=" w-[90%] group-hover:scale-105 transition-all
+                className=" xl:w-[70%]  w-[85%] group-hover:scale-105 transition-all
                 duration-500 ease-in-out object-contain "
                 src={item.image}
                 alt={item.alt}

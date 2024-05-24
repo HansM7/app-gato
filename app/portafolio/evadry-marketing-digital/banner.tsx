@@ -28,8 +28,8 @@ function BannerDetailPortfolio() {
 
   if (!isLoading) {
     return (
-<section className="md:min-h-screen  h-full  flex bg-[#6D28D9]  relative  overflow-hidden ">
-        <div className=" w-full">
+      <section className="md:min-h-screen  h-full  flex bg-[#A52DE6]  relative  overflow-hidden ">
+        <div className="max-w-[1536px] mx-auto w-full">
           <div className="py-16 pl-16 ">
             <div className="">
               <Link href={"/portafolio"} className="text-white flex gap-x-2">
@@ -52,14 +52,14 @@ function BannerDetailPortfolio() {
               </Link>
               <div className="pt-8 flex flex-col ">
                 <span className="text-xl font-bold text-white uppercase">
-                  Categoría de servicio{" "}
+                  Categoría de servicio: {data.title.rendered}
                 </span>
 
                 <h1
                   className="text-[4rem] text-white capitalize"
-                  title={data.title.rendered}
+                  title={data.acf.cliente}
                 >
-                  {data.title.rendered}
+                  {data.acf.cliente}
                 </h1>
               </div>
               <div className="pb-8">
@@ -115,24 +115,29 @@ function BannerDetailPortfolio() {
                 SOLUCIÓN
               </span>
               <div className=" absolute bottom-6 right-8 ">
-                <span className="text-white font-bold text-6xl uppercase drop-shadow-lg">
-                  {data.acf.cliente}
-                </span>
+                <img src={data.acf.imagen} alt={`logo ${data.acf.cliente}`} 
+                className="h-[60px] object-contain"/>
+                {/* <span className="text-white font-bold text-6xl uppercase drop-shadow-lg">
+                  {data.acf.imagen}
+                </span> */}
               </div>
             </div>
 
             <div className="flex justify-center items-start w-[40%] h-full mb-8">
-              <div className="relative h-[340px] w-[86px]  border-t-8 border-r-8 border-[#CC27D9]">
-                <div className="absolute border-none -top-5 left-0  h-8 w-8 bg-[#CC27D9]"></div>
-                <div className="absolute -right-5 top-1/2 h-8 w-8 bg-[#CC27D9]"></div>
-                <div className="absolute -right-5 bottom-0 h-8 w-8 bg-[#CC27D9]"></div>
+              <div className="relative h-[340px] w-[86px]  border-t-8 border-r-8 border-[#6D28D9]">
+                <div className="absolute border-none -top-5 left-0  h-8 w-8 bg-[#6D28D9]"></div>
+                <div className="absolute -right-5 top-1/2 h-8 w-8 bg-[#6D28D9]"></div>
+                <div className="absolute -right-5 bottom-0 h-8 w-8 bg-[#6D28D9]"></div>
               </div>
               <div className="h-[460px] flex flex-col ml-4 text-white text-2xl font-bold justify-between">
                 <div className="flex flex-col gap-5">
                   <span>Análisis</span>
-                  <span>Diseño</span>
-                  <span>Desarrollo</span>
+
                 </div>
+                <div className="flex flex-col gap-5">
+                <span>Diseño</span>
+                  <span>Desarrollo</span>
+                  </div>
                 <div className="flex flex-col gap-5">
                   <span>Pruebas</span>
                   <span>Despliegue</span>
