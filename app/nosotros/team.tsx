@@ -1,6 +1,7 @@
 "use client";
 
-import { Button, Modal, Typography } from "keep-react";
+import { Button, Modal } from "keep-react";
+import Typography from "@mui/material/Typography";
 import { RevealWrapper } from "next-reveal";
 import { CloudArrowUp } from "phosphor-react";
 import { useState } from "react";
@@ -118,6 +119,50 @@ function Team() {
       description: "",
       alt: "GATO - Community Manager Alejandra",
     },
+    {
+      name: "Sol",
+      photo_name: "sol",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "sol.png",
+      role: "Community Manager",
+      description: "",
+      alt: "GATO - Community Manager Sol",
+    },
+    {
+      name: "Estefany",
+      photo_name: "estefany",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "estefany.png",
+      role: "Community Manager",
+      description: "",
+      alt: "GATO - Community Manager Estefany",
+    },
+    {
+      name: "Gio",
+      photo_name: "gio",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "gio-alva.png",
+      role: "Desarrollador Web",
+      description: "",
+      alt: "GATO - Community Manager Estefany",
+    },
+    {
+      name: "Daniela",
+      photo_name: "daniela",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "daniela.png",
+      role: "Practicante Desarrolladora Web",
+      description: "",
+      alt: "GATO - Community Manager Estefany",
+    },
   ];
 
   const openModal = (data: any) => {
@@ -204,7 +249,7 @@ function ModalDetail({
     <Modal isOpen={isOpen} onClose={closeModal}>
       <Modal.Body className="space-y-3">
         <Modal.Content>
-          <Typography variant="div" className="!mb-6">
+          <Typography variant="body2" className="!mb-6">
             <Typography
               variant="h3"
               className="mb-2 text-body-1  text-metal-900 text-center"
@@ -212,7 +257,7 @@ function ModalDetail({
               {data.name}
             </Typography>
             <Typography
-              variant="p"
+              variant="body2"
               className="text-body-4 font-normal text-metal-600"
             >
               <img className="rounded-lg" src={"team/" + data.photo} alt="" />

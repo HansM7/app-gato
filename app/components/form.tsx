@@ -4,67 +4,123 @@ import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import React, { FormEvent, useEffect, useState } from "react";
+import CountUp from "react-countup";
+/* import ScrollTrigger from 'react-scroll-trigger'; */
+/* import ScrollTriggerWrapper from './ScrollTriggerWrapper' */
+import { useInView } from 'react-intersection-observer';
+import { useSpring,  animated } from 'react-spring'
+
+
+interface NumberProps {
+  n: number; 
+}
+
+function Number({ n }: NumberProps) {
+  const [counterOn, setCounterOn] = useState(false);
+  
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Esto asegura que la animación solo se active una vez
+    threshold: 0.5, // Esto indica que el componente se considera visible cuando al menos la mitad está en la vista
+  });
+
+  useEffect(() => {
+    if (inView) {
+      // Aquí puedes activar tu animación
+      setCounterOn(true);
+    }
+  }, [inView]);
+
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: counterOn ? n : 0, // Comienza la animación solo cuando counterOn es verdadero
+    delay: 300,
+    config: { mass: 1, tension: 20, friction: 10 },
+  });
+
+  return <animated.div ref={ref}>{number.to((n) => n.toFixed(0))}</animated.div>;
+}
 
 function Form() {
-    const [data, setData] = useState({
-        name: "",
-        email: "",
-        service: "Marketing Digital",
-        message: "",
-      });
-    
-      const [isSubmiting, setIsSubmiting] = useState(false);
-    
-      async function captureTokenDynamic() {
-        try {
-          const response: any = await axios.post(
-            "https://palegreen-anteater-636608.hostingersite.com/wp-json/jwt-auth/v1/token",
-            {
-              username: process.env.NEXT_PUBLIC_EMAIL,
-              password: process.env.NEXT_PUBLIC_PASSWORD,
-            }
-          );
-          return response.data.token;
-        } catch (error) {}
-      }
-    
-      async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-        e.preventDefault();
-        setIsSubmiting(true);
-    
-        try {
-          const token = await captureTokenDynamic();
-          await axios.post(
-            "https://palegreen-anteater-636608.hostingersite.com/wp-json/api/v1/send-mail/",
-            data,
-            {
-              headers: {
-                Authorization: "Bearer " + token,
-              },
-            }
-          );
-          setIsSubmiting(false);
-        } catch (error) {
-          setIsSubmiting(false);
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    service: "Marketing Digital",
+    message: "",
+  });
+
+  
+  const [isSubmiting, setIsSubmiting] = useState(false);
+  const [isEnter, setIsEnter] = useState(false);
+
+  function handleEnter() {
+    setIsEnter(true);
+  }
+
+  function handleLeave() {
+    setIsEnter(false);
+  }
+
+  async function captureTokenDynamic() {
+    try {
+      const response: any = await axios.post(
+        "https://palegreen-anteater-636608.hostingersite.com/wp-json/jwt-auth/v1/token",
+        {
+          username: process.env.NEXT_PUBLIC_EMAIL,
+          password: process.env.NEXT_PUBLIC_PASSWORD,
         }
-      }
+      );
+      return response.data.token;
+    } catch (error) {}
+  }
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setIsSubmiting(true);
+
+    try {
+      const token = await captureTokenDynamic();
+      await axios.post(
+        "https://palegreen-anteater-636608.hostingersite.com/wp-json/api/v1/send-mail/",
+        data,
+        {
+          headers: {
+            Authorization: "Bearer " + token,
+          },
+        }
+      );
+      setIsSubmiting(false);
+    } catch (error) {
+      setIsSubmiting(false);
+    }
+  }
   return (
-   <section className="xl:px-32 md:px-24  px-8 flex  py-16  w-full border-b">
-        <RevealWrapper origin="right" duration={1500} className={"w-full flex justify-between gap-6"}>
-          <div className="w-2/4 flex items-center">
-            <img className="w-full h-full object-cover" src="https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg" alt="imgen contactanos" />
-            <div className="bg-[#9747FF] px-3 py-4 flex flex-col justify-center items-center h-fit gap-6">
+    <section className="xl:px-32 md:px-24  px-8 flex  py-16  w-full border-b">
+      <RevealWrapper
+        origin="right"
+        duration={1500}
+        className={
+          "w-full flex justify-between gap-6 flex-col-reverse lg:flex-row"
+        }
+      >
+        <div className="xl:w-3/5 lg:w-2/4 w-full items-center  flex flex-row">
+          <img
+            className="h-full object-cover w-full lg:max-w-[85%] rounded-xl shadow-md"
+            src="https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
+            alt="imgen contactanos"
+          />
+          <div className="hidden bg-[#9747FF] px-3 py-4 lg:flex lg:flex-col justify-center items-center w-fit lg:h-fit gap-6 shadow-md lg:rounded-none lg:rounded-r-xl  rounded-b-xl">
             <Link
               href={"https://www.instagram.com/genius_mkt_peru/"}
               target="_blank"
-              className="hover:scale-125 transition-all ease-in-out duration-00"
+              className="flex justify-center items-center hover:scale-125 transition-all ease-in-out duration-300"
             >
               <svg
+                className="w-[40px] object-contain"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="28"
-                height="28"
+                width="100%"
+                height="100%"
                 viewBox="0 0 48 48"
               >
                 <radialGradient
@@ -95,11 +151,7 @@ function Form() {
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop offset="0" stopColor="#fff"></stop>
-                  <stop
-                    offset=".999"
-                    stopColor="#fff"
-                    stopOpacity="0"
-                  ></stop>
+                  <stop offset=".999" stopColor="#fff" stopOpacity="0"></stop>
                 </radialGradient>
                 <path
                   fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
@@ -116,14 +168,18 @@ function Form() {
                 ></path>
               </svg>
             </Link>
-            <Link href={"https://www.facebook.com/geniusper"} target="_blank"
-            className="hover:scale-125 transition-all ease-in-out duration-00">
+            <Link
+              href={"https://www.facebook.com/geniusper"}
+              target="_blank"
+              className="hover:scale-125 transition-all ease-in-out duration-300"
+            >
               <svg
+                className="w-[40px] object-contain"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="28"
-                height="28"
+                width="100%"
+                height="100%"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -136,18 +192,18 @@ function Form() {
                 ></path>
               </svg>
             </Link>
-
             <Link
               href={"https://www.linkedin.com/company/geniusperu"}
               target="_blank"
-              className="hover:scale-125 transition-all ease-in-out duration-00"
+              className="flex justify-center items-center hover:scale-125 transition-all ease-in-out duration-300"
             >
               <svg
+                className="w-[40px] object-contain"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="30"
-                height="30"
+                width="100%"
+                height="100%"
                 viewBox="0 0 48 48"
               >
                 <path
@@ -160,76 +216,153 @@ function Form() {
                 ></path>
               </svg>
             </Link>
-            </div>
           </div>
-          <form onSubmit={handleSubmit} className="w-2/4 flex flex-col gap-4 px-16">
-            <div>
-              <h2 className="text-xl">Contáctanos</h2>
+        </div>
+        <form
+          onSubmit={handleSubmit}
+          className="w-full xl:w-2/5 lg:w-2/4 flex flex-col gap-6 text-[#3D3D3D]"
+        >
+          <div>
+            <h2 className="xl:text-3xl md:text-2xl text-2xl uppercase text-[#3D3D3D] text-center">
+              Contáctanos
+            </h2>
+          </div>
+{/*           <ScrollTriggerWrapper
+            onEnter={() => setCounterOn(true)}
+            onExit={() => setCounterOn(false)}
+          > */}
+            <div className="flex justify-center items-center gap-6  text-[#3D3D3D]">
+              <div className="flex flex-col gap text-center xl:text-lg">
+                <span className="text-[#9747FF] font-bold  ">
+                  +{" "}
+                  {/* {counterOn && (
+                    
+                  )} */}
+                  {/* <CountUp start={0} end={100} duration={3} delay={0} /> */}
+                  <Number n={100}/>
+                </span>
+                <span className="text-sm xl:text-base">Clientes</span>
+              </div>
+              <div className="flex flex-col gap text-center xl:text-lg">
+                <span className="text-[#9747FF] font-bold ">
+                  +{" "}
+                  {/* {counterOn && (
+                    
+                  )} */}
+                  <Number n={100}/>
+                  {/* <CountUp start={0} end={200} duration={3} delay={0} /> */}
+                </span>
+                <span className="text-sm xl:text-base">Proyectos</span>
+              </div>
             </div>
-            <div className="flex gap-2 mx-auto">
-              <div>
-                <span>+3</span>
-                <span>Años de experiencia</span>
-              </div>
-              <div>
-                <span>+100</span>
-                <span>clientes satisfechos</span>
-              </div>
-              <div>
-                <span>+2000</span>
-                <span>Seguidores en redes sociales</span>
-              </div>
-            </div>
-            <p>¿Buscas llevar tu presencia en línea al siguiente nivel? En Gato, creamos experiencias digitales impactantes. Desde páginas web y aplicaciones móviles hasta estrategias de marketing y branding personalizadas. ¡Contáctanos y descubre cómo podemos ayudarte a destacar en la web!</p>
-            <div className="flex flex-col gap-4">
+{/*           </ScrollTriggerWrapper> */}
+
+          <p>
+            ¿Buscas llevar tu presencia en línea al siguiente nivel? En Gato,
+            creamos experiencias digitales impactantes. Desde páginas web y
+            aplicaciones móviles hasta estrategias de marketing y branding
+            personalizadas. ¡Contáctanos y descubre cómo podemos ayudarte a
+            destacar en la web!
+          </p>
+          <div className="flex flex-col gap-6 text-[#3D3D3D]">
+            <div className="relative w-full">
               <input
-                className="border p-2 outline-none w-full rounded-lg"
-                placeholder="Nombres"
+                className="peer h-full w-full border-b border-[#3D3D3D] bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-[#3D3D3D] outline outline-0 transition-all placeholder-shown:border-[#3D3D3D] focus:border-[#3D3D3D] focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
+                placeholder=""
+                id="name"
                 type="text"
                 defaultValue={data.name}
                 required
                 onChange={(e) => setData({ ...data, name: e.target.value })}
               />
+              <label
+                htmlFor="name"
+                className="after:content[''] pointer-events-none absolute left-0  -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-[#3D3D3D] transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-[#3D3D3D] after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-[#3D3D3D] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:after:scale-x-100 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-[#3D3D3D]"
+              >
+                Nombres
+              </label>
+            </div>
+            <div className="relative w-full">
               <input
-                className="border p-2 outline-none w-full rounded-lg"
-                placeholder="Correo"
+                className="peer h-full w-full border-b border-[#3D3D3D] bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-[#3D3D3D] outline outline-0 transition-all placeholder-shown:border-[#3D3D3D] focus:border-[#3D3D3D] focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
+                placeholder=""
+                id="email"
                 type="email"
                 defaultValue={data.email}
                 required
                 onChange={(e) => setData({ ...data, email: e.target.value })}
               />
-              <select
-                className="border p-2 outline-none w-full rounded-lg"
-                defaultValue={data.service}
-                onChange={(e) => setData({ ...data, service: e.target.value })}
+              <label
+                htmlFor="email"
+                className="after:content[''] pointer-events-none absolute left-0  -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-[#3D3D3D] transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-[#3D3D3D] after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-[#3D3D3D] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:after:scale-x-100 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-[#3D3D3D]"
               >
-                <option value="Marketing Digital">Marketing Digital</option>
-                <option value="Branding">Branding</option>
-                <option value="Diseno Web">Diseno Web</option>
-                <option value="Desarrollo de Software">
-                  Desarrollo de Software
-                </option>
-                <option value="Desarrollo Movil">Desarrollo Movil</option>
-              </select>
+                Correo
+              </label>
+            </div>
+
+            {/*  <input
+              className="border p-2 outline-none w-full rounded-lg"
+              placeholder="Correo"
+              type="email"
+              defaultValue={data.email}
+              required
+              onChange={(e) => setData({ ...data, email: e.target.value })}
+            /> */}
+            <select
+              className="h-full w-full border-b border-[#3D3D3D] bg-transparent pt-4 pb-1.5 font-sans  font-normal text-[#3D3D3D] outline outline-0 "
+              defaultValue={data.service}
+              onChange={(e) => setData({ ...data, service: e.target.value })}
+            >
+              <option value="Marketing Digital">Marketing Digital</option>
+              <option value="Branding">Branding</option>
+              <option value="Diseno Web">Diseno Web</option>
+              <option value="Desarrollo de Software">
+                Desarrollo de Software
+              </option>
+              <option value="Desarrollo Movil">Desarrollo Movil</option>
+            </select>
+            <div className="relative w-full">
               <textarea
+                className="resize-none peer  w-full border-b border-[#3D3D3D] bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-[#3D3D3D] outline outline-0 transition-all placeholder-shown:border-[#3D3D3D] focus:border-[#3D3D3D] focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
+                rows={4}
+                placeholder=""
+                id="message"
                 defaultValue={data.message}
                 onChange={(e) => setData({ ...data, message: e.target.value })}
-                className="border p-2 outline-none w-full rounded-lg"
-                placeholder="Cuentanos su idea"
               />
-              <button
-                className={`rounded-lg bg-[#6D28D9] text-white px-4 py-2 w-fit hover:bg-[#823CF0] transition-all duration-300 ease-in-out ${
-                  isSubmiting && "opacity-90 cursor-not-allowed"
-                }`}
-                disabled={isSubmiting}
+              <label
+                htmlFor="message"
+                className="after:content[''] pointer-events-none absolute left-0  -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-[#3D3D3D] transition-all after:absolute after:-bottom-0 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-[#3D3D3D] after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-[#3D3D3D] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:after:scale-x-100 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-[#3D3D3D]"
               >
-                Solicitar
-              </button>
+                Cuentanos tu idea
+              </label>
             </div>
-          </form>
-        </RevealWrapper>
-        
-   </section>
+            <div
+              onMouseEnter={handleEnter}
+              onMouseLeave={handleLeave}
+              role="button"
+              className={`mx-auto relative rounded-3xl py-3 pr-2  w-fit   font-semibold flex items-center   ${
+                isEnter && " transition-all"
+              } transition-all`}
+            >
+              <div
+                className={`bg-[#9747FF] rounded-full w-12 h-full absolute transition-all  ${
+                  isEnter ? "w-full bg-opacity-100" : "bg-opacity-20"
+                }`}
+              ></div>
+              <Link
+                href={"/servicios/marketing-digital"}
+                className={`pl-4 z-10 text-sm  ${
+                  isEnter ? "text-white" : "text-[#9747FF]"
+                } `}
+              >
+                VER SERVICIO {">"}
+              </Link>
+            </div>
+          </div>
+        </form>
+      </RevealWrapper>
+    </section>
   );
 }
 

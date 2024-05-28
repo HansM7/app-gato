@@ -43,6 +43,9 @@ function BannerAbout() {
             desafiar los límites en busca de resultados extraordinarios.
           </span>
         </RevealWrapper>
+        <a href="" className="scrollDown opacity-80 absolute bottom-10 left-1/2 w-[45px] h-[70px] border-2 border-white flex justify-center rounded-[30px]">
+            <span className="bg-white w-[5px] h-[10px] rounded-[30px] mt-[10px] relative"></span>
+        </a>
       </div>
     </section>
   );

@@ -208,12 +208,12 @@ function Component1({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 md:gap-6 lg:gap-8 xl:gap-10">
       <div className="flex flex-col gap-4 ">
         <h2 className={`${sizing.title}`} title="GATO - Marketing Digital">
           Marketing Digital
         </h2>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Nuestros servicios de Marketing Digital, están orientados en
             transformar tus redes sociales en canales de ventas, según los
@@ -266,12 +266,12 @@ function Component2({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 md:gap-6 lg:gap-8 xl:gap-10">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`} title="GATO - Diseño Web">
           Diseño Web
         </h2>
-        <div className=" flex flex-col gap-2">
+        <div className=" flex flex-col gap-4">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
           Nuestros servicios de Diseño Web crean sitios web personalizados y optimizados que reflejan la identidad de tu marca. Nos enfocamos en desarrollar sitios responsivos, rápidos y seguros que mejoran la experiencia del usuario y ayudan a alcanzar tus objetivos comerciales.
           </p>
@@ -322,12 +322,12 @@ function Component3({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 md:gap-6 lg:gap-8 xl:gap-10">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`} title="GATO - Desarollo de software">
           Desarollo de software
         </h2>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Transformamos tus ideas en software funcional. Desde la
             conceptualización hasta la implementación, creamos soluciones a
@@ -380,12 +380,12 @@ function Component4({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 md:gap-6 lg:gap-8 xl:gap-10">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`} title="GATO - Desarrollo Móvil">
           Desarrollo Móvil
         </h2>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
           Nuestros servicios de Desarrollo Móvil se centran en crear aplicaciones innovadoras y funcionales para dispositivos móviles. Nos especializamos en desarrollar aplicaciones que proporcionan una experiencia de usuario excepcional y están optimizadas para un rendimiento óptimo en una variedad de plataformas móviles.
           </p>
@@ -436,12 +436,12 @@ function Component5({
   isEnter: any;
 }) {
   return (
-    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4">
+    <div className="flex  flex-col md:flex-row   animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal gap-4 md:gap-6 lg:gap-8 xl:gap-10">
       <div className="flex flex-col gap-4">
         <h2 className={`${sizing.title}`} title="GATO - Branding">
           Branding
         </h2>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <p className={`${sizing.description} text-[#7A7678] font-light`}>
             Capturamos la esencia de tu marca y la llevamos a nuevas alturas.
             Con la creación de identidades visuales impactantes te ayudamos a

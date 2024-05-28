@@ -1,11 +1,13 @@
 "use client";
 
+import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
-import { title } from "process";
+import { use, useEffect, useState } from "react";
+import Pagination from "../components/Pagination";
 
 function GridClients() {
-  const clients = [
+  /*   const clients = [
     {
       slug: "evadry",
       company: "Eva-Dry",
@@ -43,22 +45,22 @@ function GridClients() {
       alt: "GATO - Cliente Caprepar Group",
     },
     {
-      slug: "social-commerce",
-      company: "Social Commerce",
+      slug: "intexos",
+      company: "Intexos",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/81/dd/00/81dd000b83b99271f5b58c8c2232e033.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/intexos.png",
       url: "",
       alt: "GATO - Cliente Social Commerce",
     },
     {
-      slug: "dg-norte",
-      company: "DG NOrte",
+      slug: "ginius",
+      company: "ginius",
       service: "Desarrolllo Web",
       image:
-        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/dg-norte.webp",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716646445/clientes-gato/ginius.png",
       url: "",
-      alt: "GATO - Cliente DG Norte",
+      alt: "GATO - Cliente ginius",
     },
     {
       slug: "embalaje-company",
@@ -74,7 +76,7 @@ function GridClients() {
       company: "Naturmed",
       service: "Desarrolllo Web",
       image:
-        "https://res.cloudinary.com/difvp2onn/image/upload/v1716480131/clientes-gato/naturmed.webp",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716649373/clientes-gato/naturmed.png",
       url: "",
       alt: "GATO - Cliente Naturmed",
     },
@@ -124,61 +126,102 @@ function GridClients() {
       alt: "GATO - Cliente Corporacion Social Commerce",
     },
     {
-      slug: "evadry",
-      company: "Eva-Dry",
+      slug: "bsf-outsourcing-contable",
+      company: "BSF Outsourcing Contable",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/01/a2/5b/01a25b770392bf75c3bf4182b91892cf.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716646449/clientes-gato/bsf-contable.png",
       url: "",
-      alt: "GATO - Cliente Eva-Dry",
+      alt: "GATO - Cliente BSF Outsourcing Contable",
     },
     {
-      slug: "cr-motors",
-      company: "CR Motors",
+      slug: "hogardia",
+      company: "Hogardia",
       service: "Desarrolllo Web",
       image:
-        "https://i.pinimg.com/736x/14/d4/1e/14d41e8e044f772dd97ba883eae11075.jpg",
+        "https://res.cloudinary.com/difvp2onn/image/upload/v1716646996/clientes-gato/hogardia.png",
       url: "",
-      alt: "GATO - Cliente CR Motors",
+      alt: "GATO - Cliente Hogardia",
     },
-  ];
+  ]; */
+  interface ClientItem {
+    id: string;
+    slug: string;
+    acf: {
+      imagen_url: string;
+    };
+    title: {
+      rendered: string;
+    };
+  }
+
+  const [dataClient, setDataClient] = useState<ClientItem[]>([]);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  async function fetchData() {
+    try {
+      const response = await axios.get(
+        "https://palegreen-anteater-636608.hostingersite.com/wp-json/wp/v2/cliente?per_page=100"
+      );
+      const clients = response.data;
+      console.log(response.data);
+      setDataClient(clients);
+    } catch (error) {
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  const renderClient = (client: any) => (
+    <RevealWrapper
+      key={client.id}
+      origin="bottom"
+      duration={1000}
+      className="w-full justify-center flex items-center relative overflow-hidden group"
+    >
+      <Link href={"clientes/" + client.slug} className="w-full">
+        <div className="w-full bg-white flex items-center justify-center object-contain aspect-square">
+          <img
+            className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
+            src={client.acf.imagen_url}
+            alt={client.title.rendered}
+          />
+        </div>
+        <div className="absolute opacity-0 bg-black group-hover:opacity-100 group-hover:bg-opacity-50 flex top-0 h-full w-full transition-all justify-center items-center duration-500 ease-in-out">
+          <span className="translate-y-[500%] text-2xl text-white text-center font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] group-hover:translate-y-0 transition-all duration-700">
+            {client.title.rendered}
+          </span>
+        </div>
+      </Link>
+    </RevealWrapper>
+  );
+
   return (
     <section
       className="xl:px-32 md:px-24  px-8 flex  py-16  w-full bg-gray-100 flex-col"
       id="clientes"
     >
       <div className="">
-        <h2 className="text-3xl text-center
-         text-[#3D3D3D] font-medium uppercase mb-3">Nuestros clientes</h2>
+        <h2
+          className="text-3xl text-center
+         text-[#3D3D3D] font-medium uppercase mb-3"
+        >
+          Nuestros clientes
+        </h2>
       </div>
-      <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:mt-8 mt-4 gap-4  opacity-90  ">
-        {clients.map((item, index) => (
-          <RevealWrapper
-            key={index}
-            origin="bottom"
-            duration={1000 + index * 200}
-            className={
-              "w-full justify-center  flex items-center relative overflow-hidden group "
-            }
-          >
-            <Link href={"clientes/" + item.slug} className="w-full  ">
-              <div className=" w-full h-64 bg-white flex items-center justify-center
-                object-contain aspect-square">
-                  <img
-                className=" xl:w-[70%]  w-[85%] group-hover:scale-105 transition-all
-                duration-500 ease-in-out object-contain "
-                src={item.image}
-                alt={item.alt}
-              />
-              </div>
-              <div className="absolute opacity-0 bg-black group-hover:opacity-100 group-hover:bg-opacity-50  flex top-0 h-full w-full transition-all justify-center items-center
-              duration-500 ease-in-out ">
-                <span className="translate-y-[500%] text-2xl text-white 
-                font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] group-hover:translate-y-0 transition-all duration-700">{item.company}</span>
-              </div>
-            </Link>
-          </RevealWrapper>
-        ))}
+      <div className="w-full  ">
+        <Pagination
+          data={dataClient}
+          itemsPerPage={15}
+          render={renderClient}
+          gridClass={
+            "grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:mt-8 mt-4 gap-4  opacity-90"
+          }
+        />
       </div>
     </section>
   );

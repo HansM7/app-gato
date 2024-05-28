@@ -1,6 +1,7 @@
 "use client";
 
-import { Button, Modal, Typography } from "keep-react";
+import { Button, Modal } from "keep-react";
+import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import { useState } from "react";
 import { useMediaQuery } from "@react-hook/media-query"; //todo-> uninstall this package
@@ -84,20 +85,19 @@ function Navigation({
         <Modal isOpen={isOpen} onClose={closeModal}>
           <Modal.Body className="space-y-3">
             <Modal.Content>
-              <Typography variant="div" className="!mb-6">
+              <p>
+                Tenemos un canal exclusivo para atender clientes, da click en el
+                boton siguiente e inicia una conversación con nosotros
+              </p>
+              <Typography variant="body1" className="!mb-6">
                 <Typography
                   variant="h3"
                   className="mb-2 text-body-1 font-medium text-metal-900"
-                >
-                  Renderización
-                </Typography>
+                >Renderización</Typography>
                 <Typography
-                  variant="p"
+                  variant="body2"
                   className="text-body-4 font-normal text-metal-600"
-                >
-                  Tenemos un canal exclusivo para atender clientes, da click en
-                  el boton siguiente e inicia una conversación con nosotros
-                </Typography>
+                ></Typography>
               </Typography>
             </Modal.Content>
             <Modal.Footer>

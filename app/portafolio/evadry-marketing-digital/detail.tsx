@@ -7,7 +7,6 @@ import BannerDetailPortfolio from "./banner";
 import Footer from "@/app/components/footer";
 import WhatsappContact from "@/app/components/whatsapp-contact";
 import Form from "@/app/components/form";
-import Process from "../process";
 
 function Detail() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -36,7 +35,6 @@ function Detail() {
       </div>
       <div className="flex flex-col w-full md:pl-[80px] ">
         <BannerDetailPortfolio></BannerDetailPortfolio>
-        <Process></Process>
         <Form></Form>
         <Footer></Footer>
       </div>
