@@ -8,6 +8,7 @@ import Section2 from "./section-2";
 import Footer from "../components/footer";
 import BannerAbout from "./banner";
 import WhatsappContact from "../components/whatsapp-contact";
+import CollageAbout from "./collage-about";
 
 function About() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -55,6 +56,7 @@ function About() {
         <div className="w-full flex flex-col  justify-between md:pl-[80px]">
           {/* <Header></Header> */}
           <BannerAbout></BannerAbout>
+          <CollageAbout></CollageAbout>
           <Section1></Section1>
         </div>
 

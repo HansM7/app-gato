@@ -34,7 +34,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E35AQHPXy-1TU49Ow/profile-framedphoto-shrink_800_800/0/1711806246117?e=1713628800&v=beta&t=mWQvQSUf5PGy_jwPjav-5imqRhOJfAHv8XpzYpHmyUw",
-        "diana.png",
+        "diana.jpg",
       role: "CEO",
       description: "",
       alt: "GATO - CEO Diana Ortega",
@@ -81,32 +81,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4D03AQFxLpT4Jd4YgA/profile-displayphoto-shrink_400_400/0/1711981006091?e=1718236800&v=beta&t=X2Hb95A1iv9yJ_tnCZ_DYJT4vvyC669V6_ePQZoU3-E",
         "mariapia.png",
-      role: "Marketing",
+      role: "Trafficker Digital",
       description: "",
-      alt: "GATO - Marketing Mariapia Contreras",
-    },
-    {
-      name: "Stacey Geraldine",
-      photo_name: "stacey",
-
-      photo:
-        // "https://media.licdn.com/dms/image/D4E03AQE-PeReXqOXqA/profile-displayphoto-shrink_800_800/0/1712686468366?e=1718236800&v=beta&t=syqAvo7kmkH70nvRJ81iozLAuMxdD66syADy-60Ookc",
-        "stacy.png",
-      role: "Marketing",
-      description: "",
-      alt: "GATO - Marketing Stacey Geraldine",
-    },
-
-    {
-      name: "Lisbeth",
-      photo_name: "lisbeth",
-
-      photo:
-        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "lisbeth.png",
-      role: "Marketing",
-      description: "",
-      alt: "GATO - Marketing Lisbeth",
+      alt: "GATO - Trafficker Digital ",
     },
     {
       name: "Alejandra",
@@ -115,9 +92,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "alejandra.png",
-      role: "Community Manager",
+      role: "Coordinadora de Marketing",
       description: "",
-      alt: "GATO - Community Manager Alejandra",
+      alt: "GATO - Coordinadora de Marketing Alejandra",
     },
     {
       name: "Sol",
@@ -126,9 +103,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "sol.png",
-      role: "Community Manager",
+      role: "Diseñadora Gráfica",
       description: "",
-      alt: "GATO - Community Manager Sol",
+      alt: "GATO - Diseñadora Gráfica Sol",
     },
     {
       name: "Estefany",
@@ -137,9 +114,20 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "estefany.png",
+      role: "Realizadora Audiovisual",
+      description: "",
+      alt: "GATO - Realizadora Audiovisual Estefany",
+    },
+    {
+      name: "Luis",
+      photo_name: "luis",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "luis.jpg",
       role: "Community Manager",
       description: "",
-      alt: "GATO - Community Manager Estefany",
+      alt: "GATO - Community Manager Luis",
     },
     {
       name: "Gio",
@@ -150,7 +138,7 @@ function Team() {
         "gio-alva.png",
       role: "Desarrollador Web",
       description: "",
-      alt: "GATO - Community Manager Estefany",
+      alt: "GATO - Desarrollador Web Gio",
     },
     {
       name: "Daniela",
@@ -161,7 +149,18 @@ function Team() {
         "daniela.png",
       role: "Practicante Desarrolladora Web",
       description: "",
-      alt: "GATO - Community Manager Estefany",
+      alt: "GATO - Practicante Desarrolladora Daniela",
+    },
+    {
+      name: "Lucero",
+      photo_name: "lucero",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "lucero.jpg",
+      role: "Practicante de Talento Humano",
+      description: "",
+      alt: "GATO - Practicante de Talento Humano Lucero",
     },
   ];
 
@@ -174,7 +173,7 @@ function Team() {
   };
 
   return (
-    <div className="w-fullxl:px-24 md:px-16  px-8 min-h-screen flex flex-col mt-16 bg-gray-100 pt-16  pb-32">
+    <div className="w-fullxl:px-24 md:px-16  px-8 min-h-screen flex flex-col py-16 ">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
           <h1 className="md:text-[3rem] text-[2rem] ">Nuestro equipo</h1>

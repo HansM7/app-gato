@@ -417,7 +417,7 @@ function Component4({
       <div className="flex items-center">
         <img
           className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
-          src="https://www.zervizgroup.com/blogs/wp-content/uploads/2021/08/desarrollo-de-apps-para-empresas.jpg"
+          src="https://i.pinimg.com/736x/f7/8a/89/f78a89c21a83abd51bef3da2baf26c8d.jpg"
           alt="GATO - Desarrollo Móvil"
           title="GATO - Desarrollo Móvil"
         />

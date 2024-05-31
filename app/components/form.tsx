@@ -4,53 +4,26 @@ import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
 import React, { FormEvent, useEffect, useState } from "react";
-import CountUp from "react-countup";
-/* import ScrollTrigger from 'react-scroll-trigger'; */
-/* import ScrollTriggerWrapper from './ScrollTriggerWrapper' */
-import { useInView } from 'react-intersection-observer';
-import { useSpring,  animated } from 'react-spring'
 
+import CountNumber from "../components/countNumber";
 
-interface NumberProps {
-  n: number; 
-}
+import ConfirmationModal from "./modal";
 
-function Number({ n }: NumberProps) {
-  const [counterOn, setCounterOn] = useState(false);
-  
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Esto asegura que la animación solo se active una vez
-    threshold: 0.5, // Esto indica que el componente se considera visible cuando al menos la mitad está en la vista
-  });
-
-  useEffect(() => {
-    if (inView) {
-      // Aquí puedes activar tu animación
-      setCounterOn(true);
-    }
-  }, [inView]);
-
-  const { number } = useSpring({
-    from: { number: 0 },
-    number: counterOn ? n : 0, // Comienza la animación solo cuando counterOn es verdadero
-    delay: 300,
-    config: { mass: 1, tension: 20, friction: 10 },
-  });
-
-  return <animated.div ref={ref}>{number.to((n) => n.toFixed(0))}</animated.div>;
-}
 
 function Form() {
   const [data, setData] = useState({
     name: "",
     email: "",
+    phone: "",
     service: "Marketing Digital",
     message: "",
   });
 
-  
   const [isSubmiting, setIsSubmiting] = useState(false);
   const [isEnter, setIsEnter] = useState(false);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
 
   function handleEnter() {
     setIsEnter(true);
@@ -70,7 +43,11 @@ function Form() {
         }
       );
       return response.data.token;
-    } catch (error) {}
+    } catch (error) {
+      setModalMessage("Error al capturar el token.");
+      setIsModalOpen(true);
+      throw error;
+    }
   }
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -89,10 +66,15 @@ function Form() {
         }
       );
       setIsSubmiting(false);
+      setModalMessage("Gracias por dejar tus datos, Un ejecutivo te contactara o puedes contactarnos.");
+      setIsModalOpen(true);
     } catch (error) {
       setIsSubmiting(false);
+      setModalMessage("Error al enviar el mensaje. Por favor, inténtelo de nuevo o contactenos");
+      setIsModalOpen(true);
     }
   }
+
   return (
     <section className="xl:px-32 md:px-24  px-8 flex  py-16  w-full border-b">
       <RevealWrapper
@@ -223,40 +205,24 @@ function Form() {
           className="w-full xl:w-2/5 lg:w-2/4 flex flex-col gap-6 text-[#3D3D3D]"
         >
           <div>
-            <h2 className="xl:text-3xl md:text-2xl text-2xl uppercase text-[#3D3D3D] text-center">
+            <h2 className="text-3xl text-center   text-[#3D3D3D] font-medium uppercase">
               Contáctanos
             </h2>
           </div>
-{/*           <ScrollTriggerWrapper
-            onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
-          > */}
-            <div className="flex justify-center items-center gap-6  text-[#3D3D3D]">
-              <div className="flex flex-col gap text-center xl:text-lg">
-                <span className="text-[#9747FF] font-bold  ">
-                  +{" "}
-                  {/* {counterOn && (
-                    
-                  )} */}
-                  {/* <CountUp start={0} end={100} duration={3} delay={0} /> */}
-                  <Number n={100}/>
-                </span>
-                <span className="text-sm xl:text-base">Clientes</span>
-              </div>
-              <div className="flex flex-col gap text-center xl:text-lg">
-                <span className="text-[#9747FF] font-bold ">
-                  +{" "}
-                  {/* {counterOn && (
-                    
-                  )} */}
-                  <Number n={100}/>
-                  {/* <CountUp start={0} end={200} duration={3} delay={0} /> */}
-                </span>
-                <span className="text-sm xl:text-base">Proyectos</span>
-              </div>
+          <div className="flex justify-center items-center gap-6 text-[#686D76]">
+            <div className="flex flex-col gap text-center items-center justify-center text-xl lg:text-2xl">
+              <span className="text-[#9747FF] font-bold flex items-center justify-center text-3xl">
+                + <CountNumber n={100} />
+              </span>
+              <span className="text-lg">Clientes</span>
             </div>
-{/*           </ScrollTriggerWrapper> */}
-
+            <div className="flex flex-col justify-center items-center gap text-center text-xl lg:text-2xl">
+              <span className="text-[#9747FF] font-bold flex justify-center text-3xl">
+                + <CountNumber n={200} />
+              </span>
+              <span className="text-lg text-center mx-auto">Proyectos</span>
+            </div>
+          </div>
           <p>
             ¿Buscas llevar tu presencia en línea al siguiente nivel? En Gato,
             creamos experiencias digitales impactantes. Desde páginas web y
@@ -282,7 +248,8 @@ function Form() {
                 Nombres
               </label>
             </div>
-            <div className="relative w-full">
+            <div className="w-full flex gap-4">
+            <div className="relative w-full lg:w-3/5">
               <input
                 className="peer h-full w-full border-b border-[#3D3D3D] bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-[#3D3D3D] outline outline-0 transition-all placeholder-shown:border-[#3D3D3D] focus:border-[#3D3D3D] focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
                 placeholder=""
@@ -299,15 +266,26 @@ function Form() {
                 Correo
               </label>
             </div>
-
-            {/*  <input
-              className="border p-2 outline-none w-full rounded-lg"
-              placeholder="Correo"
-              type="email"
-              defaultValue={data.email}
-              required
-              onChange={(e) => setData({ ...data, email: e.target.value })}
-            /> */}
+            <div className="relative w-full lg:w-2/5">
+              <input
+                className="peer h-full w-full border-b border-[#3D3D3D] bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-[#3D3D3D] outline outline-0 transition-all placeholder-shown:border-[#3D3D3D] focus:border-[#3D3D3D] focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100"
+                placeholder=""
+                id="phone"
+                type="text"
+                maxLength={9}
+                defaultValue={data.phone}
+                required
+                onChange={(e) => setData({ ...data, phone: e.target.value })}
+              />
+              <label
+                htmlFor="email"
+                className="after:content[''] pointer-events-none absolute left-0  -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-[#3D3D3D] transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-[#3D3D3D] after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-blue-[#3D3D3D] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:after:scale-x-100 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-[#3D3D3D]"
+              >
+                Número
+              </label>
+            </div>
+            </div>
+            
             <select
               className="h-full w-full border-b border-[#3D3D3D] bg-transparent pt-4 pb-1.5 font-sans  font-normal text-[#3D3D3D] outline outline-0 "
               defaultValue={data.service}
@@ -350,18 +328,24 @@ function Form() {
                   isEnter ? "w-full bg-opacity-100" : "bg-opacity-20"
                 }`}
               ></div>
-              <Link
-                href={"/servicios/marketing-digital"}
-                className={`pl-4 z-10 text-sm  ${
-                  isEnter ? "text-white" : "text-[#9747FF]"
+              <button
+                disabled={isSubmiting}
+                className={`pl-4   ${
+                  isEnter ? "text-white z-10 text-lg" : "text-[#9747FF] text-lg"
                 } `}
               >
-                VER SERVICIO {">"}
-              </Link>
+                Contratar servicios {">"}
+              </button>
             </div>
           </div>
         </form>
+        
       </RevealWrapper>
+      <ConfirmationModal
+        isOpen={isModalOpen}
+        message={modalMessage}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }

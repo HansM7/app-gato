@@ -6,27 +6,11 @@ function InfoDrawer({ word }: { word: string }) {
   if (word === "Portafolio") {
     return (
       <div className="grid grid-cols-3 gap-8">
-        <Link
-          href={"/portafolio/cr-motors-marketing-digital"}
-          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
-        >
-          Proyecto Marketing Digital
-        </Link>
-
-        <Link
-          href={"/portafolio/flower-travel-marketing-y-marketing-digital"}
-          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
-        >
-          Proyecto Branding
-        </Link>
-        <Link
-          href={"https://ambarpaddle.com/"}
-          target="_blank"
-          className="animate-fade-up animate-duration-500 animate-ease-linear animate-normal hover:font-semibold transition-all"
-        >
-          Proyecto Web Ambar Paddle
-        </Link>
+        <span className=" font-light animate-fade-up animate-duration-500 animate-ease-linear animate-normal col-span-3 text-lg">
+        ¡Descubre la magia de nuestros proyectos realizados! Sumérgete en un mundo donde la creatividad y la excelencia se unen para dar vida a ideas innovadoras. Desde diseños sorprendentes hasta soluciones tecnológicas de vanguardia, cada proyecto es una historia de éxito esperando ser explorada. Únete a nosotros y sé testigo de cómo convertimos visiones en realidad.
+        </span>
       </div>
+      
     );
   } else if (word === "Nosotros") {
     return (

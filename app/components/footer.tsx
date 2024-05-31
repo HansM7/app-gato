@@ -16,7 +16,7 @@ function Footer() {
         </Link>
         <div className="flex flex-col ">
           <span className="font-semibold mb-1">Visítanos </span>
-          <span className="text-slate-600">Jesús María</span>
+          <span className="text-slate-600">Av. Brasil 2475, Jesús María</span>
         </div>
         <div className="flex flex-col ">
           <span className="font-semibold mb-1">Hablemos</span>

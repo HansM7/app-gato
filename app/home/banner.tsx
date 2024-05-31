@@ -10,7 +10,7 @@ function Banner() {
 
   const words = [
     "Desarrollo de Software",
-    "Desarrollo web",
+    "Desarrollo Web",
     "Marketing Digital",
   ];
 
@@ -50,7 +50,7 @@ function Banner() {
   }, [position]);
 
   return (
-    <section className=" md:min-h-screen min-h-[25rem]  bg-gray-100 relative">
+    <section className=" md:min-h-screen min-h-[25rem]  bg-gray-100 relative flex flex-col justify-center">
       {/* this is decorator */}
       <div className="absolute w-full  h-full bg-red-100 md:max-h-screen overflow-hidden ">
         {/* <video
@@ -69,19 +69,19 @@ function Banner() {
       </div>
 
       {/*  */}
-      <div className="xl:px-24 md:px-12 sm:px-12  px-8 flex   pt-12 relative">
-        {position === 0 && (
+      <div className="xl:px-24 md:px-12 sm:px-12  px-8 flex   pt-12 ">
           <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
             <div className="flex flex-col animate-fade-right ">
               <h1
                 className={`${sizing.title} 
-                text-white w-full font-semibold`}
+                text-white w-full font-semibold `}
                 title="Agencia GATO"
               >
                 Agencia de{" "}
               </h1>
 
               <div className="flex flex-col gap-2">
+                
                 <span
                   title="Servicio tecnológico GATO"
                   className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
@@ -91,8 +91,8 @@ function Banner() {
                     onDelete={deleting}
                     typeSpeed={70}
                   /> */}
-
-                  <TypeAnimation
+                  {position === 0 && (
+                    <TypeAnimation
                     className={`${bg_colors[position]}`}
                     sequence={[
                       // Same substring at the start will only be typed once, initially
@@ -102,6 +102,32 @@ function Banner() {
                     speed={2}
                     repeat={Infinity}
                   />
+                  )}
+                  {position === 1 && (
+                    <TypeAnimation
+                    className={`${bg_colors[position]}`}
+                    sequence={[
+                      // Same substring at the start will only be typed once, initially
+                      words[position],
+                      1000,
+                    ]}
+                    speed={2}
+                    repeat={Infinity}
+                  />
+                  )}
+                  {position === 2 && (
+                    <TypeAnimation
+                    className={`${bg_colors[position]}`}
+                    sequence={[
+                      // Same substring at the start will only be typed once, initially
+                      words[position],
+                      1000,
+                    ]}
+                    speed={2}
+                    repeat={Infinity}
+                  />
+                  )}
+                  
                 </span>
               </div>
             </div>
@@ -110,7 +136,8 @@ function Banner() {
 
             <div className="flex gap-4  justify-start xl:mt-16  md:mt-8 mt-4 ">
               <div className="w-full flex justify-between xl:pr-16 pr-8">
-                <p
+                {position === 0 && (
+                  <p
                   // className={`font-light ${sizing.description} text-[#7A7678]`}
                   className={`font-light ${sizing.description} text-white md:leading-tight`}
                 >
@@ -122,52 +149,9 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {position === 1 && (
-          <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
-            <div className="flex flex-col  animate-fade-right  ">
-              <h1
-                className={`${sizing.title} 
-                text-white w-full font-semibold`}
-                title="Agencia GATO"
-              >
-                Agencia de{" "}
-              </h1>
-
-              <div className="flex flex-col gap-2">
-                <span
-                  title="Servicio tecnológico GATO"
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
-                >
-                  {/* <Typewriter
-                    words={["Desarrollo de software"]}
-                    onDelete={deleting}
-                    typeSpeed={70}
-                  /> */}
-
-                  <TypeAnimation
-                    className={`${bg_colors[position]}`}
-                    sequence={[
-                      // Same substring at the start will only be typed once, initially
-                      words[position],
-                      1000,
-                    ]}
-                    speed={2}
-                    repeat={Infinity}
-                  />
-                </span>
-              </div>
-            </div>
-
-            {/* //todo carousel or transition images  --------------------- */}
-
-            <div className="flex gap-4  justify-start xl:mt-16  md:mt-8 mt-4 ">
-              <div className="w-full flex justify-between xl:pr-16 pr-8">
-                <p
+                )}
+                {position === 1 && (
+                  <p
                   className={`font-light ${sizing.description} text-white  md:leading-tight`}
                 >
                   <Typewriter
@@ -178,51 +162,9 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {position === 2 && (
-          <div className="w-full flex flex-col animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out animate-normal">
-            <div className="flex flex-col animate-fade-right animate-duration-500  ">
-              <h1
-                className={`${sizing.title} 
-                text-white w-full font-semibold`}
-                title="Agencia GATO"
-              >
-                Agencia de{" "}
-              </h1>
-              <div className="flex flex-col gap-2">
-                <span
-                  title="Servicio tecnológico GATO"
-                  className={` ${sizing.title} text-white  px-1 w-fit font-semibold   leading-1	`}
-                >
-                  {/* <Typewriter
-                    words={["Desarrollo de software"]}
-                    onDelete={deleting}
-                    typeSpeed={70}
-                  /> */}
-
-                  <TypeAnimation
-                    className={`${bg_colors[position]}`}
-                    sequence={[
-                      // Same substring at the start will only be typed once, initially
-                      words[position],
-                      1000,
-                    ]}
-                    speed={2}
-                    repeat={Infinity}
-                  />
-                </span>
-              </div>
-            </div>
-
-            {/* //todo carousel or transition images  --------------------- */}
-
-            <div className="flex gap-4  justify-start xl:mt-16  md:mt-8 mt-4 ">
-              <div className="w-full flex justify-between xl:pr-16 pr-8">
-                <p
+                )}
+                {position === 2 && (
+                  <p
                   className={`font-light ${sizing.description} text-white  md:leading-tight`}
                 >
                   <Typewriter
@@ -233,10 +175,18 @@ function Banner() {
                     typeSpeed={30}
                   />
                 </p>
+                )}
+                
               </div>
+              
             </div>
+            
           </div>
-        )}
+          <a href="#collage" className="scrollDown opacity-100 absolute bottom-10 left-1/2 w-[45px] h-[70px] flex justify-center">
+            <span className="bg-white  relative"></span>
+        </a>
+
+        
 
         {/* //todo data about company */}
         {/* <div className=" p- text-slate-700 z-0  flex flex-col gap-8 text-right">

@@ -5,19 +5,20 @@ import Team from "./team";
 import Footer from "../components/footer";
 import Colaborators from "./colaborators";
 import CollageAbout from "./collage-about";
+import GridClients from "./grid-clients";
 
 function Section1() {
   return (
     <div className="w-full h-full ">
-      <div className=" pb-16 xl:px-32 md:px-24 px-8   flex   justify-center  ">
+      {/* <div className=" pb-16 xl:px-32 md:px-24 px-8   flex   justify-center  ">
         <RevealWrapper origin="bottom" duration={1500} className={"w-full"}>
           <CollageAbout></CollageAbout>
         </RevealWrapper>
-      </div>
+      </div> */}
 
       {/* //todo -> --------------------------------------------------------------------------------*/}
 
-      <div className="w-full  flex flex-col ">
+      <div className="w-full  flex flex-col pb-16 bg-gray-100 ">
         <div className="grid md:grid-cols-2 grid-cols-1 xl:px-32 md:px-24 px-8  md:gap-20 gap-8">
           <RevealWrapper origin="left" duration={1500} className={"w-full"}>
             <p className="text-3xl ">
@@ -126,8 +127,9 @@ function Section1() {
       {/* //todo -> --------------------------------------------------------------------------------*/}
 
       <Team></Team>
+      <GridClients></GridClients>
       <hr />
-      <Colaborators></Colaborators>
+      {/* <Colaborators></Colaborators> */}
       <Footer></Footer>
     </div>
   );

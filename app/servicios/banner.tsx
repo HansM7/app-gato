@@ -5,23 +5,27 @@
 // import { Typewriter } from "react-simple-typewriter";
 // import Section1 from "../nosotros/section-1";
 import { Carousel } from "keep-react";
+import BackgroundSlider from "../components/backgroundSlider";
+
 
 function BannerServices() {
 
   return (
     <section className="w-full h-full min-h-screen relative">
-      <div className=" md:min-h-screen h-full  overflow-hidden  absolute z-0">
-        <img
+      <div className=" md:min-h-screen h-full w-full overflow-hidden  absolute z-0 bg-blue-200">
+      <BackgroundSlider/>
+        {/* <img
           className="w-screen  md:min-h-screen h-full  object-cover  overflow-hidden filter brightness-50"
           src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
           alt="GATO - Servicios digitales"
           title="GATO - Servicios digitales"
-        ></img>
+        ></img> */}
       </div>
       <div className=" w-full h-full flex items-center md:px-16 px-2">
-        <Carousel
-/*           slideInterval={5000}
-          showControls={true} */
+        
+        {/* <Carousel
+          //slideInterval={5000}
+          //showControls={true}
           // indicators={true}
           className="  text-white  carousel_dinamic  w-full  "
           style={{ height: "100%!important" }}
@@ -43,7 +47,7 @@ function BannerServices() {
                 en el mundo digital.
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
             <div className="flex flex-col items-center md:gap-16 py-16">
@@ -63,7 +67,7 @@ function BannerServices() {
               </p>
             </div>
           </div> */}
-        </Carousel>
+       {/*  </Carousel> */}
       </div>
     </section>
   );

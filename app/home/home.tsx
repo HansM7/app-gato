@@ -11,7 +11,6 @@ import Detail from "./detail";
 import Slider from "../components/slider";
 import Testimonials from "../components/testimonials";
 import Footer from "../components/footer";
-import GridClients from "./grid-clients";
 import TestimonialsCards from "./testimonials-card";
 import WhatsappContact from "../components/whatsapp-contact";
 import Form from "../components/form";
@@ -51,12 +50,13 @@ function Home() {
         <Detail></Detail>
 
         {/* <Slider direction="right"></Slider> */}
-        <GridClients></GridClients>
+        
         {/* <Testimonials></Testimonials> */}
         {/* <TestimonialsCards></TestimonialsCards> */}
         <Form></Form>
         <Footer></Footer>
       </main>
+      
     </div>
   );
 }

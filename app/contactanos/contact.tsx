@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Navigation from "../components/navigation";
-import Form from "./form";
+import Form from "../components/form";
 import Drawer from "../components/drawer";
 import WhatsappContact from "../components/whatsapp-contact";
+import Header from "./header";
+import Ubication from "./ubication";
 
 function Contact() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -67,8 +69,9 @@ function Contact() {
         </div>
         <div className="w-full flex flex-col  justify-between md:ml-16">
           {/* <Header></Header> */}
-
+          <Header></Header>
           <Form></Form>
+          <Ubication></Ubication>
         </div>
 
         {/* //todo-> section loadin -----------------------------------------------*/}

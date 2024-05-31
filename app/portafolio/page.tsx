@@ -29,7 +29,6 @@ export const metadata: Metadata = {
         alt: "Proyecto Eva-Dry",
       },
 
-      // Agrega más imágenes según sea necesario para representar tus proyectos
     ],
   },
 };

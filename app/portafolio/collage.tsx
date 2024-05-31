@@ -12,6 +12,7 @@ function CollagePortfolio() {
     acf: {
       imagen: string;
       cliente: string;
+      "cliente-slug": string;
     };
     title: {
       rendered: string;
@@ -33,7 +34,6 @@ function CollagePortfolio() {
       );
       const projects = response.data;
       setDataPortfolio(projects);
-      console.log(projects);
     } catch (error) {
     } finally {
       setIsLoading(false);
@@ -63,8 +63,9 @@ function CollagePortfolio() {
 
   const renderPortfolioItem = (item: any) => (
     <Link
-      key={item.id}
-      href={"/portafolio/" + item.slug}
+    key={item.id}
+    href="/portafolio/[slug]/"
+    as={`/portafolio/${item.acf['cliente-slug']}`}
       className="group relative flex justify-center items-center overflow-hidden border"
     >
       <img
@@ -126,10 +127,11 @@ function CollagePortfolio() {
           data={filteredPortafolio}
           itemsPerPage={8}
           render={renderPortfolioItem}
-          gridClass={"grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 "}
+          gridClass={
+            "grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 "
+          }
         />
       </RevealWrapper>
-      
     </section>
   );
 }

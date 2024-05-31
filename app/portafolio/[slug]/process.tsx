@@ -3,6 +3,7 @@ import { RevealWrapper } from "next-reveal";
 
 import React from "react";
 interface ProcessProps {
+  color:string;
   analisis: string;
   diseño: string;
   desarrollo: string;
@@ -10,7 +11,7 @@ interface ProcessProps {
   despliegue: string;
 }
 
-const process: React.FC<ProcessProps> = ({analisis, diseño, desarrollo, prueba, despliegue}) => {
+const process: React.FC<ProcessProps> = ({color,analisis, diseño, desarrollo, prueba, despliegue}) => {
 
   const cardContents = [
     {
@@ -86,12 +87,13 @@ const process: React.FC<ProcessProps> = ({analisis, diseño, desarrollo, prueba,
       <RevealWrapper
         duration={1500}
         origin="left"
-        className=" w-full flex flex-col xl:px-32 lg:px-24  px-8 py-16 gap-4 xl:gap-10 lg:gap-6 bg-gray-100"
+        className=" w-full flex flex-col xl:px-32 lg:px-16 px-8 py-8 lg:py-16 gap-4 xl:gap-10 lg:gap-6 bg-gray-100"
       >
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 xl:gap-12">
           {cardContents.map((content, index) => (
             <CardSolution
               key={index}
+              color={color}
               title={content.title}
               description={content.description}
               imgSrc={content.imgSrc}
@@ -100,9 +102,10 @@ const process: React.FC<ProcessProps> = ({analisis, diseño, desarrollo, prueba,
           ))}
 
         </div>
-        <div className=" lg:max-w-[960px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12">
+        <div className=" lg:max-w-[960px] mx-auto min-w-full lg:min-w-0 w-full grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 xl:gap-12">
         {cardContents2.map((content, index) => (
             <CardSolution
+              color={color}
               key={index}
               title={content.title}
               description={content.description}

@@ -4,6 +4,7 @@ import Drawer from "../components/drawer";
 import Footer from "../components/footer";
 import WhatsappContact from "../components/whatsapp-contact";
 import { useEffect, useState } from "react";
+import Custom404 from "../not-found";
 const blog = () => {
     const [isDrawer, setIsDrawer] = useState(false);
 
@@ -32,7 +33,7 @@ const blog = () => {
       </div>
       <main className="flex flex-col w-full  md:pl-[80px] ">
         {/* <Header></Header> */}
-        <h1>Blog</h1>
+        <h1>hola</h1>
         <Footer></Footer>
       </main>
     </div>
