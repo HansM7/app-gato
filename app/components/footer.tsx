@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="bg-white h-auto xl:px-32 md:px-24 px-8 flex  pt-16  w-full flex-col">
+    <footer className="bg-white h-auto xl:px-32 md:px-24 px-8 flex  pt-16  w-full flex-col border-t">
       <div className="text-sm grid xl:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-16 gap-4 justify-between w-full mb-4">
         <Link href={"/"} className="">
           {/* <span className="text-3xl font-semibold">GATO</span> */}
@@ -70,7 +70,7 @@ function Footer() {
           <span className="font-semibold mb-1">Redes Sociales</span>
           <div className="flex gap-2">
             <Link
-              href={"https://www.instagram.com/genius_mkt_peru/"}
+              href={"https://www.instagram.com/agenciagato2024/"}
               target="_blank"
               className="hover:scale-125 transition-all ease-in-out duration-00"
             >
@@ -104,7 +104,7 @@ function Footer() {
               </svg>
             </Link>
             <Link
-              href={"https://www.facebook.com/geniusper"}
+              href={"https://www.facebook.com/agenciagatope"}
               target="_blank"
               className="hover:scale-125 transition-all ease-in-out duration-00"
             >
@@ -128,7 +128,7 @@ function Footer() {
             </Link>
 
             <Link
-              href={"https://www.linkedin.com/company/geniusperu"}
+              href={"https://www.linkedin.com/company/agenciagato/"}
               target="_blank"
               className="hover:scale-125 transition-all ease-in-out duration-00"
             >

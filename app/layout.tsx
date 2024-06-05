@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  icons: "icon-gato.png",
+  icons: "https://res.cloudinary.com/difvp2onn/image/upload/v1717528898/img-para-web-gato/icon-gato.png",
 };
 
 export default function RootLayout({

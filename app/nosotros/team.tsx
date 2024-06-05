@@ -83,10 +83,10 @@ function Team() {
         "mariapia.png",
       role: "Trafficker Digital",
       description: "",
-      alt: "GATO - Trafficker Digital ",
+      alt: "GATO - Trafficker Digital Mariapia Contreras",
     },
     {
-      name: "Alejandra",
+      name: "Alejandra Andía",
       photo_name: "alejandra",
 
       photo:
@@ -94,10 +94,10 @@ function Team() {
         "alejandra.png",
       role: "Coordinadora de Marketing",
       description: "",
-      alt: "GATO - Coordinadora de Marketing Alejandra",
+      alt: "GATO - Coordinadora de Marketing Alejandra Andía",
     },
     {
-      name: "Sol",
+      name: "Solange Ferrando",
       photo_name: "sol",
 
       photo:
@@ -105,10 +105,10 @@ function Team() {
         "sol.png",
       role: "Diseñadora Gráfica",
       description: "",
-      alt: "GATO - Diseñadora Gráfica Sol",
+      alt: "GATO - Diseñadora Gráfica Sollage Ferrando",
     },
     {
-      name: "Estefany",
+      name: "Estefany Chapoñan",
       photo_name: "estefany",
 
       photo:
@@ -116,10 +116,10 @@ function Team() {
         "estefany.png",
       role: "Realizadora Audiovisual",
       description: "",
-      alt: "GATO - Realizadora Audiovisual Estefany",
+      alt: "GATO - Realizadora Audiovisual Estefany Chapoñan",
     },
     {
-      name: "Luis",
+      name: "Luis Saenz",
       photo_name: "luis",
 
       photo:
@@ -127,10 +127,10 @@ function Team() {
         "luis.jpg",
       role: "Community Manager",
       description: "",
-      alt: "GATO - Community Manager Luis",
+      alt: "GATO - Community Manager Luis Saenz",
     },
     {
-      name: "Gio",
+      name: "Gio Alva",
       photo_name: "gio",
 
       photo:
@@ -138,10 +138,10 @@ function Team() {
         "gio-alva.png",
       role: "Desarrollador Web",
       description: "",
-      alt: "GATO - Desarrollador Web Gio",
+      alt: "GATO - Desarrollador Web Gio Alva",
     },
     {
-      name: "Daniela",
+      name: "Daniela Carrasco",
       photo_name: "daniela",
 
       photo:
@@ -149,10 +149,10 @@ function Team() {
         "daniela.png",
       role: "Practicante Desarrolladora Web",
       description: "",
-      alt: "GATO - Practicante Desarrolladora Daniela",
+      alt: "GATO - Practicante Desarrolladora Daniela Carrasco",
     },
     {
-      name: "Lucero",
+      name: "Lucero Cueva",
       photo_name: "lucero",
 
       photo:
@@ -160,7 +160,18 @@ function Team() {
         "lucero.jpg",
       role: "Practicante de Talento Humano",
       description: "",
-      alt: "GATO - Practicante de Talento Humano Lucero",
+      alt: "GATO - Practicante de Talento Humano Lucero Cueva",
+    },
+    {
+      name: "Lucia Aguado",
+      photo_name: "lucia",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "lucia.jpg",
+      role: "Asistente Contable",
+      description: "",
+      alt: "GATO - Asistente Contable Lucia Cueva",
     },
   ];
 
@@ -173,14 +184,15 @@ function Team() {
   };
 
   return (
-    <div className="w-fullxl:px-24 md:px-16  px-8 min-h-screen flex flex-col py-16 ">
+    <div className="w-full">
+      <div className="max-w-[1920px] mx-auto xl:px-24 md:px-16 px-8  flex flex-col pt-8 pb-16">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
           <h1 className="md:text-[3rem] text-[2rem] ">Nuestro equipo</h1>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-16 gap-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-8 justify-center">
           {leaders.map((item, index) => (
             <RevealWrapper
               origin="bottom"
@@ -196,7 +208,7 @@ function Team() {
                   alt={item.alt}
                   title={item.alt}
                 />
-                <span className="  text-gray-500 rounded-lg px-2 ">
+                <span className="text-gray-500 rounded-lg px-2 ">
                   {item.role}
                 </span>
                 <span>{item.name}</span>
@@ -227,6 +239,8 @@ function Team() {
           ))}
         </div>
       </div>
+      </div>
+      
 
       {/* modal detail team */}
 

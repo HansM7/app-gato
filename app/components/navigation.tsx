@@ -17,6 +17,7 @@ function Navigation({
 
   // const isMdOrLarger = useMediaQuery("(min-width: 1024px)");
 
+
   const openModal = () => {
     setIsOpen(true);
   };
@@ -25,11 +26,11 @@ function Navigation({
   };
 
   return (
-    <div className=" hidden md:flex w-[80px]    left-0 top-0   flex-col justify-between min-h-svh bg-white items-center shadow-lg ">
-      <div className="h-[100%] flex flex-col justify-between items-center  py-4">
-        <Link href={"/"}>
+    <div className=" flex w-full lg:w-[80px] lg:h-full h-[60px] left-0 top-0 lg:flex-col justify-between  bg-white items-center shadow-lg ">
+      <div className="h-full w-full flex lg:flex-col justify-between items-center px-4  lg:py-4">
+        <Link href={"/"} className="h-full lg:w-full lg:h-auto">
           <img
-            className="w-full"
+            className="h-full lg:w-full"
             src="https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png"
             alt=""
           />
@@ -38,7 +39,7 @@ function Navigation({
           {/* <div className="-rotate-90">
         <span className="w-full ">GATO</span>
       </div> */}
-          <Link href={"/"} className="flex  flex-col justify-center items-center gap-1 text-3xl">
+          <Link href={"/"} className="hidden lg:flex  flex-col justify-center items-center gap-1 text-3xl">
           <span className="font-semibold">G</span>
           <span className="font-semibold">A</span>
           <span className="font-semibold">T</span>
@@ -120,12 +121,12 @@ function Navigation({
         </Modal>
       </div>
 
-      <div className="bg-violet-700 flex justify-center items-center  text-center min-h-52 max-w-full overflow-hidden">
+      <div className="bg-violet-700 flex justify-center items-center  text-center lg:max-h-52 max-w-full lg:overflow-hidden h-full px-4">
         <Link
           href={"/contactanos"}
-          className="-rotate-90   flex justify-center items-center min-w-48 "
+          className="lg:-rotate-90   flex justify-center items-center lg:min-w-48 "
         >
-          <span className="w-full text-white "> Contacto </span>
+          <span className="w-full text-white font-semibold">Contáctanos</span>
         </Link>
       </div>
     </div>

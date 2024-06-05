@@ -23,10 +23,10 @@ function Detail() {
   }
 
   return (
-    <section className="xl:px-32 lg:px-24  px-8 flex   pb-16    w-full bg-white">
-      <RevealWrapper duration={1500} origin="left ">
+    <section className="w-full bg-white">
+      <RevealWrapper duration={1500} origin="left " className={`w-full max-w-[1920px] mx-auto xl:px-32 lg:px-24  px-8 flex pb-16 `}>
         <div className="flex flex-col md:flex-row w-full justify-between gap-6 md:gap-8 xl:gap-24">
-          <div className=" flex justify-center md:justify-start   md:flex-col gap-2 md:gap-4 ">
+          <div className=" flex justify-center md:justify-start md:flex-col gap-2 md:gap-4 ">
             <div
               role="button"
               onClick={() => setSelected(1)}
@@ -247,7 +247,7 @@ function Component1({
       <div className="flex items-center">
         <img
           className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
-          src="https://i.pinimg.com/originals/74/68/cc/7468cc4fe04a0fccfbfa661555fe8922.jpg"
+          src="https://i.pinimg.com/736x/05/f6/a7/05f6a750173d902cdb9ecbf7783c9fd5.jpg"
           alt="GATO - Marketing Digital"
           title="GATO - Marketing Digital"
         />

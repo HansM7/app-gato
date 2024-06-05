@@ -1,127 +1,192 @@
 "use client";
 
-// import { RevealWrapper } from "next-reveal";
-// import Link from "next/link";
-// import { Typewriter } from "react-simple-typewriter";
-// import Section1 from "../nosotros/section-1";
+import { RevealWrapper } from "next-reveal";
 import { Carousel } from "keep-react";
 import BackgroundSlider from "../components/backgroundSlider";
+import { useEffect, useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 
 function BannerServices() {
+  const words = [
+    "Soluciones Personalizada",
+    "Ideas Creativas",
+    "Innovación Constante",
+  ];
+
+  const bg_colors = ["bg-[#007CF8]", "bg-[#0BC2E1]", "bg-[#A52DE6]"];
+
+  const sizing = {
+    title: "xl:text-[4rem] md:text-[3rem] sm:text-[2rem] text-[2rem]",
+    description: "xl:text-[3rem] md:text-3xl sm:text-[2rem]  text-xl",
+  };
+
+  const [iterator, setIterator] = useState(0);
+
+  const [colorSelected, setColorSelected] = useState(bg_colors[0]);
+
+  const [position, setPosition] = useState(1);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setPosition((prevPosition) =>
+        prevPosition === 2 ? 0 : prevPosition + 1
+      );
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  }, [position]);
 
   return (
-    <section className="w-full h-full min-h-screen relative">
-      <div className=" md:min-h-screen h-full w-full overflow-hidden  absolute z-0 bg-blue-200">
-      <BackgroundSlider/>
-        {/* <img
-          className="w-screen  md:min-h-screen h-full  object-cover  overflow-hidden filter brightness-50"
-          src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
-          alt="GATO - Servicios digitales"
-          title="GATO - Servicios digitales"
-        ></img> */}
-      </div>
-      <div className=" w-full h-full flex items-center md:px-16 px-2">
-        
-        {/* <Carousel
-          //slideInterval={5000}
-          //showControls={true}
-          // indicators={true}
-          className="  text-white  carousel_dinamic  w-full  "
-          style={{ height: "100%!important" }}
-        >
-          <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
-            <div className="flex flex-col items-center md:gap-16 py-16">
-              <h1 className="md:text-[6rem] text-4xl font-black">
-                Servicios que
-              </h1>
-              <span className="md:text-[6rem] text-4xl font-black text-blue-500">
-                Innovan
-              </span>
-            </div>
-            <div className="px-8 ">
-              <p className="md:text-xl text-sm font-light text-center">
-                En GATO llevamos tu negocio al siguiente nivel con nuestra gama
-                completa de servicios digitales. Desde estrategias de marketing
-                hasta el diseño web, estamos aquí para hacer que tu marca brille
-                en el mundo digital.
-              </p>
-            </div>
-          </div> */}
+    <section className=" w-full  ">
+      <div className="max-w-[1920px] flex flex-col mx-auto relative xl:px-32 lg:px:16 px-8 py-16">
+        <div className="flex flex-col animate-fade-right mb-4">
+          <h1
+            className={`${sizing.title} 
+                text-[#3D3D3D] w-full font-semibold `}
+            title="Agencia GATO"
+          >
+            En <span className="text-[#6D28D9]">GATO</span> nos destacamos por
+            nuestra
+          </h1>
 
-          {/* <div className=" flex flex-col md:gap-8  gap-4 py-12 md:px-16   ">
-            <div className="flex flex-col items-center md:gap-16 py-16">
-              <h2 className="md:text-[6rem] text-4xl font-black">
-                Servicios que
-              </h2>
-              <span className="md:text-[6rem] text-4xl font-black text-blue-500">
-                Trascienden
-              </span>
-            </div>
-            <div className="px-8 ">
-              <p className="md:text-xl text-sm font-light text-center">
-                En GATO llevamos tu negocio al siguiente nivel con nuestra gama
-                completa de servicios digitales. Desde estrategias de marketing
-                hasta el diseño web, estamos aquí para hacer que tu marca brille
-                en el mundo digital.
-              </p>
-            </div>
-          </div> */}
-       {/*  </Carousel> */}
-      </div>
-    </section>
-  );
-}
-
-{
-  /* <section className="md:min-h-screen min-h-[28rem]    flex bg-gray-100  relative ">
-      <div className=" md:min-h-screen h-full  overflow-hidden min-h-[28rem] absolute">
-        <img
-          className="w-screen  md:min-h-screen h-full min-h-[28rem] object-cover  overflow-hidden filter brightness-50"
-          src="https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        ></img>
-      </div>
-      <div className="xl:px-14 md:px-20 pb-16 md:pb-0 px-8 md:pt-12 pt-8 flex flex-col items-center">
-        <RevealWrapper origin="left" duration={1500} className={"w-full"}>
-          <div className="  flex flex-col  ">
-            <h1
-              title="Servicios tecnologicos GATO"
-              className="text-gray-200 xl:text-[5rem] md:text-[4rem] text-[3rem]"
+          <div className="flex flex-col gap-2">
+            <span
+              title="Servicio tecnológico GATO"
+              className={` ${sizing.title} text-[#3D3D3D]  px-1 w-fit font-semibold   leading-1	`}
             >
-              Servicios que
-            </h1>
-
-            <div className="text-sky-400  xl:text-[7rem] md:text-[6rem] text-[3rem] min-h-44 -mt-4">
-              <Typewriter
-                loop
-                words={["Innovan", "Trascienden", "Impactan"]}
-                typeSpeed={70}
-              />
+              {position === 0 && (
+                <TypeAnimation
+                  className={``}
+                  sequence={[
+                    // Same substring at the start will only be typed once, initially
+                    words[position],
+                    1000,
+                  ]}
+                  speed={2}
+                  repeat={Infinity}
+                />
+              )}
+              {position === 1 && (
+                <TypeAnimation
+                  className={""}
+                  sequence={[
+                    // Same substring at the start will only be typed once, initially
+                    words[position],
+                    1000,
+                  ]}
+                  speed={2}
+                  repeat={Infinity}
+                />
+              )}
+              {position === 2 && (
+                <TypeAnimation
+                  className={``}
+                  sequence={[
+                    // Same substring at the start will only be typed once, initially
+                    words[position],
+                    1000,
+                  ]}
+                  speed={2}
+                  repeat={Infinity}
+                />
+              )}
+            </span>
+          </div>
+        </div>
+        <div className="w-full flex flex-col md:flex-row justify-between gap-8 lg:gap-10 md:h-[500px] xl:h-[700px]">
+          <div className="w-full md:w-1/3 flex flex-col justify-end">
+            <div className="container w-full flex flex-col gap-4">
+              <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
+                <img
+                  className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
+                  src="https://i.pinimg.com/736x/fc/cf/b0/fccfb08b7b601c7b23e738d690ff3c69.jpg"
+                  alt="imagen"
+                />
+                <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+                  <img
+                    className=" w-full h-full object-cover lg:aspect-square shadow-md"
+                    src="https://i.pinimg.com/736x/fc/cf/b0/fccfb08b7b601c7b23e738d690ff3c69.jpg"
+                    alt="imagen"
+                  />
+                  <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Et, labore minus voluptate a voluptatum laudantium! Id
+                      expedita recusandae et repudiandae odit laborum at sed
+                      consequuntur repellendus, quam animi sequi sapiente!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
+                Soluciones Personalizadas
+              </div>
             </div>
           </div>
-        </RevealWrapper>
-        <RevealWrapper
-          origin="right"
-          duration={1500}
-          className={"w-full md:mt-16 -mt-16"}
-        >
-          <span className="md:font-light font-light xl:text-[3rem] md:text-[2rem] text-3xl text-pretty text-gray-200">
-            En GATO llevamos tu negocio al siguiente nivel con nuestra gama
-            completa de servicios digitales. Desde estrategias de marketing
-            hasta el diseño web, estamos aquí para hacer que tu marca brille en
-            el mundo digital.
-          </span>
-        </RevealWrapper>
-        <div className="absolute inset-x-0 mx-auto max-w-sm  p-4 bottom-0 text-center ">
-          <Link
-            href={"#detail"}
-            className="floating-image text-sky-400  text-xl "
-          >
-            <span className="animate-pulse">Ver mas</span>
-          </Link>
+          <div className="w-full md:w-1/3 flex flex-col justify-center">
+            <div className="container w-full flex flex-col gap-4">
+              <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
+                <img
+                  className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
+                  src="https://i.pinimg.com/736x/d5/20/0d/d5200da7fb7e6323f41db312d7f40cef.jpg"
+                  alt="imagen"
+                />
+                <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+                  <img
+                    className=" w-full h-full object-cover lg:aspect-square shadow-md"
+                    src="https://i.pinimg.com/736x/d5/20/0d/d5200da7fb7e6323f41db312d7f40cef.jpg"
+                    alt="imagen"
+                  />
+                  <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Et, labore minus voluptate a voluptatum laudantium! Id
+                      expedita recusandae et repudiandae odit laborum at sed
+                      consequuntur repellendus, quam animi sequi sapiente!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
+                Ideas Creativas
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 flex flex-col justify-start">
+            <div className="container w-full flex flex-col gap-4">
+              <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
+                <img
+                  className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
+                  src="https://i.pinimg.com/736x/da/57/8e/da578e890c011bf32b2aabe78d1e94c2.jpg"
+                  alt="imagen"
+                />
+                <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+                  <img
+                    className=" w-full h-full object-cover lg:aspect-square shadow-md"
+                    src="https://i.pinimg.com/736x/da/57/8e/da578e890c011bf32b2aabe78d1e94c2.jpg"
+                    alt="imagen"
+                  />
+                  <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Et, labore minus voluptate a voluptatum laudantium! Id
+                      expedita recusandae et repudiandae odit laborum at sed
+                      consequuntur repellendus, quam animi sequi sapiente!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
+                Innovación constante
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section> */
+    </section>
+   
+  );
 }
-
 export default BannerServices;

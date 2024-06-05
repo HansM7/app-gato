@@ -23,13 +23,13 @@ function FastContact() {
               alt=""
             />
             <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
-              <span className="text-xl text-slate-600">
+              <span className="text-xl text-[#3D3D3D]">
                 Soy una Pyme y tengo una idea de negocio
               </span>
               <div className="h-10  mt-2 ">
                 <Link
                   href={"/contactanos"}
-                  className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
+                  className="text-[#6D28D9] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
                 >
                   Solicitar detalle
                 </Link>
@@ -50,13 +50,13 @@ function FastContact() {
               alt=""
             />
             <div className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-white px-8 py-4 group-hover:shadow-xl transition-all ">
-              <span className="text-xl text-slate-600">
+              <span className="text-xl text-[#3D3D3D]">
                 Tengo una empresa y necesito una cotización
               </span>
               <div className="h-10  mt-2 ">
                 <Link
                   href={"/contactanos"}
-                  className="text-[#0A86ED] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
+                  className="text-[#6D28D9] animate-fade-right animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex text-md font-semibold"
                 >
                   Solicitar detalle
                 </Link>

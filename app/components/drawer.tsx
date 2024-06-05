@@ -59,7 +59,7 @@ function Drawer() {
       <span
         role="button"
         onClick={() => handleRedirect(word)}
-        className={`relative xl:text-[3rem] text-[3rem] font-semibold hover:text-black text-gray-500  transition-all ${
+        className={`relative xl:text-[3rem] md:text-[2rem] text-[1.5rem] font-semibold hover:text-black text-gray-500  transition-all ${
           hovered === word && "text-black"
         }`}
         onMouseEnter={() => handleHover(word)}
@@ -84,19 +84,10 @@ function Drawer() {
 
   return (
     <>
-      <div className="overflow-y-scroll bg-white h-full w-screen  animate-fade-right animate-duration-500 animate-ease-linear animate-normal pt-24 xl:px-32 px-16 z-30">
-        <div className="flex justify-between">
+      <div className="overflow-y-scroll bg-white h-full w-screen  animate-fade-right animate-duration-500 animate-ease-linear animate-normal pt-8 md:pt-24 xl:px-32 px-8 md:px-16 z-30">
+        <div className="flex justify-between flex-col gap-4 md:gap-0 md:flex-row">
           <div className="flex flex-col">
             <div className="flex items-center">
-              {/* <div className="w-10 ">
-                {info === "Portafolio" ? (
-                  <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
-                    {number}
-                  </div>
-                ) : (
-                  ""
-                )}{" "}
-              </div> */}
               <div
                 className={`${
                   info === "Portafolio"
@@ -108,15 +99,6 @@ function Drawer() {
               </div>
             </div>
             <div className="flex items-center">
-              {/* <div className="w-10">
-                {info === "Nosotros" ? (
-                  <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
-                    {number}
-                  </div>
-                ) : (
-                  ""
-                )}{" "}
-              </div> */}
               <div
                 className={`${
                   info === "Nosotros"
@@ -128,15 +110,6 @@ function Drawer() {
               </div>
             </div>
             <div className="flex items-center">
-              {/* <div className="w-10">
-                {info === "Servicios" ? (
-                  <div className="animate-fade-left animate-duration-[1000ms] animate-ease-linear animate-alternate ">
-                    {number}
-                  </div>
-                ) : (
-                  ""
-                )}{" "}
-              </div> */}
               <div
                 className={`${
                   info === "Servicios"
@@ -178,11 +151,6 @@ function Drawer() {
             <InfoDrawer word={info}></InfoDrawer>
           </div>
 
-          {/* <div className="grid grid-cols-3 mt-8 text-sm font-semibold border-t pt-8 pb-8">
-            <Link href={"/clientes"}>Clientes</Link>
-            <Link href={"/blog"}>Blog</Link>
-            <Link href={"/bolsa-de-trabajo"}>Bolsa de trabajo</Link>
-          </div> */}
         </div>
       </div>
       {/* --------------- screen black ------------------------------------- */}

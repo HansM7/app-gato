@@ -1,5 +1,3 @@
-"use client";
-
 import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";

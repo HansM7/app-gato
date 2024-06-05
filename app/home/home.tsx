@@ -2,18 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Banner from "./banner";
-import Carousel from "../components/carousel";
 import Navigation from "../components/navigation";
 import Drawer from "../components/drawer";
 import "react-awesome-slider/dist/styles.css";
 import Collage from "./collage";
 import Detail from "./detail";
-import Slider from "../components/slider";
-import Testimonials from "../components/testimonials";
 import Footer from "../components/footer";
-import TestimonialsCards from "./testimonials-card";
 import WhatsappContact from "../components/whatsapp-contact";
 import Form from "../components/form";
+import GridClients from "../components/clientes/grid-clients";
 
 function Home() {
   const [isDrawer, setIsDrawer] = useState(false);
@@ -33,26 +30,17 @@ function Home() {
   return (
     <div className="relative bg-white flex">
       <WhatsappContact></WhatsappContact>
-
       <div
-        className={`fixed  ${
-          isDrawer ? "w-screen" : "w-16"
-        }  h-screen z-10 flex  `}
+        className={`fixed top-0 left-0  ${isDrawer ? "w-screen h-screen" : "w-screen lg:w-16"} h-[60px] lg:h-screen z-10 flex flex-col lg:flex-row`}
       >
         <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
         {isDrawer && <Drawer></Drawer>}
       </div>
-      <main className="flex flex-col w-full  md:pl-[80px] ">
-        {/* <Header></Header> */}
+      <main className="min-w-screen flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0">
         <Banner></Banner>
-
         <Collage></Collage>
         <Detail></Detail>
-
-        {/* <Slider direction="right"></Slider> */}
-        
-        {/* <Testimonials></Testimonials> */}
-        {/* <TestimonialsCards></TestimonialsCards> */}
+        <GridClients></GridClients>
         <Form></Form>
         <Footer></Footer>
       </main>

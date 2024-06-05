@@ -19,6 +19,7 @@ interface ProjectData {
     "solucion-desarrollo": string;
     "solucion-pruebas": string;
     "solucion-despliegue": string;
+    "banner-descripcion": string;
   };
 }
 interface BannerDetailProps {
@@ -65,7 +66,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
         selectedColor = colors[0];
       } else if (projectTitle.includes("diseño web")) {
         selectedColor = colors[1];
-      } else if (projectTitle.includes("desarrollo de software") || projectTitle.includes("desarrollo móvil")) {
+      } else if (projectTitle.includes("desarrollo de software") || projectTitle.includes("desarrollo movil")) {
         selectedColor = colors[2];
       }
   
@@ -78,13 +79,13 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
     <section className="md:min-h-screen h-full">
       {!isLoading ? (
         <div
-          className={` flex ${bgColor} relative w-full flex-col xl:px-32 lg:px-16 px-8 py-8 lg:py-16`}
+          className={` flex ${bgColor} relative w-full flex-col `}
         >
-          <div className="max-w-[1920px] mx-auto w-full pb-8">
+          <div className="max-w-[1920px] mx-auto w-full pb-4 lg:pb-8 xl:px-32 lg:px-16 px-8 py-8 lg:py-16">
             <RevealWrapper origin="top" duration={1500}>
               <Link
                 href={"/portafolio"}
-                className="text-white flex gap-x-2 items-center "
+                className="text-gray-300 flex gap-x-2 items-center "
               >
                 <svg
                   width="100%"
@@ -92,11 +93,11 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-[1.5rem] w-auto"
+                  className="h-4 md:h-[1.5rem] w-auto"
                 >
                   <path
                     d="M15 20L7 12L15 4"
-                    stroke="white"
+                    stroke="#D1D5DB"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -104,12 +105,13 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                 </svg>
                 Ver todos los proyectos
               </Link>
-              <div className="py-4 flex flex-col gap-2 lg:gap-4">
-                <span className=" lg:text-xl font-semibold lg:font-bold text-white uppercase">
+              <div className="pt-8 pb-4 lg:py-8 flex flex-col gap-2 lg:gap-4">
+                <span className=" md:text-xl font-bold lg:font-bold text-white uppercase">
                   Categoría de servicio: {proyecto.title?.rendered}
                 </span>
                 <h1
-                  className="text-[3rem] lg:text-[4rem] text-white capitalize"
+                  className="text-4xl md:text-6xl font-semibold
+                    text-white capitalize"
                   title={proyecto.acf?.cliente}
                 >
                   {proyecto.acf?.cliente}
@@ -117,8 +119,14 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
               </div>
             </RevealWrapper>
 
-            <div className="pb-8">
-              <RevealWrapper origin="bottom" duration={1500} className={""}>
+            <div className="pb-4 lg:pb-8">
+              <RevealWrapper origin="bottom" duration={1500} className={"relative"}>
+              <div className=" md:absolute w-full h-full top-0 left-0 md:justify-center md:items-center flex">
+                  <p className="text-white text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl md:text-center md:max-w-[40%] font-semibold pb-4 md:pb-0 drop-shadow-lg">
+                  {proyecto.acf?.['banner-descripcion']}
+                  </p>
+                  
+                </div>
                 <img
                   src={
                     proyecto.acf?.banner
@@ -129,16 +137,17 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                   alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
                   title="Servicio de Marketing Digital para Social Commerce"
                 />
+                
               </RevealWrapper>
             </div>
 
-            <div className="w-full flex flex-col lg:flex-row gap-8">
+            <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-8">
               <RevealWrapper
                 origin="left"
                 duration={1500}
                 className={"lg:max-w-[500px] w-full"}
               >
-                <span className="text-2xl text-white font-semibold lg:font-bold mb-5">
+                <span className="text-xl lg:text-2xl text-white font-bold">
                   PROBLEMA
                 </span>
                 <p className="text-white font-light">
@@ -151,7 +160,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                 duration={1500}
                 className={"lg:max-w-[500px] w-full"}
               >
-                <span className="text-2xl text-white font-semibold lg:font-bold mb-5">
+                <span className="text-xl lg:text-2xl text-white font-bold">
                   NECESIDAD
                 </span>
                 <p className="text-white font-light">
@@ -160,7 +169,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
               </RevealWrapper>
             </div>
           </div>
-          <div className="max-w-[1920px] mx-auto w-full relative flex items-end flex-col lg:flex-row">
+          <div className="max-w-[1920px] mx-auto w-full xl:px-32 lg:px-16 px-8 py-8 lg:py-16 relative flex items-end flex-col lg:flex-row">
             <div className=" relative w-full lg:w-[60%] lg:h-[700px] h-auto ">
               <RevealWrapper
                 origin="left"
@@ -230,9 +239,29 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
           </div>
         </div>
       ) : (
-        <section className="w-full h-screen flex justify-center items-center">
-          <Spinner color="info" size="lg" />
-        </section>
+        <div className=" flex justify-center items-center bg-white bg-opacity-75 z-50">
+            <svg
+              className="mr-3 h-20 w-20 animate-spin text-[#6D28D9]"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                strokeLinecap="round"
+              ></path>
+            </svg>
+          </div>
       )}
       <RevealWrapper origin="left" duration={1500} className={""}>
         <Process

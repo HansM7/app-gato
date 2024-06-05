@@ -56,8 +56,8 @@ function Items() {
   ];
 
   return (
-    <section id="detail">
-      <div className="min-h-screen xl:px-24 md:px-16  px-8 flex bg-gray-100 pt-12 pb-24">
+    <section id="detail" className=" bg-gray-100">
+      <div className="w-full min-h-screen max-w-[1920px] mx-auto xl:px-24 md:px-16  px-8 flex pt-12 pb-24">
         <div className="w-full flex flex-col ">
           <div className="grid grid-cols-6 gap-8 mt-8 ">
             {services.map((service, index) => (
@@ -88,7 +88,7 @@ function Items() {
                       <p className="text-gray-300 text-xl font-light">
                         {service.detail}
                       </p>
-                      <div className="text-violet-300 p-2 hidden group-hover:flex animate-fade-right ">
+                      <div className="text-[#9747FF] p-2 hidden group-hover:flex animate-fade-right drop-shadow-md font-bold">
                         Click para ver mas detalles
                       </div>
                     </div>

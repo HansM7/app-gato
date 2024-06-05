@@ -55,17 +55,12 @@ function Content() {
         <WhatsappContact></WhatsappContact>
 
         <div
-          className={`fixed ${
-            isDrawer ? "w-screen" : "w-16"
-          }  h-screen z-10 flex  `}
-        >
-          <Navigation
-            isDrawer={isDrawer}
-            setIsDrawer={setIsDrawer}
-          ></Navigation>
-          {isDrawer && <Drawer></Drawer>}
-        </div>
-        <div className="w-full flex flex-col  justify-between md:pl-16">
+        className={`fixed top-0 left-0  ${isDrawer ? "w-screen h-screen" : "w-screen lg:w-16"} h-[60px] lg:h-screen z-10 flex flex-col lg:flex-row`}
+      >
+        <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
+        {isDrawer && <Drawer></Drawer>}
+      </div>
+        <div className="w-full flex flex-col  justify-between pt-[60px] lg:pl-[80px] lg:pt-0">
           {/* <Header></Header> */}
 
           <Service04></Service04>

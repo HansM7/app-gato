@@ -38,51 +38,21 @@ function Contact() {
   return (
     <>
       <div className="relative bg-white flex">
-        {/* //todo fondo -----------------------------*/}
-
-        {/* <div className="absolute w-full bg-violet-900 opacity-80">
-        <video
-          className="  opacity-60"
-          muted
-          loop
-          autoPlay
-          src="video.mp4"
-        ></video>
-      </div> */}
-
-        {/* //todo fondo -----------------------------*/}
-
-        {/* // todo -> whatsapp icon */}
 
         <WhatsappContact></WhatsappContact>
 
         <div
-          className={`fixed ${
-            isDrawer ? "w-screen" : "w-16"
-          }  h-screen z-10 flex  `}
-        >
-          <Navigation
-            isDrawer={isDrawer}
-            setIsDrawer={setIsDrawer}
-          ></Navigation>
-          {isDrawer && <Drawer></Drawer>}
-        </div>
-        <div className="w-full flex flex-col  justify-between md:ml-16">
+        className={`fixed top-0 left-0  ${isDrawer ? "w-screen h-screen" : "w-screen lg:w-16"} h-[60px] lg:h-screen z-10 flex flex-col lg:flex-row`}
+      >
+        <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
+        {isDrawer && <Drawer></Drawer>}
+      </div>
+        <div className="w-full flex flex-col  justify-between pt-[60px] lg:pl-[80px] lg:pt-0">
           {/* <Header></Header> */}
           <Header></Header>
           <Form></Form>
           <Ubication></Ubication>
         </div>
-
-        {/* //todo-> section loadin -----------------------------------------------*/}
-        {/* {loading ? (
-          <div className={`fixed h-screen  z-30 bg-black   `}></div>
-        ) : (
-          <div
-            className={`fixed h-screen  bg-black   animate-fade-left animate-duration-[800ms] animate-ease-linear animate-reverse`}
-          ></div>
-        )} */}
-        {/* //todo-> section loadin -----------------------------------------------*/}
       </div>
     </>
   );

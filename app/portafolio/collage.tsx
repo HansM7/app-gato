@@ -27,8 +27,11 @@ function CollagePortfolio() {
     "Todas las categorías"
   );
 
+  const [isMobile, setIsMobile] = useState(false);
+
   async function fetchData() {
     try {
+      setIsLoading(true);
       const response = await axios.get(
         "https://palegreen-anteater-636608.hostingersite.com/wp-json/wp/v2/proyecto?per_page=100"
       );
@@ -42,6 +45,16 @@ function CollagePortfolio() {
 
   useEffect(() => {
     fetchData();
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const handleCategorySelect = (category: any) => {
@@ -63,10 +76,10 @@ function CollagePortfolio() {
 
   const renderPortfolioItem = (item: any) => (
     <Link
-    key={item.id}
-    href="/portafolio/[slug]/"
-    as={`/portafolio/${item.acf['cliente-slug']}`}
-      className="group relative flex justify-center items-center overflow-hidden border"
+      key={item.id}
+      href="/portafolio/[slug]/"
+      as={`/portafolio/${item.slug}`}
+      className="group relative flex justify-center items-center overflow-hidden border aspect-square"
     >
       <img
         className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
@@ -74,63 +87,116 @@ function CollagePortfolio() {
         alt={`GATO - Proyecto ${item.acf.cliente}`}
         title={`GATO - Proyecto ${item.acf.cliente}`}
       />
-      <div className="absolute hidden group-hover:flex inset-0 bg-black bg-opacity-70 w-full h-full top-0 p-3 animate-fade-up flex-col justify-end items-start gap-4 text-white">
-        <h2 className="font-semibold text-xl">{item.acf.cliente}</h2>
-        <span>{item.title.rendered}</span>
+      <div className="absolute hidden group-hover:flex inset-0 bg-black bg-opacity-70 w-full h-full top-0 p-1 md:p-3 animate-fade-up flex-col justify-end items-start gap-4 text-white">
+        <span className="font-semibold text-base md:text-2xl">
+          {item.acf.cliente}
+        </span>
+        <span className="text-xs md:text-base">{item.title.rendered}</span>
       </div>
     </Link>
   );
-
   return (
-    <section className="w-full  xl:px-24 md:px-20 sm:px-12  px-8   py-16">
+    <section className="w-full  xl:px-24 md:px-20 sm:px-12 p-8 md:py-16">
       <RevealWrapper duration={1500} origin="top">
         <div>
           <h1
             title="GATO - Portafolio de proyectos"
-            className="text-3xl 
-            text-[#3D3D3D] font-semibold uppercase mb-4"
+            className="text-3xl
+            text-[#3D3D3D] font-medium uppercase mb-3"
           >
             Portafolio
           </h1>
         </div>
       </RevealWrapper>
       <RevealWrapper duration={1500} origin="left">
-        <nav className="w-full">
-          <ul className=" relative flex gap-x-4 text-[#4F4F4F] font-semibold">
+        {isMobile ? (
+          <select
+            className="w-full border-none bg-white text-[#4F4F4F] text-lg font-semibold outline-none focus:ring-[#6D28D9] placeholder-[#3D3D3D]"
+            value={selectedCategory}
+            onChange={(e) => handleCategorySelect(e.target.value)}
+          >
             {[
               "Todas las categorías",
-              "Diseño Web",
-              "Branding",
-              "Desarrollo de Aplicaciones",
               "Marketing Digital",
+              "Diseño Web",
+              "Desarrollo de Software",
+              "Desarrollo de Móvil",
+              "Branding",
             ].map((category) => (
-              <li
-                key={category}
-                className={`group hover:text-[#6D28D9] ${
-                  selectedCategory === category ? "text-[#6D28D9]" : ""
-                }`}
-                onClick={() => handleCategorySelect(category)}
-              >
+              <option key={category} value={category} className="">
                 {category}
-                <div
-                  className={`abslute w-full h-0.5 bg-[#6D28D9] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
-                    selectedCategory === category ? "scale-x-100" : ""
-                  }`}
-                ></div>
-              </li>
+              </option>
             ))}
-          </ul>
-        </nav>
+          </select>
+        ) : (
+          <nav className="w-full">
+            <ul className=" relative flex gap-x-4 text-[#4F4F4F] font-semibold">
+              {[
+                "Todas las categorías",
+                "Diseño Web",
+                "Branding",
+                "Desarrollo de Aplicaciones",
+                "Marketing Digital",
+              ].map((category) => (
+                <li
+                  key={category}
+                  className={`group hover:text-[#6D28D9] ${
+                    selectedCategory === category ? "text-[#6D28D9]" : ""
+                  }`}
+                  onClick={() => handleCategorySelect(category)}
+                >
+                  {category}
+                  <div
+                    className={`abslute w-full h-0.5 bg-[#6D28D9] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
+                      selectedCategory === category ? "scale-x-100" : ""
+                    }`}
+                  ></div>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </RevealWrapper>
-      <RevealWrapper duration={1500} origin="bottom" className={`mt-12`}>
-        <Pagination
-          data={filteredPortafolio}
-          itemsPerPage={8}
-          render={renderPortfolioItem}
-          gridClass={
-            "grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 "
-          }
-        />
+      <RevealWrapper
+        duration={1500}
+        origin="bottom"
+        className={`mt-8 md:mt-12`}
+      >
+        {isLoading ? (
+          <div className=" flex justify-center items-center bg-white bg-opacity-75 z-50">
+            <svg
+              className="mr-3 h-20 w-20 animate-spin text-[#6D28D9]"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                strokeLinecap="round"
+              ></path>
+            </svg>
+          </div>
+        ) : (
+          <Pagination
+            dataName="proyectos"
+            data={filteredPortafolio}
+            itemsPerPage={10}
+            render={renderPortfolioItem}
+            gridClass={
+              "grid xl:grid-cols-5 md:grid-cols-3  grid-cols-2 gap-2 md:gap-4 xl:gap-8 "
+            }
+          />
+        )}
       </RevealWrapper>
     </section>
   );

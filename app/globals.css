@@ -29,6 +29,8 @@ html::-webkit-scrollbar-thumb {
 
 body {
   font-family: var(--font-poppins);
+  overflow-x: hidden;
+  color: #3D3D3D;
 }
 
 .floating-image {

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Portfolio from "./portfolio";
+import Portfolio from "./portafolio";
 
 import type { Metadata, ResolvingMetadata } from "next";
 
@@ -49,7 +49,7 @@ function Page() {
           href="https://www.linkedin.com/company/agenciagato"
         />
       </Head>
-      <div className="w-full min-h-screen">
+      <div className="min-w-screen w-full min-h-screen">
         <Portfolio></Portfolio>
       </div>
     </>
