@@ -63,8 +63,8 @@ function Service03() {
         </div>
         <div className=" w-full h-full flex items-center md:px-16 px-2">
           <Carousel
-            slideInterval={5000}
-            showControls={true}
+            /* slideInterval={5000}
+            showControls={true} */
             // indicators={true}
             className="  text-white  carousel_dinamic  w-full  "
             style={{ height: "100%!important" }}

@@ -35,9 +35,9 @@ function Testimonials() {
 
       <RevealWrapper duration={1500} origin="left">
         <Carousel
-          slideInterval={5000}
+          /* slideInterval={5000}
           showControls={true}
-          indicators={true}
+          indicators={true} */
           style={{ minHeight: "20rem!important" }}
           className=" bg-gray-500 text-white  carousel_dinamic "
         >

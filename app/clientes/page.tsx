@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import type { Metadata, ResolvingMetadata } from "next";
-import Portfolio from "../portafolio/portfolio";
+import Portfolio from "../portafolio/portafolio";
 import Clients from "./clients";
 
 export const metadata: Metadata = {

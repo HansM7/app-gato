@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Page from "./home/page";
 
 function Index() {
@@ -8,12 +8,44 @@ function Index() {
 
   const [isFade, setIsFade] = useState(false);
 
-  setTimeout(() => {
+  const [isFirstVisit, setIsFirstVisit] = useState(true);
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem('hasVisited');
+    if(hasVisited){
+      setIsFirstVisit(false);
+      setIsLoading(false);
+    } else {
+      localStorage.setItem('hasVisited', 'true');
+    }
+  },[]);
+
+  useEffect(() => {
+
+    let timer1: NodeJS.Timeout;
+    let timer2: NodeJS.Timeout;
+
+    if(isFirstVisit){
+      const timer1 = setTimeout(() => {
+        setIsLoading(false);
+      }, 4000);
+      const timer2 = setTimeout(() => {
+        setIsFade(true);
+      }, 3000);
+
+      return () => {
+        if (timer1) clearTimeout(timer1);
+        if (timer2) clearTimeout(timer2);
+      };
+    }
+  }, [isFirstVisit])
+
+/*   setTimeout(() => {
     setIsLoading(false);
   }, 4000);
   setTimeout(() => {
     setIsFade(true);
-  }, 3000);
+  }, 3000); */
 
   return (
     <>

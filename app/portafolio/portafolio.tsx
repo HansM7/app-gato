@@ -1,16 +1,14 @@
 "use client";
 
-import Drawer from "@/app/components/drawer";
-import Navigation from "@/app/components/navigation";
 import { useEffect, useState } from "react";
-import BannerDetailPortfolio from "./banner";
-import Footer from "@/app/components/footer";
-import PortfolioInfoDetail from "./info";
-import WhatsappContact from "@/app/components/whatsapp-contact";
+import Navigation from "../components/navigation";
+import Drawer from "../components/drawer";
+import CollagePortfolio from "./collage";
+import Footer from "../components/footer";
+import WhatsappContact from "../components/whatsapp-contact";
 
-function Detail() {
+function Portfolio() {
   const [isDrawer, setIsDrawer] = useState(false);
-
   useEffect(() => {
     const handleKeyDown = (event: any) => {
       if (event.key === "Escape") {
@@ -28,20 +26,17 @@ function Detail() {
       <WhatsappContact></WhatsappContact>
 
       <div
-        className={`fixed  ${
-          isDrawer ? "w-screen" : "w-16"
-        }  h-screen z-10 flex  `}
+        className={`fixed top-0 left-0  ${isDrawer ? "w-screen h-screen" : "w-screen lg:w-16"} h-[60px] lg:h-screen z-10 flex flex-col lg:flex-row`}
       >
         <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
         {isDrawer && <Drawer></Drawer>}
       </div>
-      <div className="flex flex-col w-full md:pl-[80px] ">
-        <BannerDetailPortfolio></BannerDetailPortfolio>
-        {/* <PortfolioInfoDetail></PortfolioInfoDetail> */}
+      <div className="flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0 ">
+        <CollagePortfolio></CollagePortfolio>
         <Footer></Footer>
       </div>
     </div>
   );
 }
 
-export default Detail;
+export default Portfolio;

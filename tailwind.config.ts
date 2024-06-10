@@ -25,6 +25,9 @@ module.exports = {
       },
     },
   },
+  fontFamily:{
+    body: ['Rubik', 'sans-serif']
+  },
   plugins: [require("tailwindcss-animated")],
   presets: [require("keep-react/preset")],
 };

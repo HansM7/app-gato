@@ -48,8 +48,8 @@ function Service01() {
         </div>
         <div className=" w-full h-full flex items-center md:px-16 px-2">
           <Carousel
-            slideInterval={5000}
-            showControls={true}
+            /* slideInterval={5000}
+            showControls={true} */
             // indicators={true}
             className="  text-white  carousel_dinamic  w-full  "
             style={{ height: "100%!important" }}
@@ -132,9 +132,9 @@ function Service01() {
               className={`rounded-lg overflow-hidden`}
             >
               <Carousel
-                slideInterval={5000}
+                /* slideInterval={5000}
                 showControls={true}
-                indicators={true}
+                indicators={true} */
                 className="  text-white  carousel_dinamic "
               >
                 <div className="bg-blue-500 flex flex-col px-8 md:px-24 gap-4 py-12 ">

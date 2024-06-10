@@ -1,6 +1,7 @@
 "use client";
 
-import { Button, Modal, Typography } from "keep-react";
+import { Button, Modal } from "keep-react";
+import Typography from "@mui/material/Typography";
 import { RevealWrapper } from "next-reveal";
 import { CloudArrowUp } from "phosphor-react";
 import { useState } from "react";
@@ -33,7 +34,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E35AQHPXy-1TU49Ow/profile-framedphoto-shrink_800_800/0/1711806246117?e=1713628800&v=beta&t=mWQvQSUf5PGy_jwPjav-5imqRhOJfAHv8XpzYpHmyUw",
-        "diana.png",
+        "diana.jpg",
       role: "CEO",
       description: "",
       alt: "GATO - CEO Diana Ortega",
@@ -80,43 +81,97 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4D03AQFxLpT4Jd4YgA/profile-displayphoto-shrink_400_400/0/1711981006091?e=1718236800&v=beta&t=X2Hb95A1iv9yJ_tnCZ_DYJT4vvyC669V6_ePQZoU3-E",
         "mariapia.png",
-      role: "Marketing",
+      role: "Trafficker Digital",
       description: "",
-      alt: "GATO - Marketing Mariapia Contreras",
+      alt: "GATO - Trafficker Digital Mariapia Contreras",
     },
     {
-      name: "Stacey Geraldine",
-      photo_name: "stacey",
-
-      photo:
-        // "https://media.licdn.com/dms/image/D4E03AQE-PeReXqOXqA/profile-displayphoto-shrink_800_800/0/1712686468366?e=1718236800&v=beta&t=syqAvo7kmkH70nvRJ81iozLAuMxdD66syADy-60Ookc",
-        "stacy.png",
-      role: "Marketing",
-      description: "",
-      alt: "GATO - Marketing Stacey Geraldine",
-    },
-
-    {
-      name: "Lisbeth",
-      photo_name: "lisbeth",
-
-      photo:
-        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "lisbeth.png",
-      role: "Marketing",
-      description: "",
-      alt: "GATO - Marketing Lisbeth",
-    },
-    {
-      name: "Alejandra",
+      name: "Alejandra Andía",
       photo_name: "alejandra",
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "alejandra.png",
+      role: "Coordinadora de Marketing",
+      description: "",
+      alt: "GATO - Coordinadora de Marketing Alejandra Andía",
+    },
+    {
+      name: "Solange Ferrando",
+      photo_name: "sol",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "sol.png",
+      role: "Diseñadora Gráfica",
+      description: "",
+      alt: "GATO - Diseñadora Gráfica Sollage Ferrando",
+    },
+    {
+      name: "Estefany Chapoñan",
+      photo_name: "estefany",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "estefany.png",
+      role: "Realizadora Audiovisual",
+      description: "",
+      alt: "GATO - Realizadora Audiovisual Estefany Chapoñan",
+    },
+    {
+      name: "Luis Saenz",
+      photo_name: "luis",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "luis.jpg",
       role: "Community Manager",
       description: "",
-      alt: "GATO - Community Manager Alejandra",
+      alt: "GATO - Community Manager Luis Saenz",
+    },
+    {
+      name: "Gio Alva",
+      photo_name: "gio",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "gio-alva.png",
+      role: "Desarrollador Web",
+      description: "",
+      alt: "GATO - Desarrollador Web Gio Alva",
+    },
+    {
+      name: "Daniela Carrasco",
+      photo_name: "daniela",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "daniela.png",
+      role: "Practicante Desarrolladora Web",
+      description: "",
+      alt: "GATO - Practicante Desarrolladora Daniela Carrasco",
+    },
+    {
+      name: "Lucero Cueva",
+      photo_name: "lucero",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "lucero.jpg",
+      role: "Practicante de Talento Humano",
+      description: "",
+      alt: "GATO - Practicante de Talento Humano Lucero Cueva",
+    },
+    {
+      name: "Lucia Aguado",
+      photo_name: "lucia",
+
+      photo:
+        // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
+        "lucia.jpg",
+      role: "Asistente Contable",
+      description: "",
+      alt: "GATO - Asistente Contable Lucia Cueva",
     },
   ];
 
@@ -129,14 +184,15 @@ function Team() {
   };
 
   return (
-    <div className="w-fullxl:px-24 md:px-16  px-8 min-h-screen flex flex-col mt-16 bg-gray-100 pt-16  pb-32">
+    <div className="w-full">
+      <div className="max-w-[1920px] mx-auto xl:px-24 md:px-16 px-8  flex flex-col pt-8 pb-16">
       <div className="flex justify-center">
         <RevealWrapper origin="top" duration={1000}>
           <h1 className="md:text-[3rem] text-[2rem] ">Nuestro equipo</h1>
         </RevealWrapper>
       </div>
       <div className="flex flex-col items-center mt-16 gap-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8 justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-8 justify-center">
           {leaders.map((item, index) => (
             <RevealWrapper
               origin="bottom"
@@ -152,7 +208,7 @@ function Team() {
                   alt={item.alt}
                   title={item.alt}
                 />
-                <span className="  text-gray-500 rounded-lg px-2 ">
+                <span className="text-gray-500 rounded-lg px-2 ">
                   {item.role}
                 </span>
                 <span>{item.name}</span>
@@ -183,6 +239,8 @@ function Team() {
           ))}
         </div>
       </div>
+      </div>
+      
 
       {/* modal detail team */}
 
@@ -204,7 +262,7 @@ function ModalDetail({
     <Modal isOpen={isOpen} onClose={closeModal}>
       <Modal.Body className="space-y-3">
         <Modal.Content>
-          <Typography variant="div" className="!mb-6">
+          <Typography variant="body2" className="!mb-6">
             <Typography
               variant="h3"
               className="mb-2 text-body-1  text-metal-900 text-center"
@@ -212,7 +270,7 @@ function ModalDetail({
               {data.name}
             </Typography>
             <Typography
-              variant="p"
+              variant="body2"
               className="text-body-4 font-normal text-metal-600"
             >
               <img className="rounded-lg" src={"team/" + data.photo} alt="" />
