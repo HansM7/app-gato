@@ -55,7 +55,7 @@ function InfoDrawer({ word }: { word: string }) {
           href={"/servicios/desarrollo-movil"}
           className="animate-fade-up animate-duration-900 animate-ease-linear animate-normal hover:font-semibold transition-all"
         >
-          Desarrollo de aplicaciones
+          Desarrollo móvil
         </Link>
       </div>
     );

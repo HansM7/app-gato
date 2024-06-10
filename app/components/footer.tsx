@@ -155,7 +155,7 @@ function Footer() {
       </div>
       <hr />
       <div className="text-center w-full my-4 col-span-4">
-        <span className="text-slate-600">&copy; 2024 - Gato</span>
+        <span className="text-slate-600">&copy; 2024 - Agencia Gato</span>
       </div>
     </footer>
   );

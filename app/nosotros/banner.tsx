@@ -2,7 +2,6 @@
 
 import { RevealWrapper } from "next-reveal";
 import { useEffect, useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
 import { TypeAnimation } from "react-type-animation";
 
 function BannerAbout() {
@@ -102,10 +101,11 @@ function BannerAbout() {
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      Nos enorgullece ofrecer una atención personalizada a cada
+                      uno de nuestros clientes. Nos tomamos el tiempo para
+                      conocer tus necesidades y objetivos, garantizando un
+                      enfoque a medida que maximiza los resultados y asegura tu
+                      satisfacción.
                     </p>
                   </div>
                 </div>
@@ -131,10 +131,11 @@ function BannerAbout() {
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      Con años de experiencia en marketing, branding, desarrollo
+                      de software y web, nuestro equipo está compuesto por
+                      expertos en sus respectivos campos. Esta experiencia nos
+                      permite ofrecer soluciones efectivas y creativas que
+                      impulsan el crecimiento de tu negocio.
                     </p>
                   </div>
                 </div>
@@ -160,10 +161,11 @@ function BannerAbout() {
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      La transparencia es fundamental en nuestra relación con
+                      los clientes. Nos comprometemos a ser claros y honestos en
+                      cada paso del proceso, construyendo una base sólida de
+                      confianza. Creemos que la confianza mutua es la clave para
+                      lograr resultados excepcionales y relaciones duraderas.
                     </p>
                   </div>
                 </div>

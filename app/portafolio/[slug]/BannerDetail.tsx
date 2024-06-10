@@ -60,32 +60,36 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
   useEffect(() => {
     if (!isLoading && proyecto?.title?.rendered) {
       const projectTitle = proyecto.title.rendered.toLowerCase();
-      let selectedColor = { background: "", solution: "" }; 
-  
-      if (projectTitle.includes("marketing digital") || projectTitle.includes("branding")) {
+      let selectedColor = { background: "", solution: "" };
+
+      if (
+        projectTitle.includes("marketing digital") ||
+        projectTitle.includes("branding")
+      ) {
         selectedColor = colors[0];
       } else if (projectTitle.includes("diseño web")) {
         selectedColor = colors[1];
-      } else if (projectTitle.includes("desarrollo de software") || projectTitle.includes("desarrollo movil")) {
+      } else if (
+        projectTitle.includes("desarrollo de software") ||
+        projectTitle.includes("desarrollo movil")
+      ) {
         selectedColor = colors[2];
       }
-  
+
       setBgColor(selectedColor.background);
       setSolutionColor(selectedColor.solution);
     }
   }, [isLoading, proyecto]);
 
   return (
-    <section className="md:min-h-screen h-full">
+    <section className="w-full md:min-h-screen h-full">
       {!isLoading ? (
-        <div
-          className={` flex ${bgColor} relative w-full flex-col `}
-        >
+        <div className={` flex ${bgColor} relative w-full flex-col `}>
           <div className="max-w-[1920px] mx-auto w-full pb-4 lg:pb-8 xl:px-32 lg:px-16 px-8 py-8 lg:py-16">
-            <RevealWrapper origin="top" duration={1500}>
+            <RevealWrapper origin="left" duration={1500}>
               <Link
                 href={"/portafolio"}
-                className="text-gray-300 flex gap-x-2 items-center "
+                className="text-white flex gap-x-2 items-center "
               >
                 <svg
                   width="100%"
@@ -97,7 +101,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                 >
                   <path
                     d="M15 20L7 12L15 4"
-                    stroke="#D1D5DB"
+                    stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -105,6 +109,8 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                 </svg>
                 Ver todos los proyectos
               </Link>
+            </RevealWrapper>
+            <RevealWrapper origin="left" duration={1500}>
               <div className="pt-8 pb-4 lg:py-8 flex flex-col gap-2 lg:gap-4">
                 <span className=" md:text-xl font-bold lg:font-bold text-white uppercase">
                   Categoría de servicio: {proyecto.title?.rendered}
@@ -119,8 +125,8 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
               </div>
             </RevealWrapper>
 
-            <div className="pb-4 lg:pb-8">
-              <RevealWrapper origin="bottom" duration={1500} className={"relative"}>
+             <div className="pb-4 lg:pb-8 relative">
+              <RevealWrapper origin="bottom" duration={1500} className={""}>
               <div className=" md:absolute w-full h-full top-0 left-0 md:justify-center md:items-center flex">
                   <p className="text-white text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl md:text-center md:max-w-[40%] font-semibold pb-4 md:pb-0 drop-shadow-lg">
                   {proyecto.acf?.['banner-descripcion']}
@@ -143,9 +149,9 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
 
             <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-8">
               <RevealWrapper
-                origin="left"
+                origin="bottom"
                 duration={1500}
-                className={"lg:max-w-[500px] w-full"}
+                className={"lg:w-1/3"}
               >
                 <span className="text-xl lg:text-2xl text-white font-bold">
                   PROBLEMA
@@ -156,9 +162,9 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
               </RevealWrapper>
 
               <RevealWrapper
-                origin="left"
+                origin="bottom"
                 duration={1500}
-                className={"lg:max-w-[500px] w-full"}
+                className={"lg:w-1/3"}
               >
                 <span className="text-xl lg:text-2xl text-white font-bold">
                   NECESIDAD
@@ -166,6 +172,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                 <p className="text-white font-light">
                   {proyecto.acf?.necesidad}
                 </p>
+                
               </RevealWrapper>
             </div>
           </div>
@@ -184,19 +191,21 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                   alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
                   title="Servicio de Marketing Digital para Social Commerce"
                 />
-                <RevealWrapper
+                
+                  <div className="  ">
+                  <RevealWrapper
                   origin="bottom"
                   duration={1500}
                   className={"absolute lg:bottom-6 lg:right-8 bottom-2 right-2"}
                 >
-                  <div className="  ">
                     <img
                       src={proyecto?.acf.imagen}
                       alt={`logo ${proyecto?.acf.cliente}`}
                       className="h-[3rem] lg:h-[60px] w-auto object-contain"
                     />
+                    </RevealWrapper>
                   </div>
-                </RevealWrapper>
+                
               </RevealWrapper>
               <RevealWrapper
                 origin="top"
@@ -211,7 +220,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
               </RevealWrapper>
             </div>
             <RevealWrapper
-              origin="right"
+              origin="bottom"
               duration={1500}
               className={"w-full lg:w-[40%] lg:h-full h-auto pt-8 lg:pt-0"}
             >
@@ -240,30 +249,29 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
         </div>
       ) : (
         <div className=" flex justify-center items-center bg-white bg-opacity-75 z-50">
-            <svg
-              className="mr-3 h-20 w-20 animate-spin text-[#6D28D9]"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              ></circle>
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                strokeLinecap="round"
-              ></path>
-            </svg>
-          </div>
+          <svg
+            className="mr-3 h-20 w-20 animate-spin text-[#6D28D9]"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              className="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              strokeWidth="4"
+            ></circle>
+            <path
+              className="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              strokeLinecap="round"
+            ></path>
+          </svg>
+        </div>
       )}
-      <RevealWrapper origin="left" duration={1500} className={""}>
         <Process
           color={bgColor}
           analisis={proyecto.acf["solucion-analisis"]}
@@ -272,7 +280,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
           prueba={proyecto.acf["solucion-pruebas"]}
           despliegue={proyecto.acf["solucion-despliegue"]}
         />
-      </RevealWrapper>
+
     </section>
   );
 }

@@ -65,7 +65,7 @@ function Detail({ project }: DetailProps) {
       <div className="min-w-screen flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0">
         <>
           <BannerDetailPortfolio proyecto={project} />
-          <Form />
+          {/* <Form color="#6D28D9" /> */}
           <Footer />
         </>
       </div>

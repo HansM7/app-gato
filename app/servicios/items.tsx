@@ -45,10 +45,10 @@ function Items() {
     },
 
     {
-      name: "Desarrollo de Aplicaciones",
+      name: "Desarrollo móvil",
       icon: "https://cdn-icons-png.flaticon.com/512/6470/6470993.png",
       detail:
-        "Desarrollamos aplicaciones a medida que se adaptan a tus necesidades específicas y potencian la experiencia de tus usuarios.",
+        "Desarrollamos aplicaciones móviles a medida que se adaptan a tus necesidades específicas y potencian la experiencia de tus usuarios.",
       path: "desarrollo-movil",
       video:
         "https://videos.pexels.com/video-files/3252145/3252145-uhd_3840_2160_25fps.mp4",

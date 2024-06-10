@@ -18,15 +18,15 @@ function Team() {
 
   const leaders = [
     {
-      name: "Martin Jara",
+      name: "Martín Jara",
       photo_name: "martin",
       photo:
         // "https://media.licdn.com/dms/image/D5635AQFGLM7VnS33PQ/profile-framedphoto-shrink_800_800/0/1711476726864?e=1713625200&v=beta&t=4QHErSs5nfjqgJMZz9K0sOruZTTr-CXvwuvt-bLOzFY",
         "martin.jpg",
 
-      role: "CEO",
+      role: "Director General",
       description: "",
-      alt: "GATO - CEO Martin Jara",
+      alt: "GATO - Director General Martín Jara",
     },
     {
       name: "Diana Ortega",
@@ -35,9 +35,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E35AQHPXy-1TU49Ow/profile-framedphoto-shrink_800_800/0/1711806246117?e=1713628800&v=beta&t=mWQvQSUf5PGy_jwPjav-5imqRhOJfAHv8XpzYpHmyUw",
         "diana.jpg",
-      role: "CEO",
+      role: "Director General",
       description: "",
-      alt: "GATO - CEO Diana Ortega",
+      alt: "GATO - Director General Diana Ortega",
     },
   ];
   const workers = [
@@ -48,9 +48,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEDVxglbWreig/profile-displayphoto-shrink_800_800/0/1711986826924?e=1718236800&v=beta&t=jwQEry8mTXzsYGDmq5x3kEKaMl7HkfKMHAltfPgtN24",
         "jordan.png",
-      role: "Desarrollador Web",
+      role: "Coordinador de Proyectos Web",
       description: "",
-      alt: "GATO - Desarrollador Web Edson Huamaní",
+      alt: "GATO - Coordinador de Proyectos Web Edson Huamaní",
     },
     {
       name: "Hans Melchor",
@@ -59,9 +59,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4D03AQFUHe6qo_0yQA/profile-displayphoto-shrink_800_800/0/1711981009206?e=1718236800&v=beta&t=dnZN-OtJPPET6P5WaWRAEZ0b75VK8FpS0yrVIUv_50M",
         "hans.png",
-      role: "Desarrollador Full Stack",
+      role: "Desarrollador Full Stack Jr",
       description: "",
-      alt: "GATO - Desarrollador Full Stack Hans Melchor",
+      alt: "GATO - Desarrollador Full Stack Jr Hans Melchor",
     },
     {
       name: "Alonso Ulloa",
@@ -81,9 +81,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4D03AQFxLpT4Jd4YgA/profile-displayphoto-shrink_400_400/0/1711981006091?e=1718236800&v=beta&t=X2Hb95A1iv9yJ_tnCZ_DYJT4vvyC669V6_ePQZoU3-E",
         "mariapia.png",
-      role: "Trafficker Digital",
+      role: "Asistente de Marketing",
       description: "",
-      alt: "GATO - Trafficker Digital Mariapia Contreras",
+      alt: "GATO - Asistente de Marketing Mariapia Contreras",
     },
     {
       name: "Alejandra Andía",
@@ -92,9 +92,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "alejandra.png",
-      role: "Coordinadora de Marketing",
+      role: "Asistente de Marketing",
       description: "",
-      alt: "GATO - Coordinadora de Marketing Alejandra Andía",
+      alt: "GATO - Asistente de Marketing Alejandra Andía",
     },
     {
       name: "Solange Ferrando",
@@ -108,15 +108,15 @@ function Team() {
       alt: "GATO - Diseñadora Gráfica Sollage Ferrando",
     },
     {
-      name: "Estefany Chapoñan",
-      photo_name: "estefany",
+      name: "Stefany Chapoñan",
+      photo_name: "stefany",
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "estefany.png",
-      role: "Realizadora Audiovisual",
+      role: "Asistente Audiovisual",
       description: "",
-      alt: "GATO - Realizadora Audiovisual Estefany Chapoñan",
+      alt: "GATO - Asistente Audiovisual Stefany Chapoñan",
     },
     {
       name: "Luis Saenz",
@@ -130,7 +130,7 @@ function Team() {
       alt: "GATO - Community Manager Luis Saenz",
     },
     {
-      name: "Gio Alva",
+      name: "George Alva",
       photo_name: "gio",
 
       photo:
@@ -138,7 +138,7 @@ function Team() {
         "gio-alva.png",
       role: "Desarrollador Web",
       description: "",
-      alt: "GATO - Desarrollador Web Gio Alva",
+      alt: "GATO - Desarrollador Web George Alva",
     },
     {
       name: "Daniela Carrasco",
@@ -147,9 +147,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "daniela.png",
-      role: "Practicante Desarrolladora Web",
+      role: "Desarrolladora Full Stack Jr.",
       description: "",
-      alt: "GATO - Practicante Desarrolladora Daniela Carrasco",
+      alt: "GATO - Desarrolladora Full Stack Jr.Daniela Carrasco",
     },
     {
       name: "Lucero Cueva",
@@ -158,9 +158,9 @@ function Team() {
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
         "lucero.jpg",
-      role: "Practicante de Talento Humano",
+      role: "Asistente de Gestión Humana",
       description: "",
-      alt: "GATO - Practicante de Talento Humano Lucero Cueva",
+      alt: "GATO - Asistente de Gestión Humana Lucero Cueva",
     },
     {
       name: "Lucia Aguado",

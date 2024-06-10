@@ -4,7 +4,7 @@ import Head from "next/head";
 
 // crear seo normal, sin api
 export const metadata: Metadata = {
-  title: "GATO - TI",
+  title: "GATO",
   description:
     "En GATO, transformamos ideas en soluciones digitales. Diseño web, marketing digital, software y branding. Potencia tu presencia en línea.",
   openGraph: {
