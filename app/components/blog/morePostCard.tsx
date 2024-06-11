@@ -30,7 +30,7 @@ const formatDate = (dateStr: string): string => {
   return date.toLocaleDateString("en-US", options);
 };
 
-const cardSubject = ({ post }: { post: Post }) => {
+const MorePostCard = ({ post }: { post: Post }) => {
   return (
     <div className="w-full">
       <Link
@@ -39,16 +39,16 @@ const cardSubject = ({ post }: { post: Post }) => {
         className="w-full"
       >
         <RevealWrapper
-          className={`w-full h-full flex flex-col md:flex-row gap-2 bg-white`}
+          className={`w-full h-full flex flex-col gap-2 bg-white`}
           origin="left"
           duration={1500}
         >
           <img
-            className="w-full md:w-2/4 xl:w-2/5 h-full aspect-square object-cover "
+            className="w-full h-auto aspect-video object-cover "
             src={post.acf["descripcion-imagen"]}
             alt={post.acf.titulo}
           />
-          <div className="w-full md:w-2/4 xl:w-3/5 h-full flex flex-col justify-between  text-[#3D3D3D] gap-2 md:gap-0">
+          <div className="w-full h-full flex flex-col justify-between  text-[#3D3D3D] gap-2 md:gap-0">
             <div className="flex gap-1 overflow-x-auto whitespace-nowrap h-fit pb-2">
               {post?.acf?.secciones.map((tag) => (
                 <Link
@@ -69,7 +69,7 @@ const cardSubject = ({ post }: { post: Post }) => {
               ))}
             </div>
             <div className="flex flex-col flex-grow justify-end h-full">
-              <h2 className="md:line-clamp-2 lg:line-clamp-3 capitalize font-bold drop-shadow-xl text-[1.2rem] 2xl:text-[1.8rem]  ">
+              <h2 className="md:line-clamp-2 lg:line-clamp-3 capitalize font-bold drop-shadow-xl text-[1.2rem] 2xl:text-[1.5rem]  ">
                 {post.acf.titulo}
               </h2>
               <div className="pt-1 md:pt-4 flex gap-2 text-[#bdbdbd] text-[0.8rem]">
@@ -114,4 +114,4 @@ const cardSubject = ({ post }: { post: Post }) => {
   );
 };
 
-export default cardSubject;
+export default MorePostCard;

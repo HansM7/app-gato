@@ -125,13 +125,12 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
               </div>
             </RevealWrapper>
 
-             <div className="pb-4 lg:pb-8 relative">
+            <div className="pb-4 lg:pb-8 relative">
               <RevealWrapper origin="bottom" duration={1500} className={""}>
-              <div className=" md:absolute w-full h-full top-0 left-0 md:justify-center md:items-center flex">
+                <div className=" md:absolute w-full h-full top-0 left-0 md:justify-center md:items-center flex">
                   <p className="text-white text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl md:text-center md:max-w-[40%] font-semibold pb-4 md:pb-0 drop-shadow-lg">
-                  {proyecto.acf?.['banner-descripcion']}
+                    {proyecto.acf?.["banner-descripcion"]}
                   </p>
-                  
                 </div>
                 <img
                   src={
@@ -139,11 +138,10 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                       ? proyecto.acf.banner
                       : "https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
                   }
-                  className="w-full h-auto object-cover aspect-auto shadow-md"
+                  className="w-full h-auto object-cover aspect-video shadow-md"
                   alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
                   title="Servicio de Marketing Digital para Social Commerce"
                 />
-                
               </RevealWrapper>
             </div>
 
@@ -172,7 +170,6 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                 <p className="text-white font-light">
                   {proyecto.acf?.necesidad}
                 </p>
-                
               </RevealWrapper>
             </div>
           </div>
@@ -185,27 +182,30 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
               >
                 <img
                   src={
-                    proyecto.acf['imagen-solucion'] ? proyecto.acf['imagen-solucion'] : "https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
+                    proyecto.acf["imagen-solucion"]
+                      ? proyecto.acf["imagen-solucion"]
+                      : "https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
                   }
-                  className="w-full h-full object-cover  grayscale "
+                  className="w-full h-full object-cover  "
                   alt="Servicio de Marketing Digital para Social Commerce - Aumenta tu presencia en línea y maximiza tus ventas"
                   title="Servicio de Marketing Digital para Social Commerce"
                 />
-                
-                  <div className="  ">
+
+                <div className="  ">
                   <RevealWrapper
-                  origin="bottom"
-                  duration={1500}
-                  className={"absolute lg:bottom-6 lg:right-8 bottom-2 right-2"}
-                >
+                    origin="bottom"
+                    duration={1500}
+                    className={
+                      "absolute lg:bottom-6 lg:right-8 bottom-2 right-2"
+                    }
+                  >
                     <img
                       src={proyecto?.acf.imagen}
                       alt={`logo ${proyecto?.acf.cliente}`}
                       className="h-[3rem] lg:h-[60px] w-auto object-contain"
                     />
-                    </RevealWrapper>
-                  </div>
-                
+                  </RevealWrapper>
+                </div>
               </RevealWrapper>
               <RevealWrapper
                 origin="top"
@@ -272,15 +272,14 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
           </svg>
         </div>
       )}
-        <Process
-          color={bgColor}
-          analisis={proyecto.acf["solucion-analisis"]}
-          diseño={proyecto.acf["solucion-diseno"]}
-          desarrollo={proyecto.acf["solucion-desarrollo"]}
-          prueba={proyecto.acf["solucion-pruebas"]}
-          despliegue={proyecto.acf["solucion-despliegue"]}
-        />
-
+      <Process
+        color={bgColor}
+        analisis={proyecto.acf["solucion-analisis"]}
+        diseño={proyecto.acf["solucion-diseno"]}
+        desarrollo={proyecto.acf["solucion-desarrollo"]}
+        prueba={proyecto.acf["solucion-pruebas"]}
+        despliegue={proyecto.acf["solucion-despliegue"]}
+      />
     </section>
   );
 }

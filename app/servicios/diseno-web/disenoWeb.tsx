@@ -10,6 +10,7 @@ function Service02() {
   return (
     <>
       <Banner
+        banner="https://i.pinimg.com/originals/07/dd/95/07dd95f62157b84210fad871a5f69727.jpg"
         color="#0BC2E1"
         service="Diseño"
         service2="web"

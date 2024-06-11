@@ -6,6 +6,7 @@ type Props = {
   service: string;
   service2: string;
   description: string;
+  banner: string;
 };
 
 const banner = (prop: Props) => {
@@ -112,7 +113,7 @@ const banner = (prop: Props) => {
           <div className="max-h-[300px] md:max-h-[75%] lg:max-h-[60%] 2xl:max-h-[70%] lg:h-full lg:w-2/3 w-full md:max-w-[500px] 2xl:max-w-[800px] md:mr-[10%]  h-full ">
           <RevealWrapper origin="right" duration={1800} className={"w-full h-full md:p-4 xl:p-6 bg-white rounded-xl"}>
             <img
-              src="https://i.pinimg.com/564x/34/5d/d2/345dd26426534b729d6110f00d79bfa2.jpg"
+              src={prop.banner}
               alt="imagen banner"
               className=" h-full w-full object-cover rounded-lg "
             />

@@ -7,3 +7,4 @@ export const api_clients =
 export const api_services = "";
 
 export const api_home = "";
+export const api_blog = "https://palegreen-anteater-636608.hostingersite.com/wp-json/wp/v2/posts";

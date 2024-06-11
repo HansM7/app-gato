@@ -10,6 +10,7 @@ function Branding() {
   return (
     <>
       <Banner
+      banner="https://i.pinimg.com/originals/54/74/dd/5474dde8d339a45b0f813e7e137c326c.jpg"
         color="#A52DE6"
         service="Branding"
         service2=""

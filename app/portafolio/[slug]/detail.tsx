@@ -1,16 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import axios from "axios";
 
-import { api_projects } from "@/app/data/enviroments/api.enviroment";
 
 import Drawer from "@/app/components/drawer";
 import Navigation from "@/app/components/navigation";
 import BannerDetailPortfolio from "./BannerDetail";
 import Footer from "@/app/components/footer";
 import WhatsappContact from "@/app/components/whatsapp-contact";
-import Form from "@/app/components/form";
 
 interface DetailProps {
   project: Project;

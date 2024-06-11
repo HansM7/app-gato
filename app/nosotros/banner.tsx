@@ -90,13 +90,13 @@ function BannerAbout() {
               <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                 <img
                   className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
-                  src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                  src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
                   alt="imagen"
                 />
                 <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                   <img
                     className=" w-full h-full object-cover lg:aspect-square shadow-md"
-                    src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                    src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
                     alt="imagen"
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
@@ -120,13 +120,13 @@ function BannerAbout() {
               <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                 <img
                   className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
-                  src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                  src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                   alt="imagen"
                 />
                 <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                   <img
                     className=" w-full h-full object-cover lg:aspect-square shadow-md"
-                    src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                    src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                     alt="imagen"
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">

@@ -1,13 +1,13 @@
-"use client";
-import Navigation from "../components/navigation";
-import Drawer from "../components/drawer";
-import Footer from "../components/footer";
-import WhatsappContact from "../components/whatsapp-contact";
-import { useEffect, useState } from "react";
-import Banner from "./banner";
-import Entradas from "./entradas";
+'use client';
 
-const blog = () => {
+import Navigation from "@/app/components/navigation";
+import Drawer from "@/app/components/drawer";
+import Footer from "@/app/components/footer";
+import WhatsappContact from "@/app/components/whatsapp-contact";
+import { useEffect, useState } from "react";
+import Content from "./content";
+
+const section = ({ name }: { name: string; }) => {
     const [isDrawer, setIsDrawer] = useState(false);
 
   useEffect(() => {
@@ -32,12 +32,12 @@ const blog = () => {
         {isDrawer && <Drawer></Drawer>}
       </div>
       <main className="min-w-screen flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0">
-        <Banner></Banner>
-        <Entradas></Entradas>
+        {/* <Header></Header> */}
+        <Content slug={name}></Content>
         <Footer></Footer>
       </main>
     </div>
   )
 }
 
-export default blog
+export default section

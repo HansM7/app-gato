@@ -68,7 +68,7 @@ function Form(setcolor: FormProps) {
           },
         }
       );
-      setIsSubmiting(false);
+      setIsSubmiting(true);
       setModalMessage(
         "Gracias por dejar tus datos, Un ejecutivo te contactara o puedes contactarnos."
       );
@@ -86,10 +86,10 @@ function Form(setcolor: FormProps) {
     <section className=" flex  py-16 w-full">
       <div className="max-w-[1920px] mx-auto w-full xl:px-32 md:px-24  px-8 flex justify-between gap-6 flex-col-reverse lg:flex-row">
         <RevealWrapper origin="left" duration={1500} className={"xl:w-3/5 lg:w-2/4 w-full"}>
-          <div className="w-full h-full items-center  flex flex-row">
+          <div className="w-full h-full  items-center max-h-[760px] flex flex-row">
             <img
               className="h-full object-cover w-full lg:max-w-[85%] rounded-xl shadow-md"
-              src="https://i.pinimg.com/736x/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
+              src="https://i.pinimg.com/originals/6a/8c/f8/6a8cf8cf2c09665f3d5758dc0846231e.jpg"
               alt="imgen contactanos"
             />
             <div

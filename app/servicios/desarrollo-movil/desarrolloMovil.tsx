@@ -39,6 +39,7 @@ function Service06() {
   return (
     <>
       <Banner
+        banner="https://i.pinimg.com/originals/56/eb/29/56eb29798b209c84efe1a4bcc2df250c.jpg"
         color="#007CF8"
         service="Desarrollo"
         service2="móvil"
