@@ -18,6 +18,7 @@ function FastContact() {
         >
           <div className="relative group flex overflow-hidden">
             <img
+              loading="lazy"
               className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
               src="https://i.pinimg.com/736x/d3/f1/b1/d3f1b1ad2bb5bc4d639b7a0d39846a3f.jpg"
               alt=""
@@ -45,6 +46,7 @@ function FastContact() {
         >
           <div className="relative group flex overflow-hidden">
             <img
+              loading="lazy"
               className="absolute w-20 bottom-0 right-0 animate-fade-up animate-once animate-duration-[1200ms] animate-ease-out animate-normal hidden group-hover:flex"
               src="https://i.pinimg.com/736x/d3/f1/b1/d3f1b1ad2bb5bc4d639b7a0d39846a3f.jpg"
               alt=""

@@ -84,6 +84,7 @@ function CollagePortfolio() {
       className="group relative flex justify-center items-center overflow-hidden border aspect-square"
     >
       <img
+        loading="lazy"
         className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
         src={item.acf?.imagen ? item.acf.imagen : defaultImageUrl}
         onError={(e) => {
@@ -141,6 +142,7 @@ function CollagePortfolio() {
                 "Todas las categorías",
                 "Diseño Web",
                 "Branding",
+                "Desarrollo de Software",
                 "Desarrollo de Aplicaciones",
                 "Marketing Digital",
               ].map((category) => (
@@ -196,10 +198,13 @@ function CollagePortfolio() {
           <Pagination
             dataName="proyectos"
             data={filteredPortafolio}
-            itemsPerPage={15}
+            itemsPerPageMobile={6}
+            itemsPerPageTablet={9}
+            itemsPerPageDesktop={12}
+            itemsPerPageLargeDesktop={15}
             render={renderPortfolioItem}
             gridClass={
-              "grid xl:grid-cols-5 md:grid-cols-3  grid-cols-2 gap-2 md:gap-4 xl:gap-8 "
+              "grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-2 md:gap-4 xl:gap-8 "
             }
           />
         )}

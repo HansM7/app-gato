@@ -17,7 +17,6 @@ function Navigation({
 
   // const isMdOrLarger = useMediaQuery("(min-width: 1024px)");
 
-
   const openModal = () => {
     setIsOpen(true);
   };
@@ -30,23 +29,25 @@ function Navigation({
       <div className="h-full w-full flex lg:flex-col justify-between items-center px-4  lg:py-4">
         <Link href={"/"} className="h-full lg:w-full lg:h-auto">
           <img
+            loading="lazy"
             className="h-full lg:w-full"
             src="https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png"
             alt=""
           />
         </Link>
 
-          {/* <div className="-rotate-90">
+        {/* <div className="-rotate-90">
         <span className="w-full ">GATO</span>
       </div> */}
-          <Link href={"/"} className="hidden lg:flex  flex-col justify-center items-center gap-1 text-3xl">
+        <Link
+          href={"/"}
+          className="hidden lg:flex  flex-col justify-center items-center gap-1 text-3xl"
+        >
           <span className="font-semibold">G</span>
           <span className="font-semibold">A</span>
           <span className="font-semibold">T</span>
           <span className="font-semibold">O</span>
-          </Link>
-          
-
+        </Link>
 
         {/* ------------------------------------------ */}
         <div>
@@ -97,7 +98,9 @@ function Navigation({
                 <Typography
                   variant="h3"
                   className="mb-2 text-body-1 font-medium text-metal-900"
-                >Renderización</Typography>
+                >
+                  Renderización
+                </Typography>
                 <Typography
                   variant="body2"
                   className="text-body-4 font-normal text-metal-600"

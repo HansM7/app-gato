@@ -1,6 +1,7 @@
 import NavSections from "@/app/components/blog/navSections";
 import Link from "next/link";
 import MorePost from "./morePost";
+import Form from "@/app/components/form";
 
 interface PostProps {
   post: Posts;
@@ -32,10 +33,11 @@ const ContentPost = ({ post }: PostProps) => {
   return (
     <div className="w-full   ">
       <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row pt-8 px-8 lg:px16 lg:py-16 xl:px-32">
-        <div className="flex flex-col w-full lg:w-3/4  ">
+        <div className="flex flex-col w-full lg:w-3/4 h-fit">
           <div className="w-full pr-4 flex-1 text-[1rem] 2xl:text-[1.2rem]">
             <p className="pb-4">{post.acf.introducion}</p>
             <img
+              loading="lazy"
               className="float-left mr-4 mb-4 w-full md:w-1/3 xl:w-2/4 aspect-square object-cover"
               src={post.acf["descripcion-imagen"]}
               alt="imagen blog"
@@ -65,6 +67,7 @@ const ContentPost = ({ post }: PostProps) => {
           <MorePost></MorePost>
         </div>
       </div>
+      <Form color="#6D28D9"></Form>
     </div>
   );
 };

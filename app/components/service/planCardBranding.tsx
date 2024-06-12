@@ -68,9 +68,9 @@ const planCard = (props: Prop) => {
       >
         <span className="font-bold capitalize text-xl">{props.word}</span>
         <div className="flex font-black items-center">
-          <span className="text-3xl">S/</span>
-          <span className="text-7xl">{props.price}</span>
-          <span className="text-3xl">.00</span>
+          <span className="text-[1.8rem]">S/</span>
+          <span className="text-[3rem]">{props.price}</span>
+          <span className="text-[1.8rem]">.00</span>
         </div>
       </div>
     </div>

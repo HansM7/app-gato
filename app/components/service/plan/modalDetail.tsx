@@ -22,7 +22,7 @@ function redirect() {
 const detailPlan = (prop: Props) => {
   return (
       <div>
-        <div  className="relative w-full text-center mx-auto h-full ">
+        <div  className="relative w-full text-center mx-auto h-full overflow-hidden">
           <h2
           style={{ color: prop.color }}
             className={`uppercase font-black text-[1.5rem] lg:text-[3.5rem] md:text-[2rem] mb-4 lg:mb-8`}
@@ -34,17 +34,16 @@ const detailPlan = (prop: Props) => {
               <p className=" text-white">Precio Trimestral: <span className="ml-4"> ${prop.priceTrimestral}</span> </p>
             </div>
           )}
-          <div></div>
         </div>
-        <div style={{ color: prop.color }} className={`lg:font-semibold lg:text-lg mb-4 `}>{prop.description}</div>
-        <div className="flex flex-col-reverse lg:flex-row gap-10 max-h-[80vh] lg:max-h-auto overflow-y-auto  h-full">
-          <div className=" md:max-h-[400px] md:overflow-y-auto w-full lg:w-2/3">
+        <div className={`lg:font-semibold lg:text-lg mb-4 `}>{prop.description}</div>
+        <div className="flex flex-col md:flex-row gap-10 lg:max-h-auto  pr-1 pt-1 pb-4  h-full max-h-[60vh] overflow-y-auto overflow-x-hidden">
+          <div className="h-auto md:max-h-[400px] md:overflow-y-auto w-full md:w-2/4 xl:w-2/3">
             {prop?.details.map((detail, index) => (
               <div key={index} className="mb-4">
                 <h3 style={{ color: prop.color }} className={`text-xl font-bold mb-2`}>{detail?.name}</h3>
                 <ul className="pl-5 list-none text-[1rem]">
                   {detail.items?.map((item, idx) => (
-                    <li key={idx} style={{ color: prop.color }} className={`w-full  text-lg flex items-start mb-2 lg:mb-4`}> 
+                    <li key={idx} className={`w-full  text-lg flex items-start mb-2 lg:mb-4`}> 
                     <svg className="h-[25px] w-[25px] lg:h-[30px] lg:w-[30px] mr-2 mt-1 sm:mt-0"
                     width="100%" height="100%" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="100%" height="100%" rx="20" fill={`${prop.color}`}/>
@@ -57,7 +56,7 @@ const detailPlan = (prop: Props) => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col  justify-center items-center w-full lg:w-1/3 ">
+          <div className="flex flex-col  justify-center items-center w-full md:w-2/4 xl:w-1/3 ">
             <PlanCardBranding
               price={prop.price}
               color={prop.color}

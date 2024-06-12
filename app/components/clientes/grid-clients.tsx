@@ -64,6 +64,7 @@ function GridClients() {
         <div className="card group relative transition-all duration-500">
           <div className="front w-full h-full bg-white flex items-center justify-center  aspect-square">
             <img
+              loading="lazy"
               className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
               src={
                 client.acf?.imagen_url ? client.acf.imagen_url : defaultImageUrl
@@ -77,6 +78,7 @@ function GridClients() {
           </div>
           <div className="back absolute opacity-0 group-hover:opacity-100 flex flex-col top-0 h-full w-full transition-all justify-center items-center duration-500 ease-in-out bg-white">
             <img
+              loading="lazy"
               className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
               src={
                 client.acf?.imagen_url ? client.acf.imagen_url : defaultImageUrl
@@ -116,10 +118,13 @@ function GridClients() {
           <Pagination
             dataName="clientes"
             data={dataClient}
-            itemsPerPage={15}
+            itemsPerPageMobile={6}
+            itemsPerPageTablet={9}
+            itemsPerPageDesktop={12}
+            itemsPerPageLargeDesktop={15}
             render={renderClient}
             gridClass={
-              "grid xl:grid-cols-5 md:grid-cols-3  grid-cols-2 xl:mt-8 mt-4 gap-2 md:gap-4 xl:gap-8 opacity-90"
+              "grid lg:grid-cols-4 xl:grid-cols-5 md:grid-cols-3  grid-cols-2 xl:mt-8 mt-4 gap-2 md:gap-4 xl:gap-8 opacity-90"
             }
           />
         </div>

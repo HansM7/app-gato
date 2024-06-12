@@ -18,6 +18,7 @@ const cardSolution: React.FC<cardProps> = ({
       <div className="card w-full h-full relative group shadow-md transition-all duration-500 rounded-xl bg-black">
         <div className="front absolute top-0 left-0 z-[2] w-full h-full ">
           <img
+            loading="lazy"
             src={imgSrc}
             alt={title}
             className="w-full h-full object-cover rounded-xl"
@@ -31,14 +32,18 @@ const cardSolution: React.FC<cardProps> = ({
               `,
               }}
             />
-            <span className="text-white text-2xl md:text-3xl font-semibold">{title}</span>
+            <span className="text-white text-2xl md:text-3xl font-semibold">
+              {title}
+            </span>
           </div>
         </div>
 
         <div
           className={`back absolute top-0 left-0 z-[1] ${color} w-full h-full flex justify-center items-center flex-col p-3  text-white text-center transition-all duration-600 origin-center rounded-xl`}
         >
-          <span className="text-2xl md:text-3xl mb-2 font-semibold">{title}</span>
+          <span className="text-2xl md:text-3xl mb-2 font-semibold">
+            {title}
+          </span>
           <p className="text-center w-full lg:w4/5 xl:w-3/5">{description}</p>
         </div>
       </div>

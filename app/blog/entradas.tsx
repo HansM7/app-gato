@@ -59,8 +59,8 @@ const entradas = () => {
   const renderPost = (post: Post) => <CardSubject key={post.id} post={post} />;
 
   return (
-    <div className="w-full max-w-[1920px] mx-auto px-8 pb-8 lg:px-16 lg:pb-16 xl:px32">
-      <div className=" relative -top-[4%] md:-top-[10%] grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-2 lg:gap-8">
+    <div className="w-full max-w-[1920px] mx-auto px-8 pb-8 lg:px-16 md:pb-0 xl:px32">
+      <div className=" relative mb-8  grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-2 lg:gap-8 xl:gap-12">
         {latestPosts.map((post) => (
           <CardNew key={post.id} post={post} />
         ))}
@@ -75,9 +75,12 @@ const entradas = () => {
       <div className="w-full">
         <Pagination
           data={posts}
-          itemsPerPage={9}
+          itemsPerPageMobile={3}
+          itemsPerPageTablet={4}
+          itemsPerPageDesktop={6}
+          itemsPerPageLargeDesktop={9}
           render={renderPost}
-          gridClass="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-x-6 lg:gap-8 xl:gap-12"
+          gridClass="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 lg:gap-10 xl:gap-12"
           dataName="posts"
         />
       </div>

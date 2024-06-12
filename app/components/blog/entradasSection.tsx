@@ -47,7 +47,10 @@ const entradas = ({ posts, name }: { posts: Post[], name?:string }) => {
           <div className="w-full">
             <Pagination
               data={posts}
-              itemsPerPage={6}
+              itemsPerPageMobile={3}
+              itemsPerPageTablet={4}
+              itemsPerPageDesktop={6}
+              itemsPerPageLargeDesktop={8}
               render={renderPost}
               gridClass="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8"
               dataName="posts"

@@ -7,6 +7,7 @@ import WhatsappContact from "@/app/components/whatsapp-contact";
 import { useEffect, useState } from "react";
 import Banner from './banner'
 import ContentPost from "./contentPost";
+import Form from "@/app/components/form";
 
 interface PostProps {
     post: Posts;
@@ -60,6 +61,7 @@ const Post = ({ post }: PostProps) => {
       <main className="min-w-screen flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0">
       <Banner post={post}></Banner>
       <ContentPost post={post}></ContentPost>
+      
         <Footer></Footer>
       </main>
     </div>

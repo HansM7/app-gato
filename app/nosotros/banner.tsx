@@ -85,17 +85,23 @@ function BannerAbout() {
           </div>
         </div>
         <div className="w-full flex flex-col md:flex-row justify-between gap-8 lg:gap-10 md:h-[500px] xl:h-[700px]">
-          <RevealWrapper origin="bottom" duration={1000} className={"w-full md:w-1/3 flex flex-col justify-end"}>
+          <RevealWrapper
+            origin="bottom"
+            duration={1000}
+            className={"w-full md:w-1/3 flex flex-col justify-end"}
+          >
             <div className="">
               <div className="container w-full flex flex-col gap-4">
                 <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                   <img
+                    loading="lazy"
                     className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover aspect-square shadow-md"
                     src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
                     alt="imagen"
                   />
                   <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                     <img
+                      loading="lazy"
                       className=" w-full h-full object-cover aspect-square shadow-md"
                       src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
                       alt="imagen"
@@ -117,17 +123,23 @@ function BannerAbout() {
               </div>
             </div>
           </RevealWrapper>
-          <RevealWrapper origin="bottom" duration={1300} className={"w-full md:w-1/3 flex flex-col justify-center"}>
+          <RevealWrapper
+            origin="bottom"
+            duration={1300}
+            className={"w-full md:w-1/3 flex flex-col justify-center"}
+          >
             <div className="">
               <div className="container w-full flex flex-col gap-4">
                 <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                   <img
+                    loading="lazy"
                     className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover aspect-square shadow-md"
                     src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                     alt="imagen"
                   />
                   <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                     <img
+                      loading="lazy"
                       className=" w-full h-full object-cover aspect-square shadow-md"
                       src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                       alt="imagen"
@@ -149,17 +161,23 @@ function BannerAbout() {
               </div>
             </div>
           </RevealWrapper>
-          <RevealWrapper origin="bottom" duration={1600} className={"w-full md:w-1/3 flex flex-col justify-start"}>
+          <RevealWrapper
+            origin="bottom"
+            duration={1600}
+            className={"w-full md:w-1/3 flex flex-col justify-start"}
+          >
             <div className="">
               <div className="container w-full flex flex-col gap-4">
                 <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                   <img
+                    loading="lazy"
                     className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover aspect-square shadow-md"
                     src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
                     alt="imagen"
                   />
                   <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                     <img
+                      loading="lazy"
                       className=" w-full h-full object-cover aspect-square shadow-md"
                       src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
                       alt="imagen"

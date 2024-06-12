@@ -8,6 +8,7 @@ import Navigation from "@/app/components/navigation";
 import BannerDetailPortfolio from "./BannerDetail";
 import Footer from "@/app/components/footer";
 import WhatsappContact from "@/app/components/whatsapp-contact";
+import Form from "@/app/components/form";
 
 interface DetailProps {
   project: Project;
@@ -62,7 +63,7 @@ function Detail({ project }: DetailProps) {
       <div className="min-w-screen flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0">
         <>
           <BannerDetailPortfolio proyecto={project} />
-          {/* <Form color="#6D28D9" /> */}
+          <Form color="#6D28D9"></Form>
           <Footer />
         </>
       </div>

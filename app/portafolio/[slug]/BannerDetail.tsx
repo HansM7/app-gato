@@ -133,6 +133,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                   </p>
                 </div>
                 <img
+                  loading="lazy"
                   src={
                     proyecto.acf?.banner
                       ? proyecto.acf.banner
@@ -181,6 +182,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                 className={"w-ful h-full shadow-md"}
               >
                 <img
+                  loading="lazy"
                   src={
                     proyecto.acf["imagen-solucion"]
                       ? proyecto.acf["imagen-solucion"]
@@ -200,6 +202,7 @@ function BannerDetailPortfolio({ proyecto }: BannerDetailProps) {
                     }
                   >
                     <img
+                      loading="lazy"
                       src={proyecto?.acf.imagen}
                       alt={`logo ${proyecto?.acf.cliente}`}
                       className="h-[3rem] lg:h-[60px] w-auto object-contain"

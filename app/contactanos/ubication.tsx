@@ -61,13 +61,11 @@ const ubication = () => {
         </div>
         <div className="w-full aspect-square lg:w-3/5 rounded-xl shadow-md lg:aspect-auto ">
           <iframe
-            className="rounded-xl"
-            src="https://my.atlist.com/map/c27c23af-0f59-47e0-8134-302039d25706/?share=true"
-            allow="geolocation 'self' https://my.atlist.com"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.3515099215786!2d-77.06087471251213!3d-12.082318981265281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c901760a45b7%3A0x3e9a28e2a4b5f6de!2sAv.%20Brasil%202475%2C%20Jes%C3%BAs%20Mar%C3%ADa%2015072!5e0!3m2!1ses-419!2spe!4v1718231936806!5m2!1ses-419!2spe"
             width="100%"
             height="100%"
+            className="border-none rounded-xl"
             loading="lazy"
-            id="atlist-embed"
           ></iframe>
         </div>
       </div>

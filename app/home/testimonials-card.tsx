@@ -7,6 +7,7 @@ function TestimonialsCards() {
         <div className="bg-white rounded-lg shadow-small p-4">
           <div className="flex gap-2">
             <img
+              loading="lazy"
               className="rounded-full w-20"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIikjoCF-c8UtN5zp0sk_baxDD-pJNIhRuSNXEddfKFg&s"
               alt="GATO - Testimonio cliente Evadry"
@@ -33,6 +34,7 @@ function TestimonialsCards() {
         <div className="bg-white rounded-lg shadow-small p-4">
           <div className="flex gap-2">
             <img
+              loading="lazy"
               className="rounded-full w-20"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIikjoCF-c8UtN5zp0sk_baxDD-pJNIhRuSNXEddfKFg&s"
               alt="GATO - Testimonio cliente Flowers Travel"
@@ -59,6 +61,7 @@ function TestimonialsCards() {
         <div className="bg-white rounded-lg shadow-small p-4">
           <div className="flex gap-2">
             <img
+              loading="lazy"
               className="rounded-full w-20 object-cover"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIikjoCF-c8UtN5zp0sk_baxDD-pJNIhRuSNXEddfKFg&s"
               alt="GATO - Testimonio cliente CR Motors"

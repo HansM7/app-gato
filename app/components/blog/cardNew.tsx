@@ -46,12 +46,13 @@ const CardNew = ({ post }: { post: Post }) => {
           className={`w-full relative shadow-lg md:h-[160px] lg:h-auto`}
         >
           <img
+            loading="lazy"
             className="w-full h-full object-cover"
             src={post?.acf?.banner}
             alt="imagen new entrada"
           />
           <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black flex flex-col justify-between p-2 lg:p-4">
-            <div className="flex gap-1 overflow-x-auto whitespace-nowrap">
+            <div className="flex gap-1 overflow-x-auto overflow-y-hidden whitespace-nowrap">
               {post?.acf?.secciones.map((tag) => (
                 <Link
                   href="/blog/[slug]/"
@@ -69,14 +70,12 @@ const CardNew = ({ post }: { post: Post }) => {
             </div>
             <div className=" flex flex-col gap-1 lg:gap-3">
               <h2 className="truncate capitalize text-white text-[1rem] leading-[1.2rem] md:text-[1.5rem] md:leading-[1.3rem] lg:text-[1.5rem] lg:leading-[1.7rem]  2xl:text-[1.8rem] 2xl:leading-[2.2rem] md:text-base font-bold drop-shadow-xl">
-                <span>
-                {post?.acf?.titulo}
-                </span>
-                
+                <span>{post?.acf?.titulo}</span>
               </h2>
               <div className="text-[#cacaca] flex gap-2 text-xs md:text-base ">
                 <div className="flex gap-1 items-center ">
                   <img
+                    loading="lazy"
                     className="w-4 h-4 md:w-5 md:h-5 aspect-square rounded-full object-cover"
                     src={post?.acf["autor-profile"]}
                     alt="autor"
@@ -105,7 +104,11 @@ const CardNew = ({ post }: { post: Post }) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>{post?.acf?.fecha ? formatDate(post.acf.fecha) : "sin fecha"}</span>
+                  <span>
+                    {post?.acf?.fecha
+                      ? formatDate(post.acf.fecha)
+                      : "sin fecha"}
+                  </span>
                 </div>
               </div>
             </div>

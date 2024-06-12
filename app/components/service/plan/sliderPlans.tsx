@@ -1,5 +1,4 @@
 import React, { MouseEventHandler, useState } from "react";
-import PlanCard from "./planCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -108,7 +107,7 @@ const sliderPlans = ({ color, data, handleViewPlan }: SliderPlansProps) => {
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 550,
         settings: {
           slidesToShow: 1,
           infinite: true,
@@ -130,11 +129,11 @@ const sliderPlans = ({ color, data, handleViewPlan }: SliderPlansProps) => {
             >
               <h3
               style={{ backgroundColor: mainColor }} 
-                className={`uppercase font-bold text-white text-[1.2rem] lg:text-[1.5rem] shadow-xl w-full text-center rounded-md py-2`}
+                className={`uppercase font-bold text-white text-[1.1rem] lg:text-[1.4rem] shadow-xl w-full text-center rounded-md p-2 truncate`}
               >
                 {item.name}
               </h3>
-              <p style={{ color: mainColor }}  className={` text-[1rem] lg:text-[1.2rem] text-center`}>
+              <p style={{ color: mainColor }}  className={` text-[1rem] lg:text-[1.2rem] text-center truncate w-full`}>
                 {item.descriptionCorta}
               </p>
               <div

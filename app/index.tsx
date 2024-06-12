@@ -11,21 +11,20 @@ function Index() {
   const [isFirstVisit, setIsFirstVisit] = useState(true);
 
   useEffect(() => {
-    const hasVisited = localStorage.getItem('hasVisited');
-    if(hasVisited){
+    const hasVisited = localStorage.getItem("hasVisited");
+    if (hasVisited) {
       setIsFirstVisit(false);
       setIsLoading(false);
     } else {
-      localStorage.setItem('hasVisited', 'true');
+      localStorage.setItem("hasVisited", "true");
     }
-  },[]);
+  }, []);
 
   useEffect(() => {
-
     let timer1: NodeJS.Timeout;
     let timer2: NodeJS.Timeout;
 
-    if(isFirstVisit){
+    if (isFirstVisit) {
       const timer1 = setTimeout(() => {
         setIsLoading(false);
       }, 4000);
@@ -38,9 +37,9 @@ function Index() {
         if (timer2) clearTimeout(timer2);
       };
     }
-  }, [isFirstVisit])
+  }, [isFirstVisit]);
 
-/*   setTimeout(() => {
+  /*   setTimeout(() => {
     setIsLoading(false);
   }, 4000);
   setTimeout(() => {
@@ -59,6 +58,7 @@ function Index() {
           <div className="flex gap-4">
             <div className=" rounded-full p-2  bg-[#9623DE]">
               <img
+                loading="lazy"
                 className="w-60 rounded-full animate-spin animate-once animate-duration-[1000ms] animate-ease-linear animate-reverse"
                 src="animation-cat.gif"
                 alt=""

@@ -41,6 +41,7 @@ const fundamentals = () => {
                   satisfacción del cliente.
                 </p>
                 <img
+                  loading="lazy"
                   className="rounded-md shadow-md w-full h-auto aspect-video lg:max-h-[250px] object-cover"
                   src="https://i.pinimg.com/736x/fc/cf/b0/fccfb08b7b601c7b23e738d690ff3c69.jpg"
                   alt="misión"
@@ -109,6 +110,7 @@ const fundamentals = () => {
                   de cada cliente y ofrecer soluciones personalizadas.
                 </p>
                 <img
+                  loading="lazy"
                   className="rounded-md shadow-md w-full h-auto aspect-video lg:max-h-[250px] object-cover"
                   src="https://i.pinimg.com/736x/fc/cf/b0/fccfb08b7b601c7b23e738d690ff3c69.jpg"
                   alt="misión"
@@ -176,6 +178,7 @@ const fundamentals = () => {
                   ambiente para celebrar ideas innovadoras.
                 </p>
                 <img
+                  loading="lazy"
                   className="rounded-md shadow-md w-full h-auto aspect-video lg:max-h-[250px] object-cover"
                   src="https://i.pinimg.com/736x/10/96/18/10961839a65ced06476a13f79d29c628.jpg"
                   alt="misión"

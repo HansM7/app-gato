@@ -69,6 +69,7 @@ function SectionLeft({ title, items }: { title: string; items: string[] }) {
         className="col-span-2  flex items-center"
       >
         <img
+          loading="lazy"
           className="rounded-full md:w-20 md:h-20 w-16 h-16 border-2 border-blue-500"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
           alt=""
@@ -86,6 +87,7 @@ function SectionRight({ title, items }: { title: string; items: string[] }) {
         className="col-span-2 justify-end flex items-center"
       >
         <img
+          loading="lazy"
           className="rounded-full md:w-20 md:h-20 w-16 h-16 border-2 border-blue-500"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxGd2Ch0SsWo0cE-w1XPmmaWRNB6vtOKQPQVedM7ACQ&s"
           alt=""

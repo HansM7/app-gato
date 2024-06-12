@@ -9,6 +9,7 @@ function Footer() {
         <Link href={"/"} className="">
           {/* <span className="text-3xl font-semibold">GATO</span> */}
           <img
+            loading="lazy"
             className="w-24"
             src="https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png"
             alt="GATO - Desarrollo Web, Marketing Digital, Software"

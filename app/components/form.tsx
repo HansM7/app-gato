@@ -85,9 +85,14 @@ function Form(setcolor: FormProps) {
   return (
     <section className=" flex  py-16 w-full">
       <div className="max-w-[1920px] mx-auto w-full xl:px-32 md:px-24  px-8 flex justify-between gap-6 flex-col-reverse lg:flex-row">
-        <RevealWrapper origin="left" duration={1500} className={"xl:w-3/5 lg:w-2/4 w-full"}>
+        <RevealWrapper
+          origin="left"
+          duration={1500}
+          className={"xl:w-3/5 lg:w-2/4 w-full"}
+        >
           <div className="w-full h-full  items-center max-h-[760px] flex flex-row">
             <img
+              loading="lazy"
               className="h-full object-cover w-full lg:max-w-[85%] rounded-xl shadow-md"
               src="https://i.pinimg.com/originals/6a/8c/f8/6a8cf8cf2c09665f3d5758dc0846231e.jpg"
               alt="imgen contactanos"
@@ -210,7 +215,11 @@ function Form(setcolor: FormProps) {
             </div>
           </div>
         </RevealWrapper>
-        <RevealWrapper origin="left" duration={1500} className={"w-full xl:w-2/5 lg:w-2/4"}>
+        <RevealWrapper
+          origin="left"
+          duration={1500}
+          className={"w-full xl:w-2/5 lg:w-2/4"}
+        >
           <form
             onSubmit={handleSubmit}
             className="w-full flex flex-col gap-6 text-[#3D3D3D]"

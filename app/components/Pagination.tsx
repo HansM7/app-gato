@@ -2,7 +2,10 @@ import { useState } from "react";
 
 interface paginationProps {
   data: Array<any>;
-  itemsPerPage: number;
+  itemsPerPageMobile: number;
+  itemsPerPageTablet: number;
+  itemsPerPageDesktop: number;
+  itemsPerPageLargeDesktop: number;
   render: (item: any) => JSX.Element;
   gridClass: string;
   dataName: string;
@@ -10,18 +13,31 @@ interface paginationProps {
 
 const Pagination: React.FC<paginationProps> = ({
   data,
-  itemsPerPage,
+  itemsPerPageMobile,
+  itemsPerPageTablet,
+  itemsPerPageDesktop,
+  itemsPerPageLargeDesktop,
   render,
   gridClass,
   dataName,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(data.length / itemsPerPage);
-
-  const handlePageChange = (page: any) => {
+  const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
+  
+  let itemsPerPage = itemsPerPageMobile;
+  if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+    itemsPerPage = itemsPerPageTablet;
+  } else if (window.innerWidth >= 1024 && window.innerWidth < 1280) {
+    itemsPerPage = itemsPerPageDesktop;
+  } else if (window.innerWidth >= 1280) {
+    itemsPerPage = itemsPerPageLargeDesktop;
+  }
+
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const selectedData = data.slice(startIndex, startIndex + itemsPerPage);

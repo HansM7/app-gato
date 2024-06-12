@@ -54,19 +54,20 @@ function Banner() {
       {/* this is decorator */}
       <div className="absolute w-full   h-full bg-red-100 md:max-h-screen overflow-hidden ">
         <img
+          loading="lazy"
           alt="Equipo de GATO: Expertos en Desarrollo Web, Marketing Digital y Software"
           title="Equipo de GATO"
           className="w-full h-full object-cover  overflow-hidden brightness-75"
           src="banner_gato.jpg"
         />{" "}
         <div className="absolute w-full bottom-3 ">
-            <a
-              href="#collage"
-              className="hidden scrollDown opacity-100 relative  w-[55px] h-[80px] xl:w-[85px] xl:h-[110px] md:flex justify-center  mx-auto "
-            >
-              <span className="bg-white relative"></span>
-            </a>
-          </div>
+          <a
+            href="#collage"
+            className="hidden scrollDown opacity-100 relative  w-[55px] h-[80px] xl:w-[85px] xl:h-[110px] md:flex justify-center  mx-auto "
+          >
+            <span className="bg-white relative"></span>
+          </a>
+        </div>
       </div>
 
       {/*  */}
@@ -177,10 +178,8 @@ function Banner() {
               )}
             </div>
           </div>
-          
         </div>
       </div>
-      
     </section>
   );
 }

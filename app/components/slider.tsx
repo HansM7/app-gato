@@ -59,6 +59,7 @@ const Slider = ({ direction }: { direction: string }) => {
           >
             <div className="flex  items-center justify-center h-full rounded-md overflow-hidden ">
               <img
+              loading="lazy"
                 className="shadow-xl hover:scale-110 transition-all"
                 src={slide.image}
                 alt=""
@@ -75,6 +76,7 @@ const Slider = ({ direction }: { direction: string }) => {
           >
             <div className="flex  items-center justify-center w-64 rounded-md overflow-hidden ">
               <img
+                loading="lazy"
                 className=" h-14 md:h-24 w-auto  transition-all"
                 src={slide.image}
                 alt=""

@@ -25,10 +25,9 @@ function Detail() {
   return (
     <section className="w-full bg-white">
       <div className="w-full max-w-[1920px] mx-auto xl:px-32 lg:px-24  px-8 flex pb-16">
-
-          <div className="flex flex-col md:flex-row w-full justify-between gap-6 md:gap-8 xl:gap-24">
+        <div className="flex flex-col md:flex-row w-full justify-between gap-6 md:gap-8 xl:gap-24">
           <RevealWrapper duration={1500} origin="left">
-          <div className=" flex justify-center md:justify-start md:flex-col gap-2 md:gap-4 ">
+            <div className=" flex justify-center md:justify-start md:flex-col gap-2 md:gap-4 ">
               <div
                 role="button"
                 onClick={() => setSelected(1)}
@@ -168,45 +167,44 @@ function Detail() {
               </div>
             </div>
           </RevealWrapper>
-            
 
-            {selected === 1 && (
-              <Component1
-                handleEnter={handleEnter}
-                handleLeave={handleLeave}
-                isEnter={isEnter}
-              />
-            )}
-            {selected === 2 && (
-              <Component2
-                handleEnter={handleEnter}
-                handleLeave={handleLeave}
-                isEnter={isEnter}
-              />
-            )}
-            {selected === 3 && (
-              <Component3
-                handleEnter={handleEnter}
-                handleLeave={handleLeave}
-                isEnter={isEnter}
-              />
-            )}
-            {selected === 4 && (
-              <Component4
-                handleEnter={handleEnter}
-                handleLeave={handleLeave}
-                isEnter={isEnter}
-              />
-            )}
+          {selected === 1 && (
+            <Component1
+              handleEnter={handleEnter}
+              handleLeave={handleLeave}
+              isEnter={isEnter}
+            />
+          )}
+          {selected === 2 && (
+            <Component2
+              handleEnter={handleEnter}
+              handleLeave={handleLeave}
+              isEnter={isEnter}
+            />
+          )}
+          {selected === 3 && (
+            <Component3
+              handleEnter={handleEnter}
+              handleLeave={handleLeave}
+              isEnter={isEnter}
+            />
+          )}
+          {selected === 4 && (
+            <Component4
+              handleEnter={handleEnter}
+              handleLeave={handleLeave}
+              isEnter={isEnter}
+            />
+          )}
 
-            {selected === 5 && (
-              <Component5
-                handleEnter={handleEnter}
-                handleLeave={handleLeave}
-                isEnter={isEnter}
-              />
-            )}
-          </div>
+          {selected === 5 && (
+            <Component5
+              handleEnter={handleEnter}
+              handleLeave={handleLeave}
+              isEnter={isEnter}
+            />
+          )}
+        </div>
       </div>
     </section>
   );
@@ -259,6 +257,7 @@ function Component1({
       </div>
       <div className="flex items-center">
         <img
+          loading="lazy"
           className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://i.pinimg.com/736x/05/f6/a7/05f6a750173d902cdb9ecbf7783c9fd5.jpg"
           alt="GATO - Marketing Digital"
@@ -318,6 +317,7 @@ function Component2({
       </div>
       <div className="flex items-center">
         <img
+          loading="lazy"
           className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://i.pinimg.com/originals/d4/c3/fb/d4c3fbe8d97a0514ebe33641b8741f13.jpg"
           alt="GATO - Diseño Web"
@@ -375,6 +375,7 @@ function Component3({
       </div>
       <div className="flex items-center">
         <img
+          loading="lazy"
           className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
           alt="GATO - Desarollo de software"
@@ -434,6 +435,7 @@ function Component4({
       </div>
       <div className="flex items-center">
         <img
+          loading="lazy"
           className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://i.pinimg.com/736x/f7/8a/89/f78a89c21a83abd51bef3da2baf26c8d.jpg"
           alt="GATO - Desarrollo Móvil"
@@ -491,6 +493,7 @@ function Component5({
       </div>
       <div className="flex items-center">
         <img
+          loading="lazy"
           className="rounded-md w-full h-auto mx-auto lg:max-w-[400px] md:max-w-[300px] md:w-auto md:h-full object-cover aspect-video shadow-lg"
           src="https://i.pinimg.com/originals/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
           alt="GATO - Branding"

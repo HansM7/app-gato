@@ -92,12 +92,14 @@ function BannerServices() {
             <div className="container w-full flex flex-col gap-4">
               <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                 <img
+                  loading="lazy"
                   className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
                   src="https://i.pinimg.com/736x/fc/cf/b0/fccfb08b7b601c7b23e738d690ff3c69.jpg"
                   alt="imagen"
                 />
                 <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                   <img
+                    loading="lazy"
                     className=" w-full h-full object-cover lg:aspect-square shadow-md"
                     src="https://i.pinimg.com/736x/fc/cf/b0/fccfb08b7b601c7b23e738d690ff3c69.jpg"
                     alt="imagen"
@@ -122,12 +124,14 @@ function BannerServices() {
             <div className="container w-full flex flex-col gap-4">
               <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                 <img
+                  loading="lazy"
                   className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
                   src="https://i.pinimg.com/736x/d5/20/0d/d5200da7fb7e6323f41db312d7f40cef.jpg"
                   alt="imagen"
                 />
                 <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                   <img
+                    loading="lazy"
                     className=" w-full h-full object-cover lg:aspect-square shadow-md"
                     src="https://i.pinimg.com/736x/d5/20/0d/d5200da7fb7e6323f41db312d7f40cef.jpg"
                     alt="imagen"
@@ -151,12 +155,14 @@ function BannerServices() {
             <div className="container w-full flex flex-col gap-4">
               <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                 <img
+                  loading="lazy"
                   className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
                   src="https://i.pinimg.com/736x/da/57/8e/da578e890c011bf32b2aabe78d1e94c2.jpg"
                   alt="imagen"
                 />
                 <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                   <img
+                    loading="lazy"
                     className=" w-full h-full object-cover lg:aspect-square shadow-md"
                     src="https://i.pinimg.com/736x/da/57/8e/da578e890c011bf32b2aabe78d1e94c2.jpg"
                     alt="imagen"

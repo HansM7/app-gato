@@ -41,7 +41,7 @@ const plans = (prop: Props) => {
           onClick={closePopup}
         >
           <div
-            className="relative bg-white p-8 rounded max-h-[80%] max-w-[90%] sm:max-w-[80%] 2xl:max-w-[50%] overflow-hidden"
+            className="relative bg-white p-8 rounded max-h-[80%] w-[90%] sm:w-[80%] lg:w-[60%] 2xl:w-[50%] max-w-[900px] overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             <button

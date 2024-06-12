@@ -44,6 +44,7 @@ const MorePostCard = ({ post }: { post: Post }) => {
           duration={1500}
         >
           <img
+            loading="lazy"
             className="w-full h-auto aspect-video object-cover "
             src={post.acf["descripcion-imagen"]}
             alt={post.acf.titulo}
@@ -51,20 +52,18 @@ const MorePostCard = ({ post }: { post: Post }) => {
           <div className="w-full h-full flex flex-col justify-between  text-[#3D3D3D] gap-2 md:gap-0">
             <div className="flex gap-1 overflow-x-auto overflow-y-hidden whitespace-nowrap h-fit pb-2">
               {post?.acf?.secciones.map((tag) => (
-                <Link
-                  href="/blog/[slug]/"
-                  as={`/blog/${tag}`}
-                  key={tag}
-                  
-                >
-                  <span className="text-xs px-2 py-1  text-white font-medium shadow-md capitalize inline-block"
-                  style={{
-                    backgroundColor: sectionColors[tag],
-                    color: "white",
-                  }}>
-                  {tag === "diseno-web" ? "Diseño Web" : tag.replace(/-/g, " ")}
+                <Link href="/blog/[slug]/" as={`/blog/${tag}`} key={tag}>
+                  <span
+                    className="text-xs px-2 py-1  text-white font-medium shadow-md capitalize inline-block"
+                    style={{
+                      backgroundColor: sectionColors[tag],
+                      color: "white",
+                    }}
+                  >
+                    {tag === "diseno-web"
+                      ? "Diseño Web"
+                      : tag.replace(/-/g, " ")}
                   </span>
-                  
                 </Link>
               ))}
             </div>
@@ -75,6 +74,7 @@ const MorePostCard = ({ post }: { post: Post }) => {
               <div className="pt-1 md:pt-4 flex gap-2 text-[#bdbdbd] text-[0.8rem]">
                 <div className="flex gap-1 items-center ">
                   <img
+                    loading="lazy"
                     className="w-[16px] h-[16px] xl:w-[22px] xl:h-[22px] aspect-square rounded-full object-cover"
                     src={post.acf["autor-profile"]}
                     alt="autor"

@@ -33,7 +33,10 @@ const blog = () => {
       </div>
       <main className="min-w-screen flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0">
         <Banner></Banner>
+        <div className="relative -top-[1%] sm:-top-[3%] md:-top-[4%] xl:-top-[5%]">
         <Entradas></Entradas>
+        </div>
+        
         <Footer></Footer>
       </main>
     </div>

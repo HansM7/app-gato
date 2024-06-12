@@ -6,46 +6,46 @@ import Link from "next/link";
 import { sectionColors } from "@/app/components/blog/sectionColors";
 
 interface PostProps {
-    post: Posts;
-  }
-  
-  interface Posts {
-    id: number;
-    title: { rendered: string };
-    slug: string;
-    acf: {
-      secciones: string[];
-      titulo: string;
-      banner: string;
-      fecha: string;
-      "autor-name": string;
-      "autor-profile": string;
-      descripcion: string;
-      descripcion_corta: string;
-      "descripcion-imagen": string;
-    };
-  }
-  
-  const formatDate = (dateStr: string): string => {
-    const year = parseInt(dateStr?.slice(0, 4), 10);
-    const month = parseInt(dateStr?.slice(4, 6), 10) - 1;
-    const day = parseInt(dateStr?.slice(6, 8), 10);
-  
-    const date = new Date(year, month, day);
-    const options: Intl.DateTimeFormatOptions = {
-      year: "numeric",
-      month: "short",
-      day: "2-digit",
-    };
-    return date.toLocaleDateString("en-US", options);
-  };
+  post: Posts;
+}
 
-  const Banner: React.FC<PostProps> = ({ post }) => {
-  
+interface Posts {
+  id: number;
+  title: { rendered: string };
+  slug: string;
+  acf: {
+    secciones: string[];
+    titulo: string;
+    banner: string;
+    fecha: string;
+    "autor-name": string;
+    "autor-profile": string;
+    descripcion: string;
+    descripcion_corta: string;
+    "descripcion-imagen": string;
+  };
+}
+
+const formatDate = (dateStr: string): string => {
+  const year = parseInt(dateStr?.slice(0, 4), 10);
+  const month = parseInt(dateStr?.slice(4, 6), 10) - 1;
+  const day = parseInt(dateStr?.slice(6, 8), 10);
+
+  const date = new Date(year, month, day);
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+  };
+  return date.toLocaleDateString("en-US", options);
+};
+
+const Banner: React.FC<PostProps> = ({ post }) => {
   return (
     <div className="w-full relative">
       <div className="w-full h-[calc(50vh)] md:h-[600px] xl:h-[800px] relative  ">
         <img
+          loading="lazy"
           className="w-full h-full object-cover"
           src={post.acf.banner}
           alt="banner blog"
@@ -55,30 +55,30 @@ interface PostProps {
           <RevealWrapper origin="left" duration={1500} className={`w-full`}>
             <div className="w-full max-w-[1920px] mx-auto px-8 pb-8 lg:px-16 lg:pb-16 xl:px-32 flex flex-col gap-1 md:gap-4 lg:gap-4 ">
               <div className="flex flex-wrap mb-2 gap-2 ">
-              {post?.acf?.secciones.map((tag) => (
-                <Link
-                  href="/blog/[slug]/"
-                  as={`/blog/${tag}`}
-                  key={tag}
-                  className="text-xs px-2 py-1  text-white font-medium shadow-md capitalize"
-                  style={{
-                    backgroundColor: sectionColors[tag],
-                    color: "white",
-                  }}
-                >
-                  {tag === "diseno-web" ? "Diseño Web" : tag.replace(/-/g, " ")}
-                </Link>
-              ))}
+                {post?.acf?.secciones.map((tag) => (
+                  <Link
+                    href="/blog/[slug]/"
+                    as={`/blog/${tag}`}
+                    key={tag}
+                    className="text-xs px-2 py-1  text-white font-medium shadow-md capitalize"
+                    style={{
+                      backgroundColor: sectionColors[tag],
+                      color: "white",
+                    }}
+                  >
+                    {tag === "diseno-web"
+                      ? "Diseño Web"
+                      : tag.replace(/-/g, " ")}
+                  </Link>
+                ))}
               </div>
               <h2 className="capitalize text-white text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold drop-shadow-xl">
-                <Typewriter
-                  words={[`${post.title.rendered}`]}
-                  typeSpeed={60}
-                />
+                <Typewriter words={[`${post.title.rendered}`]} typeSpeed={60} />
               </h2>
               <div className="py-4 text-[#CACACA] flex gap-2 lg:gap-4 md:text-lg text-sm ">
                 <div className="flex gap-1 lg:gap-2 items-center">
                   <img
+                    loading="lazy"
                     className="w-5 h-5 md:w-[30px] md:h-[30px] lg:w-[40px] lg:h-[40px] aspect-square rounded-full object-cover"
                     src={post.acf["autor-profile"]}
                     alt="autor"
@@ -107,7 +107,11 @@ interface PostProps {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className=" drop-shadow">{post?.acf?.fecha ? formatDate(post.acf.fecha) : "sin fecha"}</span>
+                  <span className=" drop-shadow">
+                    {post?.acf?.fecha
+                      ? formatDate(post.acf.fecha)
+                      : "sin fecha"}
+                  </span>
                 </div>
               </div>
             </div>

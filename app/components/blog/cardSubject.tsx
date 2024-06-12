@@ -32,49 +32,49 @@ const formatDate = (dateStr: string): string => {
 
 const cardSubject = ({ post }: { post: Post }) => {
   return (
-    <div className="w-full hover:border transition-all duration-500 overflow-hidden bg-white pr-1">
+    <div className="w-full hover:bg-gray-100 group transition-all duration-500 overflow-hidden bg-white pr-1">
       <Link
         href="/blog/post/[slug]/"
         as={`/blog/post/${post.slug}`}
         className="w-full"
       >
         <RevealWrapper
-          className={`w-full h-full flex flex-col md:flex-row gap-2 bg-white`}
+          className={`w-full h-full flex flex-col md:flex-row gap-2 `}
           origin="left"
           duration={1500}
         >
           <img
-            className="w-full md:w-2/4 xl:w-2/5 h-full aspect-square object-cover "
+            loading="lazy"
+            className="w-full md:w-2/4 xl:w-2/5 h-full aspect-square object-cover group-hover:scale-105 transition-all duration-300 "
             src={post.acf["descripcion-imagen"]}
             alt={post.acf.titulo}
           />
           <div className="w-full md:w-2/4 xl:w-3/5 h-full flex flex-col justify-between  text-[#3D3D3D] gap-2 md:gap-0">
-            <div className="flex gap-1 overflow-x-auto whitespace-nowrap h-fit pb-2">
+            <div className="flex gap-1 overflow-x-auto overflow-y-hidden  whitespace-nowrap h-fit pb-2">
               {post?.acf?.secciones.map((tag) => (
-                <Link
-                  href="/blog/[slug]/"
-                  as={`/blog/${tag}`}
-                  key={tag}
-                  
-                >
-                  <span className="text-xs px-2 py-1  text-white font-medium shadow-md capitalize inline-block"
-                  style={{
-                    backgroundColor: sectionColors[tag],
-                    color: "white",
-                  }}>
-                  {tag === "diseno-web" ? "Diseño Web" : tag.replace(/-/g, " ")}
+                <Link href="/blog/[slug]/" as={`/blog/${tag}`} key={tag}>
+                  <span
+                    className="text-xs px-2 py-1  text-white font-medium shadow-md capitalize inline-block"
+                    style={{
+                      backgroundColor: sectionColors[tag],
+                      color: "white",
+                    }}
+                  >
+                    {tag === "diseno-web"
+                      ? "Diseño Web"
+                      : tag.replace(/-/g, " ")}
                   </span>
-                  
                 </Link>
               ))}
             </div>
             <div className="flex flex-col flex-grow justify-end h-full gap-1 lg:gap-2">
-              <h2 className="md:line-clamp-2 lg:line-clamp-2 2xl:line-clamp-3 capitalize font-bold drop-shadow-xl text-[1.2rem] 2xl:text-[1.8rem]  ">
+              <h2 className="md:line-clamp-2 lg:line-clamp-2  capitalize font-bold drop-shadow-xl text-[1.2rem] 2xl:text-[1.5rem]  ">
                 {post.acf.titulo}
               </h2>
-              <div className=" flex gap-2 text-[#bdbdbd] text-[0.8rem]">
-                <div className="flex gap-1 items-center ">
+              <div className=" flex gap-2 items-end text-[#bdbdbd] text-[0.8rem]">
+                <div className="flex gap-1 items-center justify-start ">
                   <img
+                    loading="lazy"
                     className="w-[16px] h-[16px] xl:w-[22px] xl:h-[22px] aspect-square rounded-full object-cover"
                     src={post.acf["autor-profile"]}
                     alt="autor"
@@ -89,7 +89,7 @@ const cardSubject = ({ post }: { post: Post }) => {
                     viewBox="0 0 14 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-3 h-3 xl:w-5 xl:h-5"
+                    className="w-3 h-3 xl:w-4 xl:h-4"
                   >
                     <g clip-path="url(#clip0_1813_933)">
                       <path
@@ -103,7 +103,11 @@ const cardSubject = ({ post }: { post: Post }) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>{post?.acf?.fecha ? formatDate(post.acf.fecha) : "sin fecha"}</span>
+                  <span>
+                    {post?.acf?.fecha
+                      ? formatDate(post.acf.fecha)
+                      : "sin fecha"}
+                  </span>
                 </div>
               </div>
             </div>
