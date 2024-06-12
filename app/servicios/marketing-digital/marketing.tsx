@@ -4,7 +4,6 @@ import Banner from "@/app/components/service/banner/banner";
 import Benefits from "./benefits";
 import Plans from "@/app/components/service/plan/plans";
 import Process from "./process";
-import { useState } from "react";
 import { DataMarketing } from "./dataMarketing";
 
 function Service01() {

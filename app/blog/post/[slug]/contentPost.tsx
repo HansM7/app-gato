@@ -46,7 +46,7 @@ const ContentPost = ({ post }: PostProps) => {
             />
           </div>
           <div>
-            <div className="flex flex-wrap gap-1 pb-8 lg:pb-16 ">
+            <div className="flex flex-wrap gap-1 pb-8 lg:pb-0 ">
               {post?.acf?.secciones.map((tag) => (
                 <Link
                   href="/blog/[slug]/"
@@ -60,7 +60,7 @@ const ContentPost = ({ post }: PostProps) => {
             </div>
           </div>
         </div>
-        <div className="w-full h-fit flex flex-col gap-4 lg:w-1/4 lg:pl-4 md:border-l">
+        <div className="w-full h-fit flex flex-col gap-4 lg:w-1/4 lg:pl-4 pb-8 lg:pb-0 lg:border-l">
           <NavSections />
           <MorePost></MorePost>
         </div>

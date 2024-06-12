@@ -61,7 +61,7 @@ export async function generateMetadata({
     try {
       const post = await fetchPostData(params.slug);
       return {
-        title: "Proyecto " + post.title.rendered,
+        title: "Gato - Blog: " + post.title.rendered,
         description: post.acf.descripcion_corta,
         openGraph: {
           title: post.title.rendered,

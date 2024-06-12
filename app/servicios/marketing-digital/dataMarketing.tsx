@@ -370,7 +370,7 @@ export const DataMarketing = [
     ],
     price: 350,
     color: "#A42BE6",
-    word: "Pago unico",
+    word: "Pago único",
   },
   {
     name: "SESIÓN DE FOTOS Y VIDEOS ",
@@ -394,6 +394,6 @@ export const DataMarketing = [
     ],
     price: 500,
     color: "#A42BE6",
-    word: "Pago unico",
+    word: "Pago único",
   },
 ];
