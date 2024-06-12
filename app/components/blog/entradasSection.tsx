@@ -52,9 +52,6 @@ const entradas = ({ posts }: { posts: Post[] }) => {
               gridClass="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 lg:gap-8"
               dataName="posts"
             />
-            {remainingPosts.map((post) => (
-              <CardSubject key={post.id} post={post} />
-            ))}
           </div>
         </div>
 
