@@ -19,9 +19,9 @@ interface Post {
 }
 
 const formatDate = (dateStr: string): string => {
-  const year = parseInt(dateStr.slice(0, 4), 10);
-  const month = parseInt(dateStr.slice(4, 6), 10) - 1;
-  const day = parseInt(dateStr.slice(6, 8), 10);
+  const year = parseInt(dateStr?.slice(0, 4), 10);
+  const month = parseInt(dateStr?.slice(4, 6), 10) - 1;
+  const day = parseInt(dateStr?.slice(6, 8), 10);
 
   const date = new Date(year, month, day);
   const options: Intl.DateTimeFormatOptions = {
@@ -34,16 +34,16 @@ const formatDate = (dateStr: string): string => {
 
 const CardNew = ({ post }: { post: Post }) => {
   return (
-    <div className="w-full">
+    <div className="w-full hover:scale-105 transition-all duration-500">
       <Link
         href="/blog/post/[slug]/"
         as={`/blog/post/${post.slug}`}
-        className="w-full"
+        className="w-full "
       >
         <RevealWrapper
           origin="bottom"
           duration={1500}
-          className={`w-full relative shadow-lg`}
+          className={`w-full relative shadow-lg md:h-[160px] lg:h-auto`}
         >
           <img
             className="w-full h-full object-cover"
@@ -67,18 +67,21 @@ const CardNew = ({ post }: { post: Post }) => {
                 </Link>
               ))}
             </div>
-            <div className="">
-              <h2 className="truncate capitalize text-white text-xl md:text-base lg:text-xl font-bold drop-shadow-xl">
+            <div className=" flex flex-col gap-1 lg:gap-3">
+              <h2 className="truncate capitalize text-white text-[1rem] leading-[1.2rem] md:text-[1.5rem] md:leading-[1.3rem] lg:text-[1.5rem] lg:leading-[1.7rem]  2xl:text-[1.8rem] 2xl:leading-[2.2rem] md:text-base font-bold drop-shadow-xl">
+                <span>
                 {post?.acf?.titulo}
+                </span>
+                
               </h2>
-              <div className="pt-2 md:pt-1 text-[#cacaca] flex gap-2 text-xs md:text-base ">
+              <div className="text-[#cacaca] flex gap-2 text-xs md:text-base ">
                 <div className="flex gap-1 items-center ">
                   <img
                     className="w-4 h-4 md:w-5 md:h-5 aspect-square rounded-full object-cover"
                     src={post?.acf["autor-profile"]}
                     alt="autor"
                   />
-                  <span>{post?.acf["autor-name"]}</span>
+                  <span className="truncate">{post?.acf["autor-name"]}</span>
                 </div>
 
                 <div className="flex items-center justify-start gap-1  ">
@@ -102,7 +105,7 @@ const CardNew = ({ post }: { post: Post }) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>{formatDate(post?.acf?.fecha)}</span>
+                  <span>{post?.acf?.fecha ? formatDate(post.acf.fecha) : "sin fecha"}</span>
                 </div>
               </div>
             </div>

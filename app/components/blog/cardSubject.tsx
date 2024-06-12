@@ -17,9 +17,9 @@ interface Post {
   };
 }
 const formatDate = (dateStr: string): string => {
-  const year = parseInt(dateStr.slice(0, 4), 10);
-  const month = parseInt(dateStr.slice(4, 6), 10) - 1;
-  const day = parseInt(dateStr.slice(6, 8), 10);
+  const year = parseInt(dateStr?.slice(0, 4), 10);
+  const month = parseInt(dateStr?.slice(4, 6), 10) - 1;
+  const day = parseInt(dateStr?.slice(6, 8), 10);
 
   const date = new Date(year, month, day);
   const options: Intl.DateTimeFormatOptions = {
@@ -32,7 +32,7 @@ const formatDate = (dateStr: string): string => {
 
 const cardSubject = ({ post }: { post: Post }) => {
   return (
-    <div className="w-full">
+    <div className="w-full hover:border transition-all duration-500 overflow-hidden bg-white pr-1">
       <Link
         href="/blog/post/[slug]/"
         as={`/blog/post/${post.slug}`}
@@ -68,18 +68,18 @@ const cardSubject = ({ post }: { post: Post }) => {
                 </Link>
               ))}
             </div>
-            <div className="flex flex-col flex-grow justify-end h-full">
-              <h2 className="md:line-clamp-2 lg:line-clamp-3 capitalize font-bold drop-shadow-xl text-[1.2rem] 2xl:text-[1.8rem]  ">
+            <div className="flex flex-col flex-grow justify-end h-full gap-1 lg:gap-2">
+              <h2 className="md:line-clamp-2 lg:line-clamp-2 2xl:line-clamp-3 capitalize font-bold drop-shadow-xl text-[1.2rem] 2xl:text-[1.8rem]  ">
                 {post.acf.titulo}
               </h2>
-              <div className="pt-1 md:pt-4 flex gap-2 text-[#bdbdbd] text-[0.8rem]">
+              <div className=" flex gap-2 text-[#bdbdbd] text-[0.8rem]">
                 <div className="flex gap-1 items-center ">
                   <img
                     className="w-[16px] h-[16px] xl:w-[22px] xl:h-[22px] aspect-square rounded-full object-cover"
                     src={post.acf["autor-profile"]}
                     alt="autor"
                   />
-                  <span>{post.acf["autor-name"]}</span>
+                  <span className="truncate">{post.acf["autor-name"]}</span>
                 </div>
 
                 <div className="flex items-center justify-start gap-1 ">
@@ -103,7 +103,7 @@ const cardSubject = ({ post }: { post: Post }) => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>{formatDate(post?.acf?.fecha)}</span>
+                  <span>{post?.acf?.fecha ? formatDate(post.acf.fecha) : "sin fecha"}</span>
                 </div>
               </div>
             </div>

@@ -18,7 +18,7 @@ interface Post {
   };
 }
 
-const entradas = ({ posts }: { posts: Post[] }) => {
+const entradas = ({ posts, name }: { posts: Post[], name?:string }) => {
   const sortedPosts = [...posts].sort(
     (a, b) => new Date(b.acf.fecha).getTime() - new Date(a.acf.fecha).getTime()
   );
@@ -31,13 +31,13 @@ const entradas = ({ posts }: { posts: Post[] }) => {
 
   return (
     <div className="w-full max-w-[1920px] mx-auto px-8  lg:px-16  xl:px-32">
-      <div className=" relative flex flex-col md:flex-row justify-between gap-4 md:gap-2 lg:gap-8 pb-8">
+      <div className=" relative grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-2 lg:gap-8 pb-8">
         {latestPosts.map((post) => (
           <CardNew key={post.id} post={post} />
         ))}
       </div>
       <div className="w-full flex flex-col-reverse lg:flex-row gap-4 ">
-        <div className="lg:w-3/4 lg:border-r">
+        <div className="lg:w-3/4 lg:border-r lg:pr-4">
           <h2
             className="text-3xl
          text-[#3D3D3D] font-medium uppercase mb-8"
@@ -49,14 +49,14 @@ const entradas = ({ posts }: { posts: Post[] }) => {
               data={posts}
               itemsPerPage={6}
               render={renderPost}
-              gridClass="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 lg:gap-8"
+              gridClass="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8"
               dataName="posts"
             />
           </div>
         </div>
 
         <div className="lg:w-1/4">
-          <NavSections></NavSections>
+          <NavSections name={name}></NavSections>
         </div>
       </div>
     </div>

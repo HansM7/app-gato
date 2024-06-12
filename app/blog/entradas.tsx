@@ -1,9 +1,10 @@
-'use client';
+"use client";
 import CardSubject from "../components/blog/cardSubject";
 import CardNew from "../components/blog/cardNew";
 import { useEffect, useState } from "react";
 import { api_blog } from "@/app/data/enviroments/api.enviroment";
 import axios from "axios";
+import Pagination from "@/app/components/Pagination";
 
 interface Post {
   id: number;
@@ -14,13 +15,12 @@ interface Post {
     titulo: string;
     banner: string;
     fecha: string;
-    'autor-name': string;
-    'autor-profile': string;
+    "autor-name": string;
+    "autor-profile": string;
     descripcion: string;
-    'descripcion-imagen': string;
-  }
+    "descripcion-imagen": string;
+  };
 }
-
 
 const entradas = () => {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -50,18 +50,18 @@ const entradas = () => {
     return <div>{error}</div>;
   }
 
-
   const sortedPosts = [...posts].sort(
     (a, b) => new Date(b.acf.fecha).getTime() - new Date(a.acf.fecha).getTime()
   );
 
   const latestPosts = sortedPosts.slice(0, 3);
   const remainingPosts = sortedPosts.slice(3);
+  const renderPost = (post: Post) => <CardSubject key={post.id} post={post} />;
 
   return (
     <div className="w-full max-w-[1920px] mx-auto px-8 pb-8 lg:px-16 lg:pb-16 xl:px32">
-      <div className=" relative -top-[4%] md:-top-[10%] flex flex-col md:flex-row justify-between gap-4 md:gap-2 lg:gap-8">
-       {latestPosts.map((post) => (
+      <div className=" relative -top-[4%] md:-top-[10%] grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-2 lg:gap-8">
+        {latestPosts.map((post) => (
           <CardNew key={post.id} post={post} />
         ))}
       </div>
@@ -71,10 +71,15 @@ const entradas = () => {
       >
         Otros temas
       </h2>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-2 lg:gap-8 ">
-      {remainingPosts.map((post) => (
-          <CardSubject key={post.id} post={post} />
-        ))}
+
+      <div className="w-full">
+        <Pagination
+          data={posts}
+          itemsPerPage={9}
+          render={renderPost}
+          gridClass="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-x-6 lg:gap-8 xl:gap-12"
+          dataName="posts"
+        />
       </div>
     </div>
   );

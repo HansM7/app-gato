@@ -27,9 +27,9 @@ interface PostProps {
   }
   
   const formatDate = (dateStr: string): string => {
-    const year = parseInt(dateStr.slice(0, 4), 10);
-    const month = parseInt(dateStr.slice(4, 6), 10) - 1;
-    const day = parseInt(dateStr.slice(6, 8), 10);
+    const year = parseInt(dateStr?.slice(0, 4), 10);
+    const month = parseInt(dateStr?.slice(4, 6), 10) - 1;
+    const day = parseInt(dateStr?.slice(6, 8), 10);
   
     const date = new Date(year, month, day);
     const options: Intl.DateTimeFormatOptions = {
@@ -70,7 +70,7 @@ interface PostProps {
                 </Link>
               ))}
               </div>
-              <h2 className="capitalize text-white text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-bold drop-shadow-xl">
+              <h2 className="capitalize text-white text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold drop-shadow-xl">
                 <Typewriter
                   words={[`${post.title.rendered}`]}
                   typeSpeed={60}
@@ -107,7 +107,7 @@ interface PostProps {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className=" drop-shadow">{formatDate(post.acf.fecha)}</span>
+                  <span className=" drop-shadow">{post?.acf?.fecha ? formatDate(post.acf.fecha) : "sin fecha"}</span>
                 </div>
               </div>
             </div>
