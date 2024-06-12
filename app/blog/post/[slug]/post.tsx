@@ -18,6 +18,7 @@ interface Posts {
     content: { rendered: string };
     slug: string;
     acf: {
+      introducion: string;
       secciones: string[];
       titulo: string;
       banner: string;
