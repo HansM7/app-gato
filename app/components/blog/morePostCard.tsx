@@ -49,7 +49,7 @@ const MorePostCard = ({ post }: { post: Post }) => {
             alt={post.acf.titulo}
           />
           <div className="w-full h-full flex flex-col justify-between  text-[#3D3D3D] gap-2 md:gap-0">
-            <div className="flex gap-1 overflow-x-auto whitespace-nowrap h-fit pb-2">
+            <div className="flex gap-1 overflow-x-auto overflow-y-hidden whitespace-nowrap h-fit pb-2">
               {post?.acf?.secciones.map((tag) => (
                 <Link
                   href="/blog/[slug]/"

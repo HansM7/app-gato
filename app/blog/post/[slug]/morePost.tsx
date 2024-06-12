@@ -8,7 +8,7 @@ const MorePost = () => {
     useEffect(() => {
         const fetchPosts = async () => {
           try {
-            const response = await axios.get(`${api_blog}?per_page=3`);
+            const response = await axios.get(`${api_blog}?per_page=2`);
             setPosts(response.data);
           } catch (error) {
             console.error('Error fetching posts:', error);
@@ -22,10 +22,13 @@ const MorePost = () => {
     <div className="w-full mb-8 md:mb-0">
       <div className="wfull flex flex-col gap-4">
         <h2 className="text-3xl 
-         text-[#3D3D3D] font-medium uppercase md:mb-8">Mas temas</h2>
-        {posts.map((post, index) => (
+         text-[#3D3D3D] font-medium uppercase ">Mas temas</h2>
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+         {posts.map((post, index) => (
             <MorePostCard key={index} post={post} />
             ))}
+         </div>
+        
       </div>
     </div>
   );

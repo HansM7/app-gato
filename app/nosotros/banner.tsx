@@ -85,96 +85,103 @@ function BannerAbout() {
           </div>
         </div>
         <div className="w-full flex flex-col md:flex-row justify-between gap-8 lg:gap-10 md:h-[500px] xl:h-[700px]">
-          <div className="w-full md:w-1/3 flex flex-col justify-end">
-            <div className="container w-full flex flex-col gap-4">
-              <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
-                <img
-                  className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
-                  src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
-                  alt="imagen"
-                />
-                <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+          <RevealWrapper origin="bottom" duration={1000} className={"w-full md:w-1/3 flex flex-col justify-end"}>
+            <div className="">
+              <div className="container w-full flex flex-col gap-4">
+                <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                   <img
-                    className=" w-full h-full object-cover lg:aspect-square shadow-md"
+                    className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover aspect-square shadow-md"
                     src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
                     alt="imagen"
                   />
-                  <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
-                    <p>
-                      Nos enorgullece ofrecer una atención personalizada a cada
-                      uno de nuestros clientes. Nos tomamos el tiempo para
-                      conocer tus necesidades y objetivos, garantizando un
-                      enfoque a medida que maximiza los resultados y asegura tu
-                      satisfacción.
-                    </p>
+                  <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+                    <img
+                      className=" w-full h-full object-cover aspect-square shadow-md"
+                      src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
+                      alt="imagen"
+                    />
+                    <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center text-[1rem] 2xl:text-[1.4rem]">
+                      <p>
+                        Nos enorgullece ofrecer una atención personalizada a
+                        cada uno de nuestros clientes. Nos tomamos el tiempo
+                        para conocer tus necesidades y objetivos, garantizando
+                        un enfoque a medida que maximiza los resultados y
+                        asegura tu satisfacción.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
-                Atención Personalizada
+                <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
+                  Atención Personalizada
+                </div>
               </div>
             </div>
-          </div>
-          <div className="w-full md:w-1/3 flex flex-col justify-center">
-            <div className="container w-full flex flex-col gap-4">
-              <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
-                <img
-                  className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
-                  src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
-                  alt="imagen"
-                />
-                <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+          </RevealWrapper>
+          <RevealWrapper origin="bottom" duration={1300} className={"w-full md:w-1/3 flex flex-col justify-center"}>
+            <div className="">
+              <div className="container w-full flex flex-col gap-4">
+                <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                   <img
-                    className=" w-full h-full object-cover lg:aspect-square shadow-md"
+                    className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover aspect-square shadow-md"
                     src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                     alt="imagen"
                   />
-                  <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
-                    <p>
-                      Con años de experiencia en marketing, branding, desarrollo
-                      de software y web, nuestro equipo está compuesto por
-                      expertos en sus respectivos campos. Esta experiencia nos
-                      permite ofrecer soluciones efectivas y creativas que
-                      impulsan el crecimiento de tu negocio.
-                    </p>
+                  <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+                    <img
+                      className=" w-full h-full object-cover aspect-square shadow-md"
+                      src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
+                      alt="imagen"
+                    />
+                    <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center text-[1rem] 2xl:text-[1.4rem]">
+                      <p>
+                        Con años de experiencia en marketing, branding,
+                        desarrollo de software y web, nuestro equipo está
+                        compuesto por expertos en sus respectivos campos. Esta
+                        experiencia nos permite ofrecer soluciones efectivas y
+                        creativas que impulsan el crecimiento de tu negocio.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
-                Experiencia
+                <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
+                  Experiencia
+                </div>
               </div>
             </div>
-          </div>
-          <div className="w-full md:w-1/3 flex flex-col justify-start">
-            <div className="container w-full flex flex-col gap-4">
-              <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
-                <img
-                  className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
-                  src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
-                  alt="imagen"
-                />
-                <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+          </RevealWrapper>
+          <RevealWrapper origin="bottom" duration={1600} className={"w-full md:w-1/3 flex flex-col justify-start"}>
+            <div className="">
+              <div className="container w-full flex flex-col gap-4">
+                <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                   <img
-                    className=" w-full h-full object-cover lg:aspect-square shadow-md"
+                    className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover aspect-square shadow-md"
                     src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
                     alt="imagen"
                   />
-                  <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
-                    <p>
-                      La transparencia es fundamental en nuestra relación con
-                      los clientes. Nos comprometemos a ser claros y honestos en
-                      cada paso del proceso, construyendo una base sólida de
-                      confianza. Creemos que la confianza mutua es la clave para
-                      lograr resultados excepcionales y relaciones duraderas.
-                    </p>
+                  <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
+                    <img
+                      className=" w-full h-full object-cover aspect-square shadow-md"
+                      src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                      alt="imagen"
+                    />
+                    <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center text-[1rem] 2xl:text-[1.4rem]">
+                      <p>
+                        La transparencia es fundamental en nuestra relación con
+                        los clientes. Nos comprometemos a ser claros y honestos
+                        en cada paso del proceso, construyendo una base sólida
+                        de confianza. Creemos que la confianza mutua es la clave
+                        para lograr resultados excepcionales y relaciones
+                        duraderas.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
-                Transparencia y confianza
+                <div className="flex gap-2 font-semibold text-xl md:text-2xl justify-between items-center group text-[#666666]">
+                  Transparencia y confianza
+                </div>
               </div>
             </div>
-          </div>
+          </RevealWrapper>
         </div>
       </div>
     </section>
