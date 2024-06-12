@@ -73,6 +73,8 @@ function CollagePortfolio() {
             selectedCategory.toLowerCase().replace(/ /g, "-").replace(/ñ/g, "n")
           )
         );
+  const defaultImageUrl =
+    "https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png";
 
   const renderPortfolioItem = (item: any) => (
     <Link
@@ -83,11 +85,15 @@ function CollagePortfolio() {
     >
       <img
         className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
-        src={item.acf.imagen}
+        src={item.acf?.imagen ? item.acf.imagen : defaultImageUrl}
+        onError={(e) => {
+          e.currentTarget.onerror = null;
+          e.currentTarget.src = defaultImageUrl;
+        }}
         alt={`GATO - Proyecto ${item.acf.cliente}`}
         title={`GATO - Proyecto ${item.acf.cliente}`}
       />
-      <div className="absolute hidden group-hover:flex inset-0 bg-black bg-opacity-70 w-full h-full top-0 p-1 md:p-3 animate-fade-up flex-col justify-end items-start gap-4 text-white">
+      <div className="absolute hidden group-hover:flex inset-0 bg-black bg-opacity-70 w-full h-full top-0 p-1 md:p-3 animate-fade-up flex-col justify-center items-center gap-4 text-white">
         <span className="font-semibold text-base md:text-2xl">
           {item.acf.cliente}
         </span>
@@ -101,8 +107,8 @@ function CollagePortfolio() {
         <div>
           <h1
             title="GATO - Portafolio de proyectos"
-            className="text-3xl
-            text-[#3D3D3D] font-medium uppercase mb-3"
+            className="text-4xl
+            text-[#3D3D3D] font-medium uppercase mb-8"
           >
             Portafolio
           </h1>
@@ -130,7 +136,7 @@ function CollagePortfolio() {
           </select>
         ) : (
           <nav className="w-full">
-            <ul className=" relative flex gap-x-4 text-[#4F4F4F] font-semibold">
+            <ul className=" relative flex gap-x-4 lg:gap-x-6 text-[#4F4F4F] font-semibold">
               {[
                 "Todas las categorías",
                 "Diseño Web",
@@ -140,7 +146,7 @@ function CollagePortfolio() {
               ].map((category) => (
                 <li
                   key={category}
-                  className={`group hover:text-[#6D28D9] ${
+                  className={`group hover:text-[#6D28D9] lg:text-lg ${
                     selectedCategory === category ? "text-[#6D28D9]" : ""
                   }`}
                   onClick={() => handleCategorySelect(category)}
@@ -190,7 +196,7 @@ function CollagePortfolio() {
           <Pagination
             dataName="proyectos"
             data={filteredPortafolio}
-            itemsPerPage={10}
+            itemsPerPage={15}
             render={renderPortfolioItem}
             gridClass={
               "grid xl:grid-cols-5 md:grid-cols-3  grid-cols-2 gap-2 md:gap-4 xl:gap-8 "

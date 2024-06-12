@@ -1,11 +1,8 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
-import { Carousel } from "keep-react";
-import BackgroundSlider from "../components/backgroundSlider";
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-
 
 function BannerServices() {
   const words = [
@@ -21,12 +18,7 @@ function BannerServices() {
     description: "xl:text-[3rem] md:text-3xl sm:text-[2rem]  text-xl",
   };
 
-  const [iterator, setIterator] = useState(0);
-
-  const [colorSelected, setColorSelected] = useState(bg_colors[0]);
-
   const [position, setPosition] = useState(1);
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -112,10 +104,11 @@ function BannerServices() {
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      En GATO ofrecemos soluciones a medida para cada cliente,
+                      adaptándonos a sus necesidades específicas. Desde software
+                      personalizado hasta estrategias de marketing, nos
+                      comprometemos a entender tus objetivos y ofrecerte
+                      herramientas que impulsan tu éxito.
                     </p>
                   </div>
                 </div>
@@ -141,10 +134,10 @@ function BannerServices() {
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      La creatividad impulsa todo lo que hacemos. Generamos
+                      ideas innovadoras que destacan tu marca en un mercado
+                      competitivo. Con campañas impactantes y diseños únicos,
+                      hacemos que tu marca sea memorable y atractiva.
                     </p>
                   </div>
                 </div>
@@ -170,10 +163,11 @@ function BannerServices() {
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      Nos mantenemos a la vanguardia de las tendencias y
+                      tecnologías para ofrecerte soluciones siempre actuales.
+                      Nuestra filosofía de innovación constante te asegura estar
+                      un paso adelante de la competencia, adaptándonos
+                      continuamente al mundo digital.
                     </p>
                   </div>
                 </div>
@@ -186,7 +180,6 @@ function BannerServices() {
         </div>
       </div>
     </section>
-   
   );
 }
 export default BannerServices;

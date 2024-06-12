@@ -28,7 +28,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative bg-white flex">
+    <div className="relative bg-white flex w-full">
       <WhatsappContact></WhatsappContact>
       <div
         className={`fixed top-0 left-0  ${isDrawer ? "w-screen h-screen" : "w-screen lg:w-16"} h-[60px] lg:h-screen z-10 flex flex-col lg:flex-row`}
@@ -41,7 +41,7 @@ function Home() {
         <Collage></Collage>
         <Detail></Detail>
         <GridClients></GridClients>
-        <Form></Form>
+        <Form color="#6D28D9"></Form>
         <Footer></Footer>
       </main>
       

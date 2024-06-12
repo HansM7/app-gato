@@ -11,7 +11,6 @@ import Fundamentals from "./fundamentals";
 import Team from "./team";
 import GridClients from "../components/clientes/grid-clients";
 
-
 function About() {
   const [isDrawer, setIsDrawer] = useState(false);
 
@@ -44,11 +43,16 @@ function About() {
       <div className="relative bg-white flex">
         <WhatsappContact></WhatsappContact>
         <div
-        className={`fixed top-0 left-0  ${isDrawer ? "w-screen h-screen" : "w-screen lg:w-16"} h-[60px] lg:h-screen z-10 flex flex-col lg:flex-row`}
-      >
-        <Navigation isDrawer={isDrawer} setIsDrawer={setIsDrawer}></Navigation>
-        {isDrawer && <Drawer></Drawer>}
-      </div>
+          className={`fixed top-0 left-0  ${
+            isDrawer ? "w-screen h-screen" : "w-screen lg:w-16"
+          } h-[60px] lg:h-screen z-10 flex flex-col lg:flex-row`}
+        >
+          <Navigation 
+            isDrawer={isDrawer}
+            setIsDrawer={setIsDrawer}
+          ></Navigation>
+          {isDrawer && <Drawer></Drawer>}
+        </div>
 
         <div className="min-w-screen w-full flex flex-col  justify-between pt-[60px] lg:pl-[80px] lg:pt-0">
           <BannerAbout></BannerAbout>

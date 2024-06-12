@@ -2,7 +2,6 @@
 
 import { RevealWrapper } from "next-reveal";
 import { useEffect, useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
 import { TypeAnimation } from "react-type-animation";
 
 function BannerAbout() {
@@ -91,21 +90,22 @@ function BannerAbout() {
               <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                 <img
                   className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
-                  src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                  src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
                   alt="imagen"
                 />
                 <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                   <img
                     className=" w-full h-full object-cover lg:aspect-square shadow-md"
-                    src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                    src="https://i.pinimg.com/originals/0a/ec/7b/0aec7b72bbf7111392c9fdb5341e8700.jpg"
                     alt="imagen"
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      Nos enorgullece ofrecer una atención personalizada a cada
+                      uno de nuestros clientes. Nos tomamos el tiempo para
+                      conocer tus necesidades y objetivos, garantizando un
+                      enfoque a medida que maximiza los resultados y asegura tu
+                      satisfacción.
                     </p>
                   </div>
                 </div>
@@ -120,21 +120,22 @@ function BannerAbout() {
               <div className="card group relative transition-all duration-500 w-full h-full flex flex-end">
                 <img
                   className="front w-full min-h-[250px] max-h-[500px] lg:min-h-[350px] object-cover lg:aspect-square shadow-md"
-                  src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                  src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                   alt="imagen"
                 />
                 <div className="back absolute opacity-0 group-hover:opacity-100 w-full h-full">
                   <img
                     className=" w-full h-full object-cover lg:aspect-square shadow-md"
-                    src="https://i.pinimg.com/736x/64/a1/c7/64a1c71b6f8274d4a920c8457c083f9b.jpg"
+                    src="https://i.pinimg.com/originals/be/3e/c0/be3ec039bbfc3736c73736f19fc935dc.jpg"
                     alt="imagen"
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      Con años de experiencia en marketing, branding, desarrollo
+                      de software y web, nuestro equipo está compuesto por
+                      expertos en sus respectivos campos. Esta experiencia nos
+                      permite ofrecer soluciones efectivas y creativas que
+                      impulsan el crecimiento de tu negocio.
                     </p>
                   </div>
                 </div>
@@ -160,10 +161,11 @@ function BannerAbout() {
                   />
                   <div className="absolute top-0 left-0 bg-[#6D28D9] bg-opacity-70 w-full h-full text-white text-center p-2 flex items-center justify-center">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Et, labore minus voluptate a voluptatum laudantium! Id
-                      expedita recusandae et repudiandae odit laborum at sed
-                      consequuntur repellendus, quam animi sequi sapiente!
+                      La transparencia es fundamental en nuestra relación con
+                      los clientes. Nos comprometemos a ser claros y honestos en
+                      cada paso del proceso, construyendo una base sólida de
+                      confianza. Creemos que la confianza mutua es la clave para
+                      lograr resultados excepcionales y relaciones duraderas.
                     </p>
                   </div>
                 </div>

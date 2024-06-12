@@ -32,7 +32,6 @@ const blog = () => {
         {isDrawer && <Drawer></Drawer>}
       </div>
       <main className="min-w-screen flex flex-col w-full pt-[60px] lg:pl-[80px] lg:pt-0">
-        {/* <Header></Header> */}
         <Banner></Banner>
         <Entradas></Entradas>
         <Footer></Footer>

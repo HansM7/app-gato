@@ -51,6 +51,8 @@ function GridClients() {
   useEffect(() => {
     fetchData();
   }, []);
+  const defaultImageUrl =
+    "https://i.pinimg.com/originals/73/fe/ce/73fece7ac631330d0dd4c1bd22325029.png";
   const renderClient = (client: any) => (
     <RevealWrapper
       key={client.id}
@@ -63,15 +65,27 @@ function GridClients() {
           <div className="front w-full h-full bg-white flex items-center justify-center  aspect-square">
             <img
               className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
-              src={client.acf.imagen_url}
+              src={
+                client.acf?.imagen_url ? client.acf.imagen_url : defaultImageUrl
+              }
               alt={client.title.rendered}
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = defaultImageUrl;
+              }}
             />
           </div>
           <div className="back absolute opacity-0 group-hover:opacity-100 flex flex-col top-0 h-full w-full transition-all justify-center items-center duration-500 ease-in-out bg-white">
             <img
               className="xl:w-[65%] h-[85%] group-hover:scale-105 transition-all duration-500 ease-in-out object-contain"
-              src={client.acf.imagen_url}
+              src={
+                client.acf?.imagen_url ? client.acf.imagen_url : defaultImageUrl
+              }
               alt={client.title.rendered}
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = defaultImageUrl;
+              }}
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center px-1 md:px-2 gap-2">
               <span className="text-base md:text-2xl text-white text-center font-bold drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]  transition-all duration-700">
