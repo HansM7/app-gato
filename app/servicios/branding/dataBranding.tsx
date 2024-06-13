@@ -7,13 +7,14 @@ export const DataBranding = [
     details: [
       { name: "Logo", items: ["Diseño de 3 opciones de logo para elección"] },
       {
-        name: "Papelería corporativa",
+        name: "Manual de marca",
         items: [
-          "Manual de marca (Incluye paleta de colores de marca, tipografía, etc)",
+          "Incluye paleta de colores de marca, tipografía, etc",
         ],
       },
+      {name: "Precios no incluyen IGV"}
     ],
-    price: 200,
+    price: 200.00,
     color: "#9747FF",
     word: "Pago único",
   },
@@ -24,10 +25,11 @@ export const DataBranding = [
       "Llevamos la esencia de tu marca a cada detalle, desde un logo distintivo hasta la papelería corporativa y firmas digitales. Garantizamos una presencia cohesiva y profesional en todos tus documentos y comunicaciones.",
     details: [
       { name: "Logo", items: ["Se envían 3 opciones de logo"] },
-      { name: "Papelería corporativa", items: ["tarjetas, brochure, etc"] },
+      { name: "Papelería corporativa", items: ["incluye tarjetas, brochure, etc"] },
       { name: "Firma digital" },
+      {name: "Precios no incluyen IGV"}
     ],
-    price: 350,
+    price: 350.00,
     color: "#9747FF",
     word: "Pago único",
   },
@@ -43,14 +45,15 @@ export const DataBranding = [
       },
       {
         name: "Papelería corporativa",
-        items: ["arjetas, brochures, firma digital, etc"],
+        items: ["Incluye tarjetas, brochures, firma digital, etc"],
       },
       {
         name: "Merchandising",
         items: ["Tazas, tarjetas, polos, fotocheck, etc"],
       },
+      {name: "Precios no incluyen IGV"}
     ],
-    price: 500,
+    price: 500.00,
     color: "#9747FF",
     word: "Pago único",
   },
@@ -76,8 +79,9 @@ export const DataBranding = [
         ],
       },
       { name: "Provincia - Zona alejada", items: ["S/ 500.00"] },
+      {name: "Precios no incluyen IGV"}
     ],
-    price: 350,
+    price: 350.00,
     color: "#9747FF",
     word: "Pago único",
   },

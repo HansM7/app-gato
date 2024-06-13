@@ -1,4 +1,3 @@
-import { Link } from "phosphor-react";
 import PlanCardBranding from "../planCardBranding";
 
 type ServiceDetail = {
@@ -31,7 +30,7 @@ const detailPlan = (prop: Props) => {
           </h2>
           {prop.priceTrimestral !== undefined && (
             <div style={{ backgroundColor: prop.color }} className="relative lg:absolute text-center lg:left-1/2 lg:top-2/3 w-fit px-4 py-2 inline-block  rounded-md font-bold shadow-lg">
-              <p className=" text-white">Precio Trimestral: <span className="ml-4"> ${prop.priceTrimestral}</span> </p>
+              <p className=" text-white">Precio Trimestral: <span className="ml-4"> S/ {prop.priceTrimestral}</span> </p>
             </div>
           )}
         </div>

@@ -2,8 +2,6 @@ export const DataDisenoWeb = [
   {
     name: "ONE Page",
     descriptionCorta: "Destaca con una identidad visual única.",
-    description:
-      "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye",
     details: [
       {
         name: "Incluye",
@@ -32,16 +30,17 @@ export const DataDisenoWeb = [
           "Precio anual Dominio.pe: S/ 110.00",
         ],
       },
+      {
+        name: "Precios incluye IGV"
+      }
     ],
-    price: 600,
+    price: 600.00,
     color: "#0BC2E1",
     word: "Costo de desarrollo",
   },
   {
     name: "WEB EMPRESARIAL",
     descriptionCorta: "Destaca con una identidad visual única.",
-    description:
-      "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye",
     details: [
       {
         name: "Incluye",
@@ -70,16 +69,17 @@ export const DataDisenoWeb = [
           "Precio anual Dominio.pe: S/ 110.00",
         ],
       },
+      {
+        name: "Precios incluye IGV"
+      }
     ],
-    price: 900,
+    price: 1200.00,
     color: "#0BC2E1",
     word: "Costo de desarrollo",
   },
   {
     name: "WEB CORPORATIVA",
     descriptionCorta: "Destaca con una identidad visual única.",
-    description:
-      "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye",
     details: [
       {
         name: "Incluye",
@@ -109,15 +109,13 @@ export const DataDisenoWeb = [
         ],
       },
     ],
-    price: 1200,
+    price: 1500.00,
     color: "#0BC2E1",
     word: "Costo de desarrollo",
   },
   {
     name: "WEB E-COMMERCE",
     descriptionCorta: "Destaca con una identidad visual única.",
-    description:
-      "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye",
     details: [
       {
         name: "Incluye",
@@ -148,15 +146,13 @@ export const DataDisenoWeb = [
         ],
       },
     ],
-    price: 1500,
+    price: 2000.00,
     color: "#0BC2E1",
     word: "Costo de desarrollo",
   },
   {
     name: "WEB A MEDIDA",
     descriptionCorta: "Destaca con una identidad visual única.",
-    description:
-      "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye",
     details: [
       {
         name: "Incluye",
@@ -165,10 +161,10 @@ export const DataDisenoWeb = [
           "Optimización SEO",
           "Autoadministrable (Wordpress)",
           "Diseño responsive",
-          "Hasta 2000 productos",
+          "Productos ilimitados",
           "Incluye pasarela de pagos",
-          "Capacitación de 2 hora",
-          "Desarrollo en plantilla (Elementor Pro)",
+          "Capacitación de 4 hora",
+          "Desarrollo en código fuente NodeJs, PHP",
           "Hosting 50 GB",
           "Proveedor Hostinger",
           "Ram 6 GB",
@@ -186,46 +182,11 @@ export const DataDisenoWeb = [
           "Precio anual Dominio.pe: S/ 110.00",
         ],
       },
+      {
+        name: "Precios incluye IGV"
+      }
     ],
     price: 5000,
-    color: "#0BC2E1",
-    word: "Costo de desarrollo",
-  },
-  {
-    name: "Landing Page",
-    descriptionCorta: "Destaca con una identidad visual única.",
-    description:
-      "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye",
-    details: [
-      {
-        name: "Incluye",
-        items: [
-          "1 sección",
-          "Optimización SEO",
-          "Autoadministrable (Wordpress)",
-          "Diseño responsive",
-          "Hasta 5 productos",
-          "Capacitación de 1 hora",
-          "Desarrollo en plantilla (Elementor Pro)",
-          "Hosting 2 GB",
-          "Proveedor Hostinger",
-          "Ram 6 GB",
-          "CPU 4 Núcleos",
-          "Incluye certificado SSL",
-          "Ancho de banda ilimitado",
-          "Incluye elementor Pro",
-          "Incluye 20 correos corporativos",
-          "Copias de seguridad diarias",
-          "Incluye protección de dominio (WHOIS)",
-          "Incluye antivirus",
-          "Soporte 24/7",
-          "Precio anual Hosting: S/ 100.00",
-          "Precio anual Dominio: S/ 50.00",
-          "Precio anual Dominio.pe: S/ 110.00",
-        ],
-      },
-    ],
-    price: 400,
     color: "#0BC2E1",
     word: "Costo de desarrollo",
   },
