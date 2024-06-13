@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface paginationProps {
   data: Array<any>;
@@ -22,23 +22,32 @@ const Pagination: React.FC<paginationProps> = ({
   dataName,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(itemsPerPageMobile);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
   
-  let itemsPerPage = itemsPerPageMobile;
-  if (window.innerWidth >= 768 && window.innerWidth < 1024) {
-    itemsPerPage = itemsPerPageTablet;
-  } else if (window.innerWidth >= 1024 && window.innerWidth < 1280) {
-    itemsPerPage = itemsPerPageDesktop;
-  } else if (window.innerWidth >= 1280) {
-    itemsPerPage = itemsPerPageLargeDesktop;
-  }
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      if (window.innerWidth >= 1280) {
+        setItemsPerPage(itemsPerPageLargeDesktop);
+      } else if (window.innerWidth >= 1024) {
+        setItemsPerPage(itemsPerPageDesktop);
+      } else if (window.innerWidth >= 768) {
+        setItemsPerPage(itemsPerPageTablet);
+      } else {
+        setItemsPerPage(itemsPerPageMobile);
+      }
+    };
+
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, [itemsPerPageMobile, itemsPerPageTablet, itemsPerPageDesktop, itemsPerPageLargeDesktop]);
 
   const totalPages = Math.ceil(data.length / itemsPerPage);
-
-
   const startIndex = (currentPage - 1) * itemsPerPage;
   const selectedData = data.slice(startIndex, startIndex + itemsPerPage);
 

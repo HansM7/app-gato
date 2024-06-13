@@ -22,7 +22,6 @@ const content = ({ slug }: { slug: string }) => {
         if (tagId) {
           const response = await axios.get(`${api_blog}?tags=${tagId}`);
           setPosts(response.data);
-          console.log(response.data);
         } else {
           console.error("Invalid slug:", slug);
         }

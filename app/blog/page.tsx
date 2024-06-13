@@ -1,6 +1,5 @@
 import Blog from "./blog";
 import { Metadata } from "next";
-import Footer from "../components/footer";
 import Head from "next/head";
 
 export const metadata: Metadata = {

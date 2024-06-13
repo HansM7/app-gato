@@ -46,7 +46,7 @@ export async function generateMetadata({
         title: "Página no encontrada",
         description: "La página que buscas no está disponible.",
         type: "website",
-        url: "https://dominio.com",
+        url: "https://gato.pe",
       },
     };
   }

@@ -40,7 +40,6 @@ function Team() {
       alt: "GATO - Directora Comercial Diana Ortega",
     },
   ];
-  const marketing = [];
   const workers = [
     {
       name: "Mariapia Contreras",

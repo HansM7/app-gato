@@ -1,6 +1,4 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
-import { RevealWrapper } from "next-reveal";
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 
