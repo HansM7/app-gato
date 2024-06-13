@@ -68,7 +68,7 @@ const cardSubject = ({ post }: { post: Post }) => {
               ))}
             </div>
             <div className="flex flex-col flex-grow justify-end h-full gap-1 lg:gap-2">
-              <h2 className="md:line-clamp-2 lg:line-clamp-2  capitalize font-bold drop-shadow-xl text-[1.15rem] lg:text-[1.1em] 2xl:text-[1.4rem]  ">
+              <h2 className="md:line-clamp-2 lg:line-clamp-2  capitalize font-bold drop-shadow-xl text-[1.15rem] lg:text-[1.1rem] 2xl:text-[1.4rem]  ">
                 {post.acf.titulo}
               </h2>
               <div className=" flex gap-2 items-end text-[#bdbdbd] text-[0.8rem]">

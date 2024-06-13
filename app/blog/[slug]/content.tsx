@@ -36,7 +36,7 @@ const content = ({ slug }: { slug: string }) => {
   return (
     <div>
       <Banner name={slug} />
-      <div className="relative -top-[8%] md:-top-[5%] lg:-top-[10%]">
+      <div className=" relative -top-[8%] md:-top-[5%] lg:-top-[10%]">
       <Entradas posts={posts} name={slug} />
       </div>
       

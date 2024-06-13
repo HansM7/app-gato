@@ -1,4 +1,3 @@
-import { RevealWrapper } from "next-reveal";
 import DetailPlan from "./modalDetail";
 import SliderPlans from "./sliderPlans";
 import { useState } from "react";

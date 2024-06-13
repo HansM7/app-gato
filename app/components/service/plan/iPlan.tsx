@@ -4,7 +4,7 @@ export interface Plan {
     description?: string;
     details: { name?: string; items?: string[] }[];
     price: number;
-    priceTrimestral?: number;
+    priceTrimestral?: string;
     color: string;
     word: string;
   }

@@ -10,7 +10,7 @@ type Props = {
   description?: string;
   details: ServiceDetail[];
   price: number;
-  priceTrimestral?: number;
+  priceTrimestral?: string;
   color: string;
   word: string;
 };

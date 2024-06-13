@@ -39,7 +39,7 @@ const MorePostCard = ({ post }: { post: Post }) => {
         className="w-full"
       >
         <RevealWrapper
-          className={`w-full h-full flex flex-col gap-2 bg-white`}
+          className={`w-full h-full flex flex-col gap-2`}
           origin="left"
           duration={1500}
         >
