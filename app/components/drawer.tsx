@@ -122,7 +122,6 @@ function Drawer() {
             </div>
 
             <div className="flex items-center">
-              
               <div
                 className={`${
                   info === "Blog"
@@ -137,11 +136,50 @@ function Drawer() {
           <div className="flex flex-col gap-4 text-sm">
             <div className="flex flex-col">
               <span className="font-semibold">Escríbenos</span>
-              <span>info@gato.com</span>
+              <Link
+            href={"mailto:info@gato.com"}
+            className="text-slate-600
+            hover:underline underline-offset-4 mb-1"
+          >
+            info@gato.com
+          </Link>
+          <Link
+            href={"mailto:dortega@gato.com"}
+            className="text-slate-600
+            hover:underline underline-offset-4 mb-1"
+          >
+            dortega@gato.com
+          </Link>
+          <Link
+            href={"mailto:mjara@gato.com"}
+            className="text-slate-600
+            hover:underline underline-offset-4 mb-1"
+          >
+            mjara@gato.com
+          </Link>
             </div>
             <div className="flex flex-col">
               <span className="font-semibold">Háblanos</span>
-              <span>980005257</span>
+              <Link
+                href={"tel:+51 980005257"}
+                className="text-slate-600 relative inline-block hover:underline underline-offset-4 mb-1"
+              >
+                +51 980005257
+              </Link>
+              <Link
+                href={"tel:+51 952341679"}
+                className="text-slate-600
+            hover:underline underline-offset-4 mb-1"
+              >
+                +51 952341679
+              </Link>
+              <Link
+                href={"tel:+51 980005257"}
+                className="text-slate-600
+            hover:underline underline-offset-4 mb-1"
+              >
+                +51 946380310
+              </Link>
             </div>
           </div>
         </div>
@@ -150,7 +188,6 @@ function Drawer() {
           <div className="min-h-52 w-full ">
             <InfoDrawer word={info}></InfoDrawer>
           </div>
-
         </div>
       </div>
       {/* --------------- screen black ------------------------------------- */}

@@ -112,8 +112,7 @@ const fundamentals = () => {
                 <img
                   loading="lazy"
                   className="rounded-md shadow-md w-full h-auto aspect-video lg:max-h-[250px] object-cover"
-                  src="https://i.pinimg.com/736x/fc/cf/b0/fccfb08b7b601c7b23e738d690ff3c69.jpg"
-                  alt="misión"
+                  src="https://i.pinimg.com/originals/27/0e/3e/270e3e5b8ed666060491db3bf0f7cedd.jpg"
                 />
               </div>
             </RevealWrapper>

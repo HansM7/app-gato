@@ -48,8 +48,9 @@ function Collage() {
                 </div>
 
                 <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block text-center">
-                  Transformamos tu presencia en línea con diseños web
-                  impactantes y funcionales.
+                Nuestros servicios de Marketing Digital están orientados en
+                  transformar tus redes sociales en canales de ventas, según los
+                  objetivos de tu negocio.
                 </p>
               </div>
             </div>
@@ -89,10 +90,8 @@ function Collage() {
                   </span>
                 </div>
                 <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block text-center ">
-                  Transformamos tus ideas en software funcional. Desde la
-                  conceptualización hasta la implementación, creamos soluciones
-                  a medida que potencian tu negocio y simplifican tus
-                  operaciones.
+                Transformamos tu presencia en línea con diseños web
+                impactantes y funcionales.
                 </p>
               </div>
             </div>
@@ -132,9 +131,10 @@ function Collage() {
                   </span>
                 </div>
                 <p className="hidden text-xl text-white xl:text-xl md:text-base sm:text-xs lg:w-[80%] lg-mx-auto group-hover:block text-center">
-                  Nuestros servicios de Marketing Digital están orientados en
-                  transformar tus redes sociales en canales de ventas, según los
-                  objetivos de tu negocio.
+                Transformamos tus ideas en software funcional. Desde la
+                  conceptualización hasta la implementación, creamos soluciones
+                  a medida que potencian tu negocio y simplifican tus
+                  operaciones.
                 </p>
               </div>
             </div>

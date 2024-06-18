@@ -101,7 +101,7 @@ function Form(setcolor: FormProps) {
               className={`hidden bg-[${setcolor.color}] px-3 py-4 lg:flex lg:flex-col justify-center items-center w-fit lg:h-fit gap-6 shadow-md lg:rounded-none lg:rounded-r-xl  rounded-b-xl`}
             >
               <Link
-                href={"https://www.instagram.com/genius_mkt_peru/"}
+                href={"https://www.instagram.com/agenciagato2024?igsh=MmR4ZTQ1bHpwMmF3"}
                 target="_blank"
                 className="flex justify-center items-center hover:scale-125 transition-all ease-in-out duration-300"
               >
@@ -165,7 +165,7 @@ function Form(setcolor: FormProps) {
                 </svg>
               </Link>
               <Link
-                href={"https://www.facebook.com/geniusper"}
+                href={"https://www.facebook.com/agenciagatope"}
                 target="_blank"
                 className="hover:scale-125 transition-all ease-in-out duration-300"
               >
@@ -189,7 +189,7 @@ function Form(setcolor: FormProps) {
                 </svg>
               </Link>
               <Link
-                href={"https://www.linkedin.com/company/geniusperu"}
+                href={"https://www.linkedin.com/company/agenciagato/"}
                 target="_blank"
                 className="flex justify-center items-center hover:scale-125 transition-all ease-in-out duration-300"
               >

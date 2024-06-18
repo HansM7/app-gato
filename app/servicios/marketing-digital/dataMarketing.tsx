@@ -1,13 +1,13 @@
 export const DataMarketing = [
   {
     name: "ADS MANAGER",
-    description: "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye:",
+    description:
+      "En GATO, nos especializamos en la gestión y monitoreo de ADS para maximizar tu inversión publicitaria. Nuestro servicio integral incluye:",
     descriptionCorta: "Destaca con una identidad visual única.",
     details: [
       {
         name: "Gestión de campañas ",
         items: [
-          "Campañas ilimitadas",
           "5 piezas gráficas para anuncios",
           "Incluye 8 campañas en META ADS por mes (Facebook / Instagram)",
           "Incluye 3 campañas en GOOGLE ADS por mes",
@@ -17,8 +17,11 @@ export const DataMarketing = [
         name: "Reporte de resultados mensual",
         items: ["Incluye resultados de las campañas "],
       },
+      {
+        name: "Precios incluyen IGV",
+      },
     ],
-    price: 300.00,
+    price: 350.0,
     priceTrimestal: "892.50",
     color: "#A42BE6",
     word: "Pago mensual",
@@ -73,8 +76,11 @@ export const DataMarketing = [
           "Incluye reporte de resultados de las publicaciones en redes",
         ],
       },
+      {
+        name: "Precios incluyen IGV",
+      },
     ],
-    price: 600.00,
+    price: 600.0,
     priceTrimestral: "1530.00",
     color: "#A42BE6",
     word: "Pago mensual",
@@ -142,15 +148,14 @@ export const DataMarketing = [
         name: "Precios incluyen IGV",
       },
     ],
-    price: 1200.00,
+    price: 1200.0,
     priceTrimestral: "3060.00",
     color: "#A42BE6",
     word: "Pago mensual",
   },
   {
     name: "plan AVANZADO",
-    descriptionCorta:
-      "Capturamos la esencia de tu marca",
+    descriptionCorta: "Capturamos la esencia de tu marca",
     details: [
       {
         name: "12 piezas gráficas estratégicas",
@@ -163,15 +168,16 @@ export const DataMarketing = [
       {
         name: "12 Reel cada mes",
         items: [
-          "Ocho ediciones de videos tipo reel que se pueden replicar tanto en Facebook, Instagram y Tiktok.",
+          "Ediciones de videos tipo reel que se pueden replicar tanto en Facebook, Instagram y Tiktok.",
           "Presentación: Duración máxima 30 segundos.",
         ],
       },
       {
         name: "Sesión de foto y video",
         items: [
-          "Para Lima moderna: 2 sesiones cada mes de 8 fotos y 6 videos cada sesión..",
-          "Para provincia-zonas alejadas:                1 sesión bimensual de 50 fotos y 16 videos por sesión.",
+          "Para Lima moderna: 2 sesiones cada mes de 8 fotos y 6 videos cada sesión.",
+          "Para provincia-zonas alejadas: 1 sesión bimensual de 50 fotos y 16 videos por sesión. ",
+          "*Previo pago de al menos dos meses por adelantado.",
         ],
       },
       {
@@ -211,15 +217,14 @@ export const DataMarketing = [
         name: "Precios incluyen IGV",
       },
     ],
-    price: 2500.00,
+    price: 2500.0,
     priceTrimestral: "6375.00",
     color: "#A42BE6",
     word: "Pago mensual",
   },
   {
     name: "plan CORPORATIVO",
-    descriptionCorta:
-      "Capturamos la esencia de tu marca.",
+    descriptionCorta: "Capturamos la esencia de tu marca.",
     details: [
       {
         name: "28 piezas gráficas estratégicas",
@@ -280,7 +285,7 @@ export const DataMarketing = [
         name: "Precios incluyen IGV",
       },
     ],
-    price: 4000.00,
+    price: 4000.0,
     priceTrimestral: "10200.00",
     color: "#A42BE6",
     word: "Pago mensual",
@@ -308,7 +313,7 @@ export const DataMarketing = [
         name: "Precios incluyen IGV",
       },
     ],
-    price: 350.00,
+    price: 350.0,
     color: "#A42BE6",
     word: "Pago único",
   },
@@ -335,7 +340,7 @@ export const DataMarketing = [
         name: "Precios incluyen IGV",
       },
     ],
-    price: 500.00,
+    price: 500.0,
     color: "#A42BE6",
     word: "Pago único",
   },

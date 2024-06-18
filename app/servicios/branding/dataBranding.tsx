@@ -12,7 +12,7 @@ export const DataBranding = [
           "Incluye paleta de colores de marca, tipografía, etc",
         ],
       },
-      {name: "Precios no incluyen IGV"}
+      {name: "Precios incluyen IGV"}
     ],
     price: 200.00,
     color: "#9747FF",
@@ -27,7 +27,7 @@ export const DataBranding = [
       { name: "Logo", items: ["Se envían 3 opciones de logo"] },
       { name: "Papelería corporativa", items: ["incluye tarjetas, brochure, etc"] },
       { name: "Firma digital" },
-      {name: "Precios no incluyen IGV"}
+      {name: "Precios incluyen IGV"}
     ],
     price: 350.00,
     color: "#9747FF",
@@ -51,7 +51,7 @@ export const DataBranding = [
         name: "Merchandising",
         items: ["Tazas, tarjetas, polos, fotocheck, etc"],
       },
-      {name: "Precios no incluyen IGV"}
+      {name: "Precios incluyen IGV"}
     ],
     price: 500.00,
     color: "#9747FF",
@@ -79,7 +79,7 @@ export const DataBranding = [
         ],
       },
       { name: "Provincia - Zona alejada", items: ["S/ 500.00"] },
-      {name: "Precios no incluyen IGV"}
+      {name: "Precios incluyen IGV"}
     ],
     price: 350.00,
     color: "#9747FF",

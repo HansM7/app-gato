@@ -3,7 +3,7 @@
 import axios from "axios";
 import { RevealWrapper } from "next-reveal";
 import Link from "next/link";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Pagination from "../Pagination";
 
 interface ClientItem {
@@ -60,7 +60,11 @@ function GridClients() {
       duration={1000}
       className=" w-full justify-center flex items-center relative overflow-hidden group"
     >
-      <div className="container w-full group">
+      <Link
+        href="@/app/portafolio/[slug]"
+        as={`/portafolio/${client.slug}`}
+        className="container w-full group"
+      >
         <div className="card group relative transition-all duration-500">
           <div className="front w-full h-full bg-white flex items-center justify-center  aspect-square">
             <img
@@ -99,7 +103,7 @@ function GridClients() {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </RevealWrapper>
   );
 

@@ -36,11 +36,11 @@ const plans = (prop: Props) => {
       </div>
       {selectedPlan && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-10"
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-4 py-16"
           onClick={closePopup}
         >
           <div
-            className="relative bg-white p-8 rounded max-h-[80%] w-[90%] sm:w-[80%] lg:w-[60%] 2xl:w-[50%] max-w-[900px] overflow-hidden"
+            className="relative bg-white p-8 rounded w-[90%] sm:w-[80%] lg:w-[60%] 2xl:w-[50%] max-w-[900px] max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -60,7 +60,10 @@ const plans = (prop: Props) => {
                 />
               </svg>
             </button>
+            <div className="">
             <DetailPlan {...selectedPlan} />
+            </div>
+            
           </div>
         </div>
       )}

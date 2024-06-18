@@ -22,7 +22,7 @@ function Team() {
       photo_name: "martin",
       photo:
         // "https://media.licdn.com/dms/image/D5635AQFGLM7VnS33PQ/profile-framedphoto-shrink_800_800/0/1711476726864?e=1713625200&v=beta&t=4QHErSs5nfjqgJMZz9K0sOruZTTr-CXvwuvt-bLOzFY",
-        "martin.jpg",
+        "martin.png",
 
       role: "Director General",
       description: "",
@@ -34,7 +34,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E35AQHPXy-1TU49Ow/profile-framedphoto-shrink_800_800/0/1711806246117?e=1713628800&v=beta&t=mWQvQSUf5PGy_jwPjav-5imqRhOJfAHv8XpzYpHmyUw",
-        "diana.jpg",
+        "diana.png",
       role: "Directora Comercial",
       description: "",
       alt: "GATO - Directora Comercial Diana Ortega",
@@ -69,7 +69,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "sol.png",
+        "solange.png",
       role: "Diseñadora Gráfica",
       description: "",
       alt: "GATO - Diseñadora Gráfica Sollage Ferrando",
@@ -80,7 +80,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "estefany.png",
+        "stefany.png",
       role: "Asistente Audiovisual",
       description: "",
       alt: "GATO - Asistente Audiovisual Stefany Chapoñan",
@@ -91,7 +91,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "luis.jpg",
+        "luis.png",
       role: "Coordinador de Marketing Jr.",
       description: "",
       alt: "GATO - Coordinador de Marketing Jr. Luis Saenz",
@@ -102,7 +102,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "lucero.jpg",
+        "lucero.png",
       role: "Asistente de Gestión Humana",
       description: "",
       alt: "GATO - Asistente de Gestión Humana Lucero Cueva",
@@ -113,7 +113,7 @@ function Team() {
 
       photo:
         // "https://media.licdn.com/dms/image/D4E03AQEUc7IVp3lySg/profile-displayphoto-shrink_800_800/0/1711981017350?e=1718236800&v=beta&t=Ol1RS_6KQ1lnKjwIMOL2DEYrKuYvcJeuFr-neKbMwXY",
-        "lucia.jpg",
+        "lucia.png",
       role: "Asistente Contable",
       description: "",
       alt: "GATO - Asistente Contable Lucia Cueva",

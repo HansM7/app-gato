@@ -20,8 +20,8 @@ function redirect() {
 
 const detailPlan = (prop: Props) => {
   return (
-      <div>
-        <div  className="relative w-full text-center mx-auto h-full overflow-hidden">
+      <div className="h-auto">
+        <div  className="relative w-full text-center mx-auto">
           <h2
           style={{ color: prop.color }}
             className={`uppercase font-black text-[1.5rem] lg:text-[3.5rem] md:text-[2rem] mb-4 lg:mb-8`}
@@ -35,8 +35,8 @@ const detailPlan = (prop: Props) => {
           )}
         </div>
         <div className={`lg:font-semibold lg:text-lg mb-4 `}>{prop.description}</div>
-        <div className="flex flex-col md:flex-row gap-10 lg:max-h-auto  pr-1 pt-1 pb-4  h-full max-h-[60vh] overflow-y-auto overflow-x-hidden">
-          <div className="h-auto md:max-h-[400px] md:overflow-y-auto w-full md:w-2/4 xl:w-2/3">
+        <div className="flex flex-col md:flex-row gap-10 lg:max-h-auto pr-1 pt-1 pb-4 h-fit max-h-[60vh] overflow-y-auto overflow-x-hidden">
+          <div className="h-auto md:min-h-[400px] md:max-h-[400px] md:overflow-y-auto w-full md:w-2/4 xl:w-2/3">
             {prop?.details.map((detail, index) => (
               <div key={index} className="mb-4">
                 <h3 style={{ color: prop.color }} className={`text-xl font-bold mb-2`}>{detail?.name}</h3>
@@ -55,7 +55,7 @@ const detailPlan = (prop: Props) => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col  justify-center items-center w-full md:w-2/4 xl:w-1/3 ">
+          <div className="flex flex-col  justify-center items-center w-full md:w-2/4 xl:w-1/3 md:max-h-[400px]  h-fit md:overflow-y-auto">
             <PlanCardBranding
               price={prop.price}
               color={prop.color}

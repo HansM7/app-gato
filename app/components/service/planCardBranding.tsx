@@ -10,7 +10,7 @@ const planCard = (props: Prop) => {
   const mainColor = props.color;
   return (
     <div  style={{ borderColor: mainColor }} 
-      className={`border  aspect rounded-lg p-6 flex flex-col justify-center items-center gap-5 w-full h-fit`}
+      className={`border  aspect rounded-lg p-6 flex flex-col justify-center items-center gap-5 w-full h-auto aspect-square`}
     >
       <div>
         <svg

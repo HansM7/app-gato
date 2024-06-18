@@ -95,10 +95,10 @@ function CollagePortfolio() {
         title={`GATO - Proyecto ${item.acf.cliente}`}
       />
       <div className="absolute hidden group-hover:flex inset-0 bg-black bg-opacity-70 w-full h-full top-0 p-1 md:p-3 animate-fade-up flex-col justify-center items-center gap-4 text-white">
-        <span className="font-semibold text-base md:text-2xl">
+        <span className="font-semibold text-base md:text-2xl text-center">
           {item.acf.cliente}
         </span>
-        <span className="text-xs md:text-base">{item.title.rendered}</span>
+        <span className="text-xs md:text-base text-center">{item.title.rendered}</span>
       </div>
     </Link>
   );
@@ -140,11 +140,11 @@ function CollagePortfolio() {
             <ul className=" relative flex gap-x-4 lg:gap-x-6 text-[#4F4F4F] font-semibold">
               {[
                 "Todas las categorías",
-                "Diseño Web",
-                "Branding",
-                "Desarrollo de Software",
-                "Desarrollo de Aplicaciones",
                 "Marketing Digital",
+                "Diseño Web",
+                "Desarrollo de Software",
+                "Desarrollo de Móvil",
+                "Branding",
               ].map((category) => (
                 <li
                   key={category}
