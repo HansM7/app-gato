@@ -47,7 +47,7 @@ const Banner: React.FC<PostProps> = ({ post }) => {
         <img
           loading="lazy"
           className="w-full h-full object-cover"
-          src={post.acf.banner}
+          src={post.acf?.banner}
           alt="banner blog"
         />
 
